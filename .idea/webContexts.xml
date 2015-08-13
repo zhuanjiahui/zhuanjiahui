@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/manage/order/purchaseOrderView2.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/manage/order" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/photographerView.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character" />
+      </map>
+    </option>
+  </component>
+</project>
+
