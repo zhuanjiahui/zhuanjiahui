@@ -1,0 +1,61 @@
+#wrap{width: 1200px;margin:0 auto;}
+html,body{width:100%;height:100%;margin:0;}
+.line{width:100%;border-bottom: 1px solid #dddddd;}
+/*top部分*/
+.top{width: 100%;height:31px;border-bottom: 1px solid #dddddd;line-height: 31px;color: #90d3ef;}
+.top i{font-style: normal;color:#dfe6f3;margin:0 14px;}
+.top .top-l{margin-left: 72px;}
+.top .top-l a{color: #6d6d6d;}
+.top .top-l .top-l1{height:13px;line-height: 13px;display:line-block;padding-right: 13px;}
+.top .top-l .top-l2{display: inline-block;height:13px;line-height: 13px;}
+.top .top-r{padding-right:50px;}
+.top .top-r a{color:#6d6d6d;display:inline-block;height: 13px;line-height: 13px;}
+.top a:hover{color: #45bfde;}
+/*header部分*/
+.header .logo{padding:38px 0 25px 18px;}
+.header .logo a{display: block;}
+.header .header-right{line-height: 155px;}
+.header .header-right span{color:#6d6d6d;}
+.header .header-right a{color: #ec6618;}
+.header .header-right i{font-style: normal;color:#dfe6f3;margin:0 5px;}
+/*content部分*/
+.content{width:1200px;margin:0 auto;background:url(../images/login-ad.png) 0 0 no-repeat;padding-top:20px;}
+.content form{float:right;width: 368px;height: 347px;padding:46px 0 0 35px;background: rgb(248,248,248);border: 1px solid #bbb;border-radius:3px;position:relative;}
+.content form .box1{width: 293px;height: 44px;margin-bottom:20px;border: 1px solid #ccc;border-radius: 3px;position:relative;}
+.content form .box1:hover{border:1px solid #ec6618;}
+.content form .box1 span{display: inline-block;width: 44px;height: 42px;float: left;background: url(../images/form-user.png) 6px 6px no-repeat;border-right:1px solid #d5d5d5;}
+.content form .box1 input{display: inline-block;width: 246px;height: 42px;line-height:42px;float: left;border: none;background: #f8f8f8;font-size: 14px;text-indent: 10px;}
+.content form .box2 span{background: url(../images/form-password.png) 6px 6px no-repeat;}
+.content form .box3{width: 293px;height:20px;}
+.content form .box3 .box3-l{float:left;}
+.content form .box3 .box3-r{float:right;}
+.content form .box3 .box3-l .text-l{color: #666666;cursor: pointer;}
+.content form .box3 .box3-r .text-r{color:#2cb1e7;cursor: pointer;}
+.content form .login-btn{display: inline-block;width: 300px;height: 50px;margin:20px 0 28px 0;border: none;background-color: #2cb1e7;color: #fff;border-radius: 6px;cursor: pointer;font-size: 18px;position: relative;}
+.content form .login-btn:hover{background-color:#47a8d3;}
+/*box4部分，继承box3*/
+.content form .box3 .box3-l .text-l4{color:#999;cursor: pointer;}
+.content form .box3 .box3-r .text-r4{color:#666666;cursor: pointer;}
+/*footer部分*/
+.footer{height:362px;background-color: #e5e5e5;width:100%;margin-top:50px;}
+.footer-wrap{width:1200px;margin:0 auto!important;}
+.footer-ul1{float:left;width:100%;overflow:hidden;background-color: #e5e5e5;}
+.footer-ul1 .ul1-li1{float:left;width: 225px;height:188px;color:#646464;text-indent: 45px;margin-top: 20px;border-right:1px solid #cacaca;}
+.footer-ul1-title{font-size: 24px;color: ;height:45px;line-height: 45px;}
+.footer-ul1-con{font-size:14px;height: 28px;line-height: 28px;}
+.footer-ul1-con a{color:#646464;}
+.footer-ul1 .ul1-li3{float:left;width:260px;height:188px;color:#646464;padding-left: 45px;margin-top: 20px;border-right:1px solid #cacaca;}
+.ul1-con-pic{float:left;margin-top: 10px;}
+.ul1-con-pic1{float:left;width: 80px;text-align: center;position: relative;}
+.ul1-con-pic1 a{display:inline-block;color: #646464;}
+.ul1-con-pic1-1{z-index: 20;}
+.ul1-con-pic1-2{display: none;}
+.ul1-con-pic1 a:hover .ul1-con-pic1-2{display: block;position: absolute;top:0;left:9px;z-index: 30;}
+.ul1-li4{float:left;width: 260px;height:157px;color:#646464;text-indent: 45px;margin-top: 20px;}
+.ul1-li4 .biancu{font-size: 30px;color: #6b6b6b;}
+.footer-bottom{float:left;width: 100%}
+.footer .footerpic{float:left;width: 100%;height:74px;text-align: center;padding:18px 0 18px 0;}
+.footer-ul2{width: 900px;margin:0 auto;background-color:#e5e5e5;}
+.footer-ul2 li{float:left;}
+.footer-ul2 li a{font-size: 14px;color:#6b6b6b;margin:0 20px;line-height: 40px;}
+.footer p{color:#6b6b6b;line-height: 40px;text-align: center;}

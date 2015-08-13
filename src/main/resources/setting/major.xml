@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<majors>
+
+    <majorType id="000" name="internet" label="互联网+">
+        <courseType id="00000000102" label="产品经理" name="chpjl"/>
+        <courseType id="00000000103" label="全网运营" name="qwyy"/>
+        <courseType id="00000000100" label="互联网思维" name="hlwsw" />
+        <courseType id="00000000101" label="传统企业转型" name="chtqyzhx"/>
+        <courseType id="00000000104" label="网络推广" name="wltg"/>
+        <courseType id="00000000105" label="销售管理" name="xshgl"/>
+        <courseType id="00000000007" label="地推" name="dt"/>
+        <courseType id="00000000008" label="商务拓展" name="shwtzh"/>
+        <courseType id="00000000009" label="UI设计" name="uidesign"/>
+        <courseType id="00000000007" label="前端开发" name="qdkf"/>
+        <courseType id="00000000008" label="后台开发" name="htkf"/>
+        <courseType id="00000000009" label="微信开发" name="wxkf"/>
+    </majorType>
+    <majorType id="001" name="strategy" label="战略管理">
+        <courseType id="00000000001" label="商业模式" name="shymsh"/>
+        <courseType id="00000000002" label="集团管控" name="jtgk"/>
+        <courseType id="00000000003" label="资本运营" name="zbyy"/>
+        <courseType id="00000000004" label="股权激励" name="gqjl"/>
+        <courseType id="00000000005" label="企业文化" name="qywh"/>
+        <courseType id="00000000006" label="战略规划" name="zhlgh"/>
+        <courseType id="00000000007" label="管理决策" name="gljc"/>
+        <courseType id="00000000008" label="危机管理" name="wjgl"/>
+        <courseType id="00000000009" label="企业上市" name="qyshsh"/>
+    </majorType>
+    <majorType id="002" name="manage" label="管理技能">
+        <courseType id="00000000013" label="时间管理" name="shjgl"/>
+        <courseType id="00000000014" label="沟通管理" name="gtgl"/>
+        <courseType id="00000000010" label="中层管理技能" name="zhcgljn"/>
+        <courseType id="00000000011" label="执行力" name="zhxl"/>
+        <courseType id="00000000012" label="领导力" name="ldl"/>
+        <courseType id="00000000015" label="分析与解决问题" name="fxyjjwt"/>
+        <courseType id="00000000016" label="计划与组织" name="zzhyjh"/>
+    </majorType>
+    <majorType id="003" name="professionalism" label="职业素养">
+        <courseType id="00000000017" label="金字塔原理" name="jztyl"/>
+        <courseType id="00000000018" label="职业化素养" name="zhyhsy"/>
+        <courseType id="00000000019" label="七个好习惯" name="qghxg"/>
+        <courseType id="00000000020" label="高效沟通" name="gxgt"/>
+        <courseType id="00000000021" label="工作汇报" name="gzhb"/>
+        <courseType id="00000000022" label="积极心态" name="jjxt"/>
+        <courseType id="00000000023" label="办公技能" name="bgjn"/>
+        <courseType id="00000000024" label="商务礼仪" name="shwll"/>
+        <courseType id="00000000025" label="压力管理" name="ylgl"/>
+        <courseType id="00000000026" label="演讲技巧" name="yjjq"/>
+    </majorType>
+    <majorType id="004" name="marketing" label="营销管理">
+        <courseType id="00000000028" label="网络营销" name="wlyx"/>
+        <courseType id="00000000029" label="销售团队" name="xxtd"/>
+        <courseType id="00000000027" label="大客户销售" name="dkhxsh"/>
+        <courseType id="00000000030" label="品牌管理" name="ppgl"/>
+        <courseType id="00000000031" label="营销策划" name="yxch"/>
+        <courseType id="00000000032" label="销售技巧" name="xshjq"/>
+        <courseType id="00000000033" label="门店管理" name="mdgl"/>
+        <courseType id="00000000034" label="客户服务" name="khfw"/>
+        <courseType id="00000000035" label="电话销售" name="dhxsh"/>
+        <courseType id="00000000036" label="渠道销售" name="xdxsh"/>
+        <courseType id="00000000037" label="国际贸易" name="gjmy"/>
+        <courseType id="00000000038" label="商务谈判" name="shwtp"/>
+        <courseType id="00000000039" label="合同管理" name="htgl"/>
+        <courseType id="00000000040" label="顾问式销售" name="gwshxsh"/>
+    </majorType>
+    <majorType id="005" name="hrm" label="人力资源">
+        <courseType id="00000000049" label="职业规划" name="zhygh"/>
+        <courseType id="00000000050" label="行政管理" name="xzhgl"/>
+        <courseType id="00000000041" label="非人" name="fr"/>
+        <courseType id="00000000043" label="培训体系" name="pxtx"/>
+        <courseType id="00000000042" label="TTT" name="ttt"/>
+        <courseType id="00000000044" label="招聘面试" name="zhhmsh"/>
+        <courseType id="00000000045" label="薪酬体系" name="xchtx"/>
+        <courseType id="00000000046" label="培训开发" name="pxkf"/>
+        <courseType id="00000000047" label="绩效考核" name="jjkh"/>
+        <courseType id="00000000048" label="劳动合同" name="ldht"/>
+        <courseType id="00000000051" label="员工关系" name="yggx"/>
+
+    </majorType>
+    <majorType id="006" name="production" label="生产研发">
+        <courseType id="00000000052" label="研发管理" name="yfgl"/>
+        <courseType id="00000000053" label="品质管理" name="pzhgl"/>
+        <courseType id="00000000054" label="物料控制" name="wlkzh"/>
+        <courseType id="00000000055" label="现场管理" name="xchgl"/>
+        <courseType id="00000000056" label="工业工程" name="gygch"/>
+        <courseType id="00000000057" label="班组建设" name="bjzsh"/>
+        <courseType id="00000000058" label="安全管理" name="anqgl"/>
+        <courseType id="00000000059" label="精益生产" name="jyshch"/>
+        <courseType id="00000000060" label="生产计划" name="shchjh"/>
+        <courseType id="00000000061" label="设备管理" name="shbgl"/>
+        <courseType id="00000000062" label="产品测试" name="chpcsh"/>
+        <courseType id="00000000063" label="产品管理" name="chpgl"/>
+        <courseType id="00000000064" label="6s管理" name="6sgl"/>
+    </majorType>
+    <majorType id="007" name="purchase" label="采购物流">
+        <courseType id="00000000065" label="仓储管理" name="cchgl"/>
+        <courseType id="00000000066" label="采购谈判" name="cgtp"/>
+        <courseType id="00000000067" label="供应商管理" name="gyshgl"/>
+        <courseType id="00000000068" label="成本管理" name="chbgl"/>
+        <courseType id="00000000069" label="招标管理" name="zhbgl"/>
+        <courseType id="00000000070" label="物流配送" name="wlps"/>
+    </majorType>
+
+    <majorType id="008" name="finance" label="财务管理">
+        <courseType id="00000000071" label="预算管理" name="ysgl"/>
+        <courseType id="00000000072" label="合理避税" name="hlbsh"/>
+        <courseType id="00000000073" label="非财管理" name="fcgl"/>
+        <courseType id="00000000074" label="成本控制" name="chbkzh"/>
+        <courseType id="00000000075" label="投资理财" name="tzlc"/>
+        <courseType id="00000000076" label="财务会计" name="cwkj"/>
+        <courseType id="00000000077" label="应收账款" name="yshzhk"/>
+        <courseType id="00000000078" label="报表分析" name="bbfx"/>
+        <courseType id="00000000079" label="信用管理" name="xygl"/>
+    </majorType>
+
+    <majorType id="009" name="leadership" label="领导艺术">
+        <courseType id="00000000080" label="项目管理" name="xmgl"/>
+        <courseType id="00000000081" label="中层管理" name="zhcgl"/>
+        <courseType id="00000000082" label="沟通技巧" name="gtjq"/>
+        <courseType id="00000000083" label="目标管理" name="mbgl"/>
+        <courseType id="00000000084" label="有效授权" name="yxshq"/>
+        <courseType id="00000000085" label="管理技巧" name="gljn"/>
+        <courseType id="00000000086" label="新晋主管" name="xjzhg"/>
+        <courseType id="00000000087" label="团队管理" name="tdgl"/>
+        <courseType id="00000000088" label="员工激励" name="ygjl"/>
+        <courseType id="00000000089" label="会议管理" name="hygl"/>
+    </majorType>
+</majors>

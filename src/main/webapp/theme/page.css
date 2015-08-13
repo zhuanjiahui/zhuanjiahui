@@ -1,0 +1,13 @@
+.am-pagination {
+    padding-left: 0;
+    margin: 1.5rem 0;
+    list-style: none;
+    color: #999999;
+    text-align: left;
+}
+.am-pagination-centered {
+    text-align: center;
+}
+.am-disabled{
+    disabled: disabled;
+}

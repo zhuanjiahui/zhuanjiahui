@@ -1,0 +1,35 @@
+﻿*{padding:0;margin:0;box-sizing: border-box!important;-moz-box-sizing: border-box!important;-webkit-box-sizing: border-box!important;}
+html{font-family:"Microsoft Yahei",Arial,sans-serif;font-size: 12px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{padding:0;margin:0;font-family:"Microsoft YaHei",sans-serif,Arial}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none;}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;outline:medium;}
+input,button,textarea,select{*font-size:100%}
+a{-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;-o-transition:all 0.5s linear}
+.fl{float:left;}
+.fr{float:right;}
+.clear:after{
+  display:block;
+  content:"clear";
+  height:0;
+  clear:both;
+  overflow:hidden;
+  visibility:hidden;
+}
+.clear{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*浏览器版本兼容 万云 2015.08.13*/
+/*,.content form,.content form .box1,.content form .login-btn */
+
+
+
+.column2-sub img,.column7-content span a img,.huodong1-column4 .column4-1 .column4-1-2 .column4-1-2-1,
+.query-column1-3-2 a,.query-column2-1-1 a,.column1-3 div a,.customerPhoto,.commentAreaTop li:first-child~li,
+.submitComment,.mr-a-header-r-circular,.mr-con5-sub img,.uod-ul-8-2,.content form,.content form .box1,
+.content form .login-btn{behavior: url(/scripts/PIE.htc);}

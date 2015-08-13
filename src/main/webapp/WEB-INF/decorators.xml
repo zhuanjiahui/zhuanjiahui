@@ -1,0 +1,21 @@
+<decorators defaultdir="/decorators">
+    <!--排除的请求-->
+    <excludes>
+        <pattern>/*ajax=true*</pattern>
+        <pattern>/pc/enroll.do*</pattern>
+        <pattern>/pc/login.do*</pattern>
+        <pattern>/pc/login*</pattern>
+    </excludes>
+
+
+    <decorator name="pcLoginSuccess" page="pc/pcEnrollTamplateDec.jsp">
+        <pattern>/pc/**</pattern>
+        <pattern>/pc/**.do</pattern>
+        <pattern>/pc/**/**.do</pattern>
+    </decorator>
+
+
+
+
+</decorators>
+

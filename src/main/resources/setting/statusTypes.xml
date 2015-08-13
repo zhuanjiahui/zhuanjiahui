@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statusTypes>
+    <entity name="Schedule" label="档期">
+        <statusType fileName="dateStatus" required="false">
+            <item label="不可约" value="0"></item>
+            <item label="可约" value="1"></item>
+            <item label="已约" value="3"></item>
+        </statusType>
+    </entity>
+
+    <entity name="Expert" label="专家">
+        <statusType fileName="gender" required="false">
+            <item label="男" value="1"></item>
+            <item label="女" value="0"></item>
+        </statusType>
+        <statusType fileName="freedom" required="false">
+            <item label="是" value="true"></item>
+            <item label="否" value="false"></item>
+        </statusType>
+    </entity>
+
+    <entity name="ExpertServe" label="专家服务">
+        <statusType fileName="serveType" required="false">
+            <item label="培训" value="train"></item>
+            <item label="咨询" value="consult"></item>
+            <item label="开发" value="development"></item>
+            <item label="其他" value="other"></item>
+        </statusType>
+        <statusType fileName="major" required="false">
+            <item label="互联网+" value="internet"></item>
+            <item label="战略管理" value="strategy"></item>
+            <item label="管理技能" value="manage"></item>
+            <item label="职业素养" value="professionalism"></item>
+            <item label="营销管理" value="marketing"></item>
+            <item label="人力资源" value="hrm"></item>
+            <item label="生产研发" value="production"></item>
+            <item label="采购物流" value="purchase"></item>
+            <item label="财务管理" value="finance"></item>
+            <item label="领导艺术" value="leadership"></item>
+
+        </statusType>
+        <statusType fileName="developType" required="false">
+            <item label="社交" value="social"></item>
+            <item label="电商" value="business"></item>
+            <item label="游戏" value="game"></item>
+            <item label="互联网金融" value="finance"></item>
+            <item label="O2O" value="o2o"></item>
+            <item label="在线教育" value="education"></item>
+            <item label="企业应用" value="enterprise"></item>
+            <item label="其他" value="other"></item>
+        </statusType>
+
+        <statusType fileName="industry" required="false">
+            <item label="跨行业" value="khy"></item>
+            <item label="互联网" value="hlw"></item>
+            <item label="投资" value="tz"></item>
+            <item label="消费电子" value="xfdz"></item>
+            <item label="通信" value="tx"></item>
+            <item label="制造业" value="zhzy"></item>
+            <item label="银行保险" value="yhbx"></item>
+
+            <item label="航空" value="hk"></item>
+            <item label="房地产" value="fdch"></item>
+            <item label="汽车" value="qch"></item>
+            <item label="家居建材" value="jjjc"></item>
+            <item label="电力" value="dl"></item>
+            <item label="工业品" value="gyp"></item>
+            <item label="快消品" value="kxp"></item>
+
+            <item label="家电" value="jd"></item>
+            <item label="酒店餐饮" value="jdcy"></item>
+            <item label="媒体" value="mt"></item>
+            <!--<item label="培训机构" value="pxjg"></item>-->
+
+        </statusType>
+        <statusType fileName="courseType" required="false">
+
+            <item label="产品经理" value="chpjl"/>
+            <item label="全网运营" value="qwyy"/>
+            <item label="互联网思维" value="hlwsw" />
+            <item label="传统企业转型" value="chtqyzhx"/>
+            <item label="网络推广" value="wltg"/>
+            <item label="销售管理" value="xshgl"/>
+            <item label="地推" value="dt"/>
+            <item label="商务拓展" value="shwtzh"/>
+            <item label="UI设计" value="uidesign"/>
+            <item label="前端开发" value="qdkf"/>
+            <item label="后台开发" value="htkf"/>
+            <item label="微信开发" value="wxkf"/>
+
+            <item label="商业模式" value="shymsh"/>
+            <item label="集团管控" value="jtgk"/>
+            <item label="资本运营" value="zbyy"/>
+            <item label="股权激励" value="gqjl"/>
+            <item label="企业文化" value="qywh"/>
+            <item label="战略规划" value="zhlgh"/>
+            <item label="管理决策" value="gljc"/>
+            <item label="危机管理" value="wjgl"/>
+            <item label="企业上市" value="qyshsh"/>
+
+            <item label="时间管理" value="shjgl"/>
+            <item label="沟通管理" value="gtgl"/>
+            <item label="中层管理技能" value="zhcgljn"/>
+            <item label="执行力" value="zhxl"/>
+            <item label="领导力" value="ldl"/>
+            <item label="分析与解决问题" value="fxyjjwt"/>
+            <item label="计划与组织" value="zzhyjh"/>
+
+            <item label="金字塔原理" value="jztyl"/>
+            <item label="职业化素养" value="zhyhsy"/>
+            <item label="七个好习惯" value="qghxg"/>
+            <item label="高效沟通" value="gxgt"/>
+            <item label="工作汇报" value="gzhb"/>
+            <item label="积极心态" value="jjxt"/>
+            <item label="办公技能" value="bgjn"/>
+            <item label="商务礼仪" value="shwll"/>
+            <item label="压力管理" value="ylgl"/>
+            <item label="演讲技巧" value="yjjq"/>
+
+            <item label="网络营销" value="wlyx"/>
+            <item label="销售团队" value="xxtd"/>
+            <item label="大客户销售" value="dkhxsh"/>
+            <item label="品牌管理" value="ppgl"/>
+            <item label="营销策划" value="yxch"/>
+            <item label="销售技巧" value="xshjq"/>
+            <item label="门店管理" value="mdgl"/>
+            <item label="客户服务" value="khfw"/>
+            <item label="电话销售" value="dhxsh"/>
+            <item label="渠道销售" value="xdxsh"/>
+            <item label="国际贸易" value="gjmy"/>
+            <item label="商务谈判" value="shwtp"/>
+            <item label="合同管理" value="htgl"/>
+            <item label="顾问式销售" value="gwshxsh"/>
+
+            <item label="职业规划" value="zhygh"/>
+            <item label="行政管理" value="xzhgl"/>
+            <item label="非人" value="fr"/>
+            <item label="培训体系" value="pxtx"/>
+            <item label="TTT" value="ttt"/>
+            <item label="招聘面试" value="zhhmsh"/>
+            <item label="薪酬体系" value="xchtx"/>
+            <item label="培训开发" value="pxkf"/>
+            <item label="绩效考核" value="jjkh"/>
+            <item label="劳动合同" value="ldht"/>
+            <item label="员工关系" value="yggx"/>
+            <item label="研发管理" value="yfgl"/>
+            <item label="品质管理" value="pzhgl"/>
+            <item label="物料控制" value="wlkzh"/>
+            <item label="现场管理" value="xchgl"/>
+            <item label="工业工程" value="gygch"/>
+            <item label="班组建设" value="bjzsh"/>
+            <item label="安全管理" value="anqgl"/>
+            <item label="精益生产" value="jyshch"/>
+            <item label="生产计划" value="shchjh"/>
+            <item label="设备管理" value="shbgl"/>
+            <item label="产品测试" value="chpcsh"/>
+            <item label="产品管理" value="chpgl"/>
+            <item label="6s管理" value="6sgl"/>
+            <item label="仓储管理" value="cchgl"/>
+            <item label="采购谈判" value="cgtp"/>
+            <item label="供应商管理" value="gyshgl"/>
+            <item label="成本管理" value="chbgl"/>
+            <item label="招标管理" value="zhbgl"/>
+            <item label="物流配送" value="wlps"/>
+            <item label="预算管理" value="ysgl"/>
+            <item label="合理避税" value="hlbsh"/>
+            <item label="非财管理" value="fcgl"/>
+            <item label="成本控制" value="chbkzh"/>
+            <item label="投资理财" value="tzlc"/>
+            <item label="财务会计" value="cwkj"/>
+            <item label="应收账款" value="yshzhk"/>
+            <item label="报表分析" value="bbfx"/>
+            <item label="信用管理" value="xygl"/>
+            <item label="项目管理" value="xmgl"/>
+            <item label="中层管理" value="zhcgl"/>
+            <item label="沟通技巧" value="gtjq"/>
+            <item label="目标管理" value="mbgl"/>
+            <item label="有效授权" value="yxshq"/>
+            <item label="管理技巧" value="gljn"/>
+            <item label="新晋主管" value="xjzhg"/>
+            <item label="团队管理" value="tdgl"/>
+            <item label="员工激励" value="ygjl"/>
+            <item label="会议管理" value="hygl"/>
+
+        </statusType>
+
+    </entity>
+
+
+    <entity name="Activity" label="活动">
+        <statusType fileName="type" required="">
+            <item label="专题培训" value="1"></item>
+            <item label="行业趋势分享" value="2"></item>
+            <item label="新产品试用" value="3"></item>
+            <item label="创业分享沙龙" value="4"></item>
+            <item label="项目路演" value="5"></item>
+        </statusType>
+    </entity>
+
+    <entity name="Requirement" label="需求">
+        <statusType fileName="type" required="false">
+            <item label="培训" value="train"></item>
+            <item label="咨询" value="consult"></item>
+            <item label="开发" value="development"></item>
+            <item label="其他" value="other"></item>
+        </statusType>
+    </entity>
+    <entity name="PurchaseOrder" label="订单">
+        <statusType fileName="dayType" required="false">
+            <item label="上午" value="1"></item>
+            <item label="下午" value="2"></item>
+            <item label="全天" value="3"></item>
+        </statusType>
+        <statusType fileName="payType" required="false">
+            <item label="预付50%" value="1"></item>
+            <item label="全额付款" value="2"></item>
+        </statusType>
+        <statusType fileName="payStatus" required="false">
+            <item label="未支付" value="1"></item>
+            <item label="已预付" value="2"></item>
+            <item label="已支付" value="3"></item>
+
+        </statusType>
+        <statusType fileName="processStatus" required="false">
+            <item label="待接单" value="1"></item>
+            <item label="专家取消" value="2"></item>
+            <item label="专家确认" value="3"></item>
+            <item label="用户取消" value="4"></item>
+            <item label="服务进行中" value="5"></item>
+            <item label="服务完成" value="6"></item>
+            <item label="已完成" value="9"></item>
+        </statusType>
+    </entity>
+    <entity name="PurchaseOrderPayment" label="支付记录">
+        <statusType fileName="payType" required="false">
+            <item label="预付" value="1"></item>
+            <item label="全额付款" value="2"></item>
+            <item label="余款支付" value="3"></item>
+        </statusType>
+        <statusType fileName="gateWay" required="false">
+            <item label="支付宝" value="1"></item>
+            <item label="网银" value="2"></item>
+            <item label="手机一键" value="3"></item>
+        </statusType>
+        <statusType fileName="payStatus" required="false">
+            <item label="支付未成功" value="0"></item>
+            <item label="支付成功" value="1"></item>
+        </statusType>
+    </entity>
+</statusTypes>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<b:beans xmlns="http://www.springframework.org/schema/security"
+         xmlns:b="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+
+    <http realm="Contacts Realm" use-expressions="true">
+
+        <intercept-url pattern="/pc/favorite/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/switchUser" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/purchaseOrder/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/user/view" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/activity/publish" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/activity/saveDiscuss" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/requirement/publish" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/expert/viewPersonal" access="isAuthenticated()" />
+        <intercept-url pattern="/**/user/myBalance" access="isAuthenticated()" />
+        <intercept-url pattern="/**/user/viewPersonal" access="isAuthenticated()" />
+
+
+
+        <anonymous key="cookie_key" username="ananoymous" granted-authority="anonymous,ROLE_ANONYMOUS"/>
+        <form-login login-page="/pc/login" login-processing-url="/j_spring_security_check"
+                    authentication-success-handler-ref="loginSuccessHandler"
+                    authentication-failure-handler-ref="loginFailureHandler"/>
+        <logout invalidate-session="true" logout-url="/j_spring_security_logout"
+                success-handler-ref="loginOutSuccessHandler"/>
+
+
+    </http>
+    <b:bean id="loginOutSuccessHandler" class="com.frame.organization.LoginOutSuccessHandler"/>
+    <!--通过数据库获取用户权限信息，对密码加密-->
+    <authentication-manager>
+        <authentication-provider user-service-ref="userManager">
+            <password-encoder hash="sha"/>
+        </authentication-provider>
+    </authentication-manager>
+
+</b:beans>
