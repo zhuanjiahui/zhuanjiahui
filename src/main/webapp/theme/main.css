@@ -11,8 +11,8 @@ body{background:rgb(245,245,245);}
 .pi-inf-td-r input[type='text']:focus{border:1px solid rgba(81, 203, 238, .66);box-shadow:0 0 8px rgba(81, 203, 238, 1);-webkit-box-shadow:0 0 8px rgba(81, 203, 238, 1);-moz-box-shadow:0 0 8px rgba(81, 203, 238, 1);}
 .pi-inf-td-r select{font-size:13px;margin-top:7px;height:35px;box-sizing:border-box;padding:0px 15px 0px 10px;color:#777;border:1px solid #e4e4e4;-webkit-box-shadow:inset 0 0 3px #e8e8e8;-moz-box-shadow:inset 0 0 3px #e8e8e8;box-shadow:inset 0 0 3px #e8e8e8;appearance:none;-moz-appearance:none;-webkit-appearance:none;}
 .pi-inf-td-r select option{height:25px;padding-top:8px;font-size:13px;color:#777;border:1px solid transition!important;}
-.pi-guaniianz ~div span{display:inline-block;color:#777;font-size:14px;padding:0 15px;line-height:32px;border:1px solid #e4e4e4;position:relative;top:1px;box-sizing:border-box;border-radius:17px;margin-left:15px;}
-.pi-guaniianz ~div img{margin-left:-18px;margin-top:-18px;width:15px;height:15px;}
+.pi-guaniianz ~div span{display:inline-block;color:#777;font-size:14px;border:1px solid #e4e4e4;padding:0 15px;height:34px;line-height:34px;border-radius: 17px;}
+.pi-guaniianz ~div img{position:relative;width:13px;height:13px;left:-21px;top:-7px;}
 .pi-age-one{width: 93px;height: 31px;text-align: center;color: #8d8d8d;margin-top: -4px;}
 .pi-age-two{width: 60px;height: 31px;text-align: center;color: #8d8d8d;}
 .pi-age-three{width: 60px;height: 31px;text-align: center;color: #8d8d8d;}
@@ -520,9 +520,8 @@ input[name="consumerName"]{width:250px!important;}
 .editorBox{width:100%;height:auto;overflow: visible;position: relative;z-index:100;margin:0 auto;padding-top: 25px;margin-bottom: 50px;}
 
 /*专家编辑个人信息样式修改 万云 2015.08.14*/
-.userName{width:180px;}
-.genderChoice{font-size:13px;color:#777;}
-
+.inPos span label,.priceRange{font-size:13px;color:#777;margin-right: 5px;}
+.keywords{border:1px solid red;margin-top: 40px;}
 /*上传照片 万云 2015.08.14*/
 #expert{position: relative;}
 .uploadPhoto{position: absolute;width:100px;height:100px;border:1px solid red;}
