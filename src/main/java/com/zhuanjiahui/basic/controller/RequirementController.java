@@ -133,13 +133,13 @@ public class RequirementController extends BaseController{
     /*保存需求讨论内容*/
     @RequestMapping(value = "/saveDiscuss")
     @ResponseBody
-    public RequirementDiscuss saveDiscuss(RequirementDiscuss requirementDiscuss,HttpServletRequest request){
+    public Boolean saveDiscuss(RequirementDiscuss requirementDiscuss,HttpServletRequest request){
         String requirementId=request.getParameter("requirementId");
         Requirement requirement=(Requirement)baseManager.getObject(Requirement.class.getName(),requirementId);
         requirementDiscuss.setRequirement(requirement);
         requirementDiscuss.setCreateDatetime(new Date());
         requirementDiscuss.setConsumer(AuthorizationUtil.getUser());
         baseManager.saveOrUpdate(RequirementDiscuss.class.getName(),requirementDiscuss);
-        return requirementDiscuss;
+        return true;
     }
 }

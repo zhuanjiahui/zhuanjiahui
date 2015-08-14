@@ -31,8 +31,6 @@ body{background:rgb(245,245,245);}
 .pi-zuigaoziwu{width:180px;height:24px;font-size:13px;color: #8d8d8d;}
 .pi-guaniianz{width:173px;height:24px;font-size:13px;color: #8d8d8d;}
 .pi-gerenmiaoshu{width:173px;height:24px;font-size:13px;color: #8d8d8d;}
-.pi-imgs-zj{width: 185px;height: 185px;border: 1px solid #dcdcdc;float: right;position: relative;text-align: center;line-height: 245px;left: -100px;top: -861px;}
-.pi-wz-zj{float: right;position: relative;color: #8d8d8d;font-size: 16px;top: -657px;left: 25px;}
 .pi-line2{width:745px;border-bottom:1px dashed #dcdcdc;margin:0 auto;margin-top:33px;}
 .pi-but-zk{width:67px;height:31px;border:1px solid #dcdcdc;margin-left:363px;color:#BDBDBD;text-align:center;line-height:31px;}
 .pi-certification{width:170px;height:90px;text-align:center;line-height:90px;color:#BDBDBD;border: 1px solid #dcdcdc;}
@@ -520,3 +518,11 @@ input[name="workTime"]{width:66px!important;}
 
 input[name="consumerName"]{width:250px!important;}
 .editorBox{width:100%;height:auto;overflow: visible;position: relative;z-index:100;margin:0 auto;padding-top: 25px;margin-bottom: 50px;}
+
+/*专家编辑个人信息样式修改 万云 2015.08.14*/
+.userName{width:180px;}
+.genderChoice{font-size:13px;color:#777;}
+
+/*上传照片 万云 2015.08.14*/
+#expert{position: relative;}
+.uploadPhoto{position: absolute;width:100px;height:100px;border:1px solid red;}

@@ -54,6 +54,7 @@ public class PurchaseOrderController extends BaseController{
     public String listOrders(HttpServletRequest request,ModelMap modelMap){
         PageEntity pageEntity=this.getPageEntity(request);
         PageInfo pageInfo=orderManager.listOrders(AuthorizationUtil.getMyUser().getId(),pageEntity);
+        modelMap.put("myUser",AuthorizationUtil.getMyUser());
         modelMap.put("pageEntity",pageEntity);
         modelMap.put("pageInfo",pageInfo);
         return "/order/userOrderList";
@@ -63,6 +64,7 @@ public class PurchaseOrderController extends BaseController{
     public String listExpertOrders(HttpServletRequest request,ModelMap modelMap){
         PageEntity pageEntity=this.getPageEntity(request);
         PageInfo pageInfo=orderManager.listExpertOrders(AuthorizationUtil.getMyUser().getId(),pageEntity);
+        modelMap.put("myUser",AuthorizationUtil.getMyUser());
         modelMap.put("pageEntity",pageEntity);
         modelMap.put("pageInfo",pageInfo);
         return "/order/expertOrderList";
@@ -72,6 +74,7 @@ public class PurchaseOrderController extends BaseController{
     public String listAssistantOrders(HttpServletRequest request,ModelMap modelMap){
         PageEntity pageEntity=this.getPageEntity(request);
         PageInfo pageInfo=orderManager.listAssistantOrders(AuthorizationUtil.getMyUser().getId(),pageEntity);
+        modelMap.put("myUser",AuthorizationUtil.getMyUser());
         modelMap.put("pageEntity",pageEntity);
         modelMap.put("pageInfo",pageInfo);
         return "/order/assistantOrderList";

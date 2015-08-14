@@ -38,7 +38,7 @@
 .content{margin-bottom: 60px;}
 .content .nav{height:40px;background-color:#00bdff;box-sizing:border-box;}
 .nav ul{width: 1200px;margin: 0 auto;}
-.nav ul li{float:left;font-size: 18px;width: 217px;line-height: 39px;text-align: center;}
+.nav ul li{float:left;font-size: 18px;width: 196px;line-height: 39px;text-align: center;}
 /*高亮效果*/
 .nav ul li:hover{background: #2cb1e7;}
 .nav ul li a{display: inline-block;width:100%;color:#ffffff;}
@@ -251,7 +251,7 @@
 .content .query-column2 .query-column2-1 a:hover .a-span{display:block;background:#73dbff;z-index:33; }
 
 /*筛选条件*/
-ul,ol{list-style:none;background-color: #fff;}
+ul,ol{list-style:none;}
 .multiConditionScreening{width:1200px;margin:0 auto;padding:0;}
 .city{font-size:13px;color:#6d6d6d;width:100%;height:50px;line-height:50px;text-indent:1em;}
 .city span:last-child{display:inline-block;margin-left:1em;}
@@ -269,7 +269,7 @@ ul,ol{list-style:none;background-color: #fff;}
 .bodyRight{width:280px;float:right;margin-top:25px;box-sizing:border-box;}
 .bodyRight>ul{border:1px solid #e4e4e4;border-top:3px solid #00bdff;overflow:hidden;box-sizing:border-box;padding-left:20px;padding-right:15px;}
 .expertRecommendation{overflow:hidden;}
-.expertRecommendation>li:first-child~li{margin:0 0 15px 0;padding:10px 5px 10px 10px;overflow:hidden;height:120px;overflow:hidden;border:1px solid #ccc;-webkit-box-shadow:inset 0 0 12px #ccc;-moz-box-shadow:inset 0 0 12px #ccc;box-shadow:inset 0 0 12px #ccc;}
+.expertRecommendation>li:first-child~li{margin:0 0 15px 0;padding:10px 5px 10px 10px;overflow:hidden;height:143px;overflow:hidden;border:1px solid #ccc;-webkit-box-shadow:inset 0 0 12px #ccc;-moz-box-shadow:inset 0 0 12px #ccc;box-shadow:inset 0 0 12px #ccc;}
 .expertRecommendation>li:first-child~li:hover{-webkit-box-shadow:inset 0 0 12px #aaa;-moz-box-shadow:inset 0 0 12px #aaa;box-shadow:inset 0 0 12px #aaa;}
 .expertRecommendation>li>ul,.text{background:transparent!important;}
 .bodyRight>ul img{float:left;height:120px;width:120px;background:transparent;}
@@ -289,7 +289,7 @@ ul,ol{list-style:none;background-color: #fff;}
 .costRange li{display:inline-block;padding:0 2px;}
 .costRange input{height:18px;width:70px;border:1px solid #00bdff;font-size:13px;color:#777;text-indent:.5em;}
 .resultsBody{width:880px;}
-.resultsBody>ul>li{display:block;width:850px;margin-top:35px;}
+.resultsBody>ul>li{display:block;width:880px;margin-top:35px;}
 .resultsBody>ul>li>ul{width:100%;}
 .resultsElemTop li{display:inline-block;font-size:13px;color:#777;margin:0 50px 0 0;height:30px;line-height:30px;}
 .resultsElemMain{border:1px solid #e4e4e4;}
@@ -342,7 +342,7 @@ ul,ol{list-style:none;background-color: #fff;}
 .star li{display:inline-block;margin:0 -2px;}
 .score{position:absolute;top:124px;left:100px;color:#6d6d6d;font-size:13px;}
 .address{position:absolute;left:30px;top:145px;color:#6d6d6d;font-size:15px;width:100px;text-align:center;}
-.expertName{position:absolute;top:20px;left:155px;color:black;font-size:16px;color:#333;}
+.expertName{position:absolute;top:20px;left:155px;color:black;font-size:15px;color:#555;}
 .topJob{position:absolute;top:23px;left:230px;color:#6d6d6d;font-size:13px;}
 .industry{position:absolute;top:60px;left:155px;color:#00bdff;font-size:12px;border:1px solid #00bdff; width:44px;height:20px;line-height:20px;text-align:center;}
 .ServiceType{position:absolute;top:98px;left:155px;color:#6d6d6d;font-size:14px;width: 300px !important;}/*此处用来解决390行width:100%问题*/
@@ -350,7 +350,7 @@ ul,ol{list-style:none;background-color: #fff;}
 .ServiceType>li>ul>li{display:inline-block;margin-bottom:10px;margin-right:10px;}
 .expertStyle{position:absolute;top:140px;left:155px;width: 300px !important;}
 .expertStyle li{display:inline-block;margin:0 3px;padding:2px 3px;color:#888;font-size:15px;border:1px solid #888;}
-.expertOffer{position:absolute;top:53px;left:460px;font-size:20px;color:#6d6d6d;}
+.expertOffer{position:absolute;top:53px;left:460px;font-size:18px;color:#6d6d6d;}
 .expertOffer span{color:#F77530}
 .maxim{position:absolute;top:130px;left:460px;font-size:13px;color:#777;}
 .viewDetials{position:absolute;top:53px;left:800px;font-size:15px;color:#00bdff;cursor:pointer;}

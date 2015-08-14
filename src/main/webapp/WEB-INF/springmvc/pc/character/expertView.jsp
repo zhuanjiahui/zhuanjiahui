@@ -139,8 +139,8 @@
         <li class="rightLineTwo">${expert.memo}</li>
         <li class="rightLineThree">
             <ul>
-                <li>服务：<span>培训、服务、开发</span></li>
-                <li>行业：<span>
+                <li>服务: <span>培训、服务、开发</span></li>
+                <li>行业: <span>
                     <c:forEach items="${expert.expertIndustryList}" var="expertIndustry">
                         <zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expertIndustry}"></zjh:status>
                     </c:forEach> </span></li>
@@ -149,6 +149,7 @@
         </li>
         <li class="rightLineFour">
             <ul class="expertStyle">
+                <span style="color:#6d6d6d;font-size:14px;">风格:</span>
                 <c:forEach items="${expert.styleLabelList}" var="stylelabel">
                     <li>${stylelabel.label}</li>
                 </c:forEach>
@@ -176,8 +177,8 @@
         </li>
         <li>&nbsp;&nbsp;(<span>${comments.size()}</span>)条评论</li>
     </ul>
-    <p class="workingYears">工作年限：<span>${expert.workTime}</span>年</p>
-    <p class="expertIntroduction">${expert.introduce}</p>
+    <p class="workingYears">工作年限: <span>${expert.workTime}</span>年</p>
+    <p class="expertIntroduction">简介: ${expert.introduce}</p>
     <ul class="businessExperience">
         <li>工作经历</li>
         <c:forEach items="${expert.companyList}" var="company">
@@ -241,9 +242,9 @@
             </div>
             <div class="ms-table-r">
                 <div class="ms-tr-r">
-                    <div class="ms-td-r-1"><a href="/pc/expert/viewPreExpert?expertId=${expert.id}&year=${year}&month=${month}&day=${day}"><img src="/images/ms-left.png"> </a></div>
+                    <div class="ms-td-r-1"><a href="#" onclick="preMonth()"><img src="/images/ms-left.png"> </a></div>
                     <div class="ms-td-r-2">${year}&nbsp;年&nbsp;${month}&nbsp;月</div>
-                    <div class="ms-td-r-3"><a href="/pc/expert/viewNextExpert?expertId=${expert.id}&year=${year}&month=${month}&day=${day}"> <img src="/images/ms-right.png"></a></div>
+                    <div class="ms-td-r-3"><a href="#" onclick="nextMonth()"> <img src="/images/ms-right.png"></a></div>
                 </div>
                 <div class="ms-tr-r">
                     <div class="ms-td-r4">${day}</div>
@@ -252,10 +253,16 @@
             </div>
         </div>
 
-        <div class="ms-but-sq">收起</div>
+
     </div>
     <p class="legend"><span style="color:#00bcfd;">蓝色</span><span>：可约</span><span style="color:#fc5e02;">橙色</span><span>：抢约</span><span style="color:gray;">灰色</span><span>：不可约</span></p>
 </div>
+<form id="dateForm" action="/pc/expert/viewNextExpert" method="post">
+    <input id="year" type="hidden" name="year" value="${year}">
+    <input id="month" type="hidden" name="month" value="${month}">
+    <input  type="hidden" name="expertId" value="${expert.id}">
+
+</form>
 <div class="preAppointment">
     <div class="but-yuyue">预约</div>
 </div>
@@ -374,7 +381,9 @@
 <!-- 评论区 -->
 <div class="commentArea">
     <ul class="commentAreaTop">
+<%--
         <li><span style="font-size:25px;color:#333;">评论</span>(<span>${comments.size()}</span>)</li>
+--%>
        <%-- <li>好(<span>100</span>)</li>
         <li>中(<span>100</span>)</li>
         <li>差(<span>100</span>)</li>--%>
@@ -576,6 +585,7 @@
         })
     }
     function sureOrderTime(obj,date){
+
         $(obj).css("background","gray");
         $("#orderTime").val(date);
     }
@@ -611,6 +621,32 @@
         })
 
     })
+    function nextMonth() {
+        setDate(1);
+    }
+    function preMonth() {
+        setDate(-1);
+    }
+    function setDate(amount) {
+        var year = parseInt($("#year").val());
+        var month = parseInt($("#month").val());
+        amount = parseInt(amount);
+        if (month + amount > 12) {
+            year += 1;
+            month = 1;
+        }
+        else if (month + amount < 1) {
+            year -= 1;
+            month = 12;
+        }
+        else {
+            month += amount;
+        }
+        $("#year").val(year);
+        $("#month").val(month);
+        $("#dateForm").submit();
+    }
+
 </script>
 </body>
 </html>

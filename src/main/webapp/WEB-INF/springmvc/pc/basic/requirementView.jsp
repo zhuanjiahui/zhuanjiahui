@@ -149,10 +149,10 @@
             <td width="25%">联系人：<span>${requirement.linkman}</span></td>
         </tr>
         <tr>
-            <td>启动时间：<span><fmt:formatDate value="${requirement.expert.name}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></td>
-            <td>行业：<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status> </span></td>
-            <td>预算金额：￥<span>${requirement.price}</span>元</td>
-            <td>联系电话：<span>${requirement.telephone}</span></td>
+                <td>启动时间：<span><fmt:formatDate value="${requirement.startDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></td>
+                <td>行业：<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status> </span></td>
+                <td>预算金额：￥<span>${requirement.price}</span>元</td>
+                <td>联系电话：<span>${requirement.telephone}</span></td>
         </tr>
         <tr>
             <td>地点：<span>${requirement.province.name}${requirement.address}</span></td>
@@ -228,26 +228,27 @@
         <ul class="footer-ul1">
             <li class="ul1-li1">
                 <div class="footer-ul1-title">关于我们</div>
-                <div class="footer-ul1-con"><a href="#">公司介绍</a></div>
-                <div class="footer-ul1-con"><a href="#">联系我们</a></div>
-                <div class="footer-ul1-con"><a href="#">加入我们</a></div>
-                <div class="footer-ul1-con"><a href="#">网站条款</a></div>
-                <div class="footer-ul1-con"><a href="#">活动公告</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-know-us">了解我们</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-successful-case">成功案例</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-event-announcements">活动公告</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-website-terms">网站条款</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-join-us">加入我们</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-contact-us">联系我们</a></div>
+
             </li>
             <li class="ul1-li1">
                 <div class="footer-ul1-title">帮助中心</div>
-                <div class="footer-ul1-con"><a href="#">平台流程</a></div>
-                <div class="footer-ul1-con"><a href="#">专家入驻</a></div>
-                <div class="footer-ul1-con"><a href="#">用户帮助</a></div>
-                <div class="footer-ul1-con"><a href="#">助理帮助</a></div>
-                <div class="footer-ul1-con"><a href="#">专家帮助</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-platform-process">平台流程</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-expert-settled">专家入驻</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-user-help">用户帮助</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-assistant-help">助理帮助</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-expert-help">专家帮助</a></div>
             </li>
             <li class="ul1-li1">
                 <div class="footer-ul1-title">服务支持</div>
-                <div class="footer-ul1-con"><a href="#">服务保障</a></div>
-                <div class="footer-ul1-con"><a href="#">服务专家</a></div>
-                <div class="footer-ul1-con"><a href="#">投诉侵权</a></div>
-                <div class="footer-ul1-con"><a href="#">意见反馈</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-service-guarantee">服务保障</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-infringement-complaints">投诉侵权</a></div>
+                <div class="footer-ul1-con"><a href="/pc/static/footer-feedback">意见反馈</a></div>
             </li>
             <li class="ul1-li3">
                 <div class="footer-ul1-title">关注我们</div>
@@ -255,15 +256,15 @@
                     <div class="ul1-con-pic">
                         <div class="ul1-con-pic1">
                             <a href="#">
-                                <img class="ul1-con-pic1-1" src="images/weixin.png" alt="ul1-con-pic">
-                                <img class="ul1-con-pic1-2" src="images/weixinh.png" alt="悬浮出现">
+                                <img class="ul1-con-pic1-1" src="/images/weixin.png" alt="ul1-con-pic">
+                                <img class="ul1-con-pic1-2" src="/images/weixinh.png" alt="悬浮出现">
                                 <div>微信公共号</div>
                             </a>
                         </div>
                         <div class="ul1-con-pic1">
                             <a href="#">
-                                <img class="ul1-con-pic1-1" src="images/sina.png" alt="ul1-con-pic">
-                                <img class="ul1-con-pic1-2" src="images/sinah.png" alt="悬浮出现">
+                                <img class="ul1-con-pic1-1" src="/images/sina.png" alt="ul1-con-pic">
+                                <img class="ul1-con-pic1-2" src="/images/sinah.png" alt="悬浮出现">
                                 <div>新浪微博</div>
                             </a>
                         </div>
@@ -299,7 +300,9 @@
             data:$("#discuss").serialize(),
             dataType:"json",
             success:function(data){
-                location.reload();
+                if(data){
+                    location.reload();
+                }
             }
 
         })

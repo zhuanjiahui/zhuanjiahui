@@ -161,6 +161,7 @@ public class ExpertServeController extends BaseController{
     public String viewExpert(HttpServletRequest request, ModelMap modelMap) {
         String expertId = request.getParameter("expertId");
         Expert expert = expertManager.viewExpert(expertId);
+        List<ExpertServe> expertServeList=expertServeManager.myExpertServes(expertId);
         List<ExpertServeContent> serveContents=expertServeManager.listServeContent(expertId);
         List<Map> schedules= null;
         try {
@@ -172,6 +173,7 @@ public class ExpertServeController extends BaseController{
         modelMap.put("scheduleList",schedules);
         modelMap.put("expert", expert);
         modelMap.put("serveContents",serveContents);
+        modelMap.put("expertServes",expertServeList);
         return "/character/serveContents";
     }
     /*搜索专家服务*/
@@ -203,8 +205,5 @@ public class ExpertServeController extends BaseController{
         courseTypes=majorManager.getCoursesByMajorName(major);
         return courseTypes;
     }
-    public String listServeContent(){
 
-        return "";
-    }
 }

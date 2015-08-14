@@ -114,12 +114,12 @@
 <!-- 导航部分 -->
 <div class="nav">
     <ul>
-        <li class="nav-1"><a href="#">全部专家</a></li>
-        <li><a href="#">首页</a></li>
-        <li><a href="#">平台流程</a></li>
-        <li><a href="#">专家入驻</a></li>
-        <li><a href="#">寻找需求</a></li>
-        <li><a href="#">参加活动</a></li>
+        <li class="nav-1"><a href="/pc/expertServe/pageList">全部专家</a></li>
+        <li><a href="/pc/index">首页</a></li>
+        <li><a href="/pc/static/platform">平台流程</a></li>
+        <li><a href="/pc/static/settled">专家入驻</a></li>
+        <li><a href="/pc/requirement/pageList">寻找需求</a></li>
+        <li><a href="/pc/activity/pageList">参加活动</a></li>
     </ul>
 </div>
 

@@ -243,9 +243,11 @@
                     <p class="address">${expertServe.expert2.province.name}</p>
                     <p class="expertName">${expertServe.expert2.name}</p>
                     <p class="topJob">${expertServe.expert2.chief}</p>
-                    <p class="ServiceType">助理:${expertServe.expert2.assistant.name}</p>
+                    <p class="ServiceType">行业: <zjh:status name="industry"  dataType="ExpertServe.industry" type="normal" checkedValue="${expertServe.industry}" ></zjh:status></p>
                     <p class="industry"><zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status> </p>
+
                     <ul class="expertStyle">
+                        <span style="color:#6d6d6d;font-size:14px;">风格:</span>
                         <c:forEach items="${expertServe.expert2.styleLabelList}" var="stylelabel">
                             <li>${stylelabel.label}</li>
                         </c:forEach>

@@ -92,56 +92,27 @@ public class ExpertController  {
         String month=request.getParameter("month");
         Calendar calendar=Calendar.getInstance();
         if(month!=null&&!month.equals("")){
-            if(month.equals(12)){
-                calendar.set(Integer.parseInt(year)+1,Integer.parseInt(month));
-            }
-        }
-        Date date=calendar.getTime();
-        List<PurchaseOrderComment> comments = commentManager.getMyComments(expertId, 2);
-        List<ExpertServe> expertServeList=expertServeManager.myExpertServes(expertId);
-        List<Map> schedules= null;
-        try {
-            schedules = scheduleManager.getScheduleList(expertId,date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        modelMap=scheduleManager.getCalendar(modelMap,date);
-        modelMap.put("scheduleList",schedules);
-        modelMap.put("expert", expert);
-        modelMap.put("expertServes",expertServeList);
-        modelMap.put("comments", comments);
-        return "/character/expertView";
-    }
-    /*
-   * 专家详情页*/
-    @RequestMapping(value = "/viewPreExpert")
-    public String viewPreExpert(HttpServletRequest request, ModelMap modelMap) {
-        String expertId = request.getParameter("expertId");
-        Expert expert = expertManager.viewExpert(expertId);
-        String year=request.getParameter("year");
-        String month=request.getParameter("month");
-        Calendar calendar=Calendar.getInstance();
-        if(year!=null&&!year.equals("")){
             calendar.set(Calendar.DAY_OF_MONTH, 1);
             calendar.set(Calendar.MONTH, Integer.parseInt(month) - 1);//一月份表示0 etc.
             calendar.set(Calendar.YEAR, Integer.parseInt(year));
         }
-        Date date=calendar.getTime();
+
         List<PurchaseOrderComment> comments = commentManager.getMyComments(expertId, 2);
         List<ExpertServe> expertServeList=expertServeManager.myExpertServes(expertId);
         List<Map> schedules= null;
         try {
-            schedules = scheduleManager.getScheduleList(expertId,date);
+            schedules = scheduleManager.getScheduleList(expertId,calendar.getTime());
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        modelMap=scheduleManager.getCalendar(modelMap,date);
+        modelMap=scheduleManager.getCalendar(modelMap,calendar.getTime());
         modelMap.put("scheduleList",schedules);
         modelMap.put("expert", expert);
         modelMap.put("expertServes",expertServeList);
         modelMap.put("comments", comments);
         return "/character/expertView";
     }
+
 
     /*查看个人信息*/
     @RequestMapping(value = "/viewPersonal")
