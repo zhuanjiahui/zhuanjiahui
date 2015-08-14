@@ -19,13 +19,13 @@ public class BigUser {
     protected String username;
     protected String name;
     protected String password;
-    private Integer checkStatus;// 审核状态：1刚刚注册 2基本信息填写完毕（包括行业和专业） 3增添服务  4审核未通过  5审核通过待认证 6认证不通过 7身份认证通过  9完全设置完毕
+    protected Integer checkStatus;// 审核状态：1刚刚注册 2基本信息填写完毕（包括行业和专业） 3增添服务  4审核未通过  5审核通过待认证 6认证不通过 7身份认证通过  9完全设置完毕
     protected Integer utype;//用户类型：用户1、专家2、助理3、系统管理员4
     protected Integer gender;//性别 男1 女0
     protected Date birthday;
     protected Date createDatetime;//入驻日期
     protected String pictureUrl;//头像
-    private BigDecimal balance;//账户余额
+    protected BigDecimal balance;//账户余额
     protected String phone;
     protected String email;
     protected String memo;//描述

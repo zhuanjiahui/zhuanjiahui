@@ -16,7 +16,12 @@
         <intercept-url pattern="/**/activity/publish" access="isAuthenticated()"/>
         <intercept-url pattern="/**/activity/saveDiscuss" access="isAuthenticated()"/>
         <intercept-url pattern="/**/requirement/publish" access="isAuthenticated()"/>
-        <intercept-url pattern="/**/assistant/**" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/viewPersonal" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/myExperts" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/bindExpert" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/editExpert" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/deleteExpert" access="isAuthenticated()"/>
+        <intercept-url pattern="/**/assistant/saveExpert" access="isAuthenticated()"/>
         <intercept-url pattern="/**/expert/viewPersonal" access="isAuthenticated()" />
         <intercept-url pattern="/**/user/myBalance" access="isAuthenticated()" />
         <intercept-url pattern="/**/user/viewPersonal" access="isAuthenticated()" />

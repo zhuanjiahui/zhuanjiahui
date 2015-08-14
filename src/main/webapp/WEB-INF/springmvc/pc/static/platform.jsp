@@ -94,7 +94,7 @@
                 <li><a href="/pc/expertServe/pageList?major=professionalism&courseType=gxgt&serveType=train">高效沟通</a></li>
             </ul>
             <ul class="">
-                <zjh:status name="industry" dataType="ExpertServe.industry" type="list" checkedValue="" onclick="/pc/requirement/pageList?industry="></zjh:status>
+                <zjh:status name="major" dataType="ExpertServe.major" type="list" checkedValue="" onclick="/pc/requirement/pageList?type='train'&major="></zjh:status>
 
             </ul>
             <ul class="">
@@ -255,24 +255,13 @@
             <img src="/images/footer-pic.png" alt="底部图片">
         </div>
         <div class="footer-bottom">
-            <ul class="footer-ul2 clear">
-                <li><a href="#">友情链接：</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">更多</a></li>
-            </ul>
+
             <p>&copy;2011-2015&nbsp;&nbsp;专家汇&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;北京语博信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11001010号-7&nbsp;&nbsp;京公网安备&nbsp;&nbsp;11010702111111</p>
         </div>
     </div>
 </div>
 </div>
-</div>
+
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->

@@ -175,7 +175,7 @@
                 <li><a href="/pc/expertServe/pageList?major=professionalism&courseType=gxgt&serveType=train">高效沟通</a></li>
             </ul>
             <ul class="">
-                <zjh:status name="industry" dataType="ExpertServe.industry" type="list" checkedValue="" onclick="/pc/requirement/pageList?industry="></zjh:status>
+                <zjh:status name="major" dataType="ExpertServe.major" type="list" checkedValue="" onclick="/pc/requirement/pageList?type='train'&major="></zjh:status>
 
             </ul>
             <ul class="">
@@ -279,7 +279,7 @@
                 出生日期:
             </div>
             <div class="pi-inf-td-r">
-                <input type="text" class="Wdate" id="birthday" name="birthdayDate" value="<fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+                <input required type="text" class="Wdate" id="birthday" name="birthdayDate" value="<fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
             </div>
         </div>
         <div class="pi-inf-tr">
@@ -539,9 +539,9 @@
                 起止年月：
             </div>
             <div class="pi-inf-td-r">
-                <input type="text" class="Wdate"  name="startDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+                <input required type="text" class="Wdate"  name="startDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
                 --
-                <input type="text" class="Wdate"  name="endDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+                <input required type="text" class="Wdate"  name="endDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
 
             </div>
         </div>
@@ -647,18 +647,7 @@
             <img src="/images/footer-pic.png" alt="底部图片">
         </div>
         <div class="footer-bottom">
-            <ul class="footer-ul2 clear">
-                <li><a href="#">友情链接：</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">更多</a></li>
-            </ul>
+
             <p>&copy;2011-2015&nbsp;&nbsp;专家汇&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;北京语博信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11001010号-7&nbsp;&nbsp;京公网安备&nbsp;&nbsp;11010702111111</p>
         </div>
     </div>

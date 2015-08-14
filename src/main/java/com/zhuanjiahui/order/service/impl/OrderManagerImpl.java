@@ -4,6 +4,7 @@ import com.frame.core.base.dao.XdoDao;
 import com.frame.core.base.service.BaseManager;
 import com.frame.core.taglib.PageEntity;
 import com.frame.core.util.PageInfo;
+import com.zhuanjiahui.basic.model.Activity;
 import com.zhuanjiahui.character.model.Expert;
 import com.zhuanjiahui.character.model.LinkAddress;
 import com.zhuanjiahui.character.model.Linkman;
@@ -18,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -98,4 +100,20 @@ public class OrderManagerImpl implements OrderManager {
         return xdoDao.getObjectList(queryHQL,null,size,0);
     }
 
+    @Override
+    public PurchaseOrder createActivityOrder(PurchaseOrder purchaseOrder, Activity activity) {
+        purchaseOrder.setPayStatus(1);
+        purchaseOrder.setTheStatus(1);
+        purchaseOrder.setIndustry(activity.getIndustry());
+        purchaseOrder.setActivity(activity);
+        purchaseOrder.setCreateDatetime(new Date());
+        purchaseOrder.setOrderType("activity");
+        purchaseOrder.setServeDatetime(activity.getActivityDate());
+        purchaseOrder.setProcessStatus(1);
+        purchaseOrder.setPayType(2);
+        purchaseOrder.setProvince(activity.getProvince());
+        purchaseOrder.setTotal(activity.getPrice());
+        purchaseOrder.setSerial(String.valueOf(System.currentTimeMillis()));
+        return purchaseOrder;
+    }
 }

@@ -491,3 +491,12 @@ ALTER TABLE `basic_requirement`
 	ADD COLUMN `course_type` char(16) NULL AFTER `major`,
 	ADD COLUMN `develop_type` char(16) NULL AFTER `course_type`;
 
+CREATE TABLE `basic_activity_expert` (
+	`id` char(16) NOT NULL,
+	`expert_id` char(16) NULL,
+	`activity_id` char(16) NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+ALTER TABLE `basic_activity`
+	CHANGE COLUMN `expert_id` `user_id` char(16) CHARACTER SET utf8 COLLATE utf8_general_ci NULL AFTER `real_count`;

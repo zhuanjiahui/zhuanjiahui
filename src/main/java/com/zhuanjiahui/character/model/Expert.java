@@ -219,7 +219,7 @@ public class Expert extends BigUser{
         this.freedom = freedom;
     }
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-    @JoinTable(name = "basic_expert_activity",
+    @JoinTable(name = "basic_activity_expert",
             joinColumns = {@JoinColumn(name = "activity_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "expert_id", referencedColumnName = "id")})
     public List<Activity> getActivityList() {

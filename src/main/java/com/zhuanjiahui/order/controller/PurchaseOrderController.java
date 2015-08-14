@@ -30,6 +30,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -91,6 +92,7 @@ public class PurchaseOrderController extends BaseController{
         purchaseOrder.setSerial(String.valueOf(System.currentTimeMillis()));
         purchaseOrder.setExpertServe(expertServe);
         purchaseOrder.setServeDatetime(date);
+        purchaseOrder.setOrderType("normal");
 
         purchaseOrder.setPtype(expertServe.getServeType());
         purchaseOrder.setDayType(dayType);
@@ -150,6 +152,14 @@ public class PurchaseOrderController extends BaseController{
         modelMap.put("purchaseOrder",purchaseOrder);
         return "/order/sparePay";
     }
+    /*活动订单支付页面*/
+    @RequestMapping(value = "/activityPay")
+    public String activityPay(HttpServletRequest request,ModelMap modelMap){
+        String orderId=request.getParameter("id");
+        PurchaseOrder purchaseOrder=(PurchaseOrder)baseManager.getObject(PurchaseOrder.class.getName(),orderId);
+        modelMap.put("purchaseOrder",purchaseOrder);
+        return "/order/activityPay";
+    }
    /* *//*保存联系人*//*
     @RequestMapping(value = "/saveLinkman")
     @ResponseBody
@@ -204,13 +214,37 @@ public class PurchaseOrderController extends BaseController{
             return "redirect:/pc/purchaseOrder/assistantOrders";
         }
     }
-  /*  public void joinActivity(HttpServletRequest request){
+    /*活动报名*/
+    @RequestMapping(value = "/joinActivity")
+    @ResponseBody
+    public String joinActivity(HttpServletRequest request){
+        Expert user=AuthorizationUtil.getExpert();
         String activityId=request.getParameter("activityId");
         Activity activity=(Activity)baseManager.getObject(Activity.class.getName(),activityId);
         List<Expert> expertList=activity.getExpertList();
-        *//*List<PurchaseOrder> purchaseOrderList=activity.getPurchaseOrderList();*//*
-        if(expertList!=null&&expertList.size()<activity.getUserNumber()){
-
+        List<PurchaseOrder> purchaseOrderList=activity.getPurchaseOrderList();
+        if(purchaseOrderList==null){
+            purchaseOrderList=new ArrayList<>();
         }
-    }*/
+        if (expertList==null){
+            expertList=new ArrayList<>();
+        }
+        if(expertList.size()<activity.getUserNumber()){
+            for (Expert expert:expertList){
+                if(user.getId().equals(expert.getId())){
+                    return null;
+                }
+            }
+        }
+        PurchaseOrder purchaseOrder=new PurchaseOrder();
+        purchaseOrder.setConsumer(AuthorizationUtil.getUser());
+        purchaseOrder.setExpert(activity.getUser());
+        orderManager.createActivityOrder(purchaseOrder,activity);
+        expertList.add(user);
+        purchaseOrderList.add(purchaseOrder);
+        activity.setExpertList(expertList);
+        baseManager.saveOrUpdate(PurchaseOrder.class.getName(),purchaseOrder);
+        baseManager.saveOrUpdate(Activity.class.getName(),activity);
+        return "redirect:/pc/purchaseOrder/activityPay?orderId="+purchaseOrder.getId();
+    }
 }

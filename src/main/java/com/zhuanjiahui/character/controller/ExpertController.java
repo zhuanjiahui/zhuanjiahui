@@ -225,7 +225,8 @@ public class ExpertController  {
         if(styleLabels!=null&&!styleLabels.equals("")){
 
             List<Object> styleLableList=new ArrayList<>();
-            for(String label:styleLabels.split("\\s")){
+            String[] labels= styleLabels.split("\\s");
+            for(String label:labels){
                 Stylelabel style=new Stylelabel();
                 style.setExpert(expertTemp);
                 style.setLabel(label);

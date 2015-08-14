@@ -95,7 +95,7 @@
                 <li><a href="/pc/expertServe/pageList?major=professionalism&courseType=gxgt&serveType=train">高效沟通</a></li>
             </ul>
             <ul class="">
-                <zjh:status name="industry" dataType="ExpertServe.industry" type="list" checkedValue="" onclick="/pc/requirement/pageList?industry="></zjh:status>
+                <zjh:status name="major" dataType="ExpertServe.major" type="list" checkedValue="" onclick="/pc/requirement/pageList?type='train'&major="></zjh:status>
 
             </ul>
             <ul class="">
@@ -218,11 +218,11 @@
     <div class="query-column1-0 fl">
         <div class="query-column1-0-1">
             <a href="/pc/activity/view?activityId=${activity.id}">
-                <img src="http://pic.591zjh.com/${activity.expert2.pictureUrl}" alt="活动查询页专家">
+                <img src="http://pic.591zjh.com/${activity.user2.pictureUrl}" alt="活动查询页专家">
             </a>
         </div>
         <div class="query-column1-0-2">
-            <span>发起人：${activity.expert.name}</span>
+            <span>发起人：${activity.user.name}</span>
             <span>地&nbsp;&nbsp;点：${activity.province.name}&nbsp;${activity.address}</span>
             <span>时间：<fmt:formatDate value="${activity.activityDate}" pattern="yyyy-MM-dd"></fmt:formatDate> &nbsp;&nbsp;人气：99 </span>
         </div>
@@ -248,7 +248,7 @@
 <div class="query-column2">
     <div class="query-column2-1">
         <a href="/pc/activity/view?activityId=${activity.id}">
-            <img src="http://pic.591zjh.com/${activity.expert2.pictureUrl}" alt="活动查询ad图">
+            <img src="http://pic.591zjh.com/${activity.user2.pictureUrl}" alt="活动查询ad图">
             <!-- hover部分 -->
 							<span class="a-span">
 								<span class="a-span1">${activity.activityDate}</span>
@@ -259,11 +259,11 @@
         </a>
 
         <div class="query-column2-1-1">
-            <span class="query2-span1">专家：${activity.expert.name}</span>
+            <span class="query2-span1">专家：${activity.user.name}</span>
             <span class="query2-span2">活动类型：<zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span>
             <span class="query2-span3">${activity.introduce}</span>
             <span class="query2-span4">已报名${activity.realCount}/${activity.userNumber}人</span>
-            <a href="#">参加活动</a>
+            <a href="#" onclick="joinActivity('${activity.id}')">参加活动</a>
         </div>
     </div>
 </div>
@@ -343,18 +343,7 @@
             <img src="/images/footer-pic.png" alt="底部图片">
         </div>
         <div class="footer-bottom">
-            <ul class="footer-ul2 clear">
-                <li><a href="#">友情链接：</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">专家汇</a></li>
-                <li><a href="#">更多</a></li>
-            </ul>
+
             <p>&copy;2011-2015&nbsp;&nbsp;专家汇&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;北京语博信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11001010号-7&nbsp;&nbsp;京公网安备&nbsp;&nbsp;11010702111111</p>
         </div>
     </div>
@@ -367,5 +356,25 @@
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<script type="text/javascript">
+    function joinActivity(id){
+        $.ajax({
+            url:"/pc/purchaseOrder/joinActivity",
+            type:"post",
+            data:{
+                activityId:id
+            },
+            dataType:"json",
+            success:function(data){
+                if(data==null){
+                    alert("已不能报名！");
+                }else{
+                    location.href=data;
+                }
+            }
+
+        })
+    }
+</script>
 </body>
 </html>

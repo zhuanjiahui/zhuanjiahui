@@ -112,7 +112,7 @@ public class ActivityController extends BaseController{
         Date activityDate2=simpleDateFormat.parse(request.getParameter("endDatetime"));
         activity.setActivityDate(activityDate);
         activity.setActivityDate2(activityDate2);
-        activity.setExpert(expert);
+        activity.setUser(expert);
         activity.setFavoriteCount(0);
         activity.setVisitCount(0);
         activity.setRealCount(0);

@@ -153,7 +153,7 @@ public class ExpertServeManagerImpl implements ExpertServeManager {
 
     @Override
     public PageInfo searchExpertServe(PageEntity pageEntity,String words) {
-        String queryHQL="select s from "+ExpertServe.class.getName()+" s , "+ Keywords.class.getName()+" k where s.expert.id=k.expert.id and s.theStatus=1 and s.expert.checkStatus>1 and k.words='"+words+"' or s.name='"+words+"'" ;
+        String queryHQL="select s from "+ExpertServe.class.getName()+" s where s.theStatus=1 and s.expert.name like '%"+words+"%'" ;
         return baseManager.listPageInfo(queryHQL,pageEntity,null);
     }
 

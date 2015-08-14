@@ -2,6 +2,7 @@ package com.zhuanjiahui.order.service;
 
 import com.frame.core.taglib.PageEntity;
 import com.frame.core.util.PageInfo;
+import com.zhuanjiahui.basic.model.Activity;
 import com.zhuanjiahui.character.model.LinkAddress;
 import com.zhuanjiahui.character.model.Linkman;
 import com.zhuanjiahui.order.model.PurchaseGuide;
@@ -27,6 +28,8 @@ public interface OrderManager {
     public void successPay(String paymentId);
 
     public List<Object> listScheduleOrders(String expertId,int size);
+
+    public PurchaseOrder createActivityOrder(PurchaseOrder purchaseOrder,Activity activity);
 
 
 }

@@ -264,6 +264,43 @@ public class OrderPaymentController {
         return "redirect:"+payUrl;
 
     }
+    /*
+  * 预付款订单，余款支付*/
+    @RequestMapping(value = "/activityPay")
+    public String activityPay(HttpServletRequest request,HttpServletResponse response){
+        String orderId=request.getParameter("orderId");
+        int gateWay=Integer.parseInt(request.getParameter("gateWay"));
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyyMMddhhmmss");
+        String serial=simpleDateFormat.format(new Date());
+        PurchaseOrder purchaseOrder=(PurchaseOrder)baseManager.getObject(PurchaseOrder.class.getName(),orderId);
+        PurchaseOrderPayment purchaseOrderPayment=new PurchaseOrderPayment();
+        purchaseOrderPayment.setCreateDatetime(new Date());
+        purchaseOrderPayment.setGateway(gateWay);//支付方式
+        purchaseOrderPayment.setPayStatus(0);//支付未成功
+        purchaseOrderPayment.setPurchaseOrder(purchaseOrder);
+        purchaseOrderPayment.setPayType(2);//全额支付
+        purchaseOrderPayment.setSerial(serial+ StringUtil.random(6,2));
+        purchaseOrderPayment.setPayed(purchaseOrder.getTotal());//支付金额
+        baseManager.saveOrUpdate(PurchaseOrderPayment.class.getName(),purchaseOrderPayment);
+
+        String amount=purchaseOrderPayment.getPayed().toString();
+        String callbackurl ="http://www.591zjh.com/pc/payBack";
+        Map map=new HashMap<String,String>();
+        map.put("requestid",purchaseOrderPayment.getId());
+        map.put("amount","0.01");
+        map.put("productname",purchaseOrder.getExpert().getName()+"_"+purchaseOrder.getExpertServe().getName());
+        map.put("callbackurl",callbackurl);
+        if(gateWay==2){
+            map.put("payproducttype","SALES");
+        }else if(gateWay==3){
+            map.put("payproducttype","ONEKEY");
+        }
+        //调用支付接口
+        Map m=ZGTService.paymentRequest(map);
+        String payUrl=m.get("payurl").toString();
+        return "redirect:"+payUrl;
+
+    }
     /*支付成功后跳转至该入口，返回参数data*/
     @RequestMapping(value = "/payBack")
     public String yeepayCallBack(HttpServletRequest request){

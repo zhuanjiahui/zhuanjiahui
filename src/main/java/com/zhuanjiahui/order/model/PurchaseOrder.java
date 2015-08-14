@@ -23,9 +23,9 @@ import java.util.List;
 @Table(name="order_purchase_order")
 public class PurchaseOrder {
     private String id;
-    private String serial;//序列号
+    private String serial;//序列号 时间
     private String ptype;//培训、咨询、开发
-    private String orderType;//正常订单、活动订单
+    private String orderType;//normal正常订单、activity活动订单
     private String industry;
     private String major;
     private User consumer;

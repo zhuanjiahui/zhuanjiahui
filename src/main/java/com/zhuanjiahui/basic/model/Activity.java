@@ -34,8 +34,8 @@ public class Activity {
     private String linkman;
     private String telephone;
     private String introduce;
-    private User expert;
-    private Expert expert2;
+    private User user;
+    private BigUser user2;
     private Province province;
     private Integer visitCount;
 
@@ -207,23 +207,24 @@ public class Activity {
         this.province = province;
     }
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="expert_id")
-    public User getExpert() {
-        return expert;
+    @JoinColumn(name="user_id")
+    public User getUser() {
+        return user;
     }
 
-    public void setExpert(User expert) {
-        this.expert = expert;
+    public void setUser(User user) {
+        this.user = user;
     }
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="expert_id",insertable = false,updatable = false)
-    public Expert getExpert2() {
-        return expert2;
+    @JoinColumn(name = "user_id",insertable = false,updatable = false)
+    public BigUser getUser2() {
+        return user2;
     }
 
-    public void setExpert2(Expert expert2) {
-        this.expert2 = expert2;
+    public void setUser2(BigUser user2) {
+        this.user2 = user2;
     }
+
     @Column(name="visit_count")
     public Integer getVisitCount() {
         return visitCount;

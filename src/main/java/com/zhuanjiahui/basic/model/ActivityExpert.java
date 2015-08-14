@@ -1,19 +1,22 @@
-package com.zhuanjiahui.main.model;
+package com.zhuanjiahui.basic.model;
 
+import com.frame.organization.model.User;
 import com.zhuanjiahui.character.model.Expert;
 import org.hibernate.annotations.GenericGenerator;
+
 
 import javax.persistence.*;
 
 /**
- * Created by Administrator on 2015/7/22.
+ * Created by Administrator on 2015/8/13.
+ * 活动报名者
  */
 @Entity
-@Table(name="main_expert_style_label")
-public class Stylelabel {
+@Table(name="basic_activity_expert")
+public class ActivityExpert {
     private String id;
     private Expert expert;
-    private String label;
+    private Activity activity;
     @Id
     @GenericGenerator(name="id",strategy = "com.frame.core.p.model.ZJHidGenerator")
     @GeneratedValue(generator = "id")
@@ -33,12 +36,13 @@ public class Stylelabel {
     public void setExpert(Expert expert) {
         this.expert = expert;
     }
-    @Column(name="style_label")
-    public String getLabel() {
-        return label;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="activity_id")
+    public Activity getActivity() {
+        return activity;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setActivity(Activity activity) {
+        this.activity = activity;
     }
 }
