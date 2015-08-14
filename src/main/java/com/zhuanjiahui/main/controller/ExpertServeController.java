@@ -75,30 +75,7 @@ public class ExpertServeController extends BaseController{
         expertServe.setTheStatus(1);
         expertServe.setServedConsumer(request.getParameter("servedConsumer"));
         baseManager.saveOrUpdate(ExpertServe.class.getName(),expertServe);
-       /* String consumerNames =request.getParameter("consumerName");
-         List<Object> servedConsumers=new ArrayList<>();
-       String[] names=null;
-        if(consumerNames!=null&&!consumerNames.equals("")){
-            names=consumerNames.split("\\s");
-            for (String name:names){
-                ServedConsumer servedConsumer=new ServedConsumer();
-                servedConsumer.setName(name);
-                servedConsumer.setServe(expertServe);
-                servedConsumers.add(servedConsumer);
-            }
-            baseManager.batchSaveOrUpdate("save",ServedConsumer.class.getName(),servedConsumers);
-        }
-        String projectNames =request.getParameter("projectNames");
-        if(projectNames!=null&&!projectNames.equals("")){
-            names=projectNames.split("\\s");
-            for (String name:names){
-                ServedConsumer servedConsumer=new ServedConsumer();
-                servedConsumer.setProjectName(name);
-                servedConsumer.setServe(expertServe);
-                servedConsumers.add(servedConsumer);
-            }
-            baseManager.batchSaveOrUpdate("save",ServedConsumer.class.getName(),servedConsumers);
-        }*/
+
         if(myUser.getCheckStatus()==2){
             expert.setCheckStatus(3);
             baseManager.saveOrUpdate(User.class.getName(), expert);

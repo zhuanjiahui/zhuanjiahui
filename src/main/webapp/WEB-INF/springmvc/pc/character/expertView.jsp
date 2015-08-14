@@ -401,15 +401,7 @@
     </c:forEach>
 
     <ul class="pagging">
-       <%-- <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>...</li>
-        <li>100</li>
-        <li>下一页></li>
-        <li class="turnPage">共100页，去第<input type="text">页<span>确定</span></li>--%>
+
     </ul>
 
 </div>
@@ -498,10 +490,10 @@
         </div>
         <div class="pop-up-ed-line"></div>
         <div class="pop-up-ed-tr">
-            <%--<div class="pop-up-ed-td-l2">服务类型：</div>
+            <div class="pop-up-ed-td-l2">服务类型：</div>
             <div class="pop-up-ed-td-r2">
-                <zjh:status name="serveType" dataType="ExpertServe.serveType" type="select" checkedValue="" onchange="loadServe();"></zjh:status>
-            </div>--%>
+                <zjh:status name="serveType" dataType="ExpertServe.serveType" type="select" checkedValue="" onchange="loadServe('${expert.id}',this.value);"></zjh:status>
+            </div>
         </div>
         <div id="serves">
             <c:forEach items="${expertServes}" var="expertServe">
@@ -561,11 +553,9 @@
         $("#total").html(price+"元");
     }
 
-    function loadServe(){
-        var expertId=${expert.id};
-        var serveType=$("select[name='serveType']").val();
+    function loadServe(expertId,serveType){
         $.ajax({
-            url:"/pc/expertServe/load",
+            url:"/pc/expertServe/JLoad",
             type:"post",
             data:{
                 expertId:expertId,
@@ -576,10 +566,9 @@
                 $("#serves").empty();
                 for(var i=0;i<data.length;i++){
                     $("#serves").append("<div class=\"pop-up-ed-tr\"><div class=\"pop-up-ed-td-l3\">"+
-                            "服务：</div><input type=radio name=\"serveId\" class=\"pop-up-ed-td-r31\" value=\""+data[i].id+"\" "+
-                            "onclick=\"sureServe("+data[i].id+","+data[i].price+","+data[i].cheaf+","+data[i].discount+");\">"+
+                            "服务:</div><input type=\"radio\" name=\"serveId\" class=\"pop-up-ed-td-r31\" value=\""+data[i].id+"\" "+
+                            "onclick=\"sureServe('"+data[i].id+"',"+data[i].price+","+data[i].cheaf+","+data[i].discount+");\">"+
                             "<div class=\"pop-up-ed-td-r32\">"+data[i].name+" - "+data[i].price+"元/天</div></div>");
-
                 }
             }
         })
