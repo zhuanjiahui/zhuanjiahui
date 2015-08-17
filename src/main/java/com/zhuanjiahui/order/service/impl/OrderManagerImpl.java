@@ -47,19 +47,19 @@ public class OrderManagerImpl implements OrderManager {
 
     @Override
     public PageInfo listOrders(String userId,PageEntity pageEntity) {
-        String queryHQL="from "+ PurchaseOrder.class.getName()+" s where s.theStatus=1 and s.consumer.id='"+userId+"'";
+        String queryHQL="from "+ PurchaseOrder.class.getName()+" s where s.theStatus=1 and s.consumer.id='"+userId+"' order by createDatetime desc";
         return baseManager.listPageInfo(queryHQL,pageEntity,null);
     }
 
     @Override
     public PageInfo listExpertOrders(String userId, PageEntity pageEntity) {
-        String queryHQL="from "+ PurchaseOrder.class.getName()+" s where s.theStatus=1 and s.expert.id='"+userId+"'";
+        String queryHQL="from "+ PurchaseOrder.class.getName()+" s where s.theStatus=1 and s.expert.id='"+userId+"' order by createDatetime desc";
         return baseManager.listPageInfo(queryHQL,pageEntity,null);
     }
 
     @Override
     public PageInfo listAssistantOrders(String userId, PageEntity pageEntity) {
-        String queryHQL="from "+ PurchaseOrder.class.getName()+" s where s.theStatus=1 and s.expert2.assistant.id='"+userId+"'";
+        String queryHQL="from "+ PurchaseOrder.class.getName()+" s where s.theStatus=1 and s.assistant.id='"+userId+"' order by createDatetime desc";
         return baseManager.listPageInfo(queryHQL,pageEntity,null);
     }
 

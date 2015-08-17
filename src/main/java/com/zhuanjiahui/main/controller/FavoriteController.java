@@ -57,4 +57,17 @@ public class FavoriteController extends BaseController {
         }
         return false;
     }
+    /*收藏专家*/
+    @RequestMapping(value = "/delExpert")
+    @ResponseBody
+    public Boolean delFavoriteExpert(HttpServletRequest request){
+        try {
+            String expertId=request.getParameter("expertId");
+            baseManager.remove(FavoriteExpert.class.getName(),expertId);
+            return true;
+        }catch (NullPointerException e){
+            return false;
+        }
+
+    }
 }

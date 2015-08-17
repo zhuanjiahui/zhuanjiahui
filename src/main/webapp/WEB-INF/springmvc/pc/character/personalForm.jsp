@@ -224,15 +224,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
 
@@ -465,5 +465,65 @@
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<script type="text/javascript">
+    function getChooseConfirmDiv(){//动态添加确认框内容到当前页面
+        $("body").append("<div class='mask' tabindex='-1'><div class='popup'><div></div><div></div></div></div>");
+    }
+
+    $(function () {
+        $('#big').imgAreaSelect({ aspectRatio: '1:1', handles: true,fadeSpeed: 200, onSelectChange: preview });
+        $("#expertPicUpload").uploadify({
+            swf: '/scripts/uploadify/uploadify.swf?m=' + Math.random(),
+            uploader: '/pc/user/uploadPic',
+            fileTypeExts: '*.jpg;*.jpge;*.gif;*.png',
+            //浏览按钮的宽度
+            width: '100',
+            //浏览按钮的高度
+            height: '32',
+            multi: false,
+            buttonText: '<a class="le-wz">上传头像</a>',
+            onUploadSuccess: function (file, data, response) {
+                document.getElementById("bg").style.display ="block";
+                document.getElementById("big").style.display ="block";
+                document.getElementById("sma").style.display ="block";
+                document.getElementById("sure").style.display ="block";
+                document.getElementById("cancel").style.display ="block";
+                $("#photo").attr("src","http://pic.591zjh.com/"+eval(data));
+                $("#sma img").attr("src","http://pic.591zjh.com/"+eval(data));
+                url=eval(data);
+                console.log(url);
+            }
+        })
+    })
+    function preview(img, selection) {
+        if (!selection.width || !selection.height)
+            return;
+
+        var scaleX = 100 / selection.width;
+        var scaleY = 100 / selection.height;
+
+        $('#sma img').css({
+            width: Math.round(scaleX * 300),
+            height: Math.round(scaleY * 300),
+            marginLeft: -Math.round(scaleX * selection.x1),
+            marginTop: -Math.round(scaleY * selection.y1)
+        });
+        x=selection.x1;
+        y=selection.y1;
+        w=selection.width;
+        h=selection.height;
+    }
+    function sureButton(){
+
+        $("#picUrl").val(url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
+        $("#head").attr("src","http://pic.591zjh.com/"+url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
+        $("#floatDiv").hide();
+
+    }
+    function cancelButton(){
+        $("#floatDiv").hide();
+    }
+
+</script>
 </body>
 </html>

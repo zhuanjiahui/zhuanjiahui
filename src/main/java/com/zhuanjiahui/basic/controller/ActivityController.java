@@ -117,7 +117,6 @@ public class ActivityController extends BaseController{
         activity.setVisitCount(0);
         activity.setRealCount(0);
         activity.setCreateDatetime(new Date());
-        activity.setUserNumber(0);
         activity.setTheStatus(1);
         baseManager.saveObject(activity);
         return "redirect:/pc/activity/pageList";

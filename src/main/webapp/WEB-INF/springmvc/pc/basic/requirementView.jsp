@@ -137,9 +137,7 @@
     </div>
     <div class="customerPhotoBackground">
         <div class="customerPhoto"></div>
-<%--
         <div class="customerName">${requirement.expert.name}</div>
---%>
     </div>
     <table class="customerNeedInfo">
         <tr>

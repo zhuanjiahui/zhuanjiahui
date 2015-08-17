@@ -128,14 +128,14 @@
                 <div  class="a-inf-content-2">
                     <div class="a-inf-content-wz2">联系人</div>
                         <div class="a-inf-content-wz3">
-                            <input type="text" id="linkname" name="linkname"  value="${linkman.name}">&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" id="telephone" name="telephone"  value="${linkman.phone}">
+                            姓名:<input type="text" id="linkname" name="linkname"  value="${linkman.name}">&nbsp;&nbsp;&nbsp;&nbsp;
+                            联系电话:<input type="text" id="telephone" name="telephone"  value="${linkman.phone}">
                         </div>
                 </div>
             </div>
             <div class="a-inf-1">
                 <div class="a-inf-content-1">
-                    <div class="a-inf-content-wz1">地址信息</div>
+                    <div class="a-inf-content-wz1">服务地址</div>
 <%--
                     <div class="a-inf-content-but2">新增地址</div>
 --%>

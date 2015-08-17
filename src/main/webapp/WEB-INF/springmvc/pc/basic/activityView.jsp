@@ -145,7 +145,7 @@
 </div>
 <!-- banner图部分 -->
 <div class="bannerpic clear">
-    <img src="/images/banner.png" alt="banner图"/>
+    <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_1200w_377h" alt="banner图"/>
 </div>
 <div class="wrap">
     <!-- 活动栏目1部分 -->
@@ -172,7 +172,7 @@
             <div class="column1-3">
                 <div>报名费用：${activity.price}元</div>
                 <div>
-                    <a href="#">立即报名</a>
+                    <a href="#" onclick="joinActivity('${activity.id}')">立即报名</a>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
             <c:forEach items="${activity.activityDiscussList}" var="activityDiscuss">
             <div class="column4-2">
                 <div class="column4-2-1">
-                    <img src="http://pic.591zjh.com/${activityDiscuss.consumer2.pictureUrl}_90w_90h" alt="bbs人物">
+                    <img src="http://pic.591zjh.com/${activityDiscuss.consumer2.pictureUrl}@_90w_90h" alt="bbs人物">
                     <span>${activityDiscuss.consumer2.name}</span>
                 </div>
                 <div class="column4-2-2">
@@ -384,6 +384,26 @@
             dataType:"json",
             success:function(data){
                 location.reload();
+            }
+
+        })
+    }
+    function joinActivity(id){
+        $.ajax({
+            url:"/pc/purchaseOrder/joinActivity",
+            type:"post",
+            data:{
+                activityId:id
+            },
+            dataType:"json",
+            success:function(data){
+                if(data=="repeat"){
+                    alert("您已报名,不能重复报名!");
+                }else if(data=="overflows"){
+                    alert("活动人员已满!");
+                }else{
+                    location.href=data;
+                }
             }
 
         })

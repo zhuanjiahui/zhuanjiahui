@@ -29,8 +29,6 @@ public interface ExpertManager {
     public PageInfo pageExpert(PageEntity pageEntity,LinkedHashMap<String,Object> param,String orderBy);
     //专家详情
     public Expert viewExpert(String id);
-    //搜索专家
-    public PageInfo searchExperts(String keywords);
     //查询一个专家
     public Expert getExpertByNamePsw(String username,String password);
 

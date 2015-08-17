@@ -149,15 +149,15 @@
             <dd><a href="/pc/resetPwd">重置密码</a></dd>
         </dl>
         <dl>
-            <dt class="order-icon2"><a href="#">账号管理</a></dt>
-            <dd><a href="#">订单管理</a></dd>
+            <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+            <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
             <c:if test="${myUser.utype==3}">
                 <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
             </c:if>
             <c:if test="${myUser.utype==2}">
                 <dd><a href="/pc/schedule/view">档期管理</a></dd>
             </c:if>
-            <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+            <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
             <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
         </dl>
 
@@ -298,11 +298,14 @@
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l"><span>服务过的客户：</span><input type="text" name="servedConsumer" style="width:422px;"></div>
-                </div>
-                <div class="editorBox"><textarea id="content" class="ckeditor" name="content">
 
-                </textarea></div>
+                    <div class="sc-td-l"><span>服务过的客户:</span><input type="text" name="servedConsumer" size="255"></div>
+                    <br/>
+                </div>
+                <div class="editorBox">
+                    <span>课程大纲:</span>
+                    <textarea id="content" class="ckeditor" name="content"></textarea>
+                </div>
 
 
                 <div class="sc-xx"></div>
@@ -393,9 +396,10 @@
                     </div>
                     <div class="sc-td-l" style="margin-left: 25px;">客户名称：</div>
                     <div class="sc-td-r">
-                        <input name="servedConsumer" style="width:165px;" type="text" size="255">
+                        <input name="servedConsumer" style="width:318px;" type="text" size="255">
                     </div>
                 </div>
+
                 <div class="sc-xx"></div>
                 <div><button class="sc-but1" onclick="submitForm('consult')">添加咨询</button></div>
             </div>

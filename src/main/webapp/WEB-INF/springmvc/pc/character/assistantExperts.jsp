@@ -138,10 +138,10 @@
         <dd><a href="/pc/resetPwd">重置密码</a></dd>
     </dl>
     <dl>
-        <dt class="order-icon2"><a href="#">账号管理</a></dt>
-        <dd><a href="#">订单管理</a></dd>
+        <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+        <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
         <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
-        <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+        <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
         <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
     </dl>
     <dl>
@@ -408,19 +408,22 @@
         })
     }
     function deleteExpert(id,obj){
-        $.ajax({
-            url:"/pc/assistant/deleteExpert",
-            type:"get",
-            data:{
-                expertId:id
-            },
-            dataType:"json",
-            success:function(data){
-                if(data){
-                    $(obj).parents(".aem-table-wapper").fadeOut(1000);
+        if(confirm("确认解除关系?")){
+            $.ajax({
+                url:"/pc/assistant/deleteExpert",
+                type:"get",
+                data:{
+                    expertId:id
+                },
+                dataType:"json",
+                success:function(data){
+                    if(data){
+                        $(obj).parents(".aem-table-wapper").fadeOut(1000);
+                    }
                 }
-            }
-        })
+            })
+        }
+
     }
     function changeStatus(id,status,date){
         console.log(id);

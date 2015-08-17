@@ -142,15 +142,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
 
@@ -223,12 +223,12 @@
                             <c:if test="${purchaseOrder.processStatus==1}">
                                 <li>
                                     <a href="#" onclick="sureOrderProcess('${purchaseOrder.id}',3)">确认</a><i>|</i>
+<%--
                                     <a href="#" onclick="sureOrderProcess('${purchaseOrder.id}',2)">取消</a>
+--%>
                                 </li>
                             </c:if>
-                            <c:if test="${purchaseOrder.payStatus>1}">
-                                <zjh:status name="processStatus" dataType="PurchaseOrder.processStatus" type="normal" checkedValue="${purchaseOrder.processStatus}"></zjh:status>
-                            </c:if>
+
                             <li class="pop-up-clickbut"><a href="#">修改时间</a></li>
                         </ol>
                     </div>

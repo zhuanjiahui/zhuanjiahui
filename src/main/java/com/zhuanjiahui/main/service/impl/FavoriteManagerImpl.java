@@ -17,7 +17,7 @@ public class FavoriteManagerImpl implements FavoriteManager {
     private BaseManager baseManager;
     @Override
     public PageInfo pageFavoriteExpert(String userId,PageEntity pageEntity) {
-        String queryHQL="select s.expert from  FavoriteExpert s where s.theStatus=1 and s.user.id='"+userId+"'";
+        String queryHQL="from  FavoriteExpert s where s.theStatus=1 and s.user.id='"+userId+"'";
         return baseManager.listPageInfo(queryHQL,pageEntity,null);
     }
 

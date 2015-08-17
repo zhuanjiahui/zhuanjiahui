@@ -139,7 +139,7 @@
 #btn {width:40px; height:40px; position:fixed; right:80px; bottom:20px; display:none; background:url(../images/top_bg.png) no-repeat left top;}
 #btn:hover {background:url(../images/top_bg.png) no-repeat 0 -40px;}
 /*页码部分*/
-.page-normal{width: 700px;margin: 0 auto;}
+.page-normal{clear:both;width: 700px;margin: 0 auto;}
 .page-normal .page-ul{float:left;height:36px;margin:17px 0;}
 .page-ul .lue{width: 27px;line-height:36px;text-align: center;float:left;}
 .page-ul .page-li {float:left;line-height:34px;font-size:14px;color:#888888;}
@@ -298,8 +298,8 @@ ul,ol{list-style:none;}
 .resultsElemMain li a{display:block;height:100%;color:#666;}
 /*需求详情页样式*/
 /*专家资料*/
-.customerPhotoBackground{width:1200px;height:240px;background:url(../images/demandDetailsBackground.png) no-repeat;margin:0 auto;text-align:center;vertical-align:middle;padding-top:30px;}
-.customerPhoto{width:160px;height:160px;margin:0 auto;background:url(../images/xepertPhoto.png) no-repeat;border-radius:80px;background-clip:padding-box;}
+.customerPhotoBackground{width:1200px;height:240px;background:url(../images/requirementView.png) no-repeat;margin:0 auto;text-align:center;vertical-align:middle;padding-top:30px;}
+.customerPhoto{width:160px;height:160px;margin:0 auto;border-radius:80px;background-clip:padding-box;}
 .customerName{margin:0 auto;font-size:14px;color:#333;margin-top:15px;}
 .customerNeedInfo,.needDetail{width:1015px;font-size:13px;color:#6d6d6d;margin:0 auto;}
 .customerNeedInfo tr{height:30px;vertical-align:middle;}

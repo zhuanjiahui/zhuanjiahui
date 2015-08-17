@@ -142,15 +142,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
             <dl>
@@ -163,11 +163,11 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
     <div class="content-body">
         <ul class="body-nav">
-            <li class="nav-li h-color"><a href="/pc/activity/publish">发布活动</a></li>
+            <li class="nav-li h-color">发布活动</li>
             <li class="nav-li"><a href="/pc/activity/myActivity">我的活动</a> </li>
         </ul>
 
@@ -181,44 +181,44 @@
                 <div class="le-table">
                     <input type="hidden" name="id" value="${id}">
                     <div class="le-tr">
-                        <div class="le-td-l">活动主题：</div>
+                        <div class="le-td-l">活动主题:</div>
                         <div class="le-td-r"><input class="w1" name="name" type="text" value=""/></div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">类型：</div>
+                        <div class="le-td-l">类型:</div>
                         <div class="le-td-r">
                             <zjh:status name="type" dataType="Activity.type" type="select"></zjh:status>
                         </div>
-                        <div class="le-td-l">行业：</div>
+                        <div class="le-td-l">行业:</div>
                         <div class="le-td-r">
                             <zjh:status name="industry" dataType="ExpertServe.industry" type="select"></zjh:status>
 
                         </div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">费用：</div>
+                        <div class="le-td-l">费用:</div>
                         <div class="le-td-r">
                             <input class="xl" name="price" type="text" value=""/>
                         </div>
-                        <div class="le-td-l">人数：</div>
+                        <div class="le-td-l">人数:</div>
                         <div class="le-td-r">
                             <input class="xl" name="userNumber" type="text" value=""/>
                         </div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">开始时间：</div>
+                        <div class="le-td-l">开始时间:</div>
                         <div class="le-td-r">
                             <input required type="text" class="Wdate" id="startDatetime" name="startDatetime" style="width:200px;height: 35px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})">
                         </div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">结束时间：</div>
+                        <div class="le-td-l">结束时间:</div>
                         <div class="le-td-r">
                             <input required type="text" class="Wdate" id="endDatetime" name="endDatetime" style="width:200px;height: 35px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})">
                         </div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">地址：</div>
+                        <div class="le-td-l">地址:</div>
                         <div class="le-td-r">
                             <select id="province" class="xl-sheng" onchange="changeCity();">
                                 <option value="">请选择</option>
@@ -229,19 +229,19 @@
                         </div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">详细地址：</div>
+                        <div class="le-td-l">详细地址:</div>
                         <div class="le-td-r"><input class="l-address" name="address" type="text" value=""/></div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">联系人：</div>
+                        <div class="le-td-l">联系人:</div>
                         <div class="le-td-r"><input class="the-contact" name="linkman" type="text" value=""/></div>
                     </div>
                     <div class="le-tr">
-                        <div class="le-td-l">联系电话：</div>
+                        <div class="le-td-l">联系电话:</div>
                         <div class="le-td-r"><input class="the-contact" name="telephone" type="text" value=""/></div>
                     </div>
                     <div class="le-tr le-tr-h1">
-                        <div class="le-td-l">活动介绍：</div>
+                        <div class="le-td-l">活动介绍:</div>
                         <div class="le-td-r"><textarea class="ac-int" name="introduce"  value=""></textarea></div>
                     </div>
                     <div class="le-tr le-tr-h2">

@@ -250,7 +250,7 @@ public class StatusTag extends TagSupport {
             StatusTypeItem statusTypeItem = statusType.getStatusTypeItemList().get(i);
             if (checkedValue!=null&&checkedValue.equals(statusTypeItem.getValue())) {
                 htmlTagBuffer
-                .append("<li><a class='' href=" + onclick + statusTypeItem.getValue() + ">" + statusTypeItem.getLabel() + "</a></li>");
+                .append("<li><a class='screeningChioce' href=" + onclick + statusTypeItem.getValue() + ">" + statusTypeItem.getLabel() + "</a></li>");
             } else {
                 htmlTagBuffer
                         .append("<li><a href=" + onclick + statusTypeItem.getValue() + ">" + statusTypeItem.getLabel() + "</a></li>");
@@ -285,7 +285,6 @@ public class StatusTag extends TagSupport {
                         .append("<a  href='" + onclick+"_"+ statusTypeItem.getValue() + "'>" + statusTypeItem.getLabel() + "</a>");
             }
         }
-        System.out.println(htmlTagBuffer.toString());
         return htmlTagBuffer.toString();
     }
 

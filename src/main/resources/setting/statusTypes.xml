@@ -219,7 +219,8 @@
             <item label="未支付" value="1"></item>
             <item label="已预付" value="2"></item>
             <item label="已支付" value="3"></item>
-
+            <item label="待退款" value="4"></item>
+            <item label="已退款" value="5"></item>
         </statusType>
         <statusType fileName="processStatus" required="false">
             <item label="待接单" value="1"></item>
@@ -227,7 +228,7 @@
             <item label="专家确认" value="3"></item>
             <item label="用户取消" value="4"></item>
             <item label="服务进行中" value="5"></item>
-            <item label="服务完成" value="6"></item>
+            <item label="服务结束待确认" value="6"></item>
             <item label="已完成" value="9"></item>
         </statusType>
     </entity>

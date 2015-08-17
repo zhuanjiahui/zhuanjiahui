@@ -311,12 +311,10 @@ public class OrderPaymentController {
         String decryptData= AESUtil.decrypt(data,ZGTService.getKeyValue().substring(0,16));
         Map<String ,String> map= (Map)JSONObject.parse(decryptData);
         if(Integer.parseInt(map.get("code"))==1){
-            String paymentId=map.get("requestId");
+            String paymentId=map.get("requestid");
             //支付成功后修改订单、支付记录和档期状态
             orderManager.successPay(paymentId);
-        }else {
-
         }
-        return "/pc/purchaseOrder/myOrders";
+        return "redirect:/pc/purchaseOrder/myOrders";
     }
 }

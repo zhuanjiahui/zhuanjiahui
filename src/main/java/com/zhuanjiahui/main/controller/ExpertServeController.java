@@ -160,8 +160,10 @@ public class ExpertServeController extends BaseController{
         PageEntity pageEntity=this.getPageEntity(request);
         String words=request.getParameter("words");
         PageInfo pageInfo =expertServeManager.searchExpertServe(pageEntity,words);
+        List<Object> listPageExperts=expertManager.getHomeExpert(4);
         modelMap.put("pageInfo",pageInfo);
         modelMap.put("pageEntity",pageEntity);
+        modelMap.put("listPageExperts",listPageExperts);
         return "/main/expertServeList";
     }
     @RequestMapping(value = "/JLoad")

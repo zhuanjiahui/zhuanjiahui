@@ -218,7 +218,7 @@
     <div class="query-column1-0 fl">
         <div class="query-column1-0-1">
             <a href="/pc/activity/view?activityId=${activity.id}">
-                <img src="http://pic.591zjh.com/${activity.user2.pictureUrl}" alt="活动查询页专家">
+                <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_360h_460w" alt="活动查询页专家">
             </a>
         </div>
         <div class="query-column1-0-2">
@@ -248,7 +248,7 @@
 <div class="query-column2">
     <div class="query-column2-1">
         <a href="/pc/activity/view?activityId=${activity.id}">
-            <img src="http://pic.591zjh.com/${activity.user2.pictureUrl}" alt="活动查询ad图">
+            <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_190w" alt="活动查询ad图">
             <!-- hover部分 -->
 							<span class="a-span">
 								<span class="a-span1">${activity.activityDate}</span>

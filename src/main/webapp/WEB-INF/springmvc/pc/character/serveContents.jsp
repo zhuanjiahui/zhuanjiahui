@@ -425,11 +425,9 @@
         $("#total").html(price+"元");
     }
 
-    function loadServe(){
-        var expertId=${expert.id};
-        var serveType=$("select[name='serveType']").val();
+    function loadServe(expertId,serveType){
         $.ajax({
-            url:"/pc/expertServe/load",
+            url:"/pc/expertServe/JLoad",
             type:"post",
             data:{
                 expertId:expertId,
@@ -440,8 +438,8 @@
                 $("#serves").empty();
                 for(var i=0;i<data.length;i++){
                     $("#serves").append("<div class=\"pop-up-ed-tr\"><div class=\"pop-up-ed-td-l3\">"+
-                            "服务：</div><input type=radio name=\"serveId\" class=\"pop-up-ed-td-r31\" value=\""+data[i].id+"\" "+
-                            "onclick=\"sureServe("+data[i].id+","+data[i].price+","+data[i].cheaf+","+data[i].discount+");\">"+
+                            "服务:</div><input type=\"radio\" name=\"serveId\" class=\"pop-up-ed-td-r31\" value=\""+data[i].id+"\" "+
+                            "onclick=\"sureServe('"+data[i].id+"',"+data[i].price+","+data[i].cheaf+","+data[i].discount+");\">"+
                             "<div class=\"pop-up-ed-td-r32\">"+data[i].name+" - "+data[i].price+"元/天</div></div>");
 
                 }
