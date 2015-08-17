@@ -94,3 +94,14 @@
 .footer-ul2 li{float:left;}
 .footer-ul2 li a{font-size: 14px;color:#6b6b6b;margin:0 20px;line-height: 40px;}
 .footer p{color:#6b6b6b;line-height: 40px;text-align: center;}
+
+/*万云 2015.08.17 个人信息查看页面重写*/
+.personInfo{width:100%;padding:0 30px;font-size:12.5px;color:#666;position:relative;}
+.personInfo>ul{width:100%;margin-bottom: 25px;padding-bottom: 20px;border-bottom: 1px solid #E4E4E4;}
+.personInfo>ul:last-child{border:none;margin-bottom: 66px;}
+.personInfo>ul>li>p,.personInfo>ul>li>div{display: inline-block;line-height: 50px;vertical-align: top;}
+.personInfo>ul>li>p:first-child,.personInfo>ul>li>div:first-child{width:66px;text-align:right;}
+.personInfo>ul>li>p:last-child{text-indent:10px;}
+.personInfo>ul>li>div:last-child{width:750px;line-height: 28px;padding-left: 10px;padding-top: 12px;}
+.perInfoEdit{position:absolute;top:-60px;right:88px;z-index:3;color:#26C2FF;font-size:16px;}
+.perInfoPhoto{position:absolute;top:-50px;right:222px;z-index:3;width:160px;height:160px;border-radius:80px;border:8px solid rgba(0,0,0,.22);}

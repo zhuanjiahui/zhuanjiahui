@@ -19,11 +19,11 @@
     <script type="text/javascript" src="/scripts/zjh/zjh-public.js"></script>
     <script type="text/javascript">
         function autoScroll(obj){
-            $(obj).find("ul").find("li:first").css('color','transparent');
+            $(obj).find("ul li:first-child a div").css('color','transparent');
             $(obj).find("ul").animate({
                 marginTop : "-39px"
             },500,function(){
-                $(this).css({marginTop : "0px"}).find("li:first").css('color','#666').appendTo(this);
+                $(this).css({marginTop : "0px"}).find("li:first-child").appendTo(this).find("a div").css("color","#666");
             })
         }
         $(function(){

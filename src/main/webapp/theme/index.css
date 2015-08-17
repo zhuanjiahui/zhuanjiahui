@@ -586,7 +586,7 @@ a:hover .footer-sub-2-but{background-color: #00bdff;color: #fff;}
 .column2-sub .text1{font-size:15px!important;}
 .column6-content{box-sizing:border-box;height:130px!important;padding:12px 0 15px 0;}
 .column6-content-1{box-sizing:border-box;height:100%!important;overflow:visible!important;}
-.column6-content-1>li{position:relative;display:inline-block;border:1px solid #bbb;height:100%!important;width:180px;margin:0 3px;padding:10px;box-sizing:border-box;overflow:visible!important;-webkit-box-shadow:inset 0 0 12px #bbb;-moz-box-shadow:inset 0 0 12px #bbb;box-shadow:inset 0 0 12px #bbb;}
+.column6-content-1>li{position:relative;display:inline-block;border:1px solid #bbb;height:100%!important;width:185px;margin:0 3px;padding:10px;box-sizing:border-box;overflow:visible!important;-webkit-box-shadow:inset 0 0 12px #bbb;-moz-box-shadow:inset 0 0 12px #bbb;box-shadow:inset 0 0 12px #bbb;}
 .column6-content-1>li:hover{-webkit-box-shadow:inset 0 0 12px #777;-moz-box-shadow:inset 0 0 12px #777;box-shadow:inset 0 0 12px #777;}
 .column6-content-1>li>a>dl{float:none!important;display:block!important;height:100%!important;border:none!important;}
 .column6-content-1 img{position:absolute;top:10px;left:12px;}

@@ -231,7 +231,7 @@
                     </div>
                     <div class="sc-td-l">
                         <span>课程:</span>
-                        <select id="course" name="courseType">
+                        <select id="course" name="courseType" style="width:75px;">
                             <option value="">请选择</option>
                         </select>
                     </div>
@@ -240,7 +240,7 @@
                 <div class="sc-tr">
 
                     <input name="serveType" value="train" type="hidden">
-                    <div class="sc-td-r"><span>服务标题：</span><input type="text" name="name"></div>
+                    <div class="sc-td-r"><span>服务标题：</span><input type="text" name="name" style="width:215px;"></div>
                     <div class="sc-td-l">
                         <span>培训年限:</span>
                         <select name="workTime">
@@ -271,7 +271,7 @@
                 </div>
                 <div class="sc-tr">
 
-                    <div class="sc-td-l"><span>服务报价:</span><input  type="text" name="price"></div>
+                    <div class="sc-td-l"><span>服务报价:</span><input  type="text" name="price" style="width:90px;"></div>
                     <div class="sc-td-l">
                         <span>半天折扣:</span>
                         <select name="discount"  required="true">
@@ -298,9 +298,7 @@
                     </div>
                 </div>
                 <div class="sc-tr">
-
-                    <div class="sc-td-l"><span>服务过的客户：</span><input type="text" name="servedConsumer" size="255"></div>
-                    <br/>
+                    <div class="sc-td-l"><span>服务过的客户：</span><input type="text" name="servedConsumer" style="width:422px;"></div>
                 </div>
                 <div class="editorBox"><textarea id="content" class="ckeditor" name="content">
 
@@ -390,17 +388,14 @@
                 </div>
                 <div class="sc-tr">
                     <div class="sc-td-l">报价：</div>
+                    <div class="sc-td-r" style="font-size:13px;">
+                        <input type="text" name="price" style="width:114px;">元/天
+                    </div>
+                    <div class="sc-td-l" style="margin-left: 25px;">客户名称：</div>
                     <div class="sc-td-r">
-                        <input style="width:120px;" type="text" name="price">元/天
+                        <input name="servedConsumer" style="width:165px;" type="text" size="255">
                     </div>
                 </div>
-                <div class="sc-tr">
-                    <div class="sc-td-l">客户名称：</div>
-                    <div class="sc-td-r">
-                        <input name="servedConsumer" style="width:318px;" type="text" size="255">
-                    </div>
-                </div>
-
                 <div class="sc-xx"></div>
                 <div><button class="sc-but1" onclick="submitForm('consult')">添加咨询</button></div>
             </div>
@@ -480,15 +475,16 @@
                 </div>
                 <div class="sc-tr">
                     <div class="sc-td-l">报价：</div>
-                    <div class="sc-td-r">
+                    <div class="sc-td-r" style="font-size: 13px;">
                         <input style="width:120px;" type="text" name="price">元/天
+                    </div>
+                    <div class="sc-td-l" style="margin-left: 20px;">项目名称：</div>
+                    <div class="sc-td-r">
+                        <input name="servedConsumer" style="width:170px;" type="text">
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">项目名称：</div>
-                    <div class="sc-td-r">
-                        <input name="servedConsumer" style="width:318px;" type="text" size="255">
-                    </div>
+
                 </div>
                 <div class="sc-xx"></div>
                 <div><button class="sc-but1" onclick="submitForm('development');">添加开发</button></div>
