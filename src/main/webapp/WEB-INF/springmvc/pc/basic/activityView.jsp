@@ -163,14 +163,14 @@
                     ${activity.realCount}/${activity.userNumber} 人
                 </div>
                 <div class="column1-2-2">
-                    人气：${activity.visitCount}
+                    人气:${activity.visitCount}
                 </div>
                 <div class="column1-2-3">
                     出席专家
                 </div>
             </div>
             <div class="column1-3">
-                <div>报名费用：${activity.price}元</div>
+                <div>报名费用:${activity.price}元</div>
                 <div>
                     <a href="#" onclick="joinActivity('${activity.id}')">立即报名</a>
                 </div>
@@ -328,7 +328,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

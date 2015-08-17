@@ -155,7 +155,7 @@
 </div>
 <div class="content-head clear">
     <span class="content-head1">hi,你好,jay123</span>
-    <span class="content-head2">上次登录时间：2015.6.30</span>
+    <span class="content-head2">上次登录时间:2015.6.30</span>
 </div>
 <div class="content-body">
     <ul class="body-nav">
@@ -197,7 +197,7 @@
 
         </div>
         <div class="aem-td-3">
-            专家报价：<span style="color:#ed7027;">${expert.minPrice} - ${maxPrice}</span>元<br><br>
+            专家报价:<span style="color:#ed7027;">${expert.minPrice} - ${maxPrice}</span>元<br><br>
             <span class="aem-td-31">${expert.memo}</span>
         </div>
         <div class="aem-td-4">
@@ -272,7 +272,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -326,10 +326,10 @@
 
 <div class="ms1-but-sq">收起</div>
 <div class="pop-up-ts1">
-    <span style="color:#00bdff;">蓝色</span>：可约
-    <span style="color:#ec6618;">橙色</span>：抢约
-    <span style="color:#c5c8c9;">灰色</span>：不可约
-    <span style="color:#646464;">黑色</span>：已支付订单
+    <span style="color:#00bdff;">蓝色</span>:可约
+    <span style="color:#ec6618;">橙色</span>:抢约
+    <span style="color:#c5c8c9;">灰色</span>:不可约
+    <span style="color:#646464;">黑色</span>:已支付订单
 </div>
 <%--<div><button  class="pop-but1">保存</button></div>--%>
 <div class="pop-up-line"></div>

@@ -238,7 +238,7 @@
 </div>
 <div class="content-head clear">
     <span class="content-head1">hi,你好,${myUser.name}</span>
-    <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+    <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
 </div>
 <div class="content-body">
 <ul class="body-nav">
@@ -256,7 +256,7 @@
 <input id="picUrl" type="hidden" name="pictureUrl" value="${expert.pictureUrl}">
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        姓名：
+        姓名:
     </div>
     <div class="pi-inf-td-r">
         <input class="pi-input-css" type="text" value="${expert.name}" name="name"/>
@@ -264,7 +264,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        性别：
+        性别:
     </div>
     <div class="pi-inf-td-r">
         <zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${expert.gender}"></zjh:status>
@@ -310,7 +310,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        所在公司：
+        所在公司:
     </div>
     <div class="pi-inf-td-r">
         <input class="pi-input-css" type="text" value="${expert.companyName}" name="companyName"/>
@@ -319,7 +319,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        公司地址：
+        公司地址:
     </div>
     <div class="pi-inf-td-r">
         <input class="pi-input-css" type="text" value="${expert.companyAddress}" name="companyAddress"/>
@@ -327,7 +327,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        现任职务：
+        现任职务:
     </div>
     <div class="pi-inf-td-r">
         <input class="pi-input-css" type="text" value="${expert.preposition}" name="preposition"/>
@@ -363,7 +363,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="industry">
-        <label>行业：</label>
+        <label>行业:</label>
         <ul class="industryElem">
             <li><input type="checkbox" name="industrys" value="khy">跨行业</li>
             <li><input type="checkbox" name="industrys" value="hlw">互联网</li>
@@ -393,7 +393,7 @@
 <br/><br/>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        关键字：
+        关键字:
     </div>
     <div class="pi-inf-td-r">
         <input name="keywords" class="pi-input-css pi-guaniianz"  type="text" value="" placeholder="方便搜索到您"/>
@@ -404,7 +404,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        风格标签：
+        风格标签:
     </div>
     <div class="pi-inf-td-r">
         <input name="styleLabels" class="pi-input-css pi-guaniianz"  type="text" value="" placeholder="方便查找到您"/>
@@ -415,7 +415,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        联系电话：
+        联系电话:
     </div>
     <div class="pi-inf-td-r">
         <input name="phone" class="pi-input-css" type="text" value="${expert.phone}"/>
@@ -423,7 +423,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        邮箱：
+        邮箱:
     </div>
     <div class="pi-inf-td-r">
         <input name="email" class="pi-input-css" type="text" value="${expert.email}"/>
@@ -431,7 +431,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        常驻地：
+        常驻地:
     </div>
     <div class="pi-inf-td-r">
         <select class="pi-box-four" name="provinceId" required="true">
@@ -445,7 +445,7 @@
 
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        区间报价：
+        区间报价:
     </div>
     <div class="pi-inf-td-r">
         <input name="minPrice" class="pi-jiaqian" type="text" value="${expert.minPrice}"/>——
@@ -454,7 +454,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        个人描述：
+        个人描述:
     </div>
     <div class="pi-inf-td-r">
         <input name="memo" class="pi-input-css pi-gerenmiaoshu" type="text" value="${expert.memo}" placeholder="用一句话描述下自己"/>
@@ -462,7 +462,7 @@
 </div>
 <div class="pi-inf-tr">
     <div class="pi-inf-td-l">
-        个人简介：
+        个人简介:
     </div>
     <div class="pi-inf-td-r">
         <textarea name="introduce" class="pi-size-inp" type="text" placeholder="详细的介绍下自己">${expert.introduce}</textarea>
@@ -474,7 +474,7 @@
 <div id="" class="pi-wz-zj"><span id="expertPicUpload">上传头像</span></div>
 <%--  <div class="pi-inf-tr">
       <div class="pi-inf-td-l">
-          认证信息：
+          认证信息:
       </div>
       <div class="pi-inf-td-r">
           <div class="pi-certification">上传身份证扫描件</div>
@@ -519,13 +519,13 @@
         <div class="pi-inf-tr">
             <input type="hidden" name="expertId" value="${expert.id}">
             <div class="pi-inf-td-l">
-                公司名称：
+                公司名称:
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" name="name" type="text" value=""/>
             </div>
             <div class="pi-inf-td-l">
-                行业：
+                行业:
             </div>
             <div class="pi-inf-td-r">
                 <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
@@ -533,7 +533,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                起止年月：
+                起止年月:
             </div>
             <div class="pi-inf-td-r">
                 <input type="text" class="Wdate"  name="startDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
@@ -544,7 +544,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                职务：
+                职务:
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" type="text" name="position" value=""/>
@@ -552,7 +552,7 @@
         </div>
      <%--   <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                公司官网：
+                公司官网:
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" type="text" name="homeUrl" value=""/>
@@ -560,7 +560,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                公司地址：
+                公司地址:
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" type="text" name="address" value=""/>
@@ -568,7 +568,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                公司简介：
+                公司简介:
             </div>
             <div class="pi-inf-td-r">
                 <textarea name="introduce" class="pi-size-inp" type="text" placeholder="公司介绍"></textarea>
@@ -636,7 +636,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

@@ -164,7 +164,7 @@
             </div>
             <div class="content-head clear">
                 <span class="content-head1">hi,中午好,${myUser.name}</span>
-                <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+                <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
             </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -179,18 +179,18 @@
                         <div class="am-w1">
                             <div class="am-wz1">${activity.name}</div>
                             <div class="am-wz2"><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${activity.industry}"></zjh:status> </div>
-                            <div class="am-wz3">活动类型：<span class="am-c1"><zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span></div>
+                            <div class="am-wz3">活动类型:<span class="am-c1"><zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span></div>
                         </div>
                         <div class="am-w2">
-                            <div class="am-wz1">费用：<span class="am-c2">￥${activity.price}元</span></div>
-                            <div class="am-wz2">发布时间：${activity.createDatetime}</div>
-                            <div class="am-wz3">地点：${activity.address}</div>
+                            <div class="am-wz1">费用:<span class="am-c2">￥${activity.price}元</span></div>
+                            <div class="am-wz2">发布时间:${activity.createDatetime}</div>
+                            <div class="am-wz3">地点:${activity.address}</div>
 
                         </div>
                         <div class="am-w3">
                             <div class="am-w3">
-                                <div class="am-wz1">参加人数：<span class="am-c2">${activity.realCount}/${activity.userNumber}</span></div>
-                                <div class="am-wz2">活动时间：${activity.activityDate}</div>
+                                <div class="am-wz1">参加人数:<span class="am-c2">${activity.realCount}/${activity.userNumber}</span></div>
+                                <div class="am-wz2">活动时间:${activity.activityDate}</div>
                             </div>
                         </div>
                         <div class="am-w4">
@@ -266,7 +266,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

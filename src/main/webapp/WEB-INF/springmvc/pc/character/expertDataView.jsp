@@ -177,55 +177,160 @@
     <img src="/images/duihao.gif">
     完善个人资料信息
 </div>
-    <!--万云 2015.08.17 个人信息查看页面重写-->
-    <div class="personInfo">
-        <a href="/pc/expert/editPersonal" class="perInfoEdit">编辑</a>
-        <img src="http://pic.591zjh.com/${expert.pictureUrl}" class="perInfoPhoto">
-        <ul>
-            <li><p>姓名：</p><p>${expert.name}</p></li>
-            <li><p>性别：</p><p><zjh:status name="gender" dataType="Expert.gender" type="normal" checkedValue="${expert.gender}"></zjh:status></p></li>
-            <li><p>出生日期：</p><p><fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate></p></li>
-        </ul>
-        <ul>
-            <li><p>所在公司：</p><p>${expert.companyName}</p></li>
-            <li><p>公司地址：</p><p>${expert.companyAddress}</p></li>
-            <li><p>现任职务：</p><p>${expert.preposition}</p></li>
-            <li><p>最高职务：</p><p>${expert.chief}</p></li>
-            <li><p>工作年限：</p><p> ${expert.workTime}</p></li>
-            <li>
-                <p>风格标签：</p>
-                <p>
-                    <c:forEach items="${expert.styleLabelList}" var="styleLable">
-                        ${styleLable.label}&nbsp;
-                    </c:forEach>
-                </p>
-            </li>
-            <li>
-                <p>行业：</p>
-                <p>
-                    <c:forEach items="${expert.expertIndustryList}" var="expertIndustry">
-                        <zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expertIndustry.industry}"></zjh:status>&nbsp;
-                    </c:forEach>
-                </p>
-            </li>
-            <li>
-                <p>关键字：</p>
-                <p>
-                    <c:forEach items="${expert.keywordsList}" var="keyword">
-                        ${keyword.words}
-                    </c:forEach>
-                </p>
-            </li>
-        </ul>
-        <ul>
-            <li><p>联系电话：</p><p>${expert.phone}</p></li>
-            <li><p>邮箱：</p><p>${expert.email}</p></li>
-            <li><p>常驻地：</p><p>${expert.province.name}</p></li>
-            <li><p>个人描述：</p><p>${expert.memo}</p></li>
-            <li><div>个人简介：</div><div>${expert.introduce}
-            </div></li>
-        </ul>
+<div class="pi-inf-table">
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        姓名：
     </div>
+    <div class="pi-inf-td-r">
+        ${expert.name}
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        性别：
+    </div>
+    <div class="pi-inf-td-r">
+        <zjh:status name="gender" dataType="Expert.gender" type="normal" checkedValue="${expert.gender}"></zjh:status>
+    </div>
+
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        出生日期:
+    </div>
+    <div class="pi-inf-td-r">
+        <fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>
+    </div>
+</div>
+
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        所在公司：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.companyName}
+    </div>
+
+</div>
+<div class="pi-inf-tr">
+        <div class="pi-inf-td-l">
+            工作年限：
+        </div>
+        <div class="pi-inf-td-r">
+            ${expert.workTime}
+        </div>
+
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        公司地址：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.companyAddress}
+
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        现任职务：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.preposition}
+
+    </div>
+
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        最高职务：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.chief}
+    </div>
+
+</div>
+
+<div class="pi-inf-tr">
+    <div class="industry">
+        <label>行业：</label>
+        <c:forEach items="${expert.expertIndustryList}" var="expertIndustry">
+            <zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expertIndustry.industry}"></zjh:status>&nbsp;
+        </c:forEach>
+
+    </div>
+</div>
+<br/><br/>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        关键字：
+    </div>
+    <div class="pi-inf-td-r">
+        <c:forEach items="${expert.keywordsList}" var="keyword">
+            ${keyword.words}&nbsp;
+        </c:forEach>
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        风格标签：
+    </div>
+    <div class="pi-inf-td-r">
+            <c:forEach items="${expert.styleLabelList}" var="styleLable">
+                ${styleLable.label}&nbsp;
+            </c:forEach>
+
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        联系电话：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.phone}
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        邮箱：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.email}
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        常驻地：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.province.name}
+
+    </div>
+</div>
+
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        个人描述：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.memo}
+    </div>
+</div>
+<div class="pi-inf-tr">
+    <div class="pi-inf-td-l">
+        个人简介：
+    </div>
+    <div class="pi-inf-td-r">
+        ${expert.introduce}
+    </div>
+</div>
+<div class="pi-imgs-zj">
+    <img src="http://pic.591zjh.com/${expert.pictureUrl}">
+</div>
+<div class="pi-wz-zj">头像</div>
+
+<div><a href="/pc/expert/editPersonal"><button class="pi-but2">编辑 </button></a></div>
+
 </div>
 </div>
 </div>

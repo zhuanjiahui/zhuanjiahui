@@ -158,7 +158,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,你好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -176,7 +176,7 @@
                     <div class="pi-inf-table">
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                姓名：
+                                姓名:
                             </div>
                             <div class="pi-inf-td-r">
                                 ${expert.name}
@@ -184,7 +184,7 @@
                         </div>
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                性别：
+                                性别:
                             </div>
                             <div class="pi-inf-td-r">
                                 <zjh:status name="gender" dataType="Expert.gender" type="normal" checkedValue="${expert.gender}"></zjh:status>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                出生年月：
+                                出生年月:
                             </div>
                             <div class="pi-inf-td-r">
                                 <fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM"></fmt:formatDate>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                联系电话：
+                                联系电话:
                             </div>
                             <div class="pi-inf-td-r">
                                 ${expert.phone}
@@ -208,7 +208,7 @@
                         </div>
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                邮箱：
+                                邮箱:
                             </div>
                             <div class="pi-inf-td-r">
                                 ${expert.email}
@@ -216,7 +216,7 @@
                         </div>
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                常驻地：
+                                常驻地:
                             </div>
                             <div class="pi-inf-td-r">
                                 ${expert.province.name}
@@ -225,7 +225,7 @@
 
                         <div class="pi-inf-tr">
                             <div class="pi-inf-td-l">
-                                个人简介：
+                                个人简介:
                             </div>
                             <div class="pi-inf-td-r">
                                 ${expert.memo}
@@ -233,7 +233,7 @@
                         </div>
                     </div>
                     <div class="pi-imgs">
-                        <img src="http://pic.591zjh.com/${expert.pictureUrl}">
+                        <img src="http://pic.591zjh.com/${expert.pictureUrl}@_190w">
                     </div>
 
                     <div class="pi-line"></div>
@@ -246,7 +246,7 @@
                 <div class="pi-inf-table">
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            公司名称：
+                            公司名称:
                         </div>
                         <div class="pi-inf-td-r">
                             ${expert.companyName}
@@ -255,7 +255,7 @@
 
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            公司地址：
+                            公司地址:
                         </div>
                         <div class="pi-inf-td-r">
                             ${expert.companyAddress}
@@ -263,7 +263,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            所属行业：
+                            所属行业:
                         </div>
                         <div class="pi-inf-td-r">
                             <zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expert.industry}"></zjh:status>
@@ -271,7 +271,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            公司简介：
+                            公司简介:
                         </div>
                         <div class="pi-inf-td-r">
                             ${expert.companyMemo}
@@ -336,7 +336,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

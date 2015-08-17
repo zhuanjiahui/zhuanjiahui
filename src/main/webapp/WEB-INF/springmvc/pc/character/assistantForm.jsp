@@ -234,7 +234,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,你好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -253,7 +253,7 @@
                     <input id="picUrl" name="pictureUrl" type="hidden" value="${assistant.pictureUrl}">
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            姓名：
+                            姓名:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="name" class="pi-input-css" type="text" value="${assistant.name}"/>
@@ -261,7 +261,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            性别：
+                            性别:
                         </div>
                         <div class="pi-inf-td-r">
                            <zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${assistant.gender}"></zjh:status>
@@ -269,7 +269,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            出生年月：
+                            出生年月:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="birthdayDate" class="Wdate" type="text"  value="<fmt:formatDate value="${assistant.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
@@ -277,7 +277,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            联系电话：
+                            联系电话:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="phone" class="pi-input-css" type="text" value="${assistant.phone}"/>
@@ -285,7 +285,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            邮箱：
+                            邮箱:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="email" class="pi-input-css" type="text" value="${assistant.email}"/>
@@ -293,7 +293,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            常住地：
+                            常住地:
                         </div>
                         <div class="pi-inf-td-r">
                             <select class="pi-box-four" name="provinceId">
@@ -306,7 +306,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            描述：
+                            描述:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="memo" class="pi-input-css pi-gerenmiaoshu" type="text" value="${assistant.memo}" placeholder="一句话描述自己"/>
@@ -378,7 +378,7 @@
                 </li>
                 <li class="ul1-li4">
                     <div class="footer-ul1-title">客服热线</div>
-                    <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                    <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                     <div class="footer-ul1-con biancu">010-51591591</div>
                 </li>
             </ul>

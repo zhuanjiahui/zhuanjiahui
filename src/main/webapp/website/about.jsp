@@ -117,10 +117,10 @@
         </p>
 
         <p style="margin: 0px; padding: 0px; border: 0px; color: rgb(57, 57, 57); font-family: 'Microsoft YaHei'; line-height: 20px; text-align: justify; background-color: rgb(255, 255, 255);">
-            地址：北京市海淀区上地信息路甲28号科实大厦B座13C<br style="margin: 0px; padding: 0px; border: 0px;">邮编：100085&nbsp;<br
+            地址:北京市海淀区上地信息路甲28号科实大厦B座13C<br style="margin: 0px; padding: 0px; border: 0px;">邮编:100085&nbsp;<br
                 style="margin: 0px; padding: 0px; border: 0px;"><span
-                style="font-size: 10.5pt;">电话：010-51668767&nbsp;</span><br><span
-                style="font-size: 10.5pt;">Email：</span><a href="mailto:contact@ming800.com"
+                style="font-size: 10.5pt;">电话:010-51668767&nbsp;</span><br><span
+                style="font-size: 10.5pt;">Email:</span><a href="mailto:contact@ming800.com"
                                                            style="font-size: 10.5pt; margin: 0px; padding: 0px; border: 0px; color: rgb(0, 89, 191); text-decoration: none;">contact@ming800.com&nbsp;</a>
         </p></div>
 </div>

@@ -194,11 +194,11 @@
                     <span class="uod-ul-1-1"><zjh:status name="payStatus" dataType="PurchaseOrder.payStatus" type="normal" checkedValue="${purchaseOrder.payStatus}"></zjh:status> </span>
                 </div>
                 <div class="uod-ul-3">
-                    <span>订单编号：${purchaseOrder.serial}</span>
-                    <span>生成时间：<fmt:formatDate value="${purchaseOrder.createDatetime}" pattern="yyyy-MM-dd hh:mm:ss"></fmt:formatDate> </span>
+                    <span>订单编号:${purchaseOrder.serial}</span>
+                    <span>生成时间:<fmt:formatDate value="${purchaseOrder.createDatetime}" pattern="yyyy-MM-dd hh:mm:ss"></fmt:formatDate> </span>
                 </div>
                 <div class="uod-ul-4">
-                    <span>订单状态：<zjh:status name="processStatus" dataType="PurchaseOrder.processStatus" type="normal" checkedValue="${purchaseOrder.processStatus}"></zjh:status></span>
+                    <span>订单状态:<zjh:status name="processStatus" dataType="PurchaseOrder.processStatus" type="normal" checkedValue="${purchaseOrder.processStatus}"></zjh:status></span>
                 </div>
             </li>
             <li class="uod-position">
@@ -208,38 +208,40 @@
                 <div class="uod-ul-5">
                     <dl>
                         <dt>
-                            <img src="/images/mr-people.png" alt="订单页专家信息">
+                            <img src="http://pic.591zjh.com/${purchaseOrder.expert2.pictureUrl}" alt="订单页专家信息">
                         </dt>
                         <dd class="uod-ul-5-1">${purchaseOrder.expert2.name}</dd>
-                        <dd>类别：<zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.expertServe.serveType}"></zjh:status> </dd>
+                        <dd>类别:<zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.expertServe.serveType}"></zjh:status> </dd>
                         <dd>
                             <span>行业:<zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${purchaseOrder.expertServe.industry}"></zjh:status> </span>
                         </dd>
-                        <dd class="uod-ul-5-2">服务：<span>${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天</span>
-                            <span>服务时间：<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span>
+                        <dd class="uod-ul-5-2">服务:<span>${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天</span>
+                            <span>服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span>
                             <span><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status> </span>
                         </dd>
 
                     </dl>
                 </div>
                 <div class="uod-ul-6">
-						<span>应付金额：
+						<span>应付金额:
 							<i>${purchaseOrder.total}元</i>
 						</span>
                 </div>
             </li>
             <li>
                 <div class="uod-ul-7">
-                    <span>订单备注：</span>
+                    <span>订单备注:</span>
                     <span>${purchaseOrder.memo}</span>
                 </div>
                 <div class="uod-ul-8">
-                    <span class="uod-ul-8-1">已支付：
+                    <span class="uod-ul-8-1">已支付:
                         <c:if test="${purchaseOrder.payStatus==1}"><i>0元</i></c:if>
                         <c:if test="${purchaseOrder.payStatus==2}"><i>${purchaseOrder.total*0.5}元</i></c:if>
                         <c:if test="${purchaseOrder.payStatus==2}"><i>${purchaseOrder.total}元</i></c:if>
                     </span>
-                    <a class="uod-ul-8-2" href="javascript:history.go(-1);">返 回</a>
+<%--
+                    <a class="uod-ul-8-2" href="javascript:history.back();">返 回</a>
+--%>
                 </div>
 
             </li>
@@ -299,7 +301,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

@@ -155,13 +155,13 @@
             <!-- 右边部分 -->
             <div class="footer-sub-right">
                 <h1>联系我们</h1>
-                <p>总裁邮箱：xiayu@591zjh.com</p>
+                <p>总裁邮箱:xiayu@591zjh.com</p>
                 <p>公司总部</p>
-                <p>地址：珠江摩尔国际大厦16层</p>
-                <p>邮编：100000</p>
-                <p>电话：010-59505007</p>
-                <p>传真：010-59505007</p>
-                <p>邮箱：lixin@591zjh.com</p>
+                <p>地址:珠江摩尔国际大厦16层</p>
+                <p>邮编:100000</p>
+                <p>电话:010-59505007</p>
+                <p>传真:010-59505007</p>
+                <p>邮箱:lixin@591zjh.com</p>
             </div>
         </div>
     </div>
@@ -218,7 +218,7 @@
                 </li>
                 <li class="ul1-li4">
                     <div class="footer-ul1-title">客服热线</div>
-                    <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                    <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                     <div class="footer-ul1-con biancu">010-51591591</div>
                 </li>
             </ul>

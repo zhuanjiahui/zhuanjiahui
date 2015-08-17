@@ -211,7 +211,7 @@ public class OrderPaymentController {
         }
         baseManager.saveOrUpdate(PurchaseOrderPayment.class.getName(),purchaseOrderPayment);
         String amount=purchaseOrderPayment.getPayed().toString();
-        String callbackurl ="http://locolhost:8080/pc/payBack";
+        String callbackurl ="http://1.202.165.225:8080/pc/payBack";
         Map<String,String> map=new HashMap<String,String>();
         map.put("requestid",purchaseOrderPayment.getId());
         map.put("amount","0.01");

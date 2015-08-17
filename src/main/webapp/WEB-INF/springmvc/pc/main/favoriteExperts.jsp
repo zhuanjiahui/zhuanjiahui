@@ -163,7 +163,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
 <div class="content-body">
     <ul class="body-nav">
@@ -272,7 +272,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

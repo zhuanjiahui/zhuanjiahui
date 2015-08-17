@@ -163,7 +163,7 @@
 <div class="expertDetailBottom">
 <!-- 左侧介绍 -->
 <div class="expertDetailLeft">
-    <p class="expertId">ID：<span>${expert.idNo}</span></p>
+    <p class="expertId">ID:<span>${expert.idNo}</span></p>
     <ul class="starAndNum">
         <li>
             <ul class="star">
@@ -187,7 +187,7 @@
                     <li><fmt:formatDate value="${company.startDate}" pattern="yyyy-MM-dd"></fmt:formatDate>至
                         <fmt:formatDate value="${company.endDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </li>
                     <li>${company.name}</li>
-                    <li>职务：<span>${company.position}</span></li>
+                    <li>职务:<span>${company.position}</span></li>
                 </ul>
             </li>
         </c:forEach>
@@ -195,7 +195,7 @@
 </div>
 <!-- 主介绍区 -->
 <div class="appointment">
-    <p class="tips">友情提示：预约时请查看专家位置，留给专家路程时间，避免订单流产 </p>
+    <p class="tips">友情提示:预约时请查看专家位置，留给专家路程时间，避免订单流产 </p>
     <div class="calendar" style="position:relative;top:-36px;">
         <div class="ms-table">
             <div class="ms-table-l">
@@ -255,7 +255,7 @@
 
 
     </div>
-    <p class="legend"><span style="color:#00bcfd;">蓝色</span><span>：可约</span><span style="color:#fc5e02;">橙色</span><span>：抢约</span><span style="color:gray;">灰色</span><span>：不可约</span></p>
+    <p class="legend"><span style="color:#00bcfd;">蓝色</span><span>:可约</span><span style="color:#fc5e02;">橙色</span><span>:抢约</span><span style="color:gray;">灰色</span><span>:不可约</span></p>
 </div>
 <form id="dateForm" action="/pc/expert/viewNextExpert" method="post">
     <input id="year" type="hidden" name="year" value="${year}">
@@ -278,11 +278,11 @@
             <li>
                 <ul class="expertDetialTypeElem1">
                     <li><a href="/pc/expertServe/listContent?expertId=${expert.id}#${expertServe.id}" >${expertServe.name}</a></li>
-                    <li>培训年限：<span>${expertServe.workTime}</span>年</li>
-                    <li>服务类型：<span>培训</span></li>
+                    <li>培训年限:<span>${expertServe.workTime}</span>年</li>
+                    <li>服务类型:<span>培训</span></li>
                 </ul>
                 <ul class="expertDetialTypeElem2">
-                    <li>课程：</li>
+                    <li>课程:</li>
                     <li>
                         <ul>
                             <li>
@@ -293,41 +293,41 @@
                         </ul>
                     </li>
                 </ul>
-                <p class="expertDetialTypeElem3">服务过的客户：<span>${expertServe.servedConsumer}</span></p>
+                <p class="expertDetialTypeElem3">服务过的客户:<span>${expertServe.servedConsumer}</span></p>
             </li>
         </c:if>
         <c:if test="${expertServe.serveType=='consult'}">
             <li>
                 <ul class="expertDetialTypeElem1">
                     <li>${expertServe.name}</li>
-                    <li>咨询年限：<span>${expertServe.workTime}</span>年</li>
-                    <li>服务类型：<span>咨询</span></li>
+                    <li>咨询年限:<span>${expertServe.workTime}</span>年</li>
+                    <li>服务类型:<span>咨询</span></li>
                 </ul>
                 <ul class="expertDetialTypeElem2 colorOrange">
-                    <li>咨询专业：</li>
+                    <li>咨询专业:</li>
                     <li>
                         <ul>
                             <li>
                                 <span><zjh:status name="major" dataType="ExpertServe.major" type="normal" checkedValue="${expertServe.major}"></zjh:status> </span>
-                                <span>行业：<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expertServe.industry}"></zjh:status></span></span>
+                                <span>行业:<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expertServe.industry}"></zjh:status></span></span>
                                 <span>${expertServe.price}/天</span>
                             </li>
 
                         </ul>
                     </li>
                 </ul>
-                <p class="expertDetialTypeElem3">服务过的客户：<span>${expertServe.servedConsumer}</span></p>
+                <p class="expertDetialTypeElem3">服务过的客户:<span>${expertServe.servedConsumer}</span></p>
             </li>
         </c:if>
         <c:if test="${expertServe.serveType=='development'}">
             <li>
                 <ul class="expertDetialTypeElem1">
                     <li>${expertServe.name}</li>
-                    <li>开发年限：<span>${expertServe.workTime}</span>年</li>
-                    <li>服务类型：<span>开发</span></li>
+                    <li>开发年限:<span>${expertServe.workTime}</span>年</li>
+                    <li>服务类型:<span>开发</span></li>
                 </ul>
                 <ul class="expertDetialTypeElem2">
-                    <li>擅长开发：</li>
+                    <li>擅长开发:</li>
                     <li>
                         <ul>
                             <li>
@@ -338,7 +338,7 @@
                         </ul>
                     </li>
                 </ul>
-                <p class="expertDetialTypeElem3">开发过的项目：<span>${expertServe.servedConsumer}</span></p>
+                <p class="expertDetialTypeElem3">开发过的项目:<span>${expertServe.servedConsumer}</span></p>
                 <p style="width:880px;height:30px;"></p>
             </li>
         </c:if>
@@ -347,7 +347,7 @@
 
 </ul>
 <div class="warmTips">
-    <p>友情提示：全额支付可享受优惠哦！</p>
+    <p>友情提示:全额支付可享受优惠哦！</p>
     <p>不是所有的专家支持半天服务！</p>
 </div>
 <%--
@@ -464,7 +464,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -482,7 +482,7 @@
 <div class="pop-up-ed-wapper">
     <form id="orderForm" action="/pc/purchaseOrder/create" method="post">
         <div class="pop-up-ed-tr">
-            <div class="pop-up-ed-td-l1">预约时间：<input id="orderTime" name="orderTime" value="" style="border: 0"></div>
+            <div class="pop-up-ed-td-l1">预约时间:<input id="orderTime" name="orderTime" value="" style="border: 0"></div>
             <div class="pop-up-ed-td-r34">
                 <zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="select" checkedValue="3" onchange="sureDayType();"></zjh:status>
             </div>
@@ -490,7 +490,7 @@
         </div>
         <div class="pop-up-ed-line"></div>
         <div class="pop-up-ed-tr">
-            <div class="pop-up-ed-td-l2">服务类型：</div>
+            <div class="pop-up-ed-td-l2">服务类型:</div>
             <div class="pop-up-ed-td-r2">
                 <zjh:status name="serveType" dataType="ExpertServe.serveType" type="select" checkedValue="" onchange="loadServe('${expert.id}',this.value);"></zjh:status>
             </div>
@@ -498,7 +498,7 @@
         <div id="serves">
             <c:forEach items="${expertServes}" var="expertServe">
                 <div class="pop-up-ed-tr">
-                    <div class="pop-up-ed-td-l3">服务：</div>
+                    <div class="pop-up-ed-td-l3">服务:</div>
 
                     <input type=radio name="serveId" class="pop-up-ed-td-r31" value="${expertServe.id}" onclick="sureServe('${expertServe.id}','${expertServe.price}','${expertServe.cheap}','${expertServe.discount}');">
                     <div class="pop-up-ed-td-r32"> <zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status>&nbsp;${expertServe.name} - ${expertServe.price}元/天</div>
@@ -506,7 +506,7 @@
             </c:forEach>
         </div>
         <div class="pop-up-ed-tr">
-            <div class="pop-up-ed-td-r44">应付：<span id="total" style="color:#ec6618;"></span></div>
+            <div class="pop-up-ed-td-r44">应付:<span id="total" style="color:#ec6618;"></span></div>
         </div>
         <div class="pop-up-ed-tr" >
             <div class="pop-up-ed-tdbut"><a href="javascript:void(0)" onclick="$('#orderForm').submit();">提交</a> </div>

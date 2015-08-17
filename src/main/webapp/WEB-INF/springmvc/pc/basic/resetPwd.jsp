@@ -163,7 +163,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -181,7 +181,7 @@
                     <form id="resetPwd" action="" method="post">
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            旧密码：
+                            旧密码:
                         </div>
                         <div class="cinf-td-r">
                             <input name="oldPassword" class="cinput-css" type="password" placeholder="输入密码"/>
@@ -189,7 +189,7 @@
                     </div>
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            新密码：
+                            新密码:
                         </div>
                         <div class="cinf-td-r">
                             <input name="newPassword" class="cinput-css" type="password" placeholder="输入密码"/>
@@ -197,7 +197,7 @@
                     </div>
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            确认密码：
+                            确认密码:
                         </div>
                         <div class="cinf-td-r">
                             <input class="cinput-css" type="password" placeholder="输入密码"/>
@@ -263,7 +263,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

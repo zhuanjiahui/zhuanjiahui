@@ -158,14 +158,14 @@
                         <div class="mr-con-2-0-1">
                             <span>${purchaseOrder.expert.name}</span>
                         </div>
-                        <div class="mr-con-2-0-2">类别：<zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status> </div>
+                        <div class="mr-con-2-0-2">类别:<zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status> </div>
 
                     </div>
                     <div class="mr-con-2-1">
                         <div class="mr-con-2-1-1">
-                            <span>服务：</span>
+                            <span>服务:</span>
                             <span>${purchaseOrder.expertServe.name} - ${purchaseOrder.total}元/天</span>
-                            <span>服务时间：</span>
+                            <span>服务时间:</span>
                             <span>${purchaseOrder.serveDatetime}</span>
                             <span><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status> </span>
                         </div>
@@ -182,7 +182,7 @@
         </ul>
         <div class="mr-con4">
             <div class="mr-con4-1">
-                <span class="mr-con4-1-1">应付金额：${purchaseGuide.total}元 | <a href="/pc/expertServe/pageList">继续逛逛</a></span>
+                <span class="mr-con4-1-1">应付金额:${purchaseGuide.total}元 | <a href="/pc/expertServe/pageList">继续逛逛</a></span>
                 <a href="/pc/purchaseGuide/sure">结算</a>
             </div>
         </div>
@@ -199,7 +199,7 @@
                 <div class="mr-con5-sub">
                     <a href="/pc/expert/viewExpert">
                         <div class="cover">
-                            <p>简介：${expert.introduce}</p>
+                            <p>简介:${expert.introduce}</p>
                         </div>
                         <img src="http://pic.591zjh.com/${expert.pictureUrl}@!personal-list" alt="人物简介">
                     </a><br />
@@ -266,7 +266,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

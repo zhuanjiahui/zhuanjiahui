@@ -253,7 +253,7 @@
                         </c:forEach>
 
                     </ul>
-                    <p class="expertOffer">服务报价：<span>${expertServe.price}</span>元</p>
+                    <p class="expertOffer">服务报价:<span>${expertServe.price}</span>元</p>
                     <p class="maxim">${expert2.memo}</p>
                     <a class="viewDetials" href="/pc/expert/viewExpert?expertId=${expertServe.expert2.id}">查看详情</a>
                     <a class="collectionExpert" href="#" onclick="favoriteExpert('${expertServe.expert2.id}');">收藏专家</a>
@@ -333,7 +333,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

@@ -169,7 +169,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
 
 <div class="content-body">
@@ -272,10 +272,10 @@
 </div>
 </div>
 <div class="ms1-notes">
-    <span><i class="i1">蓝色：</i>可约</span>
-    <span><i class="i2">橙色：</i>抢约</span>
-    <span><i class="i3">灰色：</i>不可约</span>
-    <span><i class="i4">黑色：</i>已支付订单</span>
+    <span><i class="i1">蓝色:</i>可约</span>
+    <span><i class="i2">橙色:</i>抢约</span>
+    <span><i class="i3">灰色:</i>不可约</span>
+    <span><i class="i4">黑色:</i>已支付订单</span>
 </div>
 <div class="ms1-but-sq">收起</div>
 
@@ -287,13 +287,13 @@
 <div class="ms1-xingxi">
     <span class="ms1-wz-1">${purchaseOrder.consumer.name}</span>
     <span class="ms1-wz-2">服务类型</span>
-    <span class="ms1-wz-3">：<zjh:status name="ptype" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status> </span>
+    <span class="ms1-wz-3">:<zjh:status name="ptype" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status> </span>
     <span class="ms1-wz-4"><zjh:status name="industry" dataType="PurchaseOrder.industry" type="normal" checkedValue="${purchaseOrder.industry}"></zjh:status> </span>
-    <span class="ms1-wz-5">时间：</span>
+    <span class="ms1-wz-5">时间:</span>
     <span class="ms1-wz-6"><fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span>
-    <span class="ms1-wz-7">地点：</span>
+    <span class="ms1-wz-7">地点:</span>
     <span class="ms1-wz-8">${purchaseOrder.province.name}</span>
-    <span class="ms1-wz-9">订单：</span>
+    <span class="ms1-wz-9">订单:</span>
     <span class="ms1-wz-10"><zjh:status name="payStatus" dataType="PurchaseOrder.payStatus" type="normal" checkedValue="${purchaseOrder.payStatus}"></zjh:status> </span>
 </div>
 </c:forEach>
@@ -354,7 +354,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

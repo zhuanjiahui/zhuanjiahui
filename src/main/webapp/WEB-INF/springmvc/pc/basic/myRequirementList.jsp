@@ -158,7 +158,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -174,11 +174,11 @@
                     <dl>
                         <dd>
                             <span class="list">${requirement.name}</span>
-								<span class="list">需求类型：<span><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span>
+								<span class="list">需求类型:<span><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span>
 								</span>
                             <span class="list"><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status></span>
-                            <span class="list special3">预算：￥${requirement.price}元</span>
-                            <span class="list">地点：${requirement.address}</span>
+                            <span class="list special3">预算:￥${requirement.price}元</span>
+                            <span class="list">地点:${requirement.address}</span>
                         </dd>
                     </dl>
                     <ol>
@@ -253,7 +253,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

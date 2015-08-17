@@ -245,14 +245,14 @@
                         <div class="le-td-r"><textarea class="ac-int" name="introduce"  value=""></textarea></div>
                     </div>
                     <div class="le-tr le-tr-h2">
-                        <div class="le-td-l">活动海报  ：</div>
-                        <div class="le-td-r le-img" id="pic"><img src="/images/le-img.png"></div>
+                        <div class="le-td-l">活动海报:</div>
+                        <div class="le-td-r le-img" id="pic"><img src="http://pic.591zjh.com/default/activity/banner.jpg@_700w"></div>
                     </div>
                     <div class="le-tr">
                         <div class="le-td-l"></div>
                         <div class="le-td-r le-sctp">
                             <input id="fileBtn"  type="file">
-                            <input type="hidden" name="activityPicUrl" id="activityPic">
+                            <input type="hidden" name="activityPicUrl" id="activityPic" value="default/activity/banner.jpg">
                         </div>
                     </div>
                     <div class="le-tr le-xx">
@@ -266,19 +266,19 @@
                      <input type="hidden" name="activityId" value="${id}">
                      <div class="le-table2">
                          <div class="le-tr2">
-                             <div class="le-td-l2">嘉宾姓名：</div>
+                             <div class="le-td-l2">嘉宾姓名:</div>
                              <div class="le-td-r2"><input name="name" type="text" value=""/></div>
                          </div>
                          <div class="le-tr2">
-                             <div class="le-td-l2">公司名称：</div>
+                             <div class="le-td-l2">公司名称:</div>
                              <div class="le-td-r2"><input  type="text" name="companyName" value=""/></div>
                          </div>
                          <div class="le-tr2">
-                             <div class="le-td-l2">现任职务：</div>
+                             <div class="le-td-l2">现任职务:</div>
                              <div class="le-td-r2"><input type="text" name="position" value=""/></div>
                          </div>
                          <div class="le-tr2">
-                             <div class="le-td-l2">嘉宾描述：</div>
+                             <div class="le-td-l2">嘉宾描述:</div>
                              <div class="le-td-r2"><textarea class="ac-int2" name="introduce"  value=""></textarea></div>
                          </div>
                          <div class="sc-p">
@@ -359,7 +359,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

@@ -126,7 +126,7 @@
     <div><b>2.2 能实现自动配餐吗？</b></div>
     <div>目前还不能，但提供了很好的手动辅助计算功能。目前的自动配餐软件，据我们了解，自动配置结果并不理想。但我们会积极研发此类功能。</div>
     <div><br></div>
-    <div><b><u><font color="#3366ff">*在线支持QQ群：<span
+    <div><b><u><font color="#3366ff">*在线支持QQ群:<span
             style="font-family: 微软雅黑, Tahoma, 宋体; line-height: 29px; font-size: 10.5pt;">308880552</span></font></u></b>
     </div>
 
