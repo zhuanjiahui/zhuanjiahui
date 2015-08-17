@@ -164,7 +164,7 @@
                     <br />
                     <dl>
                         <dt>2. 身份认证的时候，应该如何呈现身份证照片？</dt>
-                        <dd>建议各位专家手持身份证照片，贴近镜头，五官清晰，可以参考示例图：</dd>
+                        <dd>建议各位专家手持身份证照片，贴近镜头，五官清晰，可以参考示例图:</dd>
                         <br />
                         <dd><img src="/images/footer-consult.png" alt="参考图片"></dd>
                     </dl>
@@ -238,7 +238,7 @@
                 </li>
                 <li class="ul1-li4">
                     <div class="footer-ul1-title">客服热线</div>
-                    <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                    <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                     <div class="footer-ul1-con biancu">010-51591591</div>
                 </li>
             </ul>

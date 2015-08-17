@@ -242,15 +242,15 @@
     <c:forEach items="${pageInfo.list}" var="requirement">
         <li class="resultsList">
             <ul class="resultsElemTop">
-                <li class="resultsElemTop-1">发布时间：${requirement.createDatetime}</li>
-                <li class="resultsElemTop-2">开始时间：${requirement.startDatetime}</li>
+                <li class="resultsElemTop-1">发布时间:${requirement.createDatetime}</li>
+                <li class="resultsElemTop-2">开始时间:${requirement.startDatetime}</li>
             </ul>
             <ul class="resultsElemMain">
                 <li class="resultsElemMain-1"><a href="/pc/requirement/view?requirementId=${requirement.id}">${requirement.name}</a> </li>
-                <li class="resultsElemMain-2">需求类型：<span style="color:#00bdff"><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span></li>
+                <li class="resultsElemMain-2">需求类型:<span style="color:#00bdff"><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span></li>
                 <li class="resultsElemMain-3"><zjh:status name="industry" dataType="Expertserve.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status></li>
-                <li class="resultsElemMain-4" style="color:#f77530;">预算：￥<span>${requirement.price}</span>元</li>
-                <li class="resultsElemMain-5">地点：<span>${requirement.address}</span></li>
+                <li class="resultsElemMain-4" style="color:#f77530;">预算:￥<span>${requirement.price}</span>元</li>
+                <li class="resultsElemMain-5">地点:<span>${requirement.address}</span></li>
                 <li class="resultsElemMain-5"><span>${requirement.expert.name}</span></li>
             </ul>
         </li>
@@ -324,7 +324,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

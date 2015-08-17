@@ -142,11 +142,11 @@
 </div>
 <div class="ad-table">
     <div class="ad-td ad-name">${assistant.name}</div>
-    <div class="ad-td ad-phone">联系电话：<span>${assistant.phone}</span></div>
-    <div class="ad-td ad-adress">地址：${assistant.province.name}</div>
-    <div class="ad-td ad-zhuanjia">专家：${assistant.expertList.size()}位</div>
-    <div class="ad-td ad-chengdan">成单量：${assistant.purchaseOrders.size()}</div>
-    <div class="ad-td ad-renqi">人气：${assistant.visitCount}</div>
+    <div class="ad-td ad-phone">联系电话:<span>${assistant.phone}</span></div>
+    <div class="ad-td ad-adress">地址:${assistant.province.name}</div>
+    <div class="ad-td ad-zhuanjia">专家:${assistant.expertList.size()}位</div>
+    <div class="ad-td ad-chengdan">成单量:${assistant.purchaseOrders.size()}</div>
+    <div class="ad-td ad-renqi">人气:${assistant.visitCount}</div>
 </div>
 
 
@@ -175,7 +175,7 @@
     </a>
     <div class="ad-zlxx-b">
         <div class="ad-zlxx-b1">
-            <div style="margin-left:20px;margin-top:5px;float:left;width:138px;">专家：${expert.name}</div>
+            <div style="margin-left:20px;margin-top:5px;float:left;width:138px;">专家:${expert.name}</div>
         </div>
         <div class="ad-zlxx-b2">
             <div class="ad-zlxx-b2-l">
@@ -260,7 +260,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

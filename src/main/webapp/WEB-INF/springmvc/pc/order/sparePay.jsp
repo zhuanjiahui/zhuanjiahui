@@ -113,7 +113,7 @@
         <div class="check-information">
             填写并核对订单信息
         </div>
-        <form name="yeepay" action="/pc/yeepay" method="post">
+        <form name="yeepay" action="/pc/sparePay" method="post">
             <input type="hidden" name="gateWay" id="gateWay" value="2">
             <input type="hidden" name="orderId"  value="${purchaseOrder.id}">
 
@@ -163,13 +163,13 @@
                         <div class="a-order-l2-2">
                             <div class="a-order-l2-2-1">${purchaseOrder.expert2.name}</div>
                             <div class="a-order-l2-2-4">
-                                服务：${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天 服务时间：<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate>
+                                服务:${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天 服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate>
                                 <span style="color:#ec6618;"><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status></span><br>
                             </div>
                         </div>
                         <div class="a-order-l2-3">
                             <div class="a-order-l2-3wz">
-                                <span>应付金额：</span><span id="total" style="color:#ec6618;">${purchaseOrder.total*0.5}</span>元<br/>
+                                <span>应付金额:</span><span id="total" style="color:#ec6618;">${purchaseOrder.total*0.5}</span>元<br/>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                 <div class="a-order-sx"></div>
                 <div class="a-order-beizhu">
                     <div class="a-order-beizhu-l">
-                        订单备注：${purchaseOrder.memo}
+                        订单备注:${purchaseOrder.memo}
                     </div>
 
                 </div>
@@ -242,7 +242,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

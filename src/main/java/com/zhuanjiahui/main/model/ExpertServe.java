@@ -3,6 +3,8 @@ package com.zhuanjiahui.main.model;
 import com.frame.organization.model.User;
 import com.zhuanjiahui.character.model.Expert;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -11,6 +13,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2015/6/26.
  */
+
 @Entity
 @Table(name="main_expert_serve")
 public class ExpertServe {
@@ -30,9 +33,7 @@ public class ExpertServe {
     private Integer cheap;//优惠0-2.5
     private Integer theStatus;
     private Integer listPageIndex;//列表也推荐
-/*
-    private List<ServedConsumer> consumerList;//服务过的客户
-*/
+
     private String servedConsumer;//服务过的客户
     private ExpertServeContent expertServeContent;
 
@@ -178,6 +179,7 @@ public class ExpertServe {
     public void setCheap(Integer cheap) {
         this.cheap = cheap;
     }
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="expert_id",insertable = false,updatable = false)
     public Expert getExpert2() {

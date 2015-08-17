@@ -57,7 +57,7 @@ public class ActivityManagerImpl implements ActivityManager {
 
     @Override
     public PageInfo publishActivities(String expertId,PageEntity pageEntity) {
-        String queryHQL="from "+Activity.class.getName()+" ac where ac.theStatus=1 and ac.expert.id='"+expertId+"'";
+        String queryHQL="from "+Activity.class.getName()+" ac where ac.theStatus=1 and ac.user.id='"+expertId+"'";
         return baseManager.listPageInfo(queryHQL,pageEntity,null);
 
     }

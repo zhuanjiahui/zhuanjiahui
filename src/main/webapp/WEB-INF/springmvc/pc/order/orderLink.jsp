@@ -128,14 +128,14 @@
                 <div  class="a-inf-content-2">
                     <div class="a-inf-content-wz2">联系人</div>
                         <div class="a-inf-content-wz3">
-                            <input type="text" id="linkname" name="linkname"  value="${linkman.name}">&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="text" id="telephone" name="telephone"  value="${linkman.phone}">
+                            姓名:<input type="text" id="linkname" name="linkname"  value="${linkman.name}">&nbsp;&nbsp;&nbsp;&nbsp;
+                            联系电话:<input type="text" id="telephone" name="telephone"  value="${linkman.phone}">
                         </div>
                 </div>
             </div>
             <div class="a-inf-1">
                 <div class="a-inf-content-1">
-                    <div class="a-inf-content-wz1">地址信息</div>
+                    <div class="a-inf-content-wz1">服务地址</div>
 <%--
                     <div class="a-inf-content-but2">新增地址</div>
 --%>
@@ -172,13 +172,13 @@
                     <div class="a-order-l2-2">
                         <div class="a-order-l2-2-1">${purchaseOrder.expert2.name}</div>
                         <div class="a-order-l2-2-4">
-                            服务：${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天 服务时间：<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate>
+                            服务:${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天 服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate>
                             <span style="color:#ec6618;"><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status></span><br>
                         </div>
                     </div>
                     <div class="a-order-l2-3">
                         <div class="a-order-l2-3wz">
-                            <span>应付金额：</span><span id="total" style="color:#ec6618;">${purchaseOrder.total}</span>元<br/>
+                            <span>应付金额:</span><span id="total" style="color:#ec6618;">${purchaseOrder.total}</span>元<br/>
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
             <div class="a-order-sx"></div>
             <div class="a-order-beizhu">
                 <div class="a-order-beizhu-l">
-                    订单备注：<input style="width:545px;color:#646464;padding-left:10px;" type="text" name="memo" placeholder="订单备注">
+                    订单备注:<input style="width:545px;color:#646464;padding-left:10px;" type="text" name="memo" placeholder="订单备注">
 
                 </div>
                 <div>
@@ -197,10 +197,10 @@
                 <div class="a-order-beizhu-r">
                     <input type="radio" name="payType" value="1" onclick="$('#total').text(${purchaseOrder.total*0.5})">预付50%<input type="radio" name="payType" value="2" onclick="$('#total').text(${purchaseOrder.total*purchaseOrder.expertServe.discount/20})" checked>全额支付
                  <%--   <c:if test="${purchaseOrder.payType==1}">
-                    <span >预付金额：</span><span style="color:#ec6618;">${purchaseOrder.total*0.5}元</span>
+                    <span >预付金额:</span><span style="color:#ec6618;">${purchaseOrder.total*0.5}元</span>
                     </c:if>
                     <c:if test="${purchaseOrder.payType==2}">
-                        <span >支付全额：</span><span style="color:#ec6618;">${purchaseOrder.total}元</span>
+                        <span >支付全额:</span><span style="color:#ec6618;">${purchaseOrder.total}元</span>
                     </c:if>--%>
                 </div>
             </div>
@@ -263,7 +263,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -288,7 +288,7 @@
         </div>
     </div>
     <div class="pop-up-tr2">
-        <div class="pop-up-td-l">地点：</div>
+        <div class="pop-up-td-l">地点:</div>
         <div class="pop-up-td-r">
             <select class="pop-up-xl" name="provinceId">
                 <c:forEach items="${}" var="province">
@@ -298,7 +298,7 @@
         </div>
     </div>
     <div class="pop-up-tr3">
-        <div class="pop-up-td-l">详细地址：</div>
+        <div class="pop-up-td-l">详细地址:</div>
         <div class="pop-up-td-r"><input style="width:290px;height:30px;" name="address" type="text"></div>
     </div>
     <div class="pop-up-tr4">
@@ -317,13 +317,13 @@
         </div>
     </div>
     <div class="pop-up-tr2">
-        <div class="pop-up-td-l">联系人：</div>
+        <div class="pop-up-td-l">联系人:</div>
         <div class="pop-up-td-r">
             <input style="width:300px;height:30px;" id="name" name="name" type="text" value="">
         </div>
     </div>
     <div class="pop-up-tr3">
-        <div class="pop-up-td-l">联系人电话：</div>
+        <div class="pop-up-td-l">联系人电话:</div>
         <div class="pop-up-td-r"><input style="width:300px;height:30px;" id="phone" name="phone" type="text" value=""></div>
     </div>
     <div class="pop-up-tr4">

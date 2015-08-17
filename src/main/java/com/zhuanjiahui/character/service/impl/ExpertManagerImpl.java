@@ -131,11 +131,7 @@ public class ExpertManagerImpl implements ExpertManager {
         return expertIndustryMajors;
     }
 */
-    @Override
-    public PageInfo searchExperts(String keywords) {
-        String queryHQL="from "+Expert.class.getName()+" ext where ext.name like '%"+keywords+"%' union from "+Expert.class.getName()+" e where  CONTAINS(e.keywords,'')";
-        return null;
-    }
+
 
     @Override
     public Expert getExpertByNamePsw(String username, String password) {

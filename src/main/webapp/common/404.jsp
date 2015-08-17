@@ -42,7 +42,7 @@
                     <b>404</b>很抱歉，您查找的页面不存在。
                 </div>
                 <div class="s_error404-body">
-                    <span>您可以：</span>
+                    <span>您可以:</span>
                     <span>1.检查访问的页面网址是否正确</span>
                     <span>2.返回<a href="/pc/index">专家汇首页</a><b>|</b><a href="javascript:history.go(-1)">返回上一级</a></span>
                 </div>
@@ -101,7 +101,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

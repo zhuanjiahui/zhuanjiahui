@@ -142,15 +142,15 @@
         <dd><a href="/pc/resetPwd">重置密码</a></dd>
     </dl>
     <dl>
-        <dt class="order-icon2"><a href="#">账号管理</a></dt>
-        <dd><a href="#">订单管理</a></dd>
+        <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+        <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
         <c:if test="${myUser.utype==3}">
             <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
         </c:if>
         <c:if test="${myUser.utype==2}">
             <dd><a href="/pc/schedule/view">档期管理</a></dd>
         </c:if>
-        <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+        <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
         <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
     </dl>
 
@@ -164,7 +164,7 @@
 </div>
 <div class="content-head clear">
     <span class="content-head1">hi,中午好,jay123</span>
-    <span class="content-head2">上次登录时间：2015.6.30</span>
+    <span class="content-head2">上次登录时间:2015.6.30</span>
 </div>
 <div class="content-body">
 <ul class="body-nav">
@@ -178,7 +178,7 @@
 
 <div class="body-sub">
     <div class="body-title">
-        <span><a href="/pc/purchaseOrder/viewOrder?orderId=${purchaseOrder.id}">订单号：${purchaseOrder.serial}</a></span>&nbsp;&nbsp;<i>|</i><span>${purchaseOrder.serveDatetime}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><a href="/pc/purchaseOrder/viewOrder?orderId=${purchaseOrder.id}">订单号:${purchaseOrder.serial}</a></span>&nbsp;&nbsp;<i>|</i><span>${purchaseOrder.serveDatetime}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="special"><zjh:status name="payStatus" dataType="PurchaseOrder.payStatus" type="normal" checkedValue="${purchaseOrder.payStatus}"></zjh:status> </span>
     </div>
     <div class="body-con">
@@ -192,12 +192,12 @@
 									<span>${purchaseOrder.expertServe.name}</span>
 								</span>
 								<span class="list">
-									<span>订单金额：￥${purchaseOrder.total}元</span>
+									<span>订单金额:￥${purchaseOrder.total}元</span>
 								</span>
             </dd>
             <dd>
 								<span class="list">
-									<span>类型：<zjh:status name="ptype" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status></span>
+									<span>类型:<zjh:status name="ptype" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status></span>
 								</span>
 								<span class="list">
                             		<span>${purchaseOrder.expertServe.price}元/天 </span>
@@ -208,7 +208,7 @@
             </dd>
             <dd>
 								<span class="list">
-                                    <span>服务时间：<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd" ></fmt:formatDate> </span>
+                                    <span>服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd" ></fmt:formatDate> </span>
 							    </span>
 							    <span class="list">
                             		<span><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status> </span>
@@ -220,7 +220,7 @@
 
         </dl>
         <ol>
-            <li class="pop-up-clickbut"><a href="/pc/purchaseOrder/viewOrder?orderId=${purchaseOrder.id}">查看详情</a></li>
+            <li class="pop-up-clickbut"><a href="/pc/purchaseOrder/viewOrder?orderId=${purchaseOrder.id}" target="_blank">查看详情</a></li>
             <c:if test="${purchaseOrder.processStatus<4}">
                  <li><a href="#" onclick="sureOrderProcess('${purchaseOrder.id}',4)">取消订单</a></li>
             </c:if>
@@ -230,11 +230,14 @@
             <c:if test="${purchaseOrder.processStatus==6}">
                 <li><a href="#" onclick="sureOrderProcess('${purchaseOrder.id}',9)">确认订单</a></li>
             </c:if>
+            <c:if test="${purchaseOrder.processStatus==9}">
+                <li>已完成</li>
+            </c:if>
             <c:if test="${purchaseOrder.payStatus==1}">
-                <li class="payment-order special"><a href="/pc/purchaseOrder/orderLink?id=${purchaseOrder.id}">支付订单</a></li>
+                <li class="payment-order special"><a href="/pc/purchaseOrder/orderLink?id=${purchaseOrder.id}" target="_blank">支付订单</a></li>
             </c:if>
             <c:if test="${purchaseOrder.payStatus==2}">
-                <li class="payment-order special"><a href="/pc/purchaseOrder/sparePay">支付余款</a></li>
+                <li class="payment-order special"><a href="/pc/purchaseOrder/sparePay?id=${purchaseOrder.id}" target="_blank">支付余款</a></li>
             </c:if>
         </ol>
     </div>
@@ -285,15 +288,15 @@
                     <div class="ul1-con-pic">
                         <div class="ul1-con-pic1">
                             <a href="#">
-                                <img class="ul1-con-pic1-1" src="images/weixin.png" alt="ul1-con-pic">
-                                <img class="ul1-con-pic1-2" src="images/weixinh.png" alt="悬浮出现">
+                                <img class="ul1-con-pic1-1" src="/images/weixin.png" alt="ul1-con-pic">
+                                <img class="ul1-con-pic1-2" src="/images/weixinh.png" alt="悬浮出现">
                                 <div>微信公共号</div>
                             </a>
                         </div>
                         <div class="ul1-con-pic1">
                             <a href="#">
-                                <img class="ul1-con-pic1-1" src="images/sina.png" alt="ul1-con-pic">
-                                <img class="ul1-con-pic1-2" src="images/sinah.png" alt="悬浮出现">
+                                <img class="ul1-con-pic1-1" src="/images/sina.png" alt="ul1-con-pic">
+                                <img class="ul1-con-pic1-2" src="/images/sinah.png" alt="悬浮出现">
                                 <div>新浪微博</div>
                             </a>
                         </div>
@@ -302,12 +305,12 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
         <div class="footerpic">
-            <img src="images/footer-pic.png" alt="底部图片">
+            <img src="/images/footer-pic.png" alt="底部图片">
         </div>
         <div class="footer-bottom">
 
@@ -319,373 +322,7 @@
 <!--    弹出框部分-->
 <!--    增加地址弹出部分-->
 <div class="pop-up-bg"></div>
-<div class="pop-up-rili-wapper">
-<div class="pop-up-down3"><img src="images/pop-up-down3.png"></div>
 
-<div class="ms1-table">
-<div class="ms1-table-l">
-<div class="ms1-tr">
-    <div class="ms1-td">周一</div>
-    <div class="ms1-td">周二</div>
-    <div class="ms1-td">周三</div>
-    <div class="ms1-td">周四</div>
-    <div class="ms1-td">周五</div>
-    <div class="ms1-td">周六</div>
-    <div class="ms1-td">周日</div>
-</div>
-
-<div class="ms1-tr-num">
-    <div class="ms1-td ms1-color1">29
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">30
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">01
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">02
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">03
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">04
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">05
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="ms1-tr-num">
-    <div class="ms1-td ms1-color2">06
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color3">07
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">08
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-        <div class="ms1-dian"><img src="images/ms-dian.png"></div>
-
-    </div>
-    <div class="ms1-td">09
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">10
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">11
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">12
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="ms1-tr-num">
-    <div class="ms1-td">13
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">14
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">15
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">16
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">17
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">18
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">19
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="ms1-tr-num">
-    <div class="ms1-td">20
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">21
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">22
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">23
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">24
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">25
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">26
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="ms1-tr-num">
-    <div class="ms1-td">27
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">28
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">29
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td">30
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">01
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">02
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-    <div class="ms1-td ms1-color1">03
-        <div class="ms1-zhuangtai-wapper">
-            <div class="ms1-zhuangtai">
-                <div class="ms1-keyue">可约</div>
-                <div class="ms1-bukeyue">不可约</div>
-                <div class="ms1-yiyue">以约</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-<div class="ms1-table-r">
-    <div class="ms1-tr-r">
-        <div class="ms1-td-r-1"><img src="images/ms-left.png"></div>
-        <div class="ms1-td-r-2">2015年7月</div>
-        <div class="ms1-td-r-3"><img src="images/ms-right.png"></div>
-    </div>
-    <div class="ms1-tr-r">
-        <div class="ms1-td-r4">06</div>
-        <div class="ms1-td-r5">周一</div>
-    </div>
-</div>
-</div>
-<div class="pop-but-sq">收起</div>
-<div class="pop-up-ts1"><span style="color:#c5c8c9;">灰色</span>：不可修改（已确定订单）</div>
-<div class="pop-up-ts2"><span style="color:#ed7027;">橙色</span>：原订单日期
-    <span style="color:#1bb9f2;">蓝色</span>：新订单日期</div>
-<div><button  class="pop-but1">保存</button></div>
-
-</div>
 <div class="ms1-zhuangtai-wapper">
     <div class="ms1-zhuangtai">
         <div class="ms1-keyue">可约</div>
@@ -696,29 +333,22 @@
 
 <div class="pop-up-bg"></div>
 <div class="pop-up-om-wapper1">
-    <div class="pop-up-down3-om"><img src="images/pop-up-down3.png"></div>
+    <div class="pop-up-down3-om"><img src="/images/pop-up-down3.png"></div>
     <div class="pop-up-zfye">支付余额</div>
     <div class="pop-up-om-line"></div>
     <div class="pop-up-om-but1">支付余额</div>
     <div class="pop-up-om-but2">线下支付</div>
-    <div class="pop-up-om-fotter">提示：本平台不涉及线下支付业务</div>
+    <div class="pop-up-om-fotter">提示:本平台不涉及线下支付业务</div>
 </div>
 <div class="pop-up-om-wapper2">
-    <div class="pop-up-down3-om2"><img src="images/pop-up-down3.png"></div>
-    <div class="pop-up-ts1"><span style="font-size:20px;">提示</span>：请在接受服务后点击确定按钮，并给予专家评价！</div>
+    <div class="pop-up-down3-om2"><img src="/images/pop-up-down3.png"></div>
+    <div class="pop-up-ts1"><span style="font-size:20px;">提示</span>:请在接受服务后点击确定按钮，并给予专家评价！</div>
     <div class="pop-up-ts2">确定后账款会打入专家账户中，为维护您的权益请勿在服务结束前点击确定按钮。</div>
     <div class="pop-up-butom">确定</div>
 </div>
 <script type="text/javascript">
     $(function(){
-        $(".pop-up-clickbut").click(function(){
-            $(".pop-up-bg").css('display','block');
-            $(".pop-up-rili-wapper").css('display','block');
-        });
-        $(".pop-up-down3").click(function(){
-            $(".pop-up-bg").css('display','none');
-            $(".pop-up-rili-wapper").css('display','none');
-        });
+
 //            支付订单
         $(".payment-order").click(function(){
             $(".pop-up-bg").css('display','block');

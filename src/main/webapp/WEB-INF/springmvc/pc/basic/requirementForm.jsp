@@ -145,15 +145,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
 
@@ -167,7 +167,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -327,7 +327,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

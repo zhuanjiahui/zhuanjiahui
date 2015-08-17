@@ -138,8 +138,8 @@
         <li class="rightLineTwo">${expert.memo}</li>
         <li class="rightLineThree">
             <ul>
-                <li>服务：<span>培训、服务、开发</span></li>
-                <li>行业：<span>
+                <li>服务:<span>培训、服务、开发</span></li>
+                <li>行业:<span>
                     <c:forEach items="${expert.expertIndustryList}" var="expertIndustry">
                         <zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expertIndustry}"></zjh:status>
                     </c:forEach> </span></li>
@@ -161,7 +161,7 @@
 <div class="expertDetailBottom">
 <!-- 左侧介绍 -->
 <div class="expertDetailLeft">
-    <p class="expertId">ID：<span>${expert.idNo}</span></p>
+    <p class="expertId">ID:<span>${expert.idNo}</span></p>
     <ul class="starAndNum">
         <li>
             <ul class="star">
@@ -175,7 +175,7 @@
         </li>
         <li>&nbsp;&nbsp;(<span>${comments.size()}</span>)条评论</li>
     </ul>
-    <p class="workingYears">工作年限：<span>${expert.workTime}</span>年</p>
+    <p class="workingYears">工作年限:<span>${expert.workTime}</span>年</p>
     <p class="expertIntroduction">${expert.introduce}</p>
     <ul class="businessExperience">
         <li>工作经历</li>
@@ -185,7 +185,7 @@
                     <li><fmt:formatDate value="${company.startDate}" pattern="yyyy-MM-dd"></fmt:formatDate>至
                         <fmt:formatDate value="${company.endDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </li>
                     <li>${company.name}</li>
-                    <li>职务：<span>${company.position}</span></li>
+                    <li>职务:<span>${company.position}</span></li>
                 </ul>
             </li>
         </c:forEach>
@@ -193,7 +193,7 @@
 </div>
 <!-- 主介绍区 -->
 <div class="appointment">
-    <p class="tips">友情提示：预约时请查看专家位置，留给专家路程时间，避免订单流产 </p>
+    <p class="tips">友情提示:预约时请查看专家位置，留给专家路程时间，避免订单流产 </p>
     <div class="calendar" style="position:relative;top:-36px;">
         <div class="ms-table">
             <div class="ms-table-l">
@@ -253,7 +253,7 @@
 
         <div class="ms-but-sq">收起</div>
     </div>
-    <p class="legend"><span style="color:#00bcfd;">蓝色</span><span>：可约</span><span style="color:#fc5e02;">橙色</span><span>：抢约</span><span style="color:gray;">灰色</span><span>：不可约</span></p>
+    <p class="legend"><span style="color:#00bcfd;">蓝色</span><span>:可约</span><span style="color:#fc5e02;">橙色</span><span>:抢约</span><span style="color:gray;">灰色</span><span>:不可约</span></p>
 </div>
 <div class="preAppointment">
     <div class="but-yuyue">预约</div>
@@ -336,7 +336,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -354,7 +354,7 @@
 <div class="pop-up-ed-wapper">
     <form id="orderForm" action="/pc/purchaseOrder/create" method="post">
         <div class="pop-up-ed-tr">
-            <div class="pop-up-ed-td-l1">预约时间：<input id="orderTime" name="orderTime" value="" style="border: 0"></div>
+            <div class="pop-up-ed-td-l1">预约时间:<input id="orderTime" name="orderTime" value="" style="border: 0"></div>
             <div class="pop-up-ed-td-r34">
                 <zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="select" checkedValue="3" onchange="sureDayType();"></zjh:status>
             </div>
@@ -362,7 +362,7 @@
         </div>
         <div class="pop-up-ed-line"></div>
         <div class="pop-up-ed-tr">
-            <%--<div class="pop-up-ed-td-l2">服务类型：</div>
+            <%--<div class="pop-up-ed-td-l2">服务类型:</div>
             <div class="pop-up-ed-td-r2">
                 <zjh:status name="serveType" dataType="ExpertServe.serveType" type="select" checkedValue="" onchange="loadServe();"></zjh:status>
             </div>--%>
@@ -370,7 +370,7 @@
         <div id="serves">
             <c:forEach items="${expertServes}" var="expertServe">
                 <div class="pop-up-ed-tr">
-                    <div class="pop-up-ed-td-l3">服务：</div>
+                    <div class="pop-up-ed-td-l3">服务:</div>
 
                     <input type=radio name="serveId" class="pop-up-ed-td-r31" value="${expertServe.id}" onclick="sureServe('${expertServe.id}','${expertServe.price}','${expertServe.cheap}','${expertServe.discount}');">
                     <div class="pop-up-ed-td-r32"> <zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status>&nbsp;${expertServe.name} - ${expertServe.price}元/天</div>
@@ -378,7 +378,7 @@
             </c:forEach>
         </div>
         <div class="pop-up-ed-tr">
-            <div class="pop-up-ed-td-r44">应付：<span id="total" style="color:#ec6618;"></span></div>
+            <div class="pop-up-ed-td-r44">应付:<span id="total" style="color:#ec6618;"></span></div>
         </div>
         <div class="pop-up-ed-tr" >
             <div class="pop-up-ed-tdbut"><a href="javascript:void(0)" onclick="$('#orderForm').submit();">提交</a> </div>
@@ -440,7 +440,7 @@
                 $("#serves").empty();
                 for(var i=0;i<data.length;i++){
                     $("#serves").append("<div class=\"pop-up-ed-tr\"><div class=\"pop-up-ed-td-l3\">"+
-                            "服务：</div><input type=radio name=\"serveId\" class=\"pop-up-ed-td-r31\" value=\""+data[i].id+"\" "+
+                            "服务:</div><input type=radio name=\"serveId\" class=\"pop-up-ed-td-r31\" value=\""+data[i].id+"\" "+
                             "onclick=\"sureServe("+data[i].id+","+data[i].price+","+data[i].cheaf+","+data[i].discount+");\">"+
                             "<div class=\"pop-up-ed-td-r32\">"+data[i].name+" - "+data[i].price+"元/天</div></div>");
 

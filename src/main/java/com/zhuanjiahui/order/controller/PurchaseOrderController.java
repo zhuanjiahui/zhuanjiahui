@@ -3,6 +3,7 @@ package com.zhuanjiahui.order.controller;
 import com.frame.core.base.service.BaseManager;
 import com.frame.core.taglib.PageEntity;
 import com.frame.core.util.AuthorizationUtil;
+import com.frame.core.util.DateUtil;
 import com.frame.core.util.PageInfo;
 import com.frame.organization.model.MyUser;
 import com.frame.organization.model.Province;
@@ -54,6 +55,16 @@ public class PurchaseOrderController extends BaseController{
     public String listOrders(HttpServletRequest request,ModelMap modelMap){
         PageEntity pageEntity=this.getPageEntity(request);
         PageInfo pageInfo=orderManager.listOrders(AuthorizationUtil.getMyUser().getId(),pageEntity);
+        List<PurchaseOrder> purchaseOrderList=pageInfo.getList();
+        for(PurchaseOrder purchaseOrder:purchaseOrderList){
+            if(purchaseOrder.getProcessStatus()==3){
+                if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==0){
+                    purchaseOrder.setProcessStatus(5);
+                }else  if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==1){
+                    purchaseOrder.setProcessStatus(6);
+                }
+            }
+        }
         modelMap.put("myUser",AuthorizationUtil.getMyUser());
         modelMap.put("pageEntity",pageEntity);
         modelMap.put("pageInfo",pageInfo);
@@ -163,34 +174,7 @@ public class PurchaseOrderController extends BaseController{
         modelMap.put("purchaseOrder",purchaseOrder);
         return "/order/activityPay";
     }
-   /* *//*保存联系人*//*
-    @RequestMapping(value = "/saveLinkman")
-    @ResponseBody
-    public Linkman saveLinkman(HttpServletRequest request){
-        User expert=AuthorizationUtil.getUser();
-        String name=request.getParameter("name");
-        String phone=request.getParameter("phone");
-        Linkman linkman=new Linkman();
-        linkman.setName(name);
-        linkman.setPhone(phone);
-        linkman.setExpert(expert);
-        linkman.setIsDefault(false);
-        linkman.setTheStatus(1);
-        baseManager.saveOrUpdate(Linkman.class.getName(),linkman);
-        return linkman;
-    }*/
-  /*  *//*保存联系地址*//*
-    @RequestMapping(value = "/saveLinkAddress")
-    @ResponseBody
-    public LinkAddress saveLinkAddress(LinkAddress linkAddress,String provinceId){
-        Province province=cityManager.getProvince(provinceId);
-        User expert=AuthorizationUtil.getUser();
-        linkAddress.setProvince(province);
-        linkAddress.setExpert(expert);
-        linkAddress.setIsDefault(false);
-        baseManager.saveOrUpdate(LinkAddress.class.getName(),linkAddress);
-        return linkAddress;
-    }*/
+
     /*修改订单状态*/
     @RequestMapping(value = "/process")
     @ResponseBody
@@ -200,6 +184,11 @@ public class PurchaseOrderController extends BaseController{
             int processStatus=Integer.parseInt(request.getParameter("processStatus"));
             PurchaseOrder purchaseOrder=(PurchaseOrder)baseManager.getObject(PurchaseOrder.class.getName(),orderId);
             purchaseOrder.setProcessStatus(processStatus);
+            if(processStatus==2||processStatus==4){
+                if(purchaseOrder.getPayStatus()==2||purchaseOrder.getPayStatus()==3){
+                    purchaseOrder.setPayStatus(4);//如果取消订单时已经支付，则将订单调整为待退款状态
+                }
+            }
             baseManager.saveOrUpdate(PurchaseOrder.class.getName(),purchaseOrder);
             return processStatus;
         }catch (NullPointerException e){
@@ -235,9 +224,11 @@ public class PurchaseOrderController extends BaseController{
         if(expertList.size()<activity.getUserNumber()){
             for (Expert expert:expertList){
                 if(user.getId().equals(expert.getId())){
-                    return null;
+                    return "repeat";
                 }
             }
+        }else{
+            return "full";
         }
         PurchaseOrder purchaseOrder=new PurchaseOrder();
         purchaseOrder.setConsumer(AuthorizationUtil.getUser());

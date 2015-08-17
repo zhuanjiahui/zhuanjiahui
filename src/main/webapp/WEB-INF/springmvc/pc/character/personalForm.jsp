@@ -44,66 +44,7 @@
         #cancel{display: none; position: fixed; top: 70%; left: 50%; width:120px; height:25px;z-index:1002; overflow: auto;}
 
     </style>
-    <script type="text/javascript">
-        function getChooseConfirmDiv(){//动态添加确认框内容到当前页面
-            $("body").append("<div class='mask' tabindex='-1'><div class='popup'><div></div><div></div></div></div>");
-        }
 
-        $(function () {
-            $('#big').imgAreaSelect({ aspectRatio: '1:1', handles: true,fadeSpeed: 200, onSelectChange: preview });
-            $("#expertPicUpload").uploadify({
-                swf: '/scripts/uploadify/uploadify.swf?m=' + Math.random(),
-                uploader: '/pc/user/uploadPic',
-                fileTypeExts: '*.jpg;*.jpge;*.gif;*.png',
-                //浏览按钮的宽度
-                width: '100',
-                //浏览按钮的高度
-                height: '32',
-                multi: false,
-                buttonText: '<a class="le-wz">上传头像</a>',
-                onUploadSuccess: function (file, data, response) {
-                    document.getElementById("bg").style.display ="block";
-                    document.getElementById("big").style.display ="block";
-                    document.getElementById("sma").style.display ="block";
-                    document.getElementById("sure").style.display ="block";
-                    document.getElementById("cancel").style.display ="block";
-                    $("#photo").attr("src","http://pic.591zjh.com/"+eval(data));
-                    $("#sma img").attr("src","http://pic.591zjh.com/"+eval(data));
-                    url=eval(data);
-                    console.log(url);
-                }
-            })
-        })
-        function preview(img, selection) {
-            if (!selection.width || !selection.height)
-                return;
-
-            var scaleX = 100 / selection.width;
-            var scaleY = 100 / selection.height;
-
-            $('#sma img').css({
-                width: Math.round(scaleX * 300),
-                height: Math.round(scaleY * 300),
-                marginLeft: -Math.round(scaleX * selection.x1),
-                marginTop: -Math.round(scaleY * selection.y1)
-            });
-            x=selection.x1;
-            y=selection.y1;
-            w=selection.width;
-            h=selection.height;
-        }
-        function sureButton(){
-
-            $("#picUrl").val(url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
-            $("#head").attr("src","http://pic.591zjh.com/"+url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
-            $("#floatDiv").hide();
-
-        }
-        function cancelButton(){
-            $("#floatDiv").hide();
-        }
-
-    </script>
 </head>
 <body>
 
@@ -224,15 +165,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
 
@@ -246,7 +187,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,你好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -265,7 +206,7 @@
                     <div class="pi-inf-tr">
                         <input id="picUrl" name="pictureUrl" type="hidden" value="">
                         <div class="pi-inf-td-l">
-                            姓名：
+                            姓名:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="name" class="pi-input-css" type="text" value="${expert.name}"/>
@@ -273,7 +214,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            性别：
+                            性别:
                         </div>
                         <div class="pi-inf-td-r">
                             <zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${expert.gender}"></zjh:status>
@@ -281,7 +222,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            出生年月：
+                            出生年月:
                         </div>
                         <div class="pi-inf-td-r">
                             <input type="text" class="Wdate" id="birthday" name="birthdayDate" value="<fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM"></fmt:formatDate>" style="width:100px" onfocus="WdatePicker({dateFmt:'yyyy-MM'})">
@@ -289,7 +230,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            联系电话：
+                            联系电话:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="phone" class="pi-input-css" type="text" value="${expert.phone}"/>
@@ -297,7 +238,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            邮箱：
+                            邮箱:
                         </div>
                         <div class="pi-inf-td-r">
                             <input name="email" class="pi-input-css" type="text" value="${expert.email}"/>
@@ -305,7 +246,7 @@
                     </div>
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            常驻地：
+                            常驻地:
                         </div>
                         <div class="pi-inf-td-r">
                             <select class="pi-box-four" name="provinceId">
@@ -321,7 +262,7 @@
 
                     <div class="pi-inf-tr">
                         <div class="pi-inf-td-l">
-                            个人简介：
+                            个人简介:
                         </div>
                         <div class="pi-inf-td-r">
                             <textarea class="pi-size-inp" name="memo" type="text" placeholder="用一句话介绍自己">${expert.memo}</textarea>
@@ -344,7 +285,7 @@
             <div class="pi-inf-table">
                 <div class="pi-inf-tr">
                     <div class="pi-inf-td-l">
-                        公司名称：
+                        公司名称:
                     </div>
                     <div class="pi-inf-td-r">
                         <input type="text" name="companyName" value="${expert.companyName}"/>
@@ -352,7 +293,7 @@
                 </div>
                 <div class="pi-inf-tr">
                     <div class="pi-inf-td-l">
-                        所属行业：
+                        所属行业:
                     </div>
                     <div class="pi-inf-td-r">
                         <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue="${expert.industry}"></zjh:status>
@@ -360,7 +301,7 @@
                 </div>
                 <div class="pi-inf-tr">
                     <div class="pi-inf-td-l">
-                        公司地址：
+                        公司地址:
                     </div>
                     <div class="pi-inf-td-r">
                         <input class="pi-input-css" name="companyAddress" type="text" value="${expert.companyAddress}"/>
@@ -368,7 +309,7 @@
                 </div>
                 <div class="pi-inf-tr">
                     <div class="pi-inf-td-l">
-                        公司简介：
+                        公司简介:
                     </div>
                     <div class="pi-inf-td-r">
                         <textarea class="pi-size-inp" name="companyMemo" type="text" placeholder="填写公司简介，不超过100字">${expert.companyMemo}</textarea>
@@ -434,7 +375,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -465,5 +406,65 @@
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<script type="text/javascript">
+    function getChooseConfirmDiv(){//动态添加确认框内容到当前页面
+        $("body").append("<div class='mask' tabindex='-1'><div class='popup'><div></div><div></div></div></div>");
+    }
+
+    $(function () {
+        $('#big').imgAreaSelect({ aspectRatio: '1:1', handles: true,fadeSpeed: 200, onSelectChange: preview });
+        $("#expertPicUpload").uploadify({
+            swf: '/scripts/uploadify/uploadify.swf?m=' + Math.random(),
+            uploader: '/pc/user/uploadPic',
+            fileTypeExts: '*.jpg;*.jpge;*.gif;*.png',
+            //浏览按钮的宽度
+            width: '100',
+            //浏览按钮的高度
+            height: '32',
+            multi: false,
+            buttonText: '<a class="le-wz">上传头像</a>',
+            onUploadSuccess: function (file, data, response) {
+                document.getElementById("bg").style.display ="block";
+                document.getElementById("big").style.display ="block";
+                document.getElementById("sma").style.display ="block";
+                document.getElementById("sure").style.display ="block";
+                document.getElementById("cancel").style.display ="block";
+                $("#photo").attr("src","http://pic.591zjh.com/"+eval(data));
+                $("#sma img").attr("src","http://pic.591zjh.com/"+eval(data));
+                url=eval(data);
+                console.log(url);
+            }
+        })
+    })
+    function preview(img, selection) {
+        if (!selection.width || !selection.height)
+            return;
+
+        var scaleX = 100 / selection.width;
+        var scaleY = 100 / selection.height;
+
+        $('#sma img').css({
+            width: Math.round(scaleX * 300),
+            height: Math.round(scaleY * 300),
+            marginLeft: -Math.round(scaleX * selection.x1),
+            marginTop: -Math.round(scaleY * selection.y1)
+        });
+        x=selection.x1;
+        y=selection.y1;
+        w=selection.width;
+        h=selection.height;
+    }
+    function sureButton(){
+
+        $("#picUrl").val(url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
+        $("#head").attr("src","http://pic.591zjh.com/"+url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
+        $("#floatDiv").hide();
+
+    }
+    function cancelButton(){
+        $("#floatDiv").hide();
+    }
+
+</script>
 </body>
 </html>

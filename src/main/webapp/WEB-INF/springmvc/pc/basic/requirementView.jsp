@@ -137,35 +137,33 @@
     </div>
     <div class="customerPhotoBackground">
         <div class="customerPhoto"></div>
-<%--
         <div class="customerName">${requirement.expert.name}</div>
---%>
     </div>
     <table class="customerNeedInfo">
         <tr>
             <td width="22%" style="font-size:20px;font-weight:bold;">${requirement.name}</td>
-            <td width="22%">需求类型：<span><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span></td>
-            <td width="31%">期望目标：<span>${requirement.memo}</span></td>
-            <td width="25%">联系人：<span>${requirement.linkman}</span></td>
+            <td width="22%">需求类型:<span><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span></td>
+            <td width="31%">期望目标:<span>${requirement.memo}</span></td>
+            <td width="25%">联系人:<span>${requirement.linkman}</span></td>
         </tr>
         <tr>
-                <td>启动时间：<span><fmt:formatDate value="${requirement.startDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></td>
-                <td>行业：<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status> </span></td>
-                <td>预算金额：￥<span>${requirement.price}</span>元</td>
-                <td>联系电话：<span>${requirement.telephone}</span></td>
+                <td>启动时间:<span><fmt:formatDate value="${requirement.startDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></td>
+                <td>行业:<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status> </span></td>
+                <td>预算金额:￥<span>${requirement.price}</span>元</td>
+                <td>联系电话:<span>${requirement.telephone}</span></td>
         </tr>
         <tr>
-            <td>地点：<span>${requirement.province.name}${requirement.address}</span></td>
-            <td>类似项目：<span>${requirement.itemsName}${requirement.itemsUrl}</span></td>
+            <td>地点:<span>${requirement.province.name}${requirement.address}</span></td>
+            <td>类似项目:<span>${requirement.itemsName}${requirement.itemsUrl}</span></td>
             <td></td>
         </tr>
     </table>
     <ul class="needDetail">
-        <li>需求描述：</li>
+        <li>需求描述:</li>
         <li style="width:666px;">${requirement.introduce}</li>
         <li></li>
     </ul>
-    <p class="popularityValue">人气：<span>90</span></p>
+    <p class="popularityValue">人气:<span>90</span></p>
     <div class="screeningResultsAndRight-1">
         <!-- 右侧栏 -->
         <ul class="commonProblem">
@@ -273,7 +271,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

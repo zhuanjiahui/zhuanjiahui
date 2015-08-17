@@ -211,7 +211,7 @@ public class OrderPaymentController {
         }
         baseManager.saveOrUpdate(PurchaseOrderPayment.class.getName(),purchaseOrderPayment);
         String amount=purchaseOrderPayment.getPayed().toString();
-        String callbackurl ="http://locolhost:8080/pc/payBack";
+        String callbackurl ="http://1.202.165.225:8080/pc/payBack";
         Map<String,String> map=new HashMap<String,String>();
         map.put("requestid",purchaseOrderPayment.getId());
         map.put("amount","0.01");
@@ -311,12 +311,10 @@ public class OrderPaymentController {
         String decryptData= AESUtil.decrypt(data,ZGTService.getKeyValue().substring(0,16));
         Map<String ,String> map= (Map)JSONObject.parse(decryptData);
         if(Integer.parseInt(map.get("code"))==1){
-            String paymentId=map.get("requestId");
+            String paymentId=map.get("requestid");
             //支付成功后修改订单、支付记录和档期状态
             orderManager.successPay(paymentId);
-        }else {
-
         }
-        return "/pc/purchaseOrder/myOrders";
+        return "redirect:/pc/purchaseOrder/myOrders";
     }
 }

@@ -19,7 +19,7 @@
 </a>
 
 <div class="note" style="margin-top: 5px;font-size: 14px;">
-    提示信息：
+    提示信息:
     <c:out value="${pageContext.exception.message}"/>
 </div>
 <div style="margin-left: 50px; color: #FFFFFF;">

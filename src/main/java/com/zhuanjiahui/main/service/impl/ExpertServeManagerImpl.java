@@ -159,7 +159,7 @@ public class ExpertServeManagerImpl implements ExpertServeManager {
 
     @Override
     public List<ExpertServe> loadServeByType(String expertId, String serveType) {
-        String queryHQL="from "+ExpertServe.class.getName()+" s where s.expert.id='"+expertId+"' and s.serveType="+serveType;
+        String queryHQL="from "+ExpertServe.class.getName()+" s where s.expert.id='"+expertId+"' and s.serveType='"+serveType+"'";
         return baseManager.listObject(queryHQL);
     }
 

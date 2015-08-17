@@ -188,13 +188,13 @@
     重点说明</FONT></STRONG></SPAN></DIV>
 <DIV><SPAN style="FONT-SIZE: medium"></SPAN></DIV>
 <DIV><SPAN style="FONT-SIZE: medium"><STRONG>3.1 排课说明</STRONG></SPAN></DIV>
-<DIV><SPAN style="FONT-SIZE: medium">上课时段：可以在标准时段里管理常用的上课时段，也可以定义临时的上课时段。</SPAN>
+<DIV><SPAN style="FONT-SIZE: medium">上课时段:可以在标准时段里管理常用的上课时段，也可以定义临时的上课时段。</SPAN>
 </DIV>
 <DIV><SPAN
-        style="FONT-SIZE: medium">学季：对于课外辅导或者按学期，假期开课的培训机构，启用学季可以方便的管理各个阶段的班级。</SPAN>
+        style="FONT-SIZE: medium">学季:对于课外辅导或者按学期，假期开课的培训机构，启用学季可以方便的管理各个阶段的班级。</SPAN>
 </DIV>
 <DIV><SPAN
-        style="FONT-SIZE: medium">智能排课：通过可视化界面可查看一个校区的教室的使用情况以及某门课程的老师的上课时间安排，从而方便的选择合适的教室和老师来开班。</SPAN></DIV>
+        style="FONT-SIZE: medium">智能排课:通过可视化界面可查看一个校区的教室的使用情况以及某门课程的老师的上课时间安排，从而方便的选择合适的教室和老师来开班。</SPAN></DIV>
 <DIV><SPAN style="FONT-SIZE: medium"></SPAN></DIV>
 <DIV><SPAN style="FONT-SIZE: medium"><STRONG>3.2 老学员续报</STRONG></SPAN></DIV>
 <DIV><SPAN
@@ -222,7 +222,7 @@
 <DIV><SPAN style="FONT-SIZE: medium"></SPAN></DIV>
 <DIV><SPAN style="FONT-SIZE: medium">
 <DIV><STRONG></STRONG></DIV>
-<DIV><STRONG>附：基本概念说明</STRONG></DIV>
+<DIV><STRONG>附:基本概念说明</STRONG></DIV>
 <DIV>
     <DIV>
         <TABLE

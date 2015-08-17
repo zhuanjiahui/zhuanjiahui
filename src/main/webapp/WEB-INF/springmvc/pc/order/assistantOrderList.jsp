@@ -142,15 +142,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
 
@@ -164,7 +164,7 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,jay123</span>
-            <span class="content-head2">上次登录时间：2015.6.30</span>
+            <span class="content-head2">上次登录时间:2015.6.30</span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
@@ -178,7 +178,7 @@
 
                 <div class="body-sub">
                     <div class="body-title">
-                        <span><a href="/pc/purchaseOrder/viewOrder?orderId=${purchaseOrder.id}">订单号：${purchaseOrder.serial}</a></span>&nbsp;&nbsp;<i>|</i><span><fmt:formatDate value="${purchaseOrder.createDatetime}" pattern="yyyy-MM-dd hh:mm"></fmt:formatDate></span>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><a href="/pc/purchaseOrder/viewOrder?orderId=${purchaseOrder.id}">订单号:${purchaseOrder.serial}</a></span>&nbsp;&nbsp;<i>|</i><span><fmt:formatDate value="${purchaseOrder.createDatetime}" pattern="yyyy-MM-dd hh:mm"></fmt:formatDate></span>&nbsp;&nbsp;&nbsp;&nbsp;<span></span>&nbsp;&nbsp;&nbsp;&nbsp;
                         <span class="special"><zjh:status name="payStatus" dataType="PurchaseOrder.payStatus" type="normal" checkedValue="${purchaseOrder.payStatus}"></zjh:status> </span>
                         <span  style="float: right;padding-right: 51px"><a class="special" href="/pc/expert/viewExpert?expertId=${purchaseOrder.expert.id}">${purchaseOrder.expert.name}</a> </span>
                     </div>
@@ -193,12 +193,12 @@
 									<span>${purchaseOrder.expertServe.name}</span>
 								</span>
 								<span class="list">
-									<span>订单金额：￥${purchaseOrder.total}元</span>
+									<span>订单金额:￥${purchaseOrder.total}元</span>
 								</span>
                             </dd>
                             <dd>
 								<span class="list">
-									<span>类型：<zjh:status name="ptype" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status></span>
+									<span>类型:<zjh:status name="ptype" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.ptype}"></zjh:status></span>
 								</span>
 								<span class="list">
                             		<span>${purchaseOrder.expertServe.price}元/天 </span>
@@ -209,7 +209,7 @@
                             </dd>
                             <dd>
 								<span class="list">
-                                    <span>服务时间：<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd" ></fmt:formatDate> </span>
+                                    <span>服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd" ></fmt:formatDate> </span>
 							    </span>
 							    <span class="list">
                             		<span><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status> </span>
@@ -223,12 +223,12 @@
                             <c:if test="${purchaseOrder.processStatus==1}">
                                 <li>
                                     <a href="#" onclick="sureOrderProcess('${purchaseOrder.id}',3)">确认</a><i>|</i>
+<%--
                                     <a href="#" onclick="sureOrderProcess('${purchaseOrder.id}',2)">取消</a>
+--%>
                                 </li>
                             </c:if>
-                            <c:if test="${purchaseOrder.payStatus>1}">
-                                <zjh:status name="processStatus" dataType="PurchaseOrder.processStatus" type="normal" checkedValue="${purchaseOrder.processStatus}"></zjh:status>
-                            </c:if>
+
                             <li class="pop-up-clickbut"><a href="#">修改时间</a></li>
                         </ol>
                     </div>
@@ -296,7 +296,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -674,9 +674,9 @@
 </div>
 </div>
 <div class="pop-but-sq">收起</div>
-<div class="pop-up-ts1"><span style="color:#c5c8c9;">灰色</span>：不可修改（已确定订单）</div>
-<div class="pop-up-ts2"><span style="color:#ed7027;">橙色</span>：原订单日期
-    <span style="color:#1bb9f2;">蓝色</span>：新订单日期</div>
+<div class="pop-up-ts1"><span style="color:#c5c8c9;">灰色</span>:不可修改（已确定订单）</div>
+<div class="pop-up-ts2"><span style="color:#ed7027;">橙色</span>:原订单日期
+    <span style="color:#1bb9f2;">蓝色</span>:新订单日期</div>
 <div><button  class="pop-but1">保存</button></div>
 
 </div>
@@ -695,11 +695,11 @@
     <div class="pop-up-om-line"></div>
     <div class="pop-up-om-but1">支付余额</div>
     <div class="pop-up-om-but2">线下支付</div>
-    <div class="pop-up-om-fotter">提示：本平台不涉及线下支付业务</div>
+    <div class="pop-up-om-fotter">提示:本平台不涉及线下支付业务</div>
 </div>
 <div class="pop-up-om-wapper2">
     <div class="pop-up-down3-om2"><img src="images/pop-up-down3.png"></div>
-    <div class="pop-up-ts1"><span style="font-size:20px;">提示</span>：请在接受服务后点击确定按钮，并给予专家评价！</div>
+    <div class="pop-up-ts1"><span style="font-size:20px;">提示</span>:请在接受服务后点击确定按钮，并给予专家评价！</div>
     <div class="pop-up-ts2">确定后账款会打入专家账户中，为维护您的权益请勿在服务结束前点击确定按钮。</div>
     <div class="pop-up-butom">确定</div>
 </div>

@@ -202,7 +202,7 @@
                 <div class="aq-zllb-wapper-l5">
                     <div class="aq-zllb-wapper-l6">${assistant.name}</div>
 
-                    <div class="aq-zllb-wapper-l8">地点：<span style="color:#00bdff;">${assistant.province.name}</span></div>
+                    <div class="aq-zllb-wapper-l8">地点:<span style="color:#00bdff;">${assistant.province.name}</span></div>
                 </div>
             </div>
             <div class="aq-zllb-wapper-l2">
@@ -290,7 +290,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

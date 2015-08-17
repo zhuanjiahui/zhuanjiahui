@@ -142,15 +142,15 @@
                     <dd><a href="/pc/resetPwd">重置密码</a></dd>
                 </dl>
                 <dl>
-                    <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                    <dd><a href="#">订单管理</a></dd>
+                    <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                    <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                     <c:if test="${myUser.utype==3}">
                         <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                     </c:if>
                     <c:if test="${myUser.utype==2}">
                         <dd><a href="/pc/schedule/view">档期管理</a></dd>
                     </c:if>
-                    <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                    <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                     <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
                 </dl>
 
@@ -164,12 +164,12 @@
             </div>
             <div class="content-head clear">
                 <span class="content-head1">hi,中午好,${myUser.name}</span>
-                <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+                <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
             </div>
         <div class="content-body">
             <ul class="body-nav">
                 <li class="nav-li"><a href="/pc/activity/publish">发布活动</a> </li>
-                <li class="nav-li h-color"><a href="/pc/activity/myActivity">我的活动</a> </li>
+                <li class="nav-li h-color">我的活动 </li>
             </ul>
 
             <div class="body-sub">
@@ -179,18 +179,18 @@
                         <div class="am-w1">
                             <div class="am-wz1">${activity.name}</div>
                             <div class="am-wz2"><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${activity.industry}"></zjh:status> </div>
-                            <div class="am-wz3">活动类型：<span class="am-c1"><zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span></div>
+                            <div class="am-wz3">活动类型:<span class="am-c1"><zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span></div>
                         </div>
                         <div class="am-w2">
-                            <div class="am-wz1">费用：<span class="am-c2">￥${activity.price}元</span></div>
-                            <div class="am-wz2">发布时间：${activity.createDatetime}</div>
-                            <div class="am-wz3">地点：${activity.address}</div>
+                            <div class="am-wz1">费用:<span class="am-c2">￥${activity.price}元</span></div>
+                            <div class="am-wz2">发布时间:${activity.createDatetime}</div>
+                            <div class="am-wz3">地点:${activity.address}</div>
 
                         </div>
                         <div class="am-w3">
                             <div class="am-w3">
-                                <div class="am-wz1">参加人数：<span class="am-c2">${activity.realCount}/${activity.userNumber}</span></div>
-                                <div class="am-wz2">活动时间：${activity.activityDate}</div>
+                                <div class="am-wz1">参加人数:<span class="am-c2">${activity.realCount}/${activity.userNumber}</span></div>
+                                <div class="am-wz2">活动时间:${activity.activityDate}</div>
                             </div>
                         </div>
                         <div class="am-w4">
@@ -266,7 +266,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

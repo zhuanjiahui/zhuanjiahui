@@ -146,7 +146,7 @@
         <ul class="screening-2">
             <li class="screeningTitle">类别:</li>
             <li><a href="/pc/activity/pageList">全部</a></li>
-            <zjh:status name="type" dataType="Activity.type" type="list" checkedValue="${type}" onclick="/pc/activity/pageList?type="></zjh:status>;
+            <zjh:status name="type" dataType="Activity.type" type="list" checkedValue="${type}" onclick="/pc/activity/pageList?type="></zjh:status>
         </ul>
 
         <ul class="screening-2">
@@ -218,13 +218,13 @@
     <div class="query-column1-0 fl">
         <div class="query-column1-0-1">
             <a href="/pc/activity/view?activityId=${activity.id}">
-                <img src="http://pic.591zjh.com/${activity.user2.pictureUrl}" alt="活动查询页专家">
+                <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_360h_460w" alt="活动查询页专家">
             </a>
         </div>
         <div class="query-column1-0-2">
-            <span>发起人：${activity.user.name}</span>
-            <span>地&nbsp;&nbsp;点：${activity.province.name}&nbsp;${activity.address}</span>
-            <span>时间：<fmt:formatDate value="${activity.activityDate}" pattern="yyyy-MM-dd"></fmt:formatDate> &nbsp;&nbsp;人气：99 </span>
+            <span>发起人:${activity.user.name}</span>
+            <span>地&nbsp;&nbsp;点:${activity.province.name}&nbsp;${activity.address}</span>
+            <span>时间:<fmt:formatDate value="${activity.activityDate}" pattern="yyyy-MM-dd"></fmt:formatDate> &nbsp;&nbsp;人气:99 </span>
         </div>
     </div>
     <div class="query-column1-1">
@@ -248,19 +248,20 @@
 <div class="query-column2">
     <div class="query-column2-1">
         <a href="/pc/activity/view?activityId=${activity.id}">
-            <img src="http://pic.591zjh.com/${activity.user2.pictureUrl}" alt="活动查询ad图">
+            <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_190w" alt="活动查询ad图">
             <!-- hover部分 -->
 							<span class="a-span">
 								<span class="a-span1">${activity.activityDate}</span>
-								<span class="a-span2">地点：${activity.province.name}</span>
-								<span class="a-span3">人气：</span>
-								<span class="a-span4">费用：${activity.price}元</span>
+								<span class="a-span2">地点:${activity.province.name}</span>
+								<span class="a-span3">人气:</span>
+								<span class="a-span4">费用:${activity.price}元</span>
 							</span>
         </a>
 
+
         <div class="query-column2-1-1">
-            <span class="query2-span1">专家：${activity.user.name}</span>
-            <span class="query2-span2">活动类型：<zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span>
+            <span class="query2-span1">专家:${activity.user.name}</span>
+            <span class="query2-span2">活动类型:<zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span>
             <span class="query2-span3">${activity.introduce}</span>
             <span class="query2-span4">已报名${activity.realCount}/${activity.userNumber}人</span>
             <a href="#" onclick="joinActivity('${activity.id}')">参加活动</a>
@@ -335,7 +336,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -366,8 +367,11 @@
             },
             dataType:"json",
             success:function(data){
-                if(data==null){
-                    alert("已不能报名！");
+
+                if(data=="repeat"){
+                    alert("您已报名,不能重复报名!");
+                }else if(data=="full"){
+                    alert("活动人员已满!");
                 }else{
                     location.href=data;
                 }

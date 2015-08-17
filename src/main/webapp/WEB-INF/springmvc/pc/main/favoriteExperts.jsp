@@ -141,15 +141,15 @@
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
             <dl>
-                <dt class="order-icon2"><a href="#">账号管理</a></dt>
-                <dd><a href="#">订单管理</a></dd>
+                <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+                <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
                 <c:if test="${myUser.utype==3}">
                     <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
                 </c:if>
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/schedule/view">档期管理</a></dd>
                 </c:if>
-                <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+                <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
                 <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
             </dl>
 
@@ -163,45 +163,49 @@
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,中午好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
         </div>
 <div class="content-body">
     <ul class="body-nav">
         <li class="nav-li">收藏专家</li>
     </ul>
     <div class="body-sub">
-        <c:forEach items="${pageInfo.list}" var="expert">
+        <c:forEach items="${pageInfo.list}" var="favoriteExpert">
         <div class="body-con-3">
             <div class="con-l">
-                <div class="con-l1"><img src="/images/c-expert.png" style="border:0"></div>
+                <div class="con-l1"><img src="http://pic.591zjh.com/${favoriteExpert.expert.pictureUrl}_90w" style="border:0"></div>
                 <div class="con-l2">
                     <div class="star">
-                        <c:forEach items="${expert.grade}">
-                            <span class="star-pic"><img src="/images/star-pic.png" style="border:0"></span>
+                        <c:forEach items="${favoriteExpert.expert.grade}">
                         </c:forEach>
-                        <span class="grade">${expert.grade}分</span>
+                            <span class="star-pic"><img src="/images/star-pic.png" style="border:0"></span>
+                            <span class="star-pic"><img src="/images/star-pic.png" style="border:0"></span>
+                            <span class="star-pic"><img src="/images/star-pic.png" style="border:0"></span>
+                            <span class="star-pic"><img src="/images/star-pic.png" style="border:0"></span>
+                            <span class="star-pic"><img src="/images/star-pic.png" style="border:0"></span>
+                        <span class="grade">5.0分</span>
                     </div>
-                    <div class="place">${expert.province.name}</div>
+                    <div class="place">${favoriteExpert.expert.province.name}</div>
                 </div>
             </div>
             <div class="con-m">
                 <div class="con-m1">
                     <dl>
-                        <dt>${expert.name}<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expert.industry}"></zjh:status></span></dt>
-                        <dd>${expert.memo}</dd>
-                        <dd>${expert.workTime}年教龄</dd>
+                        <dt>${favoriteExpert.expert.name}<span><zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${expert.industry}"></zjh:status></span></dt>
+                        <dd>${favoriteExpert.expert.memo}</dd>
+                        <dd>${favoriteExpert.expert.workTime}年教龄</dd>
                     </dl>
                 </div>
 
                 <div class="con-m3">
-                    <c:forEach items="${expert.styleLabelList}" var="stylelabel">
+                    <c:forEach items="${favoriteExpert.expert.styleLabelList}" var="stylelabel">
                         <span>${stylelabel.label}</span>
                     </c:forEach>
                 </div>
             </div>
             <div class="con-r">
-                <a href="/pc/expert/viewExpert?expertId=${expert.id}">查看详情</a>
-                <span>删除收藏</span>
+                <a href="/pc/expert/viewExpert?expertId=${favoriteExpert.expert.id}">查看详情</a>
+                <span><a href="#" onclick="delExpert('${favoriteExpert.id}',this)">删除收藏</a></span>
             </div>
         </div>
         </c:forEach>
@@ -268,7 +272,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -285,5 +289,23 @@
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<script type="text/javascript">
+    function delExpert(id,obj){
+        $.ajax({
+            url:"/pc/favorite/delExpert",
+            type:"get",
+            data:{
+                expertId:id
+            },
+            dataType:"json",
+            success:function(data){
+                if(data){
+                    $(obj).parents(".body-con-3").fadeOut(1000);
+                }
+            }
+
+        })
+    }
+</script>
 </body>
 </html>

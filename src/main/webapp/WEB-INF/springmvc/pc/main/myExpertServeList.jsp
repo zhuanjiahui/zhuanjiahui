@@ -149,15 +149,15 @@
             <dd><a href="/pc/resetPwd">重置密码</a></dd>
         </dl>
         <dl>
-            <dt class="order-icon2"><a href="#">账号管理</a></dt>
-            <dd><a href="#">订单管理</a></dd>
+            <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
+            <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
             <c:if test="${myUser.utype==3}">
                 <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
             </c:if>
             <c:if test="${myUser.utype==2}">
                 <dd><a href="/pc/schedule/view">档期管理</a></dd>
             </c:if>
-            <dd><a href="/pc/requirement/myPublish">需要管理</a></dd>
+            <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
             <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
         </dl>
 
@@ -171,7 +171,7 @@
     </div>
     <div class="content-head clear">
         <span class="content-head1">hi,中午好,${myUser.name}</span>
-        <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+        <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
     </div>
 
 <div class="content-body">
@@ -191,11 +191,11 @@
             <dl>
                 <dd>
                     <span class="list">${expertServe.name}</span>
-					<span class="list">服务类型：<span><zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status></span></span>
-                    <span class="list">工作年限：${expertServe.workTime}</span>
-                    <span class="list">半天折扣：${expertServe.discount}</span>
-                    <span class="list">全额优惠：${expertServe.cheap}</span>
-                    <span class="list special3">预算：${expertServe.price}元</span>
+					<span class="list">服务类型:<span><zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status></span></span>
+                    <span class="list">工作年限:${expertServe.workTime}</span>
+                    <span class="list">半天折扣:${expertServe.discount}</span>
+                    <span class="list">全额优惠:${expertServe.cheap}</span>
+                    <span class="list special3">预算:${expertServe.price}元</span>
                 </dd>
             </dl>
           <%--  <ol>
@@ -240,7 +240,7 @@
                 <div class="sc-tr">
 
                     <input name="serveType" value="train" type="hidden">
-                    <div class="sc-td-r"><span>服务标题：</span><input type="text" name="name"></div>
+                    <div class="sc-td-r"><span>服务标题:</span><input type="text" name="name"></div>
                     <div class="sc-td-l">
                         <span>培训年限:</span>
                         <select name="workTime">
@@ -299,12 +299,13 @@
                 </div>
                 <div class="sc-tr">
 
-                    <div class="sc-td-l"><span>服务过的客户：</span><input type="text" name="servedConsumer" size="255"></div>
+                    <div class="sc-td-l"><span>服务过的客户:</span><input type="text" name="servedConsumer" size="255"></div>
                     <br/>
                 </div>
-                <div class="editorBox"><textarea id="content" class="ckeditor" name="content">
-
-                </textarea></div>
+                <div class="editorBox">
+                    <span>课程大纲:</span>
+                    <textarea id="content" class="ckeditor" name="content"></textarea>
+                </div>
 
 
                 <div class="sc-xx"></div>
@@ -318,7 +319,7 @@
             <div id="consult" hidden="hidden">
                 <div class="sc-tr">
                     <div class="sc-td-l sc-td-l-zxnx">
-                        咨询年限：
+                        咨询年限:
                     </div>
                     <div class="sc-td-r">
                         <select name="workTime">
@@ -347,7 +348,7 @@
                         </select>
                     </div>
                     <div class="sc-td-l sc-td-l-pxnx">
-                        半天折扣：
+                        半天折扣:
                     </div>
                     <div class="sc-td-r">
                         <select name="discount"  required="true">
@@ -361,7 +362,7 @@
                         </select>
                     </div>
                     <div class="sc-td-l sc-td-l-pxnx">
-                        全额优惠：
+                        全额优惠:
                     </div>
                     <div class="sc-td-r">
                         <select name="cheap"  required="true">
@@ -378,24 +379,24 @@
 
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">咨询专业：</div>
+                    <div class="sc-td-l">咨询专业:</div>
                     <div class="sc-td-r">
                        <zjh:status name="major" dataType="ExpertServe.major" type="select" checkedValue=""></zjh:status>
                     </div>
-                    <div class="sc-td-l sc-td-l-hy">行业：</div>
+                    <div class="sc-td-l sc-td-l-hy">行业:</div>
                     <div class="sc-td-r">
                         <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
 
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">报价：</div>
+                    <div class="sc-td-l">报价:</div>
                     <div class="sc-td-r">
                         <input style="width:120px;" type="text" name="price">元/天
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">客户名称：</div>
+                    <div class="sc-td-l">客户名称:</div>
                     <div class="sc-td-r">
                         <input name="servedConsumer" style="width:318px;" type="text" size="255">
                     </div>
@@ -415,7 +416,7 @@
                         <input type="hidden" name="serveType" value="development">
                     </div>
                     <div class="sc-td-l sc-td-l-kfnx">
-                        开发年限：
+                        开发年限:
                     </div>
                     <div class="sc-td-r">
                         <select name="workTime">
@@ -442,7 +443,7 @@
                         </select>
                     </div>
                     <div class="sc-td-l sc-td-l-pxnx">
-                        半天折扣：
+                        半天折扣:
                     </div>
                     <div class="sc-td-r">
                         <select name="discount"  required="true">
@@ -456,7 +457,7 @@
                         </select>
                     </div>
                     <div class="sc-td-l sc-td-l-pxnx">
-                        全额优惠：
+                        全额优惠:
                     </div>
                     <div class="sc-td-r">
                         <select name="cheap" required="true">
@@ -469,23 +470,23 @@
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">行业：</div>
+                    <div class="sc-td-l">行业:</div>
                     <div class="sc-td-r">
                         <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
                     </div>
-                    <div class="sc-td-l">擅长类型：</div>
+                    <div class="sc-td-l">擅长类型:</div>
                     <div class="sc-td-r">
                         <zjh:status name="developType" dataType="ExpertServe.developType" type="select" checkedValue=""></zjh:status>
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">报价：</div>
+                    <div class="sc-td-l">报价:</div>
                     <div class="sc-td-r">
                         <input style="width:120px;" type="text" name="price">元/天
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">项目名称：</div>
+                    <div class="sc-td-l">项目名称:</div>
                     <div class="sc-td-r">
                         <input name="servedConsumer" style="width:318px;" type="text" size="255">
                     </div>
@@ -552,7 +553,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -633,10 +634,10 @@
                 $(".body-sub").append("<div class=\"body-con-4\"><dl><dd>"+
                         "<span class=\"list\">${expertServe.name}</span>"+
                         "<span class=\"list\">服务类型:"+serveName+"</span>"+
-                        "<span class=\"list\">工作年限：${expertServe.workTime}</span>"+
-                        "<span class=\"list\">半天折扣：${expertServe.discount}</span>"+
-                        "<span class=\"list\">全额优惠：${expertServe.cheap}</span>"+
-                        "<span class=\"list special3\">预算：￥${expertServe.price}元</span>"+
+                        "<span class=\"list\">工作年限:${expertServe.workTime}</span>"+
+                        "<span class=\"list\">半天折扣:${expertServe.discount}</span>"+
+                        "<span class=\"list\">全额优惠:${expertServe.cheap}</span>"+
+                        "<span class=\"list special3\">预算:￥${expertServe.price}元</span>"+
                         "</dd></dl></div>");
 
             }
