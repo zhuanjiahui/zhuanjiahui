@@ -1,16 +1,16 @@
 <%@ page import="com.frame.organization.model.MyUser" %>
 <%@ page import="com.frame.core.util.AuthorizationUtil" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2015/7/3
-  Time: 12:20
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="zjh" uri="http://java.zjh.com/taglib" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2015/8/7
+  Time: 13:57
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +18,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <title>活动查询</title>
+    <title>订单详情</title>
     <link rel="stylesheet" href="/theme/reset.css">
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="/scripts/zjh/zjh-shuaixuan.js"></script>
     <script type="text/javascript" src="/scripts/zjh/zjh-public.js"></script>
 </head>
 <body>
@@ -59,6 +58,7 @@
                     pageContext.getOut().print("<i>|</i><a href=\"j_spring_security_logout\">退出</a>");
                 }
             %>
+
         </div>
     </div>
 </div>
@@ -67,6 +67,10 @@
     <div class="logo fl">
         <a href="/pc/index"><img src="/images/logo.png" alt="logo"></a>
     </div>
+    <div class="text-border fl">
+        <img src="/images/text-border.png" alt="text-border">
+    </div>
+
     <!-- TAB切换效果 -->
     <div class="search fl">
         <div class="search-top clear"  id="tab-nav">
@@ -104,27 +108,11 @@
             </ul>
         </div>
     </div>
-    <div class="guild fl">
-        <div class="guild-sub fl">
-            <a href="/pc/requirement/publish">
-                <img src="/images/xuqiu.png" alt="发布需求">
-                <br />
-                <span>发布需求</span>
-            </a>
-        </div>
-        <div class="guild-sub">
-            <a href="/pc/activity/publish">
-                <img src="/images/huodong.png" alt="发布活动">
-                <br />
-                <span>发布活动</span>
-            </a>
-        </div>
-    </div>
 </div>
 <!-- content部分 -->
-<div class="content">
+<div class="content  clear">
     <!-- 导航部分 -->
-<div class="nav">
+    <div class="nav">
         <ul>
             <li class="nav-1"><a href="/pc/expertServe/pageList">全部专家</a></li>
             <li><a href="/pc/index">首页</a></li>
@@ -133,155 +121,132 @@
             <li><a href="/pc/requirement/pageList">寻找需求</a></li>
             <li><a href="/pc/activity/pageList">参加活动</a></li>
         </ul>
-</div>
+    </div>
+    <div class="wrap0">
 
+        <!-- user-order-details -->
+        <div class="uod-title">
+            订单详情
+        </div>
+        <ul class="uod-ul">
 
-<!-- 筛选条件 -->
-<div class="multiConditionScreening">
-<%--
-    <p class="city"><span>所有分类&nbsp;>&nbsp;</span><span>北京</span><span>切换城市</span></p>
---%>
-    <ul class="screening">
-
-        <ul class="screening-2">
-            <li class="screeningTitle">类别:</li>
-            <li><a href="/pc/activity/pageList">全部</a></li>
-            <zjh:status name="type" dataType="Activity.type" type="list" checkedValue="${type}" onclick="/pc/activity/pageList?type="></zjh:status>
-        </ul>
-
-        <ul class="screening-2">
-            <li class="screeningTitle">行业类别:</li>
-            <li><a href="/pc/activity/pageList?type=${type}">全部</a> </li>
-            <zjh:status name="industry" dataType="ExpertServe.industry" type="list" checkedValue="${industry}" onclick="/pc/activity/pageList?type=${type}&industry="></zjh:status>
-        </ul>
-    </ul>
-</div>
-
-<div class="screeningResultsAndRight">
-<!-- 右侧栏 -->
-<div class="bodyRight">
-    <ul class="expertRecommendation">
-        <li style="margin:15px 0;color:#00bdff;font-size:15px;font-weight:bold;text-indent:5px;">专家推荐</li>
-        <c:forEach items="${homeExperts}" var="expert">
+            <% if(user.getUtype()==1){
+            %>
             <li>
-                <ul>
-                    <img src="http://pic.591zjh.com/${expert.pictureUrl}">
-                    <ul class="text">
-                        <li>${expert.name}</li>
-                        <li>工作${expert.workTime}年</li>
-                        <li>${expert.chief}</li>
-                        <li class="last">${expert.province.name}</li>
-                    </ul>
-                </ul>
+                <div class="uod-ul-1">
+                    <span>活动信息</span>
+                </div>
+                <div class="uod-ul-2">
+
+                        <span>${purchaseOrder.ac.name}</span>
+                        <span>支付后显示联系方式</span>
+
+                    <c:if test="${purchaseOrder.payStatus>1}">
+                        <span>${purchaseOrder.expert2.name}</span>
+                        <span>${purchaseOrder.expert2.phone}</span><span>${purchaseOrder.expert2.email}</span>
+                    </c:if>
+                    <span>${purchaseOrder.expert2.province.name}</span>
+                </div>
             </li>
-        </c:forEach>
+            <li>
+                <div class="uod-ul-1">
+                    <span>助理信息</span>
+                </div>
+                <div class="uod-ul-2"><span>${purchaseOrder.assistant.name}</span>
+                    <c:if test="${purchaseOrder.payStatus==1}">
+                        <span>支付后显示</span>
+                    </c:if>
+                    <c:if test="${purchaseOrder.payStatus>1}">
+                        <span>${purchaseOrder.assistant.phone}</span><span>${purchaseOrder.assistant.email}</span>
+                    </c:if>
+                </div>
+            </li>
+            <%}else if(user.getUtype()>1){%>
+            <li>
+                <div class="uod-ul-1">
+                    <span>联系人信息</span>
+                </div>
+                <div class="uod-ul-2">
+                    <c:if test="${purchaseOrder.payStatus==1}">
+                        <span>${purchaseOrder.consumer2.name}</span>
+                        <span>支付后显示联系方式</span>
+                    </c:if>
+                    <c:if test="${purchaseOrder.payStatus>1}">
+                        <span>${purchaseOrder.linkman}</span>
+                        <span>${purchaseOrder.telephone}</span><span>${purchaseOrder.consumer2.email}</span>
+                    </c:if>
+                    <span>${purchaseOrder.linkAddress}</span>
+                </div>
+            </li>
+            <li>
+                <div class="uod-ul-1">
+                    <span>助理信息</span>
+                </div>
+                <div class="uod-ul-2"><span>${purchaseOrder.assistant.name}</span>
+                    <span>${purchaseOrder.assistant.phone}</span><span>${purchaseOrder.assistant.email}</span>
+                </div>
+            </li>
+            <%}%>
 
-    </ul>
-    <ul class="commonProblem">
-        <li style="margin:5px 0;color:#333;font-size:15px;text-indent:5px;border-bottom:1px solid #e8e8e8;height:40px;line-height:40px;">常见问题</li>
-        <li style="margin-top:20px;">1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>10、专家汇平台是否会收取职...</li>
-    </ul>
-</div>
+            <li>
+                <div class="uod-ul-1">
+                    <span>订单信息</span>
+                    <span class="uod-ul-1-1"><zjh:status name="payStatus" dataType="PurchaseOrder.payStatus" type="normal" checkedValue="${purchaseOrder.payStatus}"></zjh:status> </span>
+                </div>
+                <div class="uod-ul-3">
+                    <span>订单编号:${purchaseOrder.serial}</span>
+                    <span>生成时间:<fmt:formatDate value="${purchaseOrder.createDatetime}" pattern="yyyy-MM-dd hh:mm:ss"></fmt:formatDate> </span>
+                </div>
+                <div class="uod-ul-4">
+                    <span>订单状态:<zjh:status name="processStatus" dataType="PurchaseOrder.processStatus" type="normal" checkedValue="${purchaseOrder.processStatus}"></zjh:status></span>
+                </div>
+            </li>
+            <li class="uod-position">
+                <div class="uod-ul-1">
+                    <span>服务信息</span>
+                </div>
+                <div class="uod-ul-5">
+                    <dl>
+                        <dt>
+                            <img src="http://pic.591zjh.com/${purchaseOrder.expert2.pictureUrl}" alt="订单页专家信息">
+                        </dt>
+                        <dd class="uod-ul-5-1">${purchaseOrder.expert2.name}</dd>
+                        <dd>类别:<zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.expertServe.serveType}"></zjh:status> </dd>
+                        <dd>
+                            <span>行业:<zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${purchaseOrder.expertServe.industry}"></zjh:status> </span>
+                        </dd>
+                        <dd class="uod-ul-5-2">服务:<span>${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天</span>
+                            <span>服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span>
+                            <span><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status> </span>
+                        </dd>
 
-<!-- 筛选结果 -->
-<ul class="resultsTop">
-    <li>
-        <ul class="sortingMethod">
-            <li  class="screeningChioce">默认排序</li>
-            <li>人气</li>
+                    </dl>
+                </div>
+                <div class="uod-ul-6">
+						<span>应付金额:
+							<i>${purchaseOrder.total}元</i>
+						</span>
+                </div>
+            </li>
+            <li>
+                <div class="uod-ul-7">
+                    <span>订单备注:</span>
+                    <span>${purchaseOrder.memo}</span>
+                </div>
+                <div class="uod-ul-8">
+                    <span class="uod-ul-8-1">已支付:
+                        <c:if test="${purchaseOrder.payStatus==1}"><i>0元</i></c:if>
+                        <c:if test="${purchaseOrder.payStatus==2}"><i>${purchaseOrder.total*0.5}元</i></c:if>
+                        <c:if test="${purchaseOrder.payStatus==3}"><i>${purchaseOrder.total}元</i></c:if>
+                    </span>
+                    <%--
+                                        <a class="uod-ul-8-2" href="javascript:history.back();">返 回</a>
+                    --%>
+                </div>
+
+            </li>
         </ul>
-    </li>
-    <li>
-        <ul class="costRange">
-            <li>费用&nbsp;:</li>
-            <li><input type="text"></li>
-            <li style="padding:0 1px;color:#00bdff">-</li>
-            <li><input type="text"></li>
-        </ul>
-    </li>
-</ul>
-<!-- 活动查询包裹 -->
-<div class="wrap-aq">
-<!-- 活动栏目1部分 -->
-<c:forEach items="${pageInfo.list}" var="activity" begin="0" end="0">
-
-<div class="query-column1">
-    <div class="query-column1-0 fl">
-        <div class="query-column1-0-1">
-            <a href="/pc/activity/view?activityId=${activity.id}">
-                <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_360h_460w" alt="活动查询页专家">
-            </a>
-        </div>
-        <div class="query-column1-0-2">
-            <span>发起人:${activity.user.name}</span>
-            <span>地&nbsp;&nbsp;点:${activity.province.name}&nbsp;${activity.address}</span>
-            <span>时间:<fmt:formatDate value="${activity.activityDate}" pattern="yyyy-MM-dd"></fmt:formatDate> &nbsp;&nbsp;人气:99 </span>
-        </div>
     </div>
-    <div class="query-column1-1">
-        <div class="query-column1-3-1">
-            <span class="query-span1">活动主题</span>
-            <span class="query-span2"><zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status></span>
-            <p>${activity.introduce}</p>
-        </div>
-        <div class="query-column1-3-2">
-            <span class="query-span3">已报名${activity.realCount}/${activity.userNumber}人</span>
-            <span class="query-span4">${activity.price}元</span>
-            <a href="#" onclick="joinActivity('${activity.id}')">参加活动</a>
-        </div>
-    </div>
-
-</div>
-</c:forEach>
-<c:forEach items="${pageInfo.list}" var="activity" begin="1" end="11">
-
-<!-- 有hover的部分 -->
-<div class="query-column2">
-    <div class="query-column2-1">
-        <a href="/pc/activity/view?activityId=${activity.id}">
-            <img src="http://pic.591zjh.com/${activity.activityPicUrl}@_190w" alt="活动查询ad图">
-            <!-- hover部分 -->
-							<span class="a-span">
-								<span class="a-span1">${activity.activityDate}</span>
-								<span class="a-span2">地点:${activity.province.name}</span>
-								<span class="a-span3">人气:</span>
-								<span class="a-span4">费用:${activity.price}元</span>
-							</span>
-        </a>
-
-
-        <div class="query-column2-1-1">
-            <span class="query2-span1">专家:${activity.user.name}</span>
-            <span class="query2-span2">活动类型:<zjh:status name="type" dataType="Activity.type" type="normal" checkedValue="${activity.type}"></zjh:status> </span>
-            <span class="query2-span3">${activity.introduce}</span>
-            <span class="query2-span4">已报名${activity.realCount}/${activity.userNumber}人</span>
-            <a href="#" onclick="joinActivity('${activity.id}')">参加活动</a>
-        </div>
-    </div>
-</div>
-</c:forEach>
-
-<!-- 页码部分 -->
-<div class="page-normal">
-    <ul class="page-ul">
-        <zjh:pageList bean="${pageEntity}" url="/pc/activity/pageList">
-            <zjh:page-param name="type" value="${type}"></zjh:page-param>
-            <zjh:page-param name="industry" value="${industry}"></zjh:page-param>
-        </zjh:pageList>
-    </ul>
-</div>
-
-</div>
-</div>
 </div>
 <!-- 回到顶部 -->
 <a href="javascript:;" id="btn" title="回到顶部"></a>
@@ -351,34 +316,9 @@
 </div>
 </div>
 
-
-
 <!-- jiathis插件侧边栏 -->
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
-<script type="text/javascript">
-    function joinActivity(id){
-        $.ajax({
-            url:"/pc/purchaseOrder/joinActivity",
-            type:"post",
-            data:{
-                activityId:id
-            },
-            dataType:"json",
-            success:function(data){
-
-                if(data=="repeat"){
-                    alert("您已报名,不能重复报名!");
-                }else if(data=="full"){
-                    alert("活动人员已满!");
-                }else{
-                    alert("报名成功!");
-                }
-            }
-
-        })
-    }
-</script>
 </body>
 </html>

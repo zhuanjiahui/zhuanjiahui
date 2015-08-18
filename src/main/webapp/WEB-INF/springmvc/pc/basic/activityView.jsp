@@ -399,10 +399,10 @@
             success:function(data){
                 if(data=="repeat"){
                     alert("您已报名,不能重复报名!");
-                }else if(data=="overflows"){
+                }else if(data=="full"){
                     alert("活动人员已满!");
                 }else{
-                    location.href=data;
+                    alert("报名成功!");
                 }
             }
 

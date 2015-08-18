@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <title>网站条款</title>
+    <title>活动公共</title>
     <link rel="stylesheet" href="/theme/reset.css">
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
@@ -132,13 +132,13 @@
             <!-- 左公共部分 -->
             <ul class="footer-sub-left">
                 <a href="/pc/static/footer-know-us"><li class="footer-sub-1">关于我们</li></a>
-                <a href="/pc/static/footer-know-us"><li class="footer-sub-2-but footer-sub-2s">了解我们
+                <a href="/pc/static/footer-know-us"><li class="footer-sub-2-but footer-sub-2">了解我们
                     <div class="right-arrow">></div>
                 </li></a>
                 <a href="/pc/static/footer-successful-case"><li class="footer-sub-2-but footer-sub-2">成功案例
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-event-announcements"><li class="footer-sub-2-but footer-sub-2">活动公告
+                <a href="/pc/static/footer-event-announcements"><li class="footer-sub-2-but footer-sub-2s">活动公告
                     <div class="right-arrow">></div>
                 </li></a>
                 <a href="/pc/static/footer-website-terms"><li class="footer-sub-2-but footer-sub-2">网站条款

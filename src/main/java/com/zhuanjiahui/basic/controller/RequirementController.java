@@ -142,4 +142,14 @@ public class RequirementController extends BaseController{
         baseManager.saveOrUpdate(RequirementDiscuss.class.getName(),requirementDiscuss);
         return true;
     }
+    /*撤回需求*/
+    @RequestMapping(value = "/close")
+    @ResponseBody
+    public Boolean closeRequirement(HttpServletRequest request){
+        String requirementId=request.getParameter("requirementId");
+        Requirement requirement=(Requirement)baseManager.getObject(Requirement.class.getName(),requirementId);
+        requirement.setTheStatus(-1);
+        baseManager.saveOrUpdate(Requirement.class.getName(),requirement);
+        return true;
+    }
 }

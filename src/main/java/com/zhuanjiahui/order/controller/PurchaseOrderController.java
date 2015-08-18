@@ -11,6 +11,7 @@ import com.frame.organization.model.User;
 import com.frame.organization.service.CityManager;
 import com.zhuanjiahui.basic.controller.BaseController;
 import com.zhuanjiahui.basic.model.Activity;
+import com.zhuanjiahui.basic.model.ActivityExpert;
 import com.zhuanjiahui.character.model.Expert;
 import com.zhuanjiahui.character.model.LinkAddress;
 import com.zhuanjiahui.character.model.Linkman;
@@ -210,20 +211,16 @@ public class PurchaseOrderController extends BaseController{
     @RequestMapping(value = "/joinActivity")
     @ResponseBody
     public String joinActivity(HttpServletRequest request){
-        Expert user=AuthorizationUtil.getExpert();
+        User user=AuthorizationUtil.getUser();
         String activityId=request.getParameter("activityId");
         Activity activity=(Activity)baseManager.getObject(Activity.class.getName(),activityId);
-        List<Expert> expertList=activity.getExpertList();
         List<PurchaseOrder> purchaseOrderList=activity.getPurchaseOrderList();
-        if(purchaseOrderList==null){
+        if (purchaseOrderList==null){
             purchaseOrderList=new ArrayList<>();
         }
-        if (expertList==null){
-            expertList=new ArrayList<>();
-        }
-        if(expertList.size()<activity.getUserNumber()){
-            for (Expert expert:expertList){
-                if(user.getId().equals(expert.getId())){
+        if(purchaseOrderList.size()<activity.getUserNumber()){
+            for (PurchaseOrder purchaseOrder:purchaseOrderList){
+                if(user.getId().equals(purchaseOrder.getConsumer().getId())){
                     return "repeat";
                 }
             }
@@ -234,11 +231,11 @@ public class PurchaseOrderController extends BaseController{
         purchaseOrder.setConsumer(AuthorizationUtil.getUser());
         purchaseOrder.setExpert(activity.getUser());
         orderManager.createActivityOrder(purchaseOrder,activity);
-        expertList.add(user);
+        baseManager.saveOrUpdate(PurchaseOrder.class.getName(), purchaseOrder);
         purchaseOrderList.add(purchaseOrder);
-        activity.setExpertList(expertList);
-        baseManager.saveOrUpdate(PurchaseOrder.class.getName(),purchaseOrder);
+        activity.setPurchaseOrderList(purchaseOrderList);
         baseManager.saveOrUpdate(Activity.class.getName(),activity);
-        return "redirect:/pc/purchaseOrder/activityPay?orderId="+purchaseOrder.getId();
+/*        return "redirect:/pc/activityPay?orderId="+purchaseOrder.getId();*/
+        return "success";
     }
 }

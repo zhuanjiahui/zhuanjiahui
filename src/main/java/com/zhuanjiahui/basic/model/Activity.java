@@ -41,7 +41,6 @@ public class Activity {
 
 
     private Integer favoriteCount;
-    private List<Expert> expertList;
     private List<ActivityGuest> activityGuests;
     private List<PurchaseOrder> purchaseOrderList;
     private List<ActivityDiscuss> activityDiscussList;
@@ -160,11 +159,8 @@ public class Activity {
         this.activityGuests = activityGuests;
     }
 
-    @Transient
+    @ManyToMany(cascade = CascadeType.PERSIST,mappedBy = "activityList")
     public List<PurchaseOrder> getPurchaseOrderList() {
-      /*  BaseManager baseManager=new BaseManagerImpl();
-        String queryHQL="from "+PurchaseOrder.class.getName()+" o where o.orderType=2 and o.theStatus=1 and o.activity.id="+this.id;
-        return baseManager.listObject(queryHQL);*/
         return purchaseOrderList;
     }
 
@@ -249,12 +245,5 @@ public class Activity {
     public void setActivityDate2(Date activityDate2) {
         this.activityDate2 = activityDate2;
     }
-    @ManyToMany(fetch = FetchType.LAZY,mappedBy = "activityList")
-    public List<Expert> getExpertList() {
-        return expertList;
-    }
 
-    public void setExpertList(List<Expert> expertList) {
-        this.expertList = expertList;
-    }
 }

@@ -240,10 +240,11 @@
             </div>
             <div class="ms-table-r">
                 <div class="ms-tr-r">
-                    <div class="ms-td-r-1"><a href="/pc/expert/viewPreExpert?expertId=${expert.id}&year=${year}&month=${month}&day=${day}"><img src="/images/ms-left.png"> </a></div>
+                    <div class="ms-td-r-1"><a href="#" onclick="preMonth()"><img src="/images/ms-left.png"> </a></div>
                     <div class="ms-td-r-2">${year}&nbsp;年&nbsp;${month}&nbsp;月</div>
-                    <div class="ms-td-r-3"><a href="/pc/expert/viewNextExpert?expertId=${expert.id}&year=${year}&month=${month}&day=${day}"> <img src="/images/ms-right.png"></a></div>
+                    <div class="ms-td-r-3"><a href="#" onclick="nextMonth()"> <img src="/images/ms-right.png"></a></div>
                 </div>
+
                 <div class="ms-tr-r">
                     <div class="ms-td-r4">${day}</div>
                     <div class="ms-td-r5">周${weekday}</div>
@@ -254,6 +255,12 @@
         <div class="ms-but-sq">收起</div>
     </div>
     <p class="legend"><span style="color:#00bcfd;">蓝色</span><span>:可约</span><span style="color:#fc5e02;">橙色</span><span>:抢约</span><span style="color:gray;">灰色</span><span>:不可约</span></p>
+    <form id="dateForm" action="/pc/expert/viewNextExpert" method="post">
+        <input id="year" type="hidden" name="year" value="${year}">
+        <input id="month" type="hidden" name="month" value="${month}">
+        <input  type="hidden" name="expertId" value="${expert.id}">
+
+    </form>
 </div>
 <div class="preAppointment">
     <div class="but-yuyue">预约</div>
@@ -481,6 +488,32 @@
         })
 
     })
+    function nextMonth() {
+        setDate(1);
+    }
+    function preMonth() {
+        setDate(-1);
+    }
+    function setDate(amount) {
+        var year = parseInt($("#year").val());
+        var month = parseInt($("#month").val());
+        amount = parseInt(amount);
+        if (month + amount > 12) {
+            year += 1;
+            month = 1;
+        }
+        else if (month + amount < 1) {
+            year -= 1;
+            month = 12;
+        }
+        else {
+            month += amount;
+        }
+        $("#year").val(year);
+        $("#month").val(month);
+        $("#dateForm").submit();
+    }
+
 </script>
 </body>
 </html>

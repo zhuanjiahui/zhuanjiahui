@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <title>网站条款</title>
+    <title>我的账号</title>
     <link rel="stylesheet" href="/theme/reset.css">
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
@@ -131,25 +131,23 @@
         <div class="footer-sub">
             <!-- 左公共部分 -->
             <ul class="footer-sub-left">
-                <a href="/pc/static/footer-know-us"><li class="footer-sub-1">关于我们</li></a>
-                <a href="/pc/static/footer-know-us"><li class="footer-sub-2-but footer-sub-2s">了解我们
+                <a href="/pc/static/footer-platform-process"><li class="footer-sub-1">帮助中心</li></a>
+                <a href="/pc/static/footer-platform-process"><li class="footer-sub-2-but footer-sub-2">平台流程
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-successful-case"><li class="footer-sub-2-but footer-sub-2">成功案例
+                <a href="/pc/static/footer-expert-settled"><li class="footer-sub-2-but footer-sub-2">专家入驻
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-event-announcements"><li class="footer-sub-2-but footer-sub-2">活动公告
+                <a href="/pc/static/footer-user-help"><li class="footer-sub-2-but footer-sub-2">用户帮助
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-website-terms"><li class="footer-sub-2-but footer-sub-2">网站条款
+                <a href="/pc/static/footer-assistant-help"><li class="footer-sub-2-but footer-sub-2">助理帮助
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-join-us"><li class="footer-sub-2-but footer-sub-2">加入我们
+                <a href="/pc/static/footer-expert-help"><li class="footer-sub-2-but footer-sub-2s">专家帮助
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-contact-us"><li class="footer-sub-2-but footer-sub-2">联系我们
-                    <div class="right-arrow">></div>
-                </li></a>
+
             </ul>
             <!-- 右边部分 -->
             <div class="footer-sub-right">

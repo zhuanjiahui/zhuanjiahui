@@ -44,7 +44,7 @@
         $("#expertPicUpload").uploadify({
             swf: '/scripts/uploadify/uploadify.swf?m=' + Math.random(),
             uploader: '/pc/user/uploadPic',
-            fileTypeExts: '*.jpg;*.jpge;*.gif;*.png',
+            fileTypeExts: '*.jpg;*.jpeg;*.gif;*.png',
             //浏览按钮的宽度
             width: '100',
             //浏览按钮的高度

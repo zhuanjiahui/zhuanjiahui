@@ -500,3 +500,11 @@ CREATE TABLE `basic_activity_expert` (
 
 ALTER TABLE `basic_activity`
 	CHANGE COLUMN `expert_id` `user_id` char(16) CHARACTER SET utf8 COLLATE utf8_general_ci NULL AFTER `real_count`;
+
+CREATE TABLE `basic_activity_order` (
+	`id` char(16) NOT NULL,
+	`activity_id` char(16) NULL,
+	`order_id` char(16) NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+

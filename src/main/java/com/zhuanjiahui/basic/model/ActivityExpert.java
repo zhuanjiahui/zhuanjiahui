@@ -6,6 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Administrator on 2015/8/13.
@@ -15,7 +16,7 @@ import javax.persistence.*;
 @Table(name="basic_activity_expert")
 public class ActivityExpert {
     private String id;
-    private Expert expert;
+    private User expert;
     private Activity activity;
     @Id
     @GenericGenerator(name="id",strategy = "com.frame.core.p.model.ZJHidGenerator")
@@ -29,11 +30,11 @@ public class ActivityExpert {
     }
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="expert_id")
-    public Expert getExpert() {
+    public User getExpert() {
         return expert;
     }
 
-    public void setExpert(Expert expert) {
+    public void setExpert(User expert) {
         this.expert = expert;
     }
     @ManyToOne(fetch = FetchType.LAZY)
@@ -45,4 +46,6 @@ public class ActivityExpert {
     public void setActivity(Activity activity) {
         this.activity = activity;
     }
+
+
 }

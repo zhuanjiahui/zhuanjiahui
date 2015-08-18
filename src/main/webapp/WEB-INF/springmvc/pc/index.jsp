@@ -19,11 +19,11 @@
     <script type="text/javascript" src="/scripts/zjh/zjh-public.js"></script>
     <script type="text/javascript">
         function autoScroll(obj){
-            $(obj).find("ul").find("li:first").css('color','transparent');
+            $(obj).find("ul li:first-child a div").css('color','transparent');
             $(obj).find("ul").animate({
                 marginTop : "-39px"
             },500,function(){
-                $(this).css({marginTop : "0px"}).find("li:first").css('color','#666').appendTo(this);
+                $(this).css({marginTop : "0px"}).find("li:first-child").appendTo(this).find("a div").css("color","#666");
             })
         }
         $(function(){
@@ -161,61 +161,61 @@
 <div class="wrap0">
 <!-- 侧边栏部分 -->
 <div class="contentTop">
-<div class="leftMenu">
-<ul>
-<c:forEach items="${majorTypes}" var="major" begin="0" end="7">
-<li class="lMenuElem">
-    <div class="lMenuElemView">
-        <a class="lMenuElemTitle" href="/pc/expertServe/pageList?serveType=train&major=${major.name}">${major.label}</a>
-			          			<span class="lMenuElemImp">
-                                    <c:forEach items="${major.courseTypes}" var="course" begin="0" end="1">
-			            			<a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a>
-                                    </c:forEach>
-    			      			</span>
-    </div>
-    <ul class = "lMenuElemContent">
-        <c:forEach items="${major.courseTypes}" var="course">
-            <li><a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a></li>
-        </c:forEach>
-    </ul>
-</li>
-</c:forEach>
-    <c:forEach items="${majorTypes}" var="major" begin="8" end="9">
-        <li class="lMenuElem Telescopic">
-            <div class="lMenuElemView">
-                <a class="lMenuElemTitle" href="/pc/expertServe/pageList?serveType=train&major=${major.name}">${major.label}</a>
+    <div class="leftMenu">
+        <ul>
+            <c:forEach items="${majorTypes}" var="major" begin="0" end="7">
+                <li class="lMenuElem">
+                    <div class="lMenuElemView">
+                        <a class="lMenuElemTitle" href="/pc/expertServe/pageList?serveType=train&major=${major.name}">${major.label}</a>
 			          			<span class="lMenuElemImp">
                                     <c:forEach items="${major.courseTypes}" var="course" begin="0" end="1">
                                         <a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a>
                                     </c:forEach>
     			      			</span>
-            </div>
-            <ul class = "lMenuElemContent">
-                <c:forEach items="${major.courseTypes}" var="course">
-                    <li><a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a></li>
-                </c:forEach>
-            </ul>
-        </li>
-    </c:forEach>
-</ul>
-</div>
-<!-- 轮播图部分 -->
-<div id="showpic" class="showpic clear">
-    <div id="list" style="left: -984px;">
-        <img src="/images/3.png" alt="3"/>
-        <img src="/images/1.png" alt="1"/>
-        <img src="/images/2.png" alt="2"/>
-        <img src="/images/3.png" alt="3"/>
-        <img src="/images/1.png" alt="3"/>
+                    </div>
+                    <ul class = "lMenuElemContent">
+                        <c:forEach items="${major.courseTypes}" var="course">
+                            <li><a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a></li>
+                        </c:forEach>
+                    </ul>
+                </li>
+            </c:forEach>
+            <c:forEach items="${majorTypes}" var="major" begin="8" end="9">
+                <li class="lMenuElem Telescopic">
+                    <div class="lMenuElemView">
+                        <a class="lMenuElemTitle" href="/pc/expertServe/pageList?serveType=train&major=${major.name}">${major.label}</a>
+			          			<span class="lMenuElemImp">
+                                    <c:forEach items="${major.courseTypes}" var="course" begin="0" end="1">
+                                        <a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a>
+                                    </c:forEach>
+    			      			</span>
+                    </div>
+                    <ul class = "lMenuElemContent">
+                        <c:forEach items="${major.courseTypes}" var="course">
+                            <li><a href="/pc/expertServe/pageList?serveType=train&major=${major.name}&courseType=${course.name}">${course.label}</a></li>
+                        </c:forEach>
+                    </ul>
+                </li>
+            </c:forEach>
+        </ul>
     </div>
-    <div id="buttons">
-        <span index="1" class="on"></span>
-        <span index="2"></span>
-        <span index="3"></span>
+    <!-- 轮播图部分 -->
+    <div id="showpic" class="showpic clear">
+        <div id="list" style="left: -984px;">
+            <img src="/images/3.png" alt="3"/>
+            <img src="/images/1.png" alt="1"/>
+            <img src="/images/2.png" alt="2"/>
+            <img src="/images/3.png" alt="3"/>
+            <img src="/images/1.png" alt="3"/>
+        </div>
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+        <a href="javascript:;" id="next" class="arrow">&gt;</a>
     </div>
-    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
-    <a href="javascript:;" id="next" class="arrow">&gt;</a>
-</div>
 </div>
 
 <!-- 栏目1部分 -->
@@ -263,21 +263,21 @@
         </div>
     </div>
     <c:forEach items="${popularExperts}" var="expert">
-    <div class="column2-sub">
-        <a href="/pc/expert/viewExpert?expertId=${expert.id}">
-            <div class="cover">
-                <p>简介:${expert.introduce}</p>
-            </div>
+        <div class="column2-sub">
+            <a href="/pc/expert/viewExpert?expertId=${expert.id}">
+                <div class="cover">
+                    <p>简介：${expert.introduce}</p>
+                </div>
 
-            <img src="http://pic.591zjh.com/${expert.pictureUrl}" alt="人物简介">
-        </a><br />
-        <span class="text1">${expert.name}</span><br />
-        <span class="text3">${expert.chief}</span><br />
-        <span class="text4">${expert.province.name}</span>
-    </div>
+                <img src="http://pic.591zjh.com/${expert.pictureUrl}" alt="人物简介">
+            </a><br />
+            <span class="text1">${expert.name}</span><br />
+            <span class="text3">${expert.chief}</span><br />
+            <span class="text4">${expert.province.name}</span>
+        </div>
     </c:forEach>
 </div>
-<!-- 栏目3部分:一会要把2修改 -->
+<!-- 栏目3部分：一会要把2修改 -->
 <div class="column2">
     <div class="column2-nav column3-nav">
         <div class="column2-left column3-left">
@@ -294,16 +294,16 @@
         </div>
     </div>
     <c:forEach items="${assistants}" var="assistant">
-    <div class="column2-sub">
-        <a href="#">
-            <div class="cover2">
-                <p>简介:${assistant.introduce}</p>
-            </div>
-            <img src="http://pic.591zjh.com/${assistant.pictureUrl}" alt="人物简介">
-        </a><br />
-        <span class="text1">${assistant.name}</span><br />
-        <span class="text4">${assistant.province.name}</span>
-    </div>
+        <div class="column2-sub">
+            <a href="#">
+                <div class="cover2">
+                    <p>简介：${assistant.introduce}</p>
+                </div>
+                <img src="http://pic.591zjh.com/${assistant.pictureUrl}" alt="人物简介">
+            </a><br />
+            <span class="text1">${assistant.name}</span><br />
+            <span class="text4">${assistant.province.name}</span>
+        </div>
 
     </c:forEach>
 </div>
@@ -328,15 +328,15 @@
                 <ul>
                     <c:forEach items="${activities}" var="activity">
 
-                    <li>
-                        <a href="/pc/activity/view?activityId=${activity.id}">
-                        <div>${activity.name} </div>
-                        <div>${activity.user.name}</div>
-                        <div>${activity.province.name}</div>
-                        <div><span class="maquee1-1">${activity.price}</span>元</div>
-                        <div><fmt:formatDate value="${activity.activityDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </div>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="/pc/activity/view?activityId=${activity.id}">
+                                <div>${activity.name} </div>
+                                <div>${activity.user.name}</div>
+                                <div>${activity.province.name}</div>
+                                <div><span class="maquee1-1">${activity.price}</span>元</div>
+                                <div><fmt:formatDate value="${activity.activityDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </div>
+                            </a>
+                        </li>
 
 
                     </c:forEach>
@@ -361,16 +361,16 @@
             <div class="maquee2">
                 <ul>
                     <c:forEach items="${requirements}" var="requirement">
-                    <li>
-                        <a href="/pc/requirement/view?requirementId=${requirement.id}">
+                        <li>
+                            <a href="/pc/requirement/view?requirementId=${requirement.id}">
 
-                        <div>${requirement.name}</div>
-                        <div>${requirement.expert.name}</div>
-                        <div>${requirement.province.name}</div>
-                        <div><span class="maquee2-1">${requirement.price}</span>元</div>
-                        <div><fmt:formatDate value="${requirement.startDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate></div>
-                        </a>
-                    </li>
+                                <div>${requirement.name}</div>
+                                <div>${requirement.expert.name}</div>
+                                <div>${requirement.province.name}</div>
+                                <div><span class="maquee2-1">${requirement.price}</span>元</div>
+                                <div><fmt:formatDate value="${requirement.startDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate></div>
+                            </a>
+                        </li>
                     </c:forEach>
                 </ul>
             </div>
@@ -387,18 +387,18 @@
     <div id="outer" class="column6-content clear">
         <ul id="inner" class="column6-content-1">
             <c:forEach items="${experts}" var="expert">
-            <li>
-                <a href="/pc/expert/viewExpert?expertId=${expert.id}">
-                    <dl>
-                        <dt>
-                            <img src="http://pic.591zjh.com/${expert.pictureUrl}_80w_80h" alt="最新入驻人物">
-                        </dt>
-                        <dd class="text1">${expert.name}</dd>
-                        <dd class="text3">教龄:${expert.workTime}年</dd>
-                        <dd class="text4"><span>${expert.province.name}</span></dd>
-                    </dl>
-                </a>
-            </li>
+                <li>
+                    <a href="/pc/expert/viewExpert?expertId=${expert.id}">
+                        <dl>
+                            <dt>
+                                <img src="http://pic.591zjh.com/${expert.pictureUrl}_80w_80h" alt="最新入驻人物">
+                            </dt>
+                            <dd class="text1">${expert.name}</dd>
+                            <dd class="text3">教龄:${expert.workTime}年</dd>
+                            <dd class="text4"><span>${expert.province.name}</span></dd>
+                        </dl>
+                    </a>
+                </li>
             </c:forEach>
         </ul>
     </div>
@@ -495,7 +495,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
