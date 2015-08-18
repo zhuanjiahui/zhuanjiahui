@@ -181,13 +181,24 @@
     <li class="nav-li">资金管理</li>
     <li class="nav-li">重置密码</li>--%>
 </ul>
-    <div class="body-sub">
+    <div class="body-sub" style="position:relative;">
         <div class="service-content">
             <img src="/images/duihao.gif">
             填写服务内容
         </div>
+        <div class="box">
+            <div class="add">
+                <div class="addImg"></div>
+                <p class="addTxt">添加服务<p>
+            </div>
+            <div class="btMenu">
+                <div class="bt op1" onclick="showPanel('train');">培训</div>
+                <div class="bt op2" onclick="showPanel('consult');">咨询</div>
+                <div class="bt op3" onclick="showPanel('development');">开发</div>
+            </div>
+        </div>
         <c:forEach items="${expertServeList}" var="expertServe">
-        <div class="body-con-4">
+        <div class="body-con-4" style="margin-top: -1px;">
             <dl>
                 <dd>
                     <span class="list">${expertServe.name}</span>
@@ -204,34 +215,20 @@
         </div>
         </c:forEach>
         <div class="sc-table">
-
-        <div class="box">
-            <div class="add">
-                <div class="addImg"></div>
-                <p class="addTxt">添加服务<p>
-            </div>
-            <div class="btMenu">
-                <div class="bt op1" onclick="showPanel('train');">培训</div>
-                <div class="bt op2" onclick="showPanel('consult');">咨询</div>
-                <div class="bt op3" onclick="showPanel('development');">开发</div>
-            </div>
-
-        </div>
-
             <form id="trainForm" name="expertServe" action="" method="post">
             <div id="train" hidden="hidden">
                 <div class="sc-tr">
                     <div class="sc-td-l">
-                        <span>行业:</span>
+                        <span>行业：</span>
                         <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
                     </div>
                     <div class="sc-td-l">
-                        <span>专业:</span>
+                        <span>专业：</span>
                         <zjh:status name="major" dataType="ExpertServe.major" type="select" checkedValue="" onchange="loadCourse(this.value);"></zjh:status>
                     </div>
                     <div class="sc-td-l">
-                        <span>课程:</span>
-                        <select id="course" name="courseType">
+                        <span>课程：</span>
+                        <select id="course" name="courseType" style="width:85px;">
                             <option value="">请选择</option>
                         </select>
                     </div>
@@ -240,10 +237,10 @@
                 <div class="sc-tr">
 
                     <input name="serveType" value="train" type="hidden">
-                    <div class="sc-td-r"><span>服务标题：</span><input type="text" name="name"></div>
+                    <div class="sc-td-r"><span>服务标题：</span><input type="text" name="name" style="width:240px;"></div>
                     <div class="sc-td-l">
-                        <span>培训年限:</span>
-                        <select name="workTime">
+                        <span>培训年限：</span>
+                        <select name="workTime" style="width:56px;">
 
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -271,9 +268,9 @@
                 </div>
                 <div class="sc-tr">
 
-                    <div class="sc-td-l"><span>服务报价:</span><input  type="text" name="price"></div>
+                    <div class="sc-td-l"><span>服务报价：</span><input  type="text" name="price" style="width:80px;"></div>
                     <div class="sc-td-l">
-                        <span>半天折扣:</span>
+                        <span>半天折扣：</span>
                         <select name="discount"  required="true">
                             <option value="10">请选择</option>
                             <option value="5">五折</option>
@@ -285,7 +282,7 @@
                         </select>
                     </div>
                     <div class="sc-td-l">
-                        <span>全额优惠:</span>
+                        <span>全额优惠：</span>
                         <select name="cheap"  required="true">
                             <option value="20">请选择</option>
                             <option value="15">七五折</option>
@@ -299,7 +296,7 @@
                 </div>
                 <div class="sc-tr">
 
-                    <div class="sc-td-l"><span>服务过的客户：</span><input type="text" name="servedConsumer" size="255"></div>
+                    <div class="sc-td-l"><span>服务过的客户：</span><input type="text" name="servedConsumer" style="width:445px;"></div>
                     <br/>
                 </div>
                 <div class="editorBox"><textarea id="content" class="ckeditor" name="content">
@@ -390,17 +387,14 @@
                 </div>
                 <div class="sc-tr">
                     <div class="sc-td-l">报价：</div>
+                    <div class="sc-td-r" style="font-size:13px;">
+                        <input type="text" name="price" style="width:114px;">元/天
+                    </div>
+                    <div class="sc-td-l" style="margin-left: 25px;">客户名称：</div>
                     <div class="sc-td-r">
-                        <input style="width:120px;" type="text" name="price">元/天
+                        <input name="servedConsumer" style="width:165px;" type="text" size="255">
                     </div>
                 </div>
-                <div class="sc-tr">
-                    <div class="sc-td-l">客户名称：</div>
-                    <div class="sc-td-r">
-                        <input name="servedConsumer" style="width:318px;" type="text" size="255">
-                    </div>
-                </div>
-
                 <div class="sc-xx"></div>
                 <div><button class="sc-but1" onclick="submitForm('consult')">添加咨询</button></div>
             </div>
@@ -480,15 +474,16 @@
                 </div>
                 <div class="sc-tr">
                     <div class="sc-td-l">报价：</div>
-                    <div class="sc-td-r">
+                    <div class="sc-td-r" style="font-size: 13px;">
                         <input style="width:120px;" type="text" name="price">元/天
+                    </div>
+                    <div class="sc-td-l" style="margin-left: 20px;">项目名称：</div>
+                    <div class="sc-td-r">
+                        <input name="servedConsumer" style="width:165px;" type="text">
                     </div>
                 </div>
                 <div class="sc-tr">
-                    <div class="sc-td-l">项目名称：</div>
-                    <div class="sc-td-r">
-                        <input name="servedConsumer" style="width:318px;" type="text" size="255">
-                    </div>
+
                 </div>
                 <div class="sc-xx"></div>
                 <div><button class="sc-but1" onclick="submitForm('development');">添加开发</button></div>
