@@ -127,7 +127,7 @@ window.onload=function(){
                 outer.scrollLeft = outer.clientWidth
                 
             }
-            if (outer.scrollLeft%200 == 0){
+            if (outer.scrollLeft%195 == 0){
                 clearInterval(t);
                 t1=setTimeout(time,2000);
                 //走走停停  
