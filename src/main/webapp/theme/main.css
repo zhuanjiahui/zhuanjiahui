@@ -7,8 +7,8 @@ body{background:rgb(245,245,245);}
 .pi-inf-tr{width: 100%;height: 50px;margin-top: 8px;}
 .pi-inf-td-l,.pi-inf-td-r{float: left;line-height:50px;}
 .pi-inf-td-l{width: 127px;text-align: right;font-size:15px;color:#777;margin-right:10px;}
-.pi-inf-td-r input[type='text']{height:35px;text-indent:10px;font-size:13px;color:#777;margin-top:7px;border:1px solid #e4e4e4;outline:none;-webkit-box-shadow:inset 0 0 3px #e8e8e8;-moz-box-shadow:inset 0 0 3px #e8e8e8;box-shadow:inset 0 0 3px #e8e8e8;transition:all 0.4s linear;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;}
-.pi-inf-td-r input[type='text']:focus{border:1px solid rgba(81, 203, 238, .66);box-shadow:0 0 8px rgba(81, 203, 238, 1);-webkit-box-shadow:0 0 8px rgba(81, 203, 238, 1);-moz-box-shadow:0 0 8px rgba(81, 203, 238, 1);}
+.pi-inf-td-r input[type='text'],.rePassInp{height:35px;text-indent:10px;font-size:13px;color:#777;margin-top:7px;border:1px solid #e4e4e4;outline:none;-webkit-box-shadow:inset 0 0 3px #e8e8e8;-moz-box-shadow:inset 0 0 3px #e8e8e8;box-shadow:inset 0 0 3px #e8e8e8;transition:all 0.4s linear;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;}
+.pi-inf-td-r input[type='text']:focus,.rePassInp:focus{border:1px solid rgba(81, 203, 238, .66);box-shadow:0 0 8px rgba(81, 203, 238, 1);-webkit-box-shadow:0 0 8px rgba(81, 203, 238, 1);-moz-box-shadow:0 0 8px rgba(81, 203, 238, 1);}
 .pi-inf-td-r select{font-size:13px;margin-top:7px;height:35px;box-sizing:border-box;padding:0px 15px 0px 10px;color:#777;border:1px solid #e4e4e4;-webkit-box-shadow:inset 0 0 3px #e8e8e8;-moz-box-shadow:inset 0 0 3px #e8e8e8;box-shadow:inset 0 0 3px #e8e8e8;appearance:none;-moz-appearance:none;-webkit-appearance:none;}
 .pi-inf-td-r select option{height:25px;padding-top:8px;font-size:13px;color:#777;border:1px solid transition!important;}
 .pi-guaniianz ~div span{display:inline-block;color:#777;font-size:14px;padding:0 15px;line-height:32px;border:1px solid #e4e4e4;position:relative;top:1px;box-sizing:border-box;border-radius:17px;margin-left:15px;}
@@ -91,14 +91,18 @@ body{background:rgb(245,245,245);}
 /*修改密码页变化之处*/
 .change-password{margin-top: 29px;color: #ec6618;font-size: 16px;margin-left: 61px;}
 .h-color{color: #ec6618 !important;}
-.cinf-table{color: #999;font-size: 16px;width: 835px;}
-.cinf-tr{width: 835px;height: 31px;margin-top: 28px;}
+.cinf-table{color: #777;font-size: 15px;width: 835px;}
+.cinf-tr{width: 835px;height: 60px;padding-top: 10px;line-height: 50px;}
+.cinf-tr input{margin-left: 10px;}
 .yzm{border: 1px solid #e4e4e4;color: #2cb1e7;height: 31px;line-height: 31px;margin-top: -4px;cursor: pointer;}
 .ccard-s{font-size: 14px;}
 .cinf-td-l,.cinf-td-r{float: left;}
 .cinf-td-l{width: 148px;text-align: right;}
 .csize-inp{ width: 640px;height: 90px;color: #a9a9a9;}
-.cbut{width: 164px;height: 38px;text-align: center;line-height: 34px;background-color: #ec6618;margin-top: 39px;margin-bottom: 33px;margin-left: 147px;border: 1px solid #e4e4e4;color: #ffffff;font-size: 18px;}
+.cbut{width: 180px;height: 43px;text-align: center;background:#ec6618;margin-top: 66px;margin-bottom: 45px;margin-left: 200px;border: 1px solid #e4e4e4;color: #ffffff;font-size: 16px;letter-spacing:3px;transition:all 0.6s linear;-webkit-transition: all 0.6s linear;-moz-transition: all 0.6s linear;color:white;}
+.cbut:hover{background:#dd3d06;cursor:pointer;}
+
+
 
 /*添加银行卡页变化之处*/
 .h-color{color: #ec6618 !important;}

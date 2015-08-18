@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/zjh/zjh.js"></script>
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.sortingMethod li a').click(function(){
+                alert('页面闪烁导致函数无法生效，需要查明原因');
+                $('.sortingMethod li a').removeClass('screeningChioce');
+                $(this).addClass('screeningChioce');
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="wrap">
@@ -204,7 +213,7 @@
     <ul class="resultsTop">
         <li>
             <ul class="sortingMethod">
-                <li class="screeningChioce"><a class="screeningChioce"  href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
+                <li><a class="screeningChioce" href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=price_asc">价格</a></li>
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=obj.expert.visitCount_desc">人气</a></li>
             </ul>
