@@ -44,15 +44,13 @@ body{background:rgb(245,245,245);}
 .sc-tr input[type='text']{height:35px;text-indent:10px;font-size:13px;color:#777;margin-top:7px;border:1px solid #e4e4e4;outline:none;-webkit-box-shadow:inset 0 0 3px #e8e8e8;-moz-box-shadow:inset 0 0 3px #e8e8e8;box-shadow:inset 0 0 3px #e8e8e8;transition:all 0.4s linear;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;}
 .sc-tr input[type='text']:focus{border:1px solid rgba(81, 203, 238, .66);box-shadow:0 0 8px rgba(81, 203, 238, 1);-webkit-box-shadow:0 0 8px rgba(81, 203, 238, 1);-moz-box-shadow:0 0 8px rgba(81, 203, 238, 1);}
 .sc-tr select{font-size:13px;margin-top:7px;height:35px;box-sizing:border-box;padding:0px 15px 0px 10px;color:#777;border:1px solid #e4e4e4;-webkit-box-shadow:inset 0 0 3px #e8e8e8;-moz-box-shadow:inset 0 0 3px #e8e8e8;box-shadow:inset 0 0 3px #e8e8e8;appearance:none;-moz-appearance:none;-webkit-appearance:none;}
-.sc-tr select option{height:25px;padding-top:8px;font-size:13px;color:#777;border:1px solid transition!important;text-indent:5px;}
+.sc-tr select option{height:25px;padding-top:4px;font-size:13px;color:#777;border:1px solid transition!important;text-indent:5px;}
 .sc-tr span{font-size:15px;color:#777;margin-right:10px;}
 #train .sc-tr div{display:inline-block;margin-right:33px;}
-#consult .sc-tr{width:600px;}
-#consult .sc-tr div,#consult .sc-tr .sc-td-l span,#consult .sc-tr .sc-td-l div,#development .sc-tr div,#development .sc-tr .sc-td-l span,#development .sc-tr .sc-td-l div{display:inline-block;font-size:15px;color:#777;}
+#consult .sc-tr div,#development .sc-tr div{display:inline-block;font-size:15px;color:#777;}
+#consult .sc-tr div,#development .sc-tr div{display:inline-block;font-size:15px;color:#777;vertical-align: top;line-height: 50px;}
 #consult input,#consult select,#development input,#development select{margin-left:8px;margin-right:20px;height:35px;}
 input[name="workTime"]{width:66px!important;}
-
-
 
 .sc-xx{width:745px;margin:0 auto;border-bottom:1px dotted #cccccc;margin-top:20px;}
 .sc-but1{width:95px;height:30px;border:1px solid #cccccc;text-align:center;background-color:#fff;color:#999;font-size:16px;margin-left:494px;margin-bottom:20px;}
@@ -518,11 +516,3 @@ input[name="workTime"]{width:66px!important;}
 
 input[name="consumerName"]{width:250px!important;}
 .editorBox{width:100%;height:auto;overflow: visible;position: relative;z-index:100;margin:0 auto;padding-top: 25px;margin-bottom: 50px;}
-
-/*专家编辑个人信息样式修改 万云 2015.08.14*/
-.userName{width:180px;}
-.genderChoice{font-size:13px;color:#777;}
-
-/*上传照片 万云 2015.08.14*/
-#expert{position: relative;}
-.uploadPhoto{position: absolute;width:100px;height:100px;border:1px solid red;}

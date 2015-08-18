@@ -29,12 +29,11 @@
     <link rel="stylesheet" type="text/css" href="/scripts/imgare/imgareaselect-animated.css" />
     <script src="/scripts/imgare/jquery.imgareaselect.pack.js"></script>
     <style type="text/css">
-        #bg{ display: none; position: fixed; top: 20%; left: 34%; width: 32%; height: 60%; background-color: gray; z-index:1001; opacity:0.7;filter:alpha(opacity=70);}
+        #bg{ display: none; position:fixed;top:50%;left:50%;width:600px;height:400px;margin-top:-200px;margin-left:-300px;background:black ; z-index:1001; opacity:0.7;filter:alpha(opacity=70);border-radius:8px;box-shadow:inset 0 0 2px white;-moz-box-shadow:inset 0 0 2px white;-webkit-box-shadow:inset 0 0 2px white; }
         #big{display: none; position: fixed; top: 25%; left: 36%; width: 18%; height: 40%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
         #sma{display: none; position: fixed; top: 25%; left: 58%; width: 6%; height: 12%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
         #sure{display: none; position: fixed; top: 70%; left: 40%; width:120px; height:25px;z-index:1002; overflow: auto;}
         #cancel{display: none; position: fixed; top: 70%; left: 50%; width:120px; height:25px;z-index:1002; overflow: auto;}
-
         .elem{display:inline-block;height:20px;position:relative;}
     </style>
 
@@ -49,11 +48,11 @@
                 uploader: '/pc/user/uploadPic',
                 fileTypeExts: '*.jpg;*.jpge;*.gif;*.png',
                 //浏览按钮的宽度
-                width: '100',
+                width: '150',
                 //浏览按钮的高度
                 height: '32',
                 multi: false,
-                buttonText: '<a class="le-wz">上传头像</a>',
+                buttonText: '<a class="uploadPhotoBt">上传头像</a>',
                 onUploadSuccess: function (file, data, response) {
                     document.getElementById("bg").style.display ="block";
                     document.getElementById("big").style.display ="block";
@@ -253,9 +252,15 @@
     <img src="/images/duihao.gif">
     完善个人资料信息
 </div>
-<div class="pi-inf-table">
+<div class="pi-inf-table" style="position:relative;">
     <form id="expert" name="expert" action="/pc/expert/savePerson" method="post">
         <input id="picUrl" type="hidden" name="pictureUrl" value="${expert.pictureUrl}">
+
+        <div class="uploadPhoto">
+            <img id="head" src="http://pic.591zjh.com/${expert.pictureUrl}">
+            <p id="expertPicUpload">上传头像</p>
+        </div>
+
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
                 姓名：
@@ -268,14 +273,14 @@
             <div class="pi-inf-td-l">
                 性别：
             </div>
-            <div class="pi-inf-td-r">
+            <div class="pi-inf-td-r gender">
                 <zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${expert.gender}" defaultValue="1"></zjh:status>
             </div>
 
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                出生日期:
+                出生日期：
             </div>
             <div class="pi-inf-td-r">
                 <input required type="text" class="Wdate" id="birthday" name="birthdayDate" value="<fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
@@ -283,7 +288,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                工作年限:
+                工作年限：
             </div>
             <div class="pi-inf-td-r">
                 <select name="workTime">
@@ -338,7 +343,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                最高职务:
+                最高职务：
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-zuigaoziwu" type="text" value="${expert.chief}" name="chief" placeholder="公司简称与职涯最高职务(10个字内)"/>
@@ -347,9 +352,9 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                是否在职:
+                是否在职：
             </div>
-            <div class="pi-inf-td-r">
+            <div class="pi-inf-td-r isCheif">
                 <input type="radio" name="isCheif" value="true" checked>是
                 <input type="radio" name="isCheif" value="false" >否
 
@@ -357,14 +362,14 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                自由专家:
+                自由专家：
             </div>
-            <div class="pi-inf-td-r">
+            <div class="pi-inf-td-r isfreedom">
                 <zjh:status name="freedom" dataType="Expert.freedom" type="radio" checkedValue="${expert.freedom}" defaultValue="1"></zjh:status>
             </div>
         </div>
         <div class="pi-inf-tr">
-            <div class="industry">
+            <div class="industry" style="margin-top: 25px;">
                 <label>行业：</label>
                 <ul class="industryElem">
                     <li><input type="checkbox" name="industrys" value="khy">跨行业</li>
@@ -393,7 +398,7 @@
             </div>
         </div>
         <br/><br/>
-        <div class="pi-inf-tr">
+        <div class="pi-inf-tr edkeywords">
             <div class="pi-inf-td-l">
                 关键字：
             </div>
@@ -449,8 +454,8 @@
             <div class="pi-inf-td-l">
                 区间报价：
             </div>
-            <div class="pi-inf-td-r">
-                <input name="minPrice" class="pi-jiaqian" type="text" value="${expert.minPrice}"/>——
+            <div class="pi-inf-td-r payRange">
+                <input name="minPrice" class="pi-jiaqian" type="text" value="${expert.minPrice}"/>—
                 <input name="maxPrice" class="pi-jiaqian" type="text" value="${expert.maxPrice}"/>元/天
             </div>
         </div>
@@ -470,10 +475,11 @@
                 <textarea name="introduce" class="pi-size-inp" type="text" placeholder="详细的介绍下自己">${expert.introduce}</textarea>
             </div>
         </div>
-        <div class="pi-imgs-zj">
-            <img id="head" src="http://pic.591zjh.com/${expert.pictureUrl}@!personal-list">
-        </div>
-        <div id="" class="pi-wz-zj"><span id="expertPicUpload">上传头像</span></div>
+
+
+
+
+
       <%--  <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
                 认证信息：
@@ -504,12 +510,12 @@
         <c:forEach items="${expert.companyList}" var="company">
             <div class="body-con-4">
                 <dl>
-                    <dd>
-                        <span class="list">${company.name}</span>
-                        <span class="list"><span><fmt:formatDate value="${company.startDate}" pattern="yyyy-MM-dd"></fmt:formatDate></span></span>
-                        <span class="list">——</span>
-                        <span class="list"><span><fmt:formatDate value="${company.endDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></span>
-                        <span class="list">职位:${company.position}</span>
+                    <dd style="padding:0 15px;padding-top: 15px;">
+                        <span class="list" style="width:220px;">${company.name}</span>
+                        <span class="list" style="text-align: right;"><span><fmt:formatDate value="${company.startDate}" pattern="yyyy-MM-dd"></fmt:formatDate></span></span>
+                        <span class="list" style="width:30px;">—</span>
+                        <span class="list" style="text-align: left;"><span><fmt:formatDate value="${company.endDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></span>
+                        <span class="list" style="margin-left: 25px;">职位：${company.position}</span>
                     </dd>
                 </dl>
 
@@ -664,8 +670,7 @@
          </div>
         <button id="sure" onclick="sureButton();">确定</button>
         <button id="cancel" onclick="cancelButton();">取消</button>
-
-    </div>
+</div>
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
