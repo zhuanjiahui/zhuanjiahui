@@ -23,11 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
@@ -3620,7 +3615,7 @@
       <workItem from="1439512806297" duration="16874000" />
       <workItem from="1439536492117" duration="4782000" />
       <workItem from="1439813576322" duration="39000" />
-      <workItem from="1439857945314" duration="9872000" />
+      <workItem from="1439857945314" duration="10078000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -4890,11 +4885,15 @@
       <created>1439858461079</created>
       <updated>1439858461079</updated>
     </task>
-    <option name="localTasksCounter" value="321" />
+    <task id="LOCAL-00321" summary="编辑个人信息页面调整">
+      <created>1439871093968</created>
+      <updated>1439871093968</updated>
+    </task>
+    <option name="localTasksCounter" value="322" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4080334000" />
+    <option name="totallyTimeSpent" value="4080540000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -4974,7 +4973,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="需求列表" />
     <MESSAGE value="绑定手机号" />
     <MESSAGE value="打war包" />
     <MESSAGE value="上传头像已处理一半" />
@@ -4999,7 +4997,8 @@
     <MESSAGE value="git add" />
     <MESSAGE value="助理可以发布活动" />
     <MESSAGE value="首页最新入驻调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页最新入驻调整" />
+    <MESSAGE value="编辑个人信息页面调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="编辑个人信息页面调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
