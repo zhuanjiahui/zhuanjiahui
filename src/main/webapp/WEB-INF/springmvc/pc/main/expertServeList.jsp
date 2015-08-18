@@ -62,10 +62,6 @@
     <div class="logo fl">
         <a href="/pc/index"><img src="/images/logo.png" alt="logo"></a>
     </div>
-    <div class="text-border fl">
-        <img src="/images/text-border.png" alt="text-border">
-    </div>
-
     <!-- TAB切换效果 -->
     <div class="search fl">
         <div class="search-top clear"  id="tab-nav">
@@ -78,7 +74,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="关键字、课程">
+						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">

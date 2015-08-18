@@ -201,12 +201,13 @@
 </div>
 <!-- 轮播图部分 -->
 <div id="showpic" class="showpic clear">
-    <div id="list" style="left: -984px;">
-        <img src="/images/3.png" alt="3"/>
-        <img src="/images/1.png" alt="1"/>
-        <img src="/images/2.png" alt="2"/>
-        <img src="/images/3.png" alt="3"/>
+    <div id="list">
         <img src="/images/1.png" alt="3"/>
+        <img src="/images/2.jpg" alt="1"/>
+        <img src="/images/3.jpg" alt="2"/>
+        <img src="/images/1.png" alt="3"/>
+        <img src="/images/2.jpg" alt="3"/>
+        <img src="/images/3.jpg" alt="3"/>
     </div>
     <div id="buttons">
         <span index="1" class="on"></span>
