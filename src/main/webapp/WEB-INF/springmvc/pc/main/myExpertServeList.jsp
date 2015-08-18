@@ -197,23 +197,25 @@
                 <div class="bt op3" onclick="showPanel('development');">开发</div>
             </div>
         </div>
-        <c:forEach items="${expertServeList}" var="expertServe">
-        <div class="body-con-4" style="margin-top: -1px;">
-            <dl>
-                <dd>
-                    <span class="list">${expertServe.name}</span>
-					<span class="list">服务类型：<span><zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status></span></span>
-                    <span class="list">工作年限：${expertServe.workTime}</span>
-                    <span class="list">半天折扣：${expertServe.discount}</span>
-                    <span class="list">全额优惠：${expertServe.cheap}</span>
-                    <span class="list special3">预算：${expertServe.price}元</span>
-                </dd>
-            </dl>
+        <div  style="clear:both;position:relative;top:-80px;">
+            <c:forEach items="${expertServeList}" var="expertServe">
+                <div class="body-con-4">
+                    <dl>
+                        <dd>
+                            <span class="list">${expertServe.name}</span>
+					        <span class="list">服务类型：<span><zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${expertServe.serveType}"></zjh:status></span></span>
+                            <span class="list">工作年限：${expertServe.workTime}</span>
+                            <span class="list">半天折扣：${expertServe.discount}</span>
+                            <span class="list">全额优惠：${expertServe.cheap}</span>
+                            <span class="list special3">预算：${expertServe.price}元</span>
+                        </dd>
+                    </dl>
           <%--  <ol>
                <a href="/pc/expertServe/update?serveId=${expertServe.id}">修改</a></li>
             </ol>--%>
+                </div>
+            </c:forEach>
         </div>
-        </c:forEach>
         <div class="sc-table">
             <form id="trainForm" name="expertServe" action="" method="post">
             <div id="train" hidden="hidden">
