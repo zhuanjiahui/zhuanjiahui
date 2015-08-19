@@ -63,7 +63,7 @@
             <div class="box1">
                 <span></span>
                 <input type="text" class="form-control" id="j_username0" name="j_username0"
-                       value="${enrollUsername}"/>
+                       value="${enrollUsername}" onfocus="$('#msg').html('')"/>
             </div>
             <div class="box1 box2"><!-- 有公共样式，在box1基础上修改 -->
                 <span></span>
@@ -71,7 +71,7 @@
                        value="${j_password}"/>
             </div>
              <c:if test="${!empty message}">
-                 <div style="color: red">${message}</div>
+                 <div id="msg" style="color: red">${message}</div>
              </c:if>
             <div class="box3">
                 <div class="box3-l">

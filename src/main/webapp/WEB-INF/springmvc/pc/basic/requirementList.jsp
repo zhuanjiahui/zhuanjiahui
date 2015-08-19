@@ -236,14 +236,14 @@
             <li>人气</li>
         </ul>
     </li>
-    <li>
+   <%-- <li>
         <ul class="costRange">
             <li>费用&nbsp;:</li>
             <li><input type="text"></li>
             <li style="padding:0 1px;color:#00bdff">-</li>
             <li><input type="text"></li>
         </ul>
-    </li>
+    </li>--%>
 </ul>
 <div class="resultsBody">
 <ul>

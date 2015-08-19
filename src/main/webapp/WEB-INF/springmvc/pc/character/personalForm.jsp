@@ -198,7 +198,9 @@
                 <c:if test="${myUser.utype==2}">
                     <dd><a href="/pc/expertServe/add">服务内容</a></dd>
                 </c:if>
+<%--
                 <dd><a href="/pc/user/myBalance">资金管理</a></dd>
+--%>
                 <dd><a href="/pc/bindPhone">修改账户</a></dd>
                 <dd><a href="/pc/resetPwd">重置密码</a></dd>
             </dl>
@@ -219,18 +221,20 @@
                 <dt class="order-icon3"><a href="/pc/favorite/listExpert">我的收藏</a></dt>
                 <dd><a href="/pc/favorite/listExpert">收藏专家</a></dd>
             </dl>
-            <dl>
+        <%--    <dl>
                 <dt class="no-border"><a href="#">我的消息</a></dt>
-            </dl>
+            </dl>--%>
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,你好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
+            <span class="content-head2">上次登录时间:<fmt:formatDate value="${myUser.lastLogintime}" pattern="yyyy-MM-dd hh:mm"></fmt:formatDate></span>
         </div>
         <div class="content-body">
             <ul class="body-nav">
                 <li class="nav-li h-color">个人资料</li>
+<%--
                 <li class="nav-li"><a href="/pc/personal/myBalance">资金管理</a> </li>
+--%>
                 <li class="nav-li"><a href="/pc/personal/resetPwd">重置密码</a> </li>
             </ul>
             <form id="personalForm" name="expert" method="post" action="/pc/user/savePersonal">

@@ -169,14 +169,14 @@
         <dt class="order-icon3"><a href="/pc/favorite/listExpert">我的收藏</a></dt>
         <dd><a href="/pc/favorite/listExpert">收藏专家</a></dd>
     </dl>
-    <dl>
+   <%-- <dl>
         <dt class="no-border"><a href="#">我的消息</a></dt>
         <dd><a href="#">查看评论</a></dd>
-    </dl>
+    </dl>--%>
 </div>
 <div class="content-head clear">
-    <span class="content-head1">hi,你好,jay123</span>
-    <span class="content-head2">上次登录时间:2015.6.30</span>
+    <span class="content-head1">hi,你好,${myUser.name}</span>
+    <span class="content-head2">上次登录时间:<fmt:formatDate value="${myUser.lastLogintime}" pattern="yyyy-MM-dd hh:mm"></fmt:formatDate></span>
 </div>
 <div class="content-body">
     <ul class="body-nav">

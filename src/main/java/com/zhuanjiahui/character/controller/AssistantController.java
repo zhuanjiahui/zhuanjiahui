@@ -127,6 +127,7 @@ public class AssistantController extends BaseController{
         PageEntity pageEntity=this.getPageEntity(request);
         String userId=AuthorizationUtil.getMyUser().getId();
         PageInfo pageInfo=assistantManager.myExperts(pageEntity,userId);
+        modelMap.put("myUser",AuthorizationUtil.getMyUser());
         modelMap.put("pageInfo",pageInfo);
         modelMap.put("pageEntity",pageEntity);
         return "/character/assistantExperts";

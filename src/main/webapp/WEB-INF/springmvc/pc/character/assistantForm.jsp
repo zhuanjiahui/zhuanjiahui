@@ -212,9 +212,9 @@
                 <dt class="order-icon3"><a href="/pc/favorite/listExpert">我的收藏</a></dt>
                 <dd><a href="/pc/favorite/listExpert">收藏专家</a></dd>
             </dl>
-            <dl>
+       <%--     <dl>
                 <dt class="no-border"><a href="#">我的消息</a></dt>
-            </dl>
+            </dl>--%>
         </div>
         <div class="content-head clear">
             <span class="content-head1">hi,你好,${myUser.name}</span>
