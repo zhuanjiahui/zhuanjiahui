@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -2544,7 +2543,7 @@
       <file leaf-file-name="expertServeList.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4783715" vertical-offset="224" max-vertical-offset="9600">
+            <state vertical-scroll-proportion="0.7633588" vertical-offset="0" max-vertical-offset="9600">
               <caret line="24" column="4" selection-start-line="24" selection-start-column="0" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
@@ -2554,7 +2553,7 @@
       <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.92" vertical-offset="6202" max-vertical-offset="15050">
+            <state vertical-scroll-proportion="-13.92" vertical-offset="6202" max-vertical-offset="15025">
               <caret line="262" column="16" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
               <folding />
             </state>
@@ -3739,7 +3738,7 @@
       <workItem from="1439813576322" duration="39000" />
       <workItem from="1439857945314" duration="13522000" />
       <workItem from="1439881652994" duration="7514000" />
-      <workItem from="1439892260745" duration="4739000" />
+      <workItem from="1439892260745" duration="5107000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -5033,11 +5032,15 @@
       <created>1439893551570</created>
       <updated>1439893551570</updated>
     </task>
-    <option name="localTasksCounter" value="327" />
+    <task id="LOCAL-00327" summary="8.19早上提交">
+      <created>1439944403154</created>
+      <updated>1439944403154</updated>
+    </task>
+    <option name="localTasksCounter" value="328" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4096237000" />
+    <option name="totallyTimeSpent" value="4096605000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -5117,7 +5120,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="gouwuche" />
     <MESSAGE value="下订单" />
     <MESSAGE value="zhuanjiaxiangqing ye" />
     <MESSAGE value="活动列表" />
@@ -5142,7 +5144,8 @@
     <MESSAGE value="个人中心服务内容页面微调" />
     <MESSAGE value="所有页面顶部区域提示语动态改变" />
     <MESSAGE value="重置密码以及忘了那个页面修改样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="重置密码以及忘了那个页面修改样式" />
+    <MESSAGE value="8.19早上提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="8.19早上提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5900,7 +5903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4783715" vertical-offset="224" max-vertical-offset="9600">
+        <state vertical-scroll-proportion="0.7633588" vertical-offset="0" max-vertical-offset="9600">
           <caret line="24" column="4" selection-start-line="24" selection-start-column="0" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
