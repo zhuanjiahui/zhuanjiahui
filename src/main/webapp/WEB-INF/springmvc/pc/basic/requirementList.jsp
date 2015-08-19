@@ -232,8 +232,8 @@
 <ul class="resultsTop">
     <li>
         <ul class="sortingMethod">
-            <li class="screeningChioce">默认排序</li>
-            <li>人气</li>
+            <li><a href="#" class="sortingMethodChioce">默认排序</a></li>
+            <li><a>人气</a></li>
         </ul>
     </li>
    <%-- <li>

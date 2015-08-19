@@ -236,7 +236,7 @@
     <ul class="resultsTop">
         <li>
             <ul class="sortingMethod">
-                <li class="sortingMethodChioce"><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
+                <li><a class="sortingMethodChioce" href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=price_asc">价格</a></li>
 <%--
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=obj.expert.visitCount_desc">人气</a></li>
