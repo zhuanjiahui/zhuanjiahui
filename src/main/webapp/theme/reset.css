@@ -24,6 +24,12 @@ a{-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transit
 .fl{float:left;}
 .fr{float:right;}
 
+/*万云 2015.08.19 IE8Bug修复*/
+.mainSearchBox{line-height: 40px;}
+.maqueenlast{float:right;margin-right:25px;}
+
+
+
 /*浏览器版本兼容 万云 2015.08.13*/
 /*,.content form,.content form .box1,.content form .login-btn */
 

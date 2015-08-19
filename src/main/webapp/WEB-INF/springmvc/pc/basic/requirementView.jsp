@@ -186,7 +186,7 @@
 <%--
                 <li>点赞&nbsp;+&nbsp;<span>11</span></li>
 --%>
-                <li>我要评论<li>
+                <li class="last">我要评论<li>
             </ul>
             <c:forEach items="${requirement.requirementDiscussList}" var="requirementDiscuss">
             <ul class="commentElem">
@@ -272,7 +272,7 @@
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
                 <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
-                <div class="footer-ul1-con biancu">010-51591591</div>
+                <div class="footer-ul1-con biancu">010-59505007</div>
             </li>
         </ul>
         <div class="footerpic">

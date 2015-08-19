@@ -251,7 +251,7 @@
                 <li class="resultsElemMain-3"><zjh:status name="industry" dataType="Expertserve.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status></li>
                 <li class="resultsElemMain-4" style="color:#f77530;">预算:￥<span>${requirement.price}</span>元</li>
                 <li class="resultsElemMain-5">地点:<span>${requirement.address}</span></li>
-                <li class="resultsElemMain-5"><span>${requirement.expert.name}</span></li>
+                <li class="resultsElemMain-5 last"><span>${requirement.expert.name}</span></li>
             </ul>
         </li>
     </c:forEach>
@@ -325,7 +325,7 @@
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
                 <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
-                <div class="footer-ul1-con biancu">010-51591591</div>
+                <div class="footer-ul1-con biancu">010-59505007</div>
             </li>
         </ul>
         <div class="footerpic">

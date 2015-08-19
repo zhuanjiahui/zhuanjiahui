@@ -125,7 +125,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="关键字、课程">
+						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
@@ -220,7 +220,7 @@
                     <img src="/images/duihao.gif">
                     完善个人资料信息
                 </div>
-                <div class="pi-inf-table">
+                <div class="pi-inf-table" style="position:relative;">
                     <div class="pi-inf-tr">
                         <input id="picUrl" name="pictureUrl" type="hidden" value="">
                         <div class="pi-inf-td-l">
@@ -234,7 +234,7 @@
                         <div class="pi-inf-td-l">
                             性别:
                         </div>
-                        <div class="pi-inf-td-r">
+                        <div class="pi-inf-td-r gender">
                             <zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${expert.gender}"></zjh:status>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                             常驻地:
                         </div>
                         <div class="pi-inf-td-r">
-                            <select class="pi-box-four" name="provinceId">
+                            <select class="pi-box-four opStyle" name="provinceId">
                                 <c:forEach items="${provinces}" var="province">
                                     <c:if test="${province.id==expert.province.id}">
                                         <option value ="${province.id}" checked>${province.name}</option>
@@ -394,7 +394,7 @@
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
                 <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
-                <div class="footer-ul1-con biancu">010-51591591</div>
+                <div class="footer-ul1-con biancu">010-59505007</div>
             </li>
         </ul>
         <div class="footerpic">

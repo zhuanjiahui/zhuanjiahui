@@ -157,7 +157,7 @@
                 <h1>成功案例</h1>
                 <div class="right-con">
                     <div class="right-con-1">
-                        <a href="#"><img src="/images/xiaoning.png" alt="肖宁"></a>
+                        <img src="/images/xiaoning.png" alt="肖宁">
                     </div>
                     <div class="right-con-2">
                         <p>我们参加了专家汇的创业分享沙龙，分享后就有了几个有优质的投资机构主动联系我们了。十分感谢专家汇！</p>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="right-con">
                     <div class="right-con-1">
-                        <a href="#"><img src="/images/dengbo.png" alt="邓博"></a>
+                        <img src="/images/dengbo.png" alt="邓博">
                     </div>
                     <div class="right-con-2">
                         <p>在专家汇组织的活动上与海通证券科技部的王总结交流，有幸成为合作伙伴，让云测成为海通证券移动客户端的测试服务商。</p>
@@ -175,7 +175,7 @@
                 </div>
                 <div class="right-con">
                     <div class="right-con-1">
-                        <a href="#"><img src="/images/xiaopeng.png" alt="肖鹏"></a>
+                        <img src="/images/xiaopeng.png" alt="肖鹏">
                     </div>
                     <div class="right-con-2">
                         <p>专家汇为我们搭建的平台，让我们认识了更多朋友,拓宽视野，丰富知识，也发现更多志同道合的朋友和事业伙伴。</p>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="right-con">
                     <div class="right-con-1">
-                        <a href="#"><img src="/images/yuanxiaofei.png" alt="袁小飞"></a>
+                        <img src="/images/yuanxiaofei.png" alt="袁小飞">
                     </div>
                     <div class="right-con-2">
                         <p>我在专家汇的活动现场与其他嘉宾分享，反响很好，当天就达成1000套“云子”产品的销售订单感谢专家汇分享平台。</p>
@@ -249,7 +249,7 @@
                 <li class="ul1-li4">
                     <div class="footer-ul1-title">客服热线</div>
                     <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
-                    <div class="footer-ul1-con biancu">010-51591591</div>
+                    <div class="footer-ul1-con biancu">010-59505007</div>
                 </li>
             </ul>
             <div class="footerpic">
