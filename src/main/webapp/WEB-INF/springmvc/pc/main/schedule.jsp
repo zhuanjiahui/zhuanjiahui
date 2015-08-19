@@ -144,7 +144,9 @@
             <li><a href="/pc/expert/viewPersonal">个人中心</a></li>
             <li><a href="/pc/requirement/myPublish">我的需求</a></li>
             <li><a href="/pc/activity/myActivity">我的活动</a></li>
+<%--
             <li><a href="#">消息</a></li>
+--%>
         </ul>
     </div>
     <div class="content-sub">

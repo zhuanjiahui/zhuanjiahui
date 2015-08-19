@@ -261,10 +261,10 @@
         <div class="column2-left">
             <dl>
                 <dt><a href="#">热门专家</a></dt>
-                <dd><a href="#">中层管理</a></dd>
-                <dd><a href="#">互联网</a></dd>
-                <dd><a href="#">项目管理</a></dd>
-                <dd><a href="#">研发管理</a></dd>
+                <dd><a href="/pc/expertServe/pageList?major=internet">互联网+</a></dd>
+                <dd><a href="/pc/expertServe/pageList?major=strategy">战略管理</a></dd>
+                <dd><a href="/pc/expertServe/pageList?major=marketing">营销管理</a></dd>
+                <dd><a href="/pc/expertServe/pageList?major=production">生产研发</a></dd>
             </dl>
         </div>
         <div class="column2-right fr">
@@ -292,10 +292,10 @@
         <div class="column2-left column3-left">
             <dl>
                 <dt><a href="#">热门助理</a></dt>
-                <dd><a href="#">中层管理</a></dd>
+            <%--    <dd><a href="#">中层管理</a></dd>
                 <dd><a href="#">互联网</a></dd>
                 <dd><a href="#">项目管理</a></dd>
-                <dd><a href="#">研发管理</a></dd>
+                <dd><a href="#">研发管理</a></dd>--%>
             </dl>
         </div>
         <div class="column2-right fr">
