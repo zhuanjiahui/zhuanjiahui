@@ -258,10 +258,11 @@ ul,ol{list-style:none;}
 .screening{width:100%;border:1px solid #e4e4e4;padding:22px 0 5px 0;}
 .screening-1,.screening-2,.screening-3,.screening-hide{display:inline-block;height:35px;width:100%;}
 .screening-1 li,.screening-2 li,.screening-3 li,.screening-hide li{display:inline-block;font-size:14px;color:#6d6d6d;margin:0 8px;cursor:pointer;}
-.screening-1 li a,.screening-2 li a,.screening-3 li a,.screening-hide li a{display:inline-block;font-size:14px;padding:0px 3px 2px 3px;color:#6d6d6d;text-align:center;line-height:20px;}
+.screening-1 li a,.screening-2 li a,.screening-3 li a,.screening-hide li a{display:block;font-size:14px;padding:0px 3px 2px 3px;color:#6d6d6d;text-align:center;line-height:20px;}
 .screening-1 li:first-child,.screening-2 li:first-child,.screening-3 li:first-child,.screening-hide li:first-child{cursor:default;}
-.screeningChioce a,.screeningChioce{display:inline-block;height:100%;width:100%;background:#00bdff;color:white!important;}
+.screeningChioce a{background:#00bdff;color:white!important;}
 .screening-1 li a{color:#666;}
+.sortingMethodChioce{background:#00bdff;color:white!important;}
 
 
 /*右侧栏*/
