@@ -128,3 +128,6 @@
 .uploadPhoto{position:absolute;top:-60px;right:188px;}
 #head{width:160px;height:160px;border-radius:80px;border:8px solid rgba(0,0,0,.22);}
 .uploadPhotoBt{font-size:16px;color:#26C2FF;margin-left: 47px;margin-top:8px;position:relative;top:5px;}
+
+/*万云 2015.08.19 发布需求页面修改*/
+.releaseDemandPage{}

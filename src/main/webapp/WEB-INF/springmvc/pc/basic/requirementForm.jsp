@@ -186,23 +186,23 @@
                 <li class="nav-li h-color">发布需求</li>
                 <li class="nav-li"><a href="/pc/requirement/myPublish">我的需求</a> </li>
             </ul>
-            <form name="requirement" action="/pc/requirement/save" method="post">
+            <form name="requirement" action="/pc/requirement/save" method="post" class="releaseDemandPage">
             <div class="body-sub">
                 <div class="release-requirements">
                     <img src="/images/duihao.gif">
-                    填写需求信息aaa
+                    填写需求信息
                 </div>
                 <div class="rr-table">
                     <div class="rr-tr">
-                        <div class="rr-td-l">标题:</div>
+                        <div class="rr-td-l">标题：</div>
                         <div class="rr-td-r"><input class="w1" type="text" name="name" value=""/></div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">类型:</div>
+                        <div class="rr-td-l">类型：</div>
                         <div class="rr-td-r">
                             <zjh:status  name="type" dataType="Requirement.type" type="select" checkedValue="" onchange="showCaseDiv(this.value);"></zjh:status>
                         </div>
-                        <div class="rr-td-l">行业:</div>
+                        <div class="rr-td-l">行业：</div>
                         <div class="rr-td-r">
                             <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
 
@@ -210,11 +210,11 @@
 
                     </div>
                     <div class="rr-tr" hidden="true" id="major">
-                        <div class="rr-td-l">专业:</div>
+                        <div class="rr-td-l">专业：</div>
                         <div class="rr-td-r">
                             <zjh:status name="major" dataType="ExpertServe.major" type="select" checkedValue="" onchange="loadCourse(this.value);"></zjh:status>
                         </div>
-                        <div class="rr-td-l">课程:</div>
+                        <div class="rr-td-l">课程：</div>
                         <div class="rr-td-r">
                             <select id="course" name="courseType">
                                 <option value="">请选择</option>
@@ -222,7 +222,7 @@
                         </div>
                     </div>
                     <div class="rr-tr" hidden="true" id="development">
-                        <div class="rr-td-l">擅长类型:</div>
+                        <div class="rr-td-l">擅长类型：</div>
                         <div class="rr-td-r">
                             <zjh:status name="developType" dataType="ExpertServe.developType" type="select" checkedValue=""></zjh:status>
                         </div>
@@ -230,11 +230,11 @@
                     </div>
 
                     <div class="rr-tr">
-                        <div class="rr-td-l">预算:</div>
+                        <div class="rr-td-l">预算：</div>
                         <div class="rr-td-r">
                             <input class="xl" name="price" type="text" value=""/>
                         </div>
-                        <div class="rr-td-l">实施时间:</div>
+                        <div class="rr-td-l">实施时间：</div>
                         <div class="rr-td-r">
                             <input required name="startDate" class="Wdate" type="text"  value="" style="height: 35px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
                         </div>
@@ -242,7 +242,7 @@
                     </div>
 
                     <div class="rr-tr">
-                        <div class="rr-td-l">省份:</div>
+                        <div class="rr-td-l">省份：</div>
                         <div class="rr-td-r">
                             <select class="pi-box-four" name="provinceId" required="true">
                             <c:forEach items="${provinces}" var="province">
@@ -252,31 +252,31 @@
                         </div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">详细地址:</div>
+                        <div class="rr-td-l">详细地址：</div>
                         <div class="rr-td-r"><input class="l-address" name="address" type="text" value=""/></div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">期望目标:</div>
+                        <div class="rr-td-l">期望目标：</div>
                         <div class="rr-td-r"><input class="the-contact" name="memo" type="text" value=""/></div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">联系人:</div>
+                        <div class="rr-td-l">联系人：</div>
                         <div class="rr-td-r"><input class="the-contact" name="linkman" type="text" value=""/></div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">联系电话:</div>
+                        <div class="rr-td-l">联系电话：</div>
                         <div class="rr-td-r"><input class="the-contact" name="telephone" type="text" value=""/></div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">类似项目:</div>
+                        <div class="rr-td-l">类似项目：</div>
                         <div class="rr-td-r"><input class="the-contact" name="itemsName" type="text" value=""/></div>
                     </div>
                     <div class="rr-tr">
-                        <div class="rr-td-l">类似项目url:</div>
+                        <div class="rr-td-l">类似项目url：</div>
                         <div class="rr-td-r"><input class="the-contact" name="itemsUrl" type="text" value=""/></div>
                     </div>
                     <div class="rr-tr rr-tr-h1">
-                        <div class="rr-td-l">需求介绍:</div>
+                        <div class="rr-td-l">需求介绍：</div>
                         <div class="rr-td-r"><textarea class="ac-int" name="introduce" ></textarea></div>
                     </div>
                 </div>
