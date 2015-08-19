@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <title>注册</title>
+    <title>找回密码</title>
     <link rel="stylesheet" href="/theme/reset.css">
     <link rel="stylesheet" href="/theme/register.css">
     <script src="/scripts/jquery-1.8.3.min.js"></script>
@@ -34,15 +34,10 @@
 <div class="line"></div>
 <!-- content部分 -->
 <div class="content">
-    <form id="reg-form" name="expert" action="/pc/user/save" method="post" autocomplete='off'>
-        <ul class="clear">
-            <li onclick="sureUserType(1);">用户注册<img src="/images/typeChoice.png"></li>
-            <li onclick="sureUserType(2);">专家注册<img src="/images/typeChoice.png"></li>
-            <li onclick="sureUserType(3);">助理注册<img src="/images/typeChoice.png"></li>
-        </ul>
-        <input type="hidden" id="utype" name="utype" value="1">
+    <form id="reg-form" name="expert" action="/pc/resetPassword" method="post" autocomplete='off'>
+
         <div class="box fl">
-            <label>注册账号</label>
+            <label>手机号</label>
 				<span class="box-sub" style="position:relative;">
 					<input id="username" type="text" value="" placeholder="手机号" maxlength="50" name="username" style="border:none;">
 					<input type="button" id='verificationCode' value="获取验证码" >
@@ -54,9 +49,9 @@
 				<span class="box-sub">
 					<input id="captcha" class="new-input" type="text" value="" placeholder="输入验证码" maxlength="6" name="captcha">
 				</span>
-                <br />
-                <img src="/pc/captcha" id="kaptchaImage" class=""/>
-                <a href="#" onclick="changeCode()">看不清?换一张</a>
+            <br />
+            <img src="/pc/captcha" id="kaptchaImage" class=""/>
+            <a href="#" onclick="changeCode()">看不清?换一张</a>
             <span></span>
         </div>
         <div class="box fl">
@@ -67,7 +62,7 @@
             <span></span>
         </div>
         <div class="box fl">
-            <label>密码</label>
+            <label>新密码</label>
 				<span class="box-sub">
 					<input class="new-input" type="password" value="" placeholder="输入密码" maxlength="12" name="password" id="password">
 				</span>
@@ -83,12 +78,7 @@
 
         <div class="box-bottom fl">
             <div class="bottom-sub">
-					<span class="bottom-text1">
-						<input type="checkbox" value="" id="agreement">
-						<span>我已阅读，并同意《专家汇平台用户服务协议》</span>
-					</span>
-                <input class="bottom-btn" type="button" value="注 册" id="registerBt">
-                <span class="bottom-text2">已有专家汇账号？<a href="/pc/login">立即登录</a></span>
+                <input class="bottom-btn" type="submit" value="重置密码">
             </div>
         </div>
     </form>
@@ -183,9 +173,9 @@
                         username: username
                     },
                     success: function (result) {
-                        if (!result) {
+                        if (result) {
                             userNameFlag = false;
-                            $("#nameMsg").html("<span style='color: #ff0000'>用户名已存在</span>");
+                            $("#nameMsg").html("<span style='color: #ff0000'>用户名不存在</span>");
                         } else {
                             userNameFlag = true;
                             $("#nameMsg").html("");
@@ -232,7 +222,6 @@
             })
         })
         $("#verificationCode").click(function(){
-            console.log(userNameFlag+","+checkCodeFlag+","+imageCodeFlag);
             if(userNameFlag&&imageCodeFlag){
                 time($("#verificationCode"));
                 $.ajax({
@@ -244,9 +233,6 @@
                     dataType:"json",
                     success:function(data){
 
-                    },
-                    error:function(){
-
                     }
                 })
             }
@@ -257,9 +243,6 @@
             }
         });
     })
-    function sureUserType(val){
-        $("#utype").val(val);
-    }
 
 
     var wait = 60;//时间

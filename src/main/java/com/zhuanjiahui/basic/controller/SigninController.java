@@ -53,9 +53,7 @@ public class SigninController {
      */
     @RequestMapping(value = {"enroll", "register"})
     public String enroll(HttpServletRequest request,HttpServletResponse response, Model model) {
-        HttpSession session = request.getSession();
-        String code = (String)session.getAttribute(Constants.KAPTCHA_SESSION_KEY);
-        return "/basic/signin";
+              return "/basic/signin";
     }
     /**
      * 获取图片验证码
@@ -102,6 +100,20 @@ public class SigninController {
             }
         }
         return null;
+    }
+    /**
+     * 校验图片验证码
+     */
+    @RequestMapping(value = "/checkImgCode")
+    @ResponseBody
+    public Boolean checkImageCode(HttpServletRequest request,HttpServletResponse response) {
+        HttpSession session=request.getSession();
+        String code=session.getAttribute(Constants.KAPTCHA_SESSION_KEY).toString();
+        String imageCode=request.getParameter("captcha");
+        if(code.equals(imageCode))
+            return true;
+        else
+            return false;
     }
     /*
     * 手机验证码认证*/
@@ -157,9 +169,9 @@ public class SigninController {
     * 注册，保存用户信息*/
     @RequestMapping(value = "/user/save")
     public String saveExpert(Expert expert){
-/*
         String j_username=expert.getUsername()+","+expert.getPassword();
-*/
+        String j_username0=expert.getUsername();
+        String j_password=expert.getPassword();
         if(expert.getUtype()==3){
             Assistant assistant=new Assistant();
             assistant.setUsername(expert.getUsername());
@@ -183,7 +195,9 @@ public class SigninController {
 
         }
 
-        /*return "redirect:/j_spring_security_check?j_username="+j_username;*/
+/*
+        return "redirect:/j_spring_security_check?j_username="+j_username;
+*/
         return "/basic/login";
     }
     @RequestMapping(value = "/updateAccount")
@@ -239,6 +253,21 @@ public class SigninController {
             isOk=true;
         }
         return isOk;
+    }
+    @RequestMapping(value = "findPwd")
+    public String findPwd(){
+        return "/basic/findPwd";
+    }
+    //修改密码
+    @RequestMapping(value = "/resetPassword")
+    public String findPassword(HttpServletRequest request){
+        String username=request.getParameter("username");
+        User user=signinManager.checkUserName(username);
+        String password = request.getParameter("password");
+        password = StringUtil.encodePassword(password, "SHA");
+        user.setPassword(password);
+        baseManager.saveOrUpdate(User.class.getName(),user);
+        return "/basic/login";
     }
 
     //获取验证码

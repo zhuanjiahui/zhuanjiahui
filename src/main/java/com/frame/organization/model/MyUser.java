@@ -36,6 +36,7 @@ public class MyUser implements Serializable, UserDetails {
     private boolean accountExpired;       //账号过期
     private boolean accountLocked;        //账号锁定
     private boolean credentialsExpired;  //证书过期
+    private String navName;
 
     private Integer roleType;
 
@@ -238,5 +239,13 @@ public class MyUser implements Serializable, UserDetails {
         result = 31 * result + username.hashCode();
         return result;
     }
+    @Transient
+    public String getNavName() {
+        if(name!=null&&!name.equals(""))
+            return name;
+        else
+            return username;
+    }
+
 
 }

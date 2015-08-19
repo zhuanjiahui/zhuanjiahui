@@ -52,7 +52,7 @@
         <div class=" top-l fl">
             <% MyUser user= AuthorizationUtil.getMyUser();
                 if(user!=null&&user.getUsername()!=null){
-                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getUsername()+"</a>");
+                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getNavName()+"</a>");
                 }else {
                     pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/login\">登录</a>");
                 }

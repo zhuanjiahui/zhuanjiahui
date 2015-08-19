@@ -19,6 +19,7 @@ public class User {
     private Integer roleType;//用户等级 普通1 会员2
     private Integer checkStatus;
     private Integer theStatus;
+    private String password;
     @Id
     @GenericGenerator(name="id",strategy = "com.frame.core.p.model.ZJHidGenerator")
     @GeneratedValue(generator = "id")
@@ -77,5 +78,13 @@ public class User {
 
     public void setCheckStatus(Integer checkStatus) {
         this.checkStatus = checkStatus;
+    }
+    @Column(name="password")
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

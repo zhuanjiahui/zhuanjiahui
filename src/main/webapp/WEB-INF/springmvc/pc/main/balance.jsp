@@ -32,7 +32,7 @@
         <div class=" top-l fl">
             <% MyUser user= AuthorizationUtil.getMyUser();
                 if(user!=null&&user.getUsername()!=null){
-                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getUsername()+"</a>");
+                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getNavName()+"</a>");
                 }else {
                     pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/login\">登录</a>");
                 }
@@ -100,11 +100,19 @@
                 <li><a href="/pc/expertServe/pageList?major=professionalism&courseType=gxgt&serveType=train">高效沟通</a></li>
             </ul>
             <ul class="">
-                <zjh:status name="major" dataType="ExpertServe.major" type="list" checkedValue="" onclick="/pc/requirement/pageList?type='train'&major="></zjh:status>
+                <li><a href="/pc/requirement/pageList?type=train&major=internet">互联网+</a></li>
+                <li><a href="/pc/requirement/pageList?type=train&major=strategy">战略管理</a></li>
+                <li><a href="/pc/requirement/pageList?type=train&major=manage">管理技能</a></li>
+                <li><a href="/pc/requirement/pageList?type=train&major=hrm">人力资源</a></li>
+                <li><a href="/pc/requirement/pageList?type=train&major=finance">财务管理</a></li>
 
             </ul>
             <ul class="">
-                <zjh:status name="type" dataType="Activity.type" type="list" checkedValue="" onclick="/pc/activity/pageList?type="></zjh:status>
+                <li><a href="/pc/activity/pageList?type=1">专题培训</a></li>
+                <li><a href="/pc/activity/pageList?type=2">行业趋势分享</a></li>
+                <li><a href="/pc/activity/pageList?type=3">新产品试用</a></li>
+                <li><a href="/pc/activity/pageList?type=4">创业分享沙龙</a></li>
+                <li><a href="/pc/activity/pageList?type=5">项目路演</a></li>
 
             </ul>
         </div>
