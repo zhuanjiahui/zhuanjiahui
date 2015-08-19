@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <title>网站条款</title>
+    <title>交易流程</title>
     <link rel="stylesheet" href="/theme/reset.css">
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
@@ -70,7 +70,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
+						<input type="text" name="words" value="" placeholder="关键字、课程">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">

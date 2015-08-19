@@ -70,7 +70,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
+						<input type="text" name="words" value="" placeholder="关键字、课程">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
@@ -132,7 +132,7 @@
             <!-- 左公共部分 -->
             <ul class="footer-sub-left">
                 <a href="/pc/static/footer-know-us"><li class="footer-sub-1">关于我们</li></a>
-                <a href="/pc/static/footer-know-us"><li class="footer-sub-2-but footer-sub-2s">了解我们
+                <a href="/pc/static/footer-know-us"><li class="footer-sub-2-but footer-sub-2">了解我们
                     <div class="right-arrow">></div>
                 </li></a>
                 <a href="/pc/static/footer-successful-case"><li class="footer-sub-2-but footer-sub-2">成功案例
@@ -141,7 +141,7 @@
                 <a href="/pc/static/footer-event-announcements"><li class="footer-sub-2-but footer-sub-2">活动公告
                     <div class="right-arrow">></div>
                 </li></a>
-                <a href="/pc/static/footer-website-terms"><li class="footer-sub-2-but footer-sub-2">网站条款
+                <a href="/pc/static/footer-website-terms"><li class="footer-sub-2-but footer-sub-2s">网站条款
                     <div class="right-arrow">></div>
                 </li></a>
                 <a href="/pc/static/footer-join-us"><li class="footer-sub-2-but footer-sub-2">加入我们

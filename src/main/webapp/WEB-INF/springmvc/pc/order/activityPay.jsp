@@ -1,6 +1,15 @@
 <%@ page import="com.frame.organization.model.MyUser" %>
 <%@ page import="com.frame.core.util.AuthorizationUtil" %>
 <%@ taglib prefix="zjh" uri="http://java.zjh.com/taglib" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2015/8/7
+  Time: 13:57
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-    <title>用户帮助</title>
+    <title>订单详情</title>
     <link rel="stylesheet" href="/theme/reset.css">
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
@@ -58,6 +67,10 @@
     <div class="logo fl">
         <a href="/pc/index"><img src="/images/logo.png" alt="logo"></a>
     </div>
+    <div class="text-border fl">
+        <img src="/images/text-border.png" alt="text-border">
+    </div>
+
     <!-- TAB切换效果 -->
     <div class="search fl">
         <div class="search-top clear"  id="tab-nav">
@@ -95,25 +108,9 @@
             </ul>
         </div>
     </div>
-    <div class="guild fl">
-        <div class="guild-sub fl">
-            <a href="/pc/requirement/publish">
-                <img src="/images/xuqiu.png" alt="发布需求">
-                <br />
-                <span>发布需求</span>
-            </a>
-        </div>
-        <div class="guild-sub">
-            <a href="/pc/activity/publish">
-                <img src="/images/huodong.png" alt="发布活动">
-                <br />
-                <span>发布活动</span>
-            </a>
-        </div>
-    </div>
 </div>
 <!-- content部分 -->
-<div class="content">
+<div class="content  clear">
     <!-- 导航部分 -->
     <div class="nav">
         <ul>
@@ -127,41 +124,128 @@
     </div>
     <div class="wrap0">
 
-        <!-- footer-sub -->
-        <div class="footer-sub">
-            <!-- 左公共部分 -->
-            <ul class="footer-sub-left">
-                <a href="/pc/static/footer-platform-process"><li class="footer-sub-1">帮助中心</li></a>
-                <a href="/pc/static/footer-platform-process"><li class="footer-sub-2-but footer-sub-2">平台流程
-                    <div class="right-arrow">></div>
-                </li></a>
-                <a href="/pc/static/footer-expert-settled"><li class="footer-sub-2-but footer-sub-2">专家入驻
-                    <div class="right-arrow">></div>
-                </li></a>
-                <a href="/pc/static/footer-user-help"><li class="footer-sub-2-but footer-sub-2s">用户帮助
-                    <div class="right-arrow">></div>
-                </li></a>
-                <a href="/pc/static/footer-assistant-help"><li class="footer-sub-2-but footer-sub-2">助理帮助
-                    <div class="right-arrow">></div>
-                </li></a>
-                <a href="/pc/static/footer-expert-help"><li class="footer-sub-2-but footer-sub-2">专家帮助
-                    <div class="right-arrow">></div>
-                </li></a>
-            </ul>
-            <!-- 右边部分 -->
-            <div class="footer-sub-right">
-                <h1>用户帮助</h1>
-                <div class="fuh">
-                    <ul class="fuh-ul">
-                        <li><a href="/pc/static/footer-my-account">我的账号</a></li>
-                        <li><a href="#">寻找专家</a></li>
-                        <li><a href="#">预约专家</a></li>
-                        <li><a href="#">支付评价</a></li>
-                        <li><a href="#">申诉保障</a></li>
-                    </ul>
-                </div>
-            </div>
+        <!-- user-order-details -->
+        <div class="uod-title">
+            订单详情
         </div>
+        <ul class="uod-ul">
+
+            <% if(user.getUtype()==1){
+            %>
+            <li>
+                <div class="uod-ul-1">
+                    <span>活动信息</span>
+                </div>
+                <div class="uod-ul-2">
+
+                        <span>${purchaseOrder.ac.name}</span>
+                        <span>支付后显示联系方式</span>
+
+                    <c:if test="${purchaseOrder.payStatus>1}">
+                        <span>${purchaseOrder.expert2.name}</span>
+                        <span>${purchaseOrder.expert2.phone}</span><span>${purchaseOrder.expert2.email}</span>
+                    </c:if>
+                    <span>${purchaseOrder.expert2.province.name}</span>
+                </div>
+            </li>
+            <li>
+                <div class="uod-ul-1">
+                    <span>助理信息</span>
+                </div>
+                <div class="uod-ul-2"><span>${purchaseOrder.assistant.name}</span>
+                    <c:if test="${purchaseOrder.payStatus==1}">
+                        <span>支付后显示</span>
+                    </c:if>
+                    <c:if test="${purchaseOrder.payStatus>1}">
+                        <span>${purchaseOrder.assistant.phone}</span><span>${purchaseOrder.assistant.email}</span>
+                    </c:if>
+                </div>
+            </li>
+            <%}else if(user.getUtype()>1){%>
+            <li>
+                <div class="uod-ul-1">
+                    <span>联系人信息</span>
+                </div>
+                <div class="uod-ul-2">
+                    <c:if test="${purchaseOrder.payStatus==1}">
+                        <span>${purchaseOrder.consumer2.name}</span>
+                        <span>支付后显示联系方式</span>
+                    </c:if>
+                    <c:if test="${purchaseOrder.payStatus>1}">
+                        <span>${purchaseOrder.linkman}</span>
+                        <span>${purchaseOrder.telephone}</span><span>${purchaseOrder.consumer2.email}</span>
+                    </c:if>
+                    <span>${purchaseOrder.linkAddress}</span>
+                </div>
+            </li>
+            <li>
+                <div class="uod-ul-1">
+                    <span>助理信息</span>
+                </div>
+                <div class="uod-ul-2"><span>${purchaseOrder.assistant.name}</span>
+                    <span>${purchaseOrder.assistant.phone}</span><span>${purchaseOrder.assistant.email}</span>
+                </div>
+            </li>
+            <%}%>
+
+            <li>
+                <div class="uod-ul-1">
+                    <span>订单信息</span>
+                    <span class="uod-ul-1-1"><zjh:status name="payStatus" dataType="PurchaseOrder.payStatus" type="normal" checkedValue="${purchaseOrder.payStatus}"></zjh:status> </span>
+                </div>
+                <div class="uod-ul-3">
+                    <span>订单编号:${purchaseOrder.serial}</span>
+                    <span>生成时间:<fmt:formatDate value="${purchaseOrder.createDatetime}" pattern="yyyy-MM-dd hh:mm:ss"></fmt:formatDate> </span>
+                </div>
+                <div class="uod-ul-4">
+                    <span>订单状态:<zjh:status name="processStatus" dataType="PurchaseOrder.processStatus" type="normal" checkedValue="${purchaseOrder.processStatus}"></zjh:status></span>
+                </div>
+            </li>
+            <li class="uod-position">
+                <div class="uod-ul-1">
+                    <span>服务信息</span>
+                </div>
+                <div class="uod-ul-5">
+                    <dl>
+                        <dt>
+                            <img src="http://pic.591zjh.com/${purchaseOrder.expert2.pictureUrl}" alt="订单页专家信息">
+                        </dt>
+                        <dd class="uod-ul-5-1">${purchaseOrder.expert2.name}</dd>
+                        <dd>类别:<zjh:status name="serveType" dataType="ExpertServe.serveType" type="normal" checkedValue="${purchaseOrder.expertServe.serveType}"></zjh:status> </dd>
+                        <dd>
+                            <span>行业:<zjh:status name="industry" dataType="ExpertServe.industry" type="normal" checkedValue="${purchaseOrder.expertServe.industry}"></zjh:status> </span>
+                        </dd>
+                        <dd class="uod-ul-5-2">服务:<span>${purchaseOrder.expertServe.name}-${purchaseOrder.expertServe.price}元/天</span>
+                            <span>服务时间:<fmt:formatDate value="${purchaseOrder.serveDatetime}" pattern="yyyy-MM-dd"></fmt:formatDate> </span>
+                            <span><zjh:status name="dayType" dataType="PurchaseOrder.dayType" type="normal" checkedValue="${purchaseOrder.dayType}"></zjh:status> </span>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="uod-ul-6">
+						<span>应付金额:
+							<i>${purchaseOrder.total}元</i>
+						</span>
+                </div>
+            </li>
+            <li>
+                <div class="uod-ul-7">
+                    <span>订单备注:</span>
+                    <span>${purchaseOrder.memo}</span>
+                </div>
+                <div class="uod-ul-8">
+                    <span class="uod-ul-8-1">已支付:
+                        <c:if test="${purchaseOrder.payStatus==1}"><i>0元</i></c:if>
+                        <c:if test="${purchaseOrder.payStatus==2}"><i>${purchaseOrder.total*0.5}元</i></c:if>
+                        <c:if test="${purchaseOrder.payStatus==3}"><i>${purchaseOrder.total}元</i></c:if>
+                    </span>
+                    <%--
+                                        <a class="uod-ul-8-2" href="javascript:history.back();">返 回</a>
+                    --%>
+                </div>
+
+            </li>
+        </ul>
     </div>
 </div>
 <!-- 回到顶部 -->
@@ -218,7 +302,7 @@
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
                 <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
-                <div class="footer-ul1-con biancu">010-59505007</div>
+                <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
         <div class="footerpic">
@@ -231,17 +315,7 @@
     </div>
 </div>
 </div>
-<script type="text/javascript">
-    $(function(){
-        $(".footer-sub-2-but").click(function(){
-            $(".footer-sub-2-but").removeClass("footer-sub-2s").addClass("footer-sub-2");
 
-            $(this).removeClass("footer-sub-2").addClass("footer-sub-2s");
-
-        });
-    });
-
-</script>
 <!-- jiathis插件侧边栏 -->
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
