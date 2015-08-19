@@ -192,35 +192,35 @@
                 <li class="nav-li">重置密码</li>
             </ul>
             <div class="body-sub">
-                <div class="change-password">
+                <div class="change-password" style="margin-bottom: 33px;">
                     <img src="/images/duihao.gif">
-                    修改密码
+                    &nbsp;&nbsp;修改密码
                 </div>
 
                 <div class="cinf-table">
                     <form id="resetPwd" action="" method="post">
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            旧密码:
+                            旧密码：
                         </div>
                         <div class="cinf-td-r">
-                            <input name="oldPassword" class="cinput-css" type="password" placeholder="输入密码"/>
+                            <input name="oldPassword" class="rePassInp" type="password" placeholder="输入以前的密码" style="width:220px;"/>
                         </div>
                     </div>
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            新密码:
+                            新密码：
                         </div>
                         <div class="cinf-td-r">
-                            <input name="newPassword" class="cinput-css" type="password" placeholder="输入密码"/>
+                            <input name="newPassword" class="rePassInp" type="password" placeholder="输入新密码" style="width:220px;"/>
                         </div>
                     </div>
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            确认密码:
+                            确认密码：
                         </div>
                         <div class="cinf-td-r">
-                            <input class="cinput-css" type="password" placeholder="输入密码"/>
+                            <input class="rePassInp" type="password" placeholder="再次输入新密码" style="width:220px;"/>
                         </div>
                     </div>
                     <div><button class="cbut" onclick="submitForm();">保存</button></div>
