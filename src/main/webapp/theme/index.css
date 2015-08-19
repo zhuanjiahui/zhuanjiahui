@@ -561,7 +561,6 @@ a:hover .footer-sub-2-but{background-color: #00bdff;color: #fff;}
 
 
 /*万云 2015.08.07 首页样式覆盖*/
-.guild-sub:last-child{margin-right:0!important;}
 .nav li{line-height:40px!important;height:40px!important;}
 .nav li a{font-size:16px;position:relative;bottom:1px;}
 .leftMenu{background:white;height:453px;position:relativel;top:-2px;}
