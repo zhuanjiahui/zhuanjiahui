@@ -164,8 +164,13 @@
 <script type="text/javascript">
     var userNameFlag=false;
     var checkCodeFlag=false;
+    var imageCodeFlag=false;
     $(function(){
         $("#username").blur(function(){
+            //获取校验图片
+            $('#kaptchaImage').hide().attr('src', '/pc/kaptcha?' + Math.floor(Math.random()*100) ).fadeIn();
+            event.cancelBubble=true;
+
             var reg=/^1[3578][0-9]{9}$/;
             var username=$("#username").val();
             if(reg.test($("#username").val())) {
@@ -185,12 +190,12 @@
                             userNameFlag = true;
                             $("#nameMsg").html("");
                         }
-                    },
-                    error: function () {
-
                     }
                 })
             }
+        })
+        $("#username").focus(function(){
+            $("#nameMsg").html("");
         })
         $("#checkCode").blur(function(){
             $.ajax({
@@ -211,9 +216,24 @@
                 }
             })
         })
+        $("#captcha").blur(function(){
+            $.ajax({
+                url:"/pc/checkImgCode",
+                type:"post",
+                data:{
+                    captcha:$("#captcha").val()
+                },
+                dataType:"json",
+                success:function(data){
+                    if(data){
+                        imageCodeFlag=true;
+                    }
+                }
+            })
+        })
         $("#verificationCode").click(function(){
-            alert(userNameFlag);
-            if(userNameFlag==true){
+            console.log(userNameFlag+","+checkCodeFlag+","+imageCodeFlag);
+            if(userNameFlag&&imageCodeFlag){
                 time($("#verificationCode"));
                 $.ajax({
                     url:"/pc/validation/send",

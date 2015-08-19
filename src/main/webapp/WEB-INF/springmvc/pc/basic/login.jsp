@@ -79,7 +79,7 @@
                     <span class="text-l">记住账号</span>
                 </div>
                 <div class="box3-r">
-                    <span class="text-r">忘记密码</span>
+                    <span class="text-r"><a href="/pc/findPwd">忘记密码</a> </span>
                 </div>
             </div>
             <input id="login" class="login-btn" type="submit" value="立即登录">

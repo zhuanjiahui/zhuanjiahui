@@ -31,7 +31,7 @@
         <div class=" top-l fl">
             <% MyUser user= AuthorizationUtil.getMyUser();
                 if(user!=null&&user.getUsername()!=null){
-                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getUsername()+"</a>");
+                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getNavName()+"</a>");
                 }else {
                     pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/login\">登录</a>");
                 }
@@ -95,14 +95,14 @@
         <div class="guild-sub fl">
             <a href="/pc/requirement/publish">
                 <img src="/images/xuqiu.png" alt="发布需求">
-                <br />
+                <br/>
                 <span>发布需求</span>
             </a>
         </div>
         <div class="guild-sub">
             <a href="/pc/activity/publish">
                 <img src="/images/huodong.png" alt="发布活动">
-                <br />
+                <br/>
                 <span>发布活动</span>
             </a>
         </div>

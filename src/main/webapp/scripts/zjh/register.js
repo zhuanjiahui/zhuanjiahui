@@ -89,9 +89,9 @@ $(function(){
 			$('#registerBt').removeClass('disAble').attr('disabled',false);
 		}
 	});
-	
 
-	var reClick;
+
+    /*var reClick;
 	function verificationCodeClick(){
 		var timer = 60;
 		function verificationCode(){
@@ -111,7 +111,7 @@ $(function(){
 	$('#verificationCode').click(function(){
 		clearInterval(reClick);
 		verificationCodeClick();
-	});
+	});*/
 	
 	
 });
