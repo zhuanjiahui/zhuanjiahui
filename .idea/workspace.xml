@@ -23,9 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
@@ -3861,7 +3858,7 @@
       <workItem from="1439955145934" duration="1997000" />
       <workItem from="1439958280664" duration="9814000" />
       <workItem from="1439972886544" duration="5829000" />
-      <workItem from="1439982095669" duration="2020000" />
+      <workItem from="1439982095669" duration="2116000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -5199,11 +5196,15 @@
       <created>1439980480989</created>
       <updated>1439980480989</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="筛选样式修改">
+      <created>1439984441390</created>
+      <updated>1439984441390</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4116265000" />
+    <option name="totallyTimeSpent" value="4116361000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -5317,7 +5318,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="最新样式" />
     <MESSAGE value="易宝支付，创建github" />
     <MESSAGE value="修改页面" />
     <MESSAGE value="wode fuwu" />
@@ -5342,7 +5342,8 @@
     <MESSAGE value="发布需求页面样式修改" />
     <MESSAGE value="昨天的恢复LaLALAst" />
     <MESSAGE value="重置密码页面恢复" />
-    <option name="LAST_COMMIT_MESSAGE" value="重置密码页面恢复" />
+    <MESSAGE value="筛选样式修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="筛选样式修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
