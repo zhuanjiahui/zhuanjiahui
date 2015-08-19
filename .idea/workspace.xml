@@ -23,8 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
@@ -3848,7 +3846,7 @@
       <workItem from="1439881652994" duration="7514000" />
       <workItem from="1439892260745" duration="5107000" />
       <workItem from="1439955145934" duration="1997000" />
-      <workItem from="1439958280664" duration="4257000" />
+      <workItem from="1439958280664" duration="4330000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -5150,11 +5148,15 @@
       <created>1439964912812</created>
       <updated>1439964912813</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="页面头部统一样式修改">
+      <created>1439967252875</created>
+      <updated>1439967252875</updated>
+    </task>
+    <option name="localTasksCounter" value="330" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4102859000" />
+    <option name="totallyTimeSpent" value="4102932000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -5268,7 +5270,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="zhuanjiaxiangqing ye" />
     <MESSAGE value="活动列表" />
     <MESSAGE value="需求类" />
     <MESSAGE value="删除关键字" />
@@ -5293,7 +5294,8 @@
     <MESSAGE value="重置密码以及忘了那个页面修改样式" />
     <MESSAGE value="8.19早上提交" />
     <MESSAGE value="页面统一页面修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面统一页面修改" />
+    <MESSAGE value="页面头部统一样式修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面头部统一样式修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
