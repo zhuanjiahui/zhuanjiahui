@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
@@ -3755,7 +3754,7 @@
       <workItem from="1439881652994" duration="7514000" />
       <workItem from="1439892260745" duration="5107000" />
       <workItem from="1439955145934" duration="1997000" />
-      <workItem from="1439958280664" duration="7696000" />
+      <workItem from="1439958280664" duration="7805000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -5077,7 +5076,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4106298000" />
+    <option name="totallyTimeSpent" value="4106407000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
