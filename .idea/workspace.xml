@@ -23,75 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/common/404.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/common/404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantDataView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantDataView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/balance.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/balance.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/favoriteExperts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/favoriteExperts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/platform.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/platform.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseGuideView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseGuideView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/reset.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/resetPwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/resetPwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/settled.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/settled.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/sparePay.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/sparePay.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
@@ -2621,8 +2552,8 @@
       <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.212485" vertical-offset="12748" max-vertical-offset="15025">
-              <caret line="517" column="38" selection-start-line="517" selection-start-column="38" selection-end-line="517" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.18247299" vertical-offset="12748" max-vertical-offset="15025">
+              <caret line="516" column="10" selection-start-line="516" selection-start-column="10" selection-end-line="516" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -3655,7 +3586,7 @@
       <workItem from="1439857945314" duration="13522000" />
       <workItem from="1439881652994" duration="7514000" />
       <workItem from="1439892260745" duration="7381000" />
-      <workItem from="1439947060348" duration="3466000" />
+      <workItem from="1439947060348" duration="3956000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -4957,11 +4888,15 @@
       <created>1439944720022</created>
       <updated>1439944720022</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="IE8部分bug修复及页脚样式调整">
+      <created>1439951263801</created>
+      <updated>1439951263801</updated>
+    </task>
+    <option name="localTasksCounter" value="330" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4102345000" />
+    <option name="totallyTimeSpent" value="4102835000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -5009,7 +4944,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40172786" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2342918" sideWeight="0.9293078" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2342918" sideWeight="0.9293078" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40195015" sideWeight="0.532973" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2585288" sideWeight="0.20833333" order="3" side_tool="true" content_ui="tabs" />
@@ -5041,7 +4976,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="下订单" />
     <MESSAGE value="zhuanjiaxiangqing ye" />
     <MESSAGE value="活动列表" />
     <MESSAGE value="需求类" />
@@ -5066,7 +5000,8 @@
     <MESSAGE value="所有页面顶部区域提示语动态改变" />
     <MESSAGE value="重置密码以及忘了那个页面修改样式" />
     <MESSAGE value="8.19早上提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="8.19早上提交" />
+    <MESSAGE value="IE8部分bug修复及页脚样式调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="IE8部分bug修复及页脚样式调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5866,8 +5801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.212485" vertical-offset="12748" max-vertical-offset="15025">
-          <caret line="517" column="38" selection-start-line="517" selection-start-column="38" selection-end-line="517" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.18247299" vertical-offset="12748" max-vertical-offset="15025">
+          <caret line="516" column="10" selection-start-line="516" selection-start-column="10" selection-end-line="516" selection-end-column="10" />
           <folding />
         </state>
       </provider>
