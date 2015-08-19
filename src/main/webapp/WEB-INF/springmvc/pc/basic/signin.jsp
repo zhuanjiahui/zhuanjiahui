@@ -52,7 +52,17 @@
         <div class="box fl">
             <label>验证码</label>
 				<span class="box-sub">
-					<input id="checkCode" class="new-input" type="text" value="" placeholder="输入验证码" maxlength="6" name="verificationCode">
+					<input id="captcha" class="new-input" type="text" value="" placeholder="输入验证码" maxlength="6" name="captcha">
+				</span>
+                <br />
+                <img src="/pc/captcha" id="kaptchaImage" class=""/>
+                <a href="#" onclick="changeCode()">看不清?换一张</a>
+            <span></span>
+        </div>
+        <div class="box fl">
+            <label>校验码</label>
+				<span class="box-sub">
+					<input id="checkCode" class="new-input" type="text" value="" placeholder="输入校验码" maxlength="6" name="verificationCode">
 				</span>
             <span></span>
         </div>
@@ -248,6 +258,15 @@
                     },
                     1000)
         }
+    }
+    //获取图片验证码
+    $(function(){
+        $('#kaptchaImage').hide().attr('src', '/pc/kaptcha?' + Math.floor(Math.random()*100) ).fadeIn();
+        event.cancelBubble=true;
+    });
+    function changeCode() {
+        $('#kaptchaImage').hide().attr('src', '/pc/kaptcha?' + Math.floor(Math.random()*100) ).fadeIn();
+        event.cancelBubble=true;
     }
 </script>
 </html>

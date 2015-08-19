@@ -78,7 +78,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
+						<input type="text" name="words" value="" placeholder="关键字、课程">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
@@ -233,7 +233,7 @@
                         </div>
                     </div>
                     <div class="pi-imgs">
-                        <img src="http://pic.591zjh.com/${expert.pictureUrl}@_190w">
+                        <img src="http://pic.591zjh.com/${expert.pictureUrl}">
                     </div>
 
                     <div class="pi-line"></div>

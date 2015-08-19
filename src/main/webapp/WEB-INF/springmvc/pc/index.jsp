@@ -201,12 +201,13 @@
     </div>
     <!-- 轮播图部分 -->
     <div id="showpic" class="showpic clear">
-        <div id="list" style="left: -984px;">
-            <img src="/images/3.png" alt="3"/>
-            <img src="/images/1.png" alt="1"/>
-            <img src="/images/2.png" alt="2"/>
-            <img src="/images/3.png" alt="3"/>
+        <div id="list">
             <img src="/images/1.png" alt="3"/>
+            <img src="/images/2.jpg" alt="1"/>
+            <img src="/images/3.jpg" alt="2"/>
+            <img src="/images/1.png" alt="3"/>
+            <img src="/images/2.jpg" alt="3"/>
+            <img src="/images/3.jpg" alt="3"/>
         </div>
         <div id="buttons">
             <span index="1" class="on"></span>
@@ -266,7 +267,7 @@
         <div class="column2-sub">
             <a href="/pc/expert/viewExpert?expertId=${expert.id}">
                 <div class="cover">
-                    <p>简介：${expert.introduce}</p>
+                    <p>简介:${expert.introduce}</p>
                 </div>
 
                 <img src="http://pic.591zjh.com/${expert.pictureUrl}" alt="人物简介">
@@ -277,7 +278,7 @@
         </div>
     </c:forEach>
 </div>
-<!-- 栏目3部分：一会要把2修改 -->
+<!-- 栏目3部分:一会要把2修改 -->
 <div class="column2">
     <div class="column2-nav column3-nav">
         <div class="column2-left column3-left">
@@ -297,7 +298,7 @@
         <div class="column2-sub">
             <a href="#">
                 <div class="cover2">
-                    <p>简介：${assistant.introduce}</p>
+                    <p>简介:${assistant.introduce}</p>
                 </div>
                 <img src="http://pic.591zjh.com/${assistant.pictureUrl}" alt="人物简介">
             </a><br />
@@ -495,7 +496,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>

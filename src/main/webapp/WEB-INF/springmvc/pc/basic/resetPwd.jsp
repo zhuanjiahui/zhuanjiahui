@@ -83,7 +83,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
+						<input type="text" name="words" value="" placeholder="关键字、课程">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
@@ -172,35 +172,35 @@
                 <li class="nav-li">重置密码</li>
             </ul>
             <div class="body-sub">
-                <div class="change-password" style="margin-bottom: 33px;">
+                <div class="change-password">
                     <img src="/images/duihao.gif">
-                    &nbsp;&nbsp;修改密码
+                    修改密码
                 </div>
 
                 <div class="cinf-table">
                     <form id="resetPwd" action="" method="post">
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            旧密码：
+                            旧密码:
                         </div>
                         <div class="cinf-td-r">
-                            <input name="oldPassword" class="rePassInp" type="password" placeholder="输入以前的密码" style="width:220px;"/>
+                            <input name="oldPassword" class="cinput-css" type="password" placeholder="输入密码"/>
                         </div>
                     </div>
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            新密码：
+                            新密码:
                         </div>
                         <div class="cinf-td-r">
-                            <input name="newPassword" class="rePassInp" type="password" placeholder="输入新密码" style="width:220px;"/>
+                            <input name="newPassword" class="cinput-css" type="password" placeholder="输入密码"/>
                         </div>
                     </div>
                     <div class="cinf-tr">
                         <div class="cinf-td-l">
-                            确认密码：
+                            确认密码:
                         </div>
                         <div class="cinf-td-r">
-                            <input class="rePassInp" type="password" placeholder="再次输入新密码" style="width:220px;"/>
+                            <input class="cinput-css" type="password" placeholder="输入密码"/>
                         </div>
                     </div>
                     <div><button class="cbut" onclick="submitForm();">保存</button></div>

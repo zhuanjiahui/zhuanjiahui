@@ -1,11 +1,9 @@
 package com.frame.organization.model;
 
-import com.zhuanjiahui.basic.model.Activity;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
  * Created by Administrator on 2015/7/7.
@@ -80,5 +78,4 @@ public class User {
     public void setCheckStatus(Integer checkStatus) {
         this.checkStatus = checkStatus;
     }
-
 }

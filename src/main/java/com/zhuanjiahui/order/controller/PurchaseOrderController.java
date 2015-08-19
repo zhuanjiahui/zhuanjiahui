@@ -11,7 +11,6 @@ import com.frame.organization.model.User;
 import com.frame.organization.service.CityManager;
 import com.zhuanjiahui.basic.controller.BaseController;
 import com.zhuanjiahui.basic.model.Activity;
-import com.zhuanjiahui.basic.model.ActivityExpert;
 import com.zhuanjiahui.character.model.Expert;
 import com.zhuanjiahui.character.model.LinkAddress;
 import com.zhuanjiahui.character.model.Linkman;
@@ -57,12 +56,15 @@ public class PurchaseOrderController extends BaseController{
         PageEntity pageEntity=this.getPageEntity(request);
         PageInfo pageInfo=orderManager.listOrders(AuthorizationUtil.getMyUser().getId(),pageEntity);
         List<PurchaseOrder> purchaseOrderList=pageInfo.getList();
-        for(PurchaseOrder purchaseOrder:purchaseOrderList){
-            if(purchaseOrder.getProcessStatus()==3){
-                if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==0){
-                    purchaseOrder.setProcessStatus(5);
-                }else  if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==1){
-                    purchaseOrder.setProcessStatus(6);
+        if(purchaseOrderList!=null&&purchaseOrderList.size()>0){
+
+            for(PurchaseOrder purchaseOrder:purchaseOrderList){
+                if(purchaseOrder.getProcessStatus()==3){
+                    if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==0){
+                        purchaseOrder.setProcessStatus(5);
+                    }else  if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==1){
+                        purchaseOrder.setProcessStatus(6);
+                    }
                 }
             }
         }
