@@ -7,10 +7,18 @@ window.onload=function(){
 	for(var i=0;i<lis.length;i++){
 		lis[i].onclick=function(){
 			for(var i=0;i<lis.length;i++){
-				if(this==lis[i]){
-					lis[i].className="select";
-					uls[i].className="show";
-				}
+                if(this==lis[i]){
+                    lis[i].className="select";
+                    uls[i].className="show";
+                    //动态修改主搜索选项卡选择改变输入框提示文本 万云 2015.08.11
+                    if(i==0){
+                        $('.mainSearchBox').attr('placeholder','请输入专家姓名');
+                    }else if(i==1){
+                        $('.mainSearchBox').attr('placeholder','请输入您的需求');
+                    }else{
+                        $('.mainSearchBox').attr('placeholder','请输入活动名称');
+                    }
+                }
 				else{
 					lis[i].className="";
 					uls[i].className="";

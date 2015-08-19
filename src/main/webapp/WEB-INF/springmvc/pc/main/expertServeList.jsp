@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/zjh/zjh.js"></script>
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
+<%--    <script>
+        $(function(){
+            $('.sortingMethod li a').click(function(){
+                $('.sortingMethod li a').removeClass('sortingMethodChioce');
+                $(this).addClass('sortingMethodChioce');
+            });
+        });
+    </script>--%>
 </head>
 <body>
 <div id="wrap">
@@ -62,10 +70,6 @@
     <div class="logo fl">
         <a href="/pc/index"><img src="/images/logo.png" alt="logo"></a>
     </div>
-    <div class="text-border fl">
-        <img src="/images/text-border.png" alt="text-border">
-    </div>
-
     <!-- TAB切换效果 -->
     <div class="search fl">
         <div class="search-top clear"  id="tab-nav">
@@ -78,7 +82,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="关键字、课程">
+						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
@@ -148,7 +152,7 @@
                 <li><a href="/pc/expertServe/pageList?industry=${industry}&major=${major}&serveType=train">全部</a> </li>
                 <c:forEach items="${courseTypes}" var="course">
                     <c:if test="${course.name==courseType}">
-                        <li><a   class="screeningChioce" href="/pc/expertServe/pageList?industry=${industry}&major=${major}&courseType=${course.name}&serveType=train">${course.label}</a> </li>
+                        <li><a class="screeningChioce" href="/pc/expertServe/pageList?industry=${industry}&major=${major}&courseType=${course.name}&serveType=train">${course.label}</a> </li>
                     </c:if>
                     <c:if test="${course.name!=courseType}">
                         <li><a href="/pc/expertServe/pageList?industry=${industry}&major=${major}&courseType=${course.name}&serveType=train">${course.label}</a> </li>
@@ -208,7 +212,7 @@
     <ul class="resultsTop">
         <li>
             <ul class="sortingMethod">
-                <li class="screeningChioce"><a class="screeningChioce"  href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
+                <li><a class="sortingMethodChioce" href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=price_asc">价格</a></li>
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=obj.expert.visitCount_desc">人气</a></li>
             </ul>

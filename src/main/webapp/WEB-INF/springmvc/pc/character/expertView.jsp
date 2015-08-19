@@ -85,7 +85,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="关键字、课程">
+						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
