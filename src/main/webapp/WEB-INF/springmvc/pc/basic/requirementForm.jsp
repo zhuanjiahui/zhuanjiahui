@@ -198,7 +198,7 @@
             <div class="body-sub">
                 <div class="release-requirements">
                     <img src="/images/duihao.gif">
-                    填写需求信息
+                    填写需求信息aaa
                 </div>
                 <div class="rr-table">
                     <div class="rr-tr">
