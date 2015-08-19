@@ -203,19 +203,25 @@
                 <div class="rr-table">
                     <div class="rr-tr">
                         <div class="rr-td-l">标题：</div>
-                        <div class="rr-td-r"><input class="w1" type="text" name="name" value=""/></div>
+                        <div class="rr-td-r"><input type="text" name="name" value="" style="width:400px;"/></div>
                     </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">类型：</div>
                         <div class="rr-td-r">
                             <zjh:status  name="type" dataType="Requirement.type" type="select" checkedValue="" onchange="showCaseDiv(this.value);"></zjh:status>
                         </div>
-                        <div class="rr-td-l">行业：</div>
+                        <div class="rr-td-l" style="width:70px;">行业：</div>
                         <div class="rr-td-r">
                             <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
-
                         </div>
-
+                        <div class="rr-td-l" style="width:70px;">省份：</div>
+                        <div class="rr-td-r">
+                            <select class="pi-box-four" name="provinceId" required="true">
+                                <c:forEach items="${provinces}" var="province">
+                                    <option value="${province.id}">${province.name}</option>
+                                </c:forEach>
+                            </select>
+                        </div>
                     </div>
                     <div class="rr-tr" hidden="true" id="major">
                         <div class="rr-td-l">专业：</div>
@@ -240,7 +246,7 @@
                     <div class="rr-tr">
                         <div class="rr-td-l">预算：</div>
                         <div class="rr-td-r">
-                            <input class="xl" name="price" type="text" value=""/>
+                            <input name="price" type="text" value="" style="width:142px;"/>
                         </div>
                         <div class="rr-td-l">实施时间：</div>
                         <div class="rr-td-r">
@@ -248,44 +254,33 @@
                         </div>
 
                     </div>
-
-                    <div class="rr-tr">
-                        <div class="rr-td-l">省份：</div>
-                        <div class="rr-td-r">
-                            <select class="pi-box-four" name="provinceId" required="true">
-                            <c:forEach items="${provinces}" var="province">
-                                <option value="${province.id}">${province.name}</option>
-                            </c:forEach>
-                             </select>
-                        </div>
-                    </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">详细地址：</div>
-                        <div class="rr-td-r"><input class="l-address" name="address" type="text" value=""/></div>
+                        <div class="rr-td-r"><input name="address" type="text" value="" style="width:400px;"/></div>
                     </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">期望目标：</div>
-                        <div class="rr-td-r"><input class="the-contact" name="memo" type="text" value=""/></div>
+                        <div class="rr-td-r"><input class="the-contact" name="memo" type="text" value="" style="width:250px;"/></div>
                     </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">联系人：</div>
-                        <div class="rr-td-r"><input class="the-contact" name="linkman" type="text" value=""/></div>
+                        <div class="rr-td-r"><input class="the-contact" name="linkman" type="text" value="" style="width:250px;"/></div>
                     </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">联系电话：</div>
-                        <div class="rr-td-r"><input class="the-contact" name="telephone" type="text" value=""/></div>
+                        <div class="rr-td-r"><input class="the-contact" name="telephone" type="text" value="" style="width:250px;"/></div>
                     </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">类似项目：</div>
-                        <div class="rr-td-r"><input class="the-contact" name="itemsName" type="text" value=""/></div>
+                        <div class="rr-td-r"><input class="the-contact" name="itemsName" type="text" value="" style="width:250px;"/></div>
                     </div>
                     <div class="rr-tr">
                         <div class="rr-td-l">类似项目url：</div>
-                        <div class="rr-td-r"><input class="the-contact" name="itemsUrl" type="text" value=""/></div>
+                        <div class="rr-td-r"><input class="the-contact" name="itemsUrl" type="text" value="" style="width:250px;"/></div>
                     </div>
                     <div class="rr-tr rr-tr-h1">
                         <div class="rr-td-l">需求介绍：</div>
-                        <div class="rr-td-r"><textarea class="ac-int" name="introduce" ></textarea></div>
+                        <div class="rr-td-r"><textarea name="introduce" ></textarea></div>
                     </div>
                 </div>
             </div>
