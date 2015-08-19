@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/zjh/zjh.js"></script>
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
+<%--    <script>
+        $(function(){
+            $('.sortingMethod li a').click(function(){
+                $('.sortingMethod li a').removeClass('sortingMethodChioce');
+                $(this).addClass('sortingMethodChioce');
+            });
+        });
+    </script>--%>
 </head>
 <body>
 <div id="wrap">
@@ -228,7 +236,7 @@
     <ul class="resultsTop">
         <li>
             <ul class="sortingMethod">
-                <li class="screeningChioce"><a class="screeningChioce"  href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
+                <li class="sortingMethodChioce"><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}">默认排序</a> </li>
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=price_asc">价格</a></li>
 <%--
                 <li><a href="/pc/expertServe/pageList?serveType=${serveType}&industry=${industry}&major=${major}&courseType=${courseType}&developType=${developType}$orderBy=obj.expert.visitCount_desc">人气</a></li>
