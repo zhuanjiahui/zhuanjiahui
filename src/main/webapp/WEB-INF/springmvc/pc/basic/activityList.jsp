@@ -236,7 +236,7 @@
         <div class="query-column1-3-2">
             <span class="query-span3">已报名${activity.realCount}/${activity.userNumber}人</span>
             <span class="query-span4">${activity.price}元</span>
-            <a href="#">参加活动</a>
+            <a href="#" onclick="joinActivity('${activity.id}')">参加活动</a>
         </div>
     </div>
 
@@ -373,7 +373,7 @@
                 }else if(data=="full"){
                     alert("活动人员已满!");
                 }else{
-                    location.href=data;
+                    alert("报名成功!");
                 }
             }
 

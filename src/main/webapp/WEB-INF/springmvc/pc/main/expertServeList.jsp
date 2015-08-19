@@ -22,14 +22,6 @@
     <link rel="stylesheet" href="/theme/index.css">
     <script type="text/javascript" src="/scripts/zjh/zjh.js"></script>
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
-<%--    <script>
-        $(function(){
-            $('.sortingMethod li a').click(function(){
-                $('.sortingMethod li a').removeClass('sortingMethodChioce');
-                $(this).addClass('sortingMethodChioce');
-            });
-        });
-    </script>--%>
 </head>
 <body>
 <div id="wrap">

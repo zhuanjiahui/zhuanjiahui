@@ -237,7 +237,7 @@
                     <span class="uod-ul-8-1">已支付:
                         <c:if test="${purchaseOrder.payStatus==1}"><i>0元</i></c:if>
                         <c:if test="${purchaseOrder.payStatus==2}"><i>${purchaseOrder.total*0.5}元</i></c:if>
-                        <c:if test="${purchaseOrder.payStatus==2}"><i>${purchaseOrder.total}元</i></c:if>
+                        <c:if test="${purchaseOrder.payStatus==3}"><i>${purchaseOrder.total}元</i></c:if>
                     </span>
 <%--
                     <a class="uod-ul-8-2" href="javascript:history.back();">返 回</a>

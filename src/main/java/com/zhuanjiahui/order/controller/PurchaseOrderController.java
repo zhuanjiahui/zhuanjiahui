@@ -56,12 +56,15 @@ public class PurchaseOrderController extends BaseController{
         PageEntity pageEntity=this.getPageEntity(request);
         PageInfo pageInfo=orderManager.listOrders(AuthorizationUtil.getMyUser().getId(),pageEntity);
         List<PurchaseOrder> purchaseOrderList=pageInfo.getList();
-        for(PurchaseOrder purchaseOrder:purchaseOrderList){
-            if(purchaseOrder.getProcessStatus()==3){
-                if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==0){
-                    purchaseOrder.setProcessStatus(5);
-                }else  if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==1){
-                    purchaseOrder.setProcessStatus(6);
+        if(purchaseOrderList!=null&&purchaseOrderList.size()>0){
+
+            for(PurchaseOrder purchaseOrder:purchaseOrderList){
+                if(purchaseOrder.getProcessStatus()==3){
+                    if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==0){
+                        purchaseOrder.setProcessStatus(5);
+                    }else  if(DateUtil.compareDate(new Date(),purchaseOrder.getServeDatetime())==1){
+                        purchaseOrder.setProcessStatus(6);
+                    }
                 }
             }
         }
@@ -210,20 +213,16 @@ public class PurchaseOrderController extends BaseController{
     @RequestMapping(value = "/joinActivity")
     @ResponseBody
     public String joinActivity(HttpServletRequest request){
-        Expert user=AuthorizationUtil.getExpert();
+        User user=AuthorizationUtil.getUser();
         String activityId=request.getParameter("activityId");
         Activity activity=(Activity)baseManager.getObject(Activity.class.getName(),activityId);
-        List<Expert> expertList=activity.getExpertList();
         List<PurchaseOrder> purchaseOrderList=activity.getPurchaseOrderList();
-        if(purchaseOrderList==null){
+        if (purchaseOrderList==null){
             purchaseOrderList=new ArrayList<>();
         }
-        if (expertList==null){
-            expertList=new ArrayList<>();
-        }
-        if(expertList.size()<activity.getUserNumber()){
-            for (Expert expert:expertList){
-                if(user.getId().equals(expert.getId())){
+        if(purchaseOrderList.size()<activity.getUserNumber()){
+            for (PurchaseOrder purchaseOrder:purchaseOrderList){
+                if(user.getId().equals(purchaseOrder.getConsumer().getId())){
                     return "repeat";
                 }
             }
@@ -234,11 +233,11 @@ public class PurchaseOrderController extends BaseController{
         purchaseOrder.setConsumer(AuthorizationUtil.getUser());
         purchaseOrder.setExpert(activity.getUser());
         orderManager.createActivityOrder(purchaseOrder,activity);
-        expertList.add(user);
+        baseManager.saveOrUpdate(PurchaseOrder.class.getName(), purchaseOrder);
         purchaseOrderList.add(purchaseOrder);
-        activity.setExpertList(expertList);
-        baseManager.saveOrUpdate(PurchaseOrder.class.getName(),purchaseOrder);
+        activity.setPurchaseOrderList(purchaseOrderList);
         baseManager.saveOrUpdate(Activity.class.getName(),activity);
-        return "redirect:/pc/purchaseOrder/activityPay?orderId="+purchaseOrder.getId();
+/*        return "redirect:/pc/activityPay?orderId="+purchaseOrder.getId();*/
+        return "success";
     }
 }

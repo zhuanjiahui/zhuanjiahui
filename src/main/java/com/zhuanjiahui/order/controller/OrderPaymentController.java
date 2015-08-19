@@ -27,6 +27,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * Created by Administrator on 2015/6/30.
@@ -40,10 +41,11 @@ public class OrderPaymentController {
     private OrderManager orderManager;
     @Autowired
     private CityManager cityManager;
-    /*
+    public static Logger logger=Logger.getLogger(OrderPaymentController.class.getName());
+  /*  *//*
     * 支付入口，生成支付页面
     * 订单分批支付的情况：因为订单号是不可重复的，所以这里用支付记录号作为订单号
-    * */
+    * *//*
     @RequestMapping(value = "/page")
     public void orderPayPage(HttpServletRequest request,HttpServletResponse response){
         String orderId = request.getParameter("orderId");
@@ -61,8 +63,8 @@ public class OrderPaymentController {
             e.printStackTrace();
         }
     }
-    /*
-    * 接受支付宝响应的业务逻辑*/
+    *//*
+    * 接受支付宝响应的业务逻辑*//*
     @RequestMapping(value = "/payment")
     public void recordPayment(HttpServletRequest request,HttpServletResponse response){
         //获取支付宝POST过来反馈信息,签名
@@ -122,8 +124,8 @@ public class OrderPaymentController {
             e.printStackTrace();
         }
     }
-    /*
-    * 构造Alipay请求参数*/
+    *//*
+    * 构造Alipay请求参数*//*
     public String getPayForm(Map<String, String> params) {
         String payment_type = "1";
         String domain = "http://beijing.yuepaila.com";//外网域名或IP
@@ -172,11 +174,12 @@ public class OrderPaymentController {
         sParaTemp.put("exter_invoke_ip", exter_invoke_ip);
         String sHtmlText = AlipaySubmit.buildRequest(sParaTemp, "post", "确认");
         return sHtmlText;
-    }
+    }*/
     /*
     * 根据订单号、支付金额、生成易宝支付页面,首次支付入口*/
     @RequestMapping(value = "/yeepay")
     public String getYeepayForm(HttpServletRequest request,HttpServletResponse response){
+
         String orderId=request.getParameter("orderId");
         String linkman=request.getParameter("linkname");
         String telephone=request.getParameter("telephone");
@@ -197,6 +200,7 @@ public class OrderPaymentController {
         purchaseOrder.setMemo(memo);
         purchaseOrder.setProvince(province);
         baseManager.saveOrUpdate(PurchaseOrder.class.getName(),purchaseOrder);
+        logger.info("设置订单的联系人信息,根据支付方式，修改订单的支付类型:预付款订单、全额支付订单...");
         PurchaseOrderPayment purchaseOrderPayment=new PurchaseOrderPayment();
         purchaseOrderPayment.setCreateDatetime(new Date());
         purchaseOrderPayment.setGateway(gateWay);//支付方式
@@ -210,6 +214,7 @@ public class OrderPaymentController {
             purchaseOrderPayment.setPayed(purchaseOrder.getTotal().multiply(new BigDecimal(purchaseOrder.getExpertServe().getDiscount()/20)));
         }
         baseManager.saveOrUpdate(PurchaseOrderPayment.class.getName(),purchaseOrderPayment);
+        logger.info("生成支付记录,默认是支付未成功状态，支付成功修改支付记录状态。支付记录id作为支付请求id...");
         String amount=purchaseOrderPayment.getPayed().toString();
         String callbackurl ="http://1.202.165.225:8080/pc/payBack";
         Map<String,String> map=new HashMap<String,String>();
@@ -224,6 +229,7 @@ public class OrderPaymentController {
         }
         map=ZGTService.paymentRequest(map);
         String payUrl=map.get("payurl");
+        logger.info("调用支付接口，跳转至支付界面...");
         return "redirect:"+payUrl;
 
     }
@@ -245,7 +251,7 @@ public class OrderPaymentController {
         purchaseOrderPayment.setSerial(serial+ StringUtil.random(6,2));
         purchaseOrderPayment.setPayed(purchaseOrder.getTotal().multiply(new BigDecimal(0.5)));//支付金额
         baseManager.saveOrUpdate(PurchaseOrderPayment.class.getName(),purchaseOrderPayment);
-
+        logger.info("生成余款支付记录，默认是支付未成功状态，支付成功修改支付记录状态。...");
         String amount=purchaseOrderPayment.getPayed().toString();
         String callbackurl ="http://www.591zjh.com/pc/payBack";
         Map map=new HashMap<String,String>();
@@ -261,11 +267,12 @@ public class OrderPaymentController {
         //调用支付接口
         Map m=ZGTService.paymentRequest(map);
         String payUrl=m.get("payurl").toString();
+        logger.info("余款支付调用支付接口，跳转至支付界面...");
         return "redirect:"+payUrl;
 
     }
     /*
-  * 预付款订单，余款支付*/
+  * 活动订单支付支付*/
     @RequestMapping(value = "/activityPay")
     public String activityPay(HttpServletRequest request,HttpServletResponse response){
         String orderId=request.getParameter("orderId");
@@ -282,7 +289,7 @@ public class OrderPaymentController {
         purchaseOrderPayment.setSerial(serial+ StringUtil.random(6,2));
         purchaseOrderPayment.setPayed(purchaseOrder.getTotal());//支付金额
         baseManager.saveOrUpdate(PurchaseOrderPayment.class.getName(),purchaseOrderPayment);
-
+        logger.info("生成活动订单支付记录，默认是支付未成功状态，支付成功后修改状态...");
         String amount=purchaseOrderPayment.getPayed().toString();
         String callbackurl ="http://www.591zjh.com/pc/payBack";
         Map map=new HashMap<String,String>();
@@ -298,6 +305,7 @@ public class OrderPaymentController {
         //调用支付接口
         Map m=ZGTService.paymentRequest(map);
         String payUrl=m.get("payurl").toString();
+        logger.info("活动订单支付,调用支付接口,跳转至支付界面");
         return "redirect:"+payUrl;
 
     }
@@ -314,6 +322,7 @@ public class OrderPaymentController {
             String paymentId=map.get("requestid");
             //支付成功后修改订单、支付记录和档期状态
             orderManager.successPay(paymentId);
+            logger.info("支付成功后，将订单修改为已预付或已付清状态,将订单的支付记录修改为支付成功状态...");
         }
         return "redirect:/pc/purchaseOrder/myOrders";
     }

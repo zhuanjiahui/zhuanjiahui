@@ -30,7 +30,7 @@ public class Requirement {
     private String address;
     private String linkman;
     private String telephone;
-    private Integer theStatus;
+    private Integer theStatus;// 0删除 1正常 -1撤回
     private String itemsName;//类似项目名称
     private String itemsUrl;//项目路径
     private Integer favoriteCount;

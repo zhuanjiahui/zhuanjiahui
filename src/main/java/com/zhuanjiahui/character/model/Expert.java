@@ -41,7 +41,7 @@ public class Expert extends BigUser{
     private List<ExpertIndustry> expertIndustryList;
     private String linkman;//第二联系人
     private String linkmanPhone;
-    private List<Activity> activityList;
+
 
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "consumer")
     public List<Stroke> getStrokes() {
@@ -218,15 +218,5 @@ public class Expert extends BigUser{
     public void setFreedom(Boolean freedom) {
         this.freedom = freedom;
     }
-    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-    @JoinTable(name = "basic_activity_expert",
-            joinColumns = {@JoinColumn(name = "activity_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "expert_id", referencedColumnName = "id")})
-    public List<Activity> getActivityList() {
-        return activityList;
-    }
 
-    public void setActivityList(List<Activity> activityList) {
-        this.activityList = activityList;
-    }
 }

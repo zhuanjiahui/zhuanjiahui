@@ -233,7 +233,7 @@
                         </div>
                     </div>
                     <div class="pi-imgs">
-                        <img src="http://pic.591zjh.com/${expert.pictureUrl}@_190w">
+                        <img src="http://pic.591zjh.com/${expert.pictureUrl}">
                     </div>
 
                     <div class="pi-line"></div>

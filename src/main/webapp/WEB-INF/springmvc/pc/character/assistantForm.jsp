@@ -24,75 +24,39 @@
     <link rel="stylesheet" href="/theme/main.css">
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>
     <script src="/scripts/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/scripts/jCrop/jquery.Jcrop.js"></script>
     <script type="text/javascript" src="/scripts/zjh/zjh-public.js"></script>
     <script type="text/javascript" src="/scripts/My97DatePicker/WdatePicker.js"></script>
-    <link rel="stylesheet" type="text/css" href="/scripts/imgare/imgareaselect-animated.css" />
-    <script src="/scripts/imgare/jquery.imgareaselect.pack.js"></script>
     <style type="text/css">
-        #bg{ display: none; position: fixed; top: 20%; left: 34%; width: 32%; height: 60%; background-color: gray; z-index:1001; opacity:0.7;filter:alpha(opacity=70);}
-        #big{display: none; position: fixed; top: 25%; left: 36%; width: 18%; height: 40%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
-        #sma{display: none; position: fixed; top: 25%; left: 58%; width: 6%; height: 12%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
-        #sure{display: none; position: fixed; top: 70%; left: 40%; width:120px; height:25px;z-index:1002; overflow: auto;}
-        #cancel{display: none; position: fixed; top: 70%; left: 50%; width:120px; height:25px;z-index:1002; overflow: auto;}
+        .imgareaselect-border1 {background: url(/images/border-anim-v.gif) repeat-y left top;}
+        .imgareaselect-border2 {background: url(/images/border-anim-h.gif) repeat-x left top;}
+        .imgareaselect-border3 {background: url(/images/border-anim-v.gif) repeat-y right top;}
+        .imgareaselect-border4 {background: url(/images/border-anim-h.gif) repeat-x left bottom;}
+        .imgareaselect-border1, .imgareaselect-border2,.imgareaselect-border3, .imgareaselect-border4 {opacity: 0.5;filter: alpha(opacity=50);}
+        .imgareaselect-handle {background-color: #fff;border: solid 1px #000;opacity: 0.5;filter: alpha(opacity=50);}
+        .imgareaselect-outer {background-color: #000;opacity: 0.5;filter: alpha(opacity=50);}
+
+        .pictureCut{display: none; position:fixed;top:50%;left:50%;width:600px;height:400px;margin-top:-200px;margin-left:-300px;background:rgba(0,0,0,.77); z-index:10;border-radius:8px;box-shadow:inset 0 0 2px white;-moz-box-shadow:inset 0 0 2px white;-webkit-box-shadow:inset 0 0 2px white;padding:0 10px;}
+        .prePicBox{position:absolute;top:33px;left:33px;border:8px solid rgba(255,255,255,.33);width:280px;height:280px;overflow:hidden;}
+        .prePicBox img{width:100%;}
+        .viewPicBox{position:absolute;top:33px;left:363px;}
+        .viewPicTxt{color:white;font-size:15px;margin:0;}
+        .small{width:96px;height:96px;margin-top:15px;overflow:hidden;}
+        .small img{width:80px;height:80px;border:8px solid rgba(255,255,255,.33);}
+        .big{width:150px;height:150px;margin-top:15px;overflow:hidden;}
+        .big img{width:134px;height:134px;border:8px solid rgba(255,255,255,.33);}
+        .line{height:3px;width:580px;border-bottom:1px solid rgba(255,255,255,.66);position:absolute;bottom:66px;}
+        .picCutBt{position:absolute;bottom:15px;right:33px;}
+        .picCutBt li{display:inline-block;margin:0 5px;}
+        .picCutBt li button{width:120px;height:40px;border:none;border-radius:3px;font-size:15px;letter-spacing:3px;color:white;}
+        .submit{background:#EC6618;cursor:pointer;}
+        .submit:hover{background:#dd3d06;}
+        .cancel{background:#26C2FF;}
+        .cancel:hover{background:#0992c7;}
 
     </style>
 
-    <script type="text/javascript">
-    var x, y, w, h,url;
-    $(function () {
-        $('#big').imgAreaSelect({ aspectRatio: '1:1', handles: true,fadeSpeed: 200, onSelectChange: preview });
-        $("#expertPicUpload").uploadify({
-            swf: '/scripts/uploadify/uploadify.swf?m=' + Math.random(),
-            uploader: '/pc/user/uploadPic',
-            fileTypeExts: '*.jpg;*.jpge;*.gif;*.png',
-            //浏览按钮的宽度
-            width: '100',
-            //浏览按钮的高度
-            height: '32',
-            multi: false,
-            buttonText: '<a class="le-wz">上传头像</a>',
-            onUploadSuccess: function (file, data, response) {
-                document.getElementById("bg").style.display ="block";
-                document.getElementById("big").style.display ="block";
-                document.getElementById("sma").style.display ="block";
-                document.getElementById("sure").style.display ="block";
-                document.getElementById("cancel").style.display ="block";
-                $("#photo").attr("src","http://pic.591zjh.com/"+eval(data));
-                $("#sma img").attr("src","http://pic.591zjh.com/"+eval(data));
-                url=eval(data);
-                console.log(url);
-            }
-        })
-    })
-    function preview(img, selection) {
-        if (!selection.width || !selection.height)
-            return;
 
-        var scaleX = 100 / selection.width;
-        var scaleY = 100 / selection.height;
-
-        $('#sma img').css({
-            width: Math.round(scaleX * 300),
-            height: Math.round(scaleY * 300),
-            marginLeft: -Math.round(scaleX * selection.x1),
-            marginTop: -Math.round(scaleY * selection.y1)
-        });
-        x=selection.x1;
-        y=selection.y1;
-        w=selection.width;
-        h=selection.height;
-    }
-    function sureButton(){
-
-        $("#picUrl").val(url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
-        $("#head").attr("src","http://pic.591zjh.com/"+url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
-        $("#floatDiv").hide();
-
-    }
-    function cancelButton(){
-        $("#floatDiv").hide();
-    }
-</script>
 </head>
 <body>
 <div id="wrap">
@@ -393,8 +357,28 @@
     </div>
 </div>
 </div>
+<div class="pictureCut">
+    <div class="prePicBox">
+        <img id="photo" src="/images/le-img.png" />
+    </div>
+    <div class="viewPicBox">
+        <p class="viewPicTxt">预览：</p>
+        <div class="preview big">
+            <img id="small" src="/images/le-img.png" />
+        </div>
+        <div class="preview small">
+            <img id="sma2" src="/images/le-img.png" />
+        </div>
+    </div>
+    <div class="line"></div>
+    <ul class="picCutBt">
+        <li><button class="submit" onclick="sureButton();">提交</button></li>
+        <li><button class="cancel" onclick="cancelButton();">取消</button></li>
+    </ul>
+
+</div>
 <%--图像浮层--%>
-<div id="floatDiv">
+<%--<div id="floatDiv">
     <div id="bg"></div>
     <div id="big">
         <img id="photo" src="">
@@ -405,9 +389,81 @@
     <button id="sure" onclick="sureButton();">确定</button>
     <button id="cancel" onclick="cancelButton();">取消</button>
 
-</div>
+</div>--%>
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<script type="text/javascript">
+    var x, y, w, h,url,jcrop_api;
+    $(function () {
+        $("#expertPicUpload").uploadify({
+            swf: '/scripts/uploadify/uploadify.swf?m=' + Math.random(),
+            uploader: '/pc/user/uploadPic',
+            /*
+             fileTypeExts: '*.jpg;*.jpeg;*.gif;*.png',
+             */
+            //浏览按钮的宽度
+            width: '150',
+            //浏览按钮的高度
+            height: '32',
+            multi: false,
+            buttonText: '<a class="uploadPhotoBt">上传头像</a>',
+            onUploadSuccess: function (file, data, response) {
+                url=eval(data);
+                $(".pictureCut").css("display","block");
+                $("#photo").attr("src","http://pic.591zjh.com/"+url);
+                $("#small").attr("src","http://pic.591zjh.com/"+url);
+                var  boundx, boundy;
+                $('#photo').Jcrop({
+                    onChange: updatePreview,
+                    onSelect: updatePreview,
+                    aspectRatio: 1,
+                    setSelect: [ 0, 0, this.width, this.height/2.5 ]
+                },function(){
+                    var bounds = this.getBounds();
+                    boundx = bounds[0];
+                    boundy = bounds[1];
+                    jcrop_api = this;
+                });
+
+                function updatePreview(c){
+                    console.log(boundx+"_"+boundy);
+                    if (parseInt(c.w) > 0){
+                        var rx = 134 / c.w;
+                        var ry = 134 / c.h;
+                        $('#small').css({
+                            width: Math.round(rx * boundx) + 'px',
+                            height: Math.round(ry * boundy) + 'px',
+                            marginLeft: '-' + Math.round(rx * c.x) + 'px',
+                            marginTop: '-' + Math.round(ry * c.y) + 'px'
+                        });
+                    }
+                    /*      x= c.x*Math.round(boundx / 280);
+                     y= c.y*Math.round(boundy / 280);
+                     w= c.w*Math.round(boundx / 280);
+                     h= c.h*Math.round(boundy / 280);
+                     console.log(x+"_"+y+"_"+w+"_"+h);*/
+                    x= c.x;
+                    y= c.y;
+                    w= c.w;
+                    h= c.h;
+                };
+
+            }
+        })
+    })
+
+    function sureButton(){
+        $("#picUrl").val(url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
+        $("#head").attr("src","http://pic.591zjh.com/"+url+"@"+x+"-"+y+"-"+w+"-"+h+"a");
+        jcrop_api.destroy();
+        $(".pictureCut").hide();
+
+    }
+    function cancelButton(){
+        jcrop_api.destroy();
+        $(".pictureCut").hide();
+    }
+</script>
 </body>
 </html>

@@ -51,6 +51,7 @@ public class PurchaseOrder {
     private String linkAddress;
     private Province province;
     private String memo;//订单备注，补充说明的要求
+    private List<Activity> activityList;
 
 
     @Id
@@ -298,5 +299,16 @@ public class PurchaseOrder {
 
     public void setPayStatus(Integer payStatus) {
         this.payStatus = payStatus;
+    }
+    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+    @JoinTable(name = "basic_activity_order",
+            joinColumns = {@JoinColumn(name = "activity_id", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "order_id", referencedColumnName = "id")})
+    public List<Activity> getActivityList() {
+        return activityList;
+    }
+
+    public void setActivityList(List<Activity> activityList) {
+        this.activityList = activityList;
     }
 }
