@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
     <title>用户我的需求</title>
     <link rel="stylesheet" href="/theme/reset.css">
-    <link rel="stylesheet" href="/theme/index.css">
+    <%--<link rel="stylesheet" href="/theme/index.css">--%>
     <link rel="stylesheet" href="/theme/public-css-style.css" >
     <link rel="stylesheet" href="/theme/main.css" >
     <script type="text/javascript" src="/scripts/jquery-1.8.0.min.js"></script>

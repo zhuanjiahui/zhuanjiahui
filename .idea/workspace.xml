@@ -7,14 +7,14 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/SigninManager.java" description="public Expert initExpert(Expert expert);" line="14" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" line="252" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" line="264" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/service/ScheduleManager.java" description="public List&lt;Map&gt; getScheduleList(Date date) throws..." line="14" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/BigUser.java" description="public class BigUser {" line="15" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/impl/AssistantManagerImpl.java" description="public PageInfo myExperts(PageEntity pageEntity, S..." line="51" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/impl/ExpertManagerImpl.java" description="public List&lt;Object&gt; getHomeExpert(int size) {" line="54" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/SigninManager.java" description="public User checkUserName(String username);" line="12" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/RequirementManager.java" description="public List&lt;Object&gt; getNewRequirements(int size);" line="13" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" line="171" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" line="183" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/controller/ScheduleController.java" line="51" />
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" line="212" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/impl/ExpertManagerImpl.java" description="public PageInfo pageExpert(PageEntity pageEntity,L..." line="72" />
@@ -23,77 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/findPwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frame/organization/model/MyUser.java" afterPath="$PROJECT_DIR$/src/main/java/com/frame/organization/model/MyUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/SigninController.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/SigninController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/activityPay.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/activityPay.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantDataView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantDataView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/balance.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/balance.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/favoriteExperts.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/favoriteExperts.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/platform.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/platform.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseGuideView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseGuideView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/zjh/register.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/zjh/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/resetPwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/resetPwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/settled.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/settled.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/sparePay.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/sparePay.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
@@ -2580,76 +2515,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="requirementForm.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.352941" vertical-offset="675" max-vertical-offset="9800">
-              <caret line="37" column="108" selection-start-line="37" selection-start-column="108" selection-end-line="37" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="myRequirementList.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.558824" vertical-offset="375" max-vertical-offset="7300">
-              <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
+            <state vertical-scroll-proportion="36.764706" vertical-offset="1850" max-vertical-offset="7600">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activityForm.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer-assistant-expert-management.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="35.382355" vertical-offset="1828" max-vertical-offset="7175">
+              <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-assistant-help.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="35.382355" vertical-offset="1828" max-vertical-offset="6575">
+              <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-know-us.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="66.17647" vertical-offset="2250" max-vertical-offset="6525">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-user-appeal.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="70.588234" vertical-offset="2400" max-vertical-offset="7225">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-service-guarantee.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.75" vertical-offset="2100" max-vertical-offset="7200">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activityForm.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7518797" vertical-offset="1200" max-vertical-offset="11300">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="-55.14706" vertical-offset="0" max-vertical-offset="11600">
+              <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myActivities.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.970589" vertical-offset="375" max-vertical-offset="7600">
-              <caret line="34" column="112" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="22.058823" vertical-offset="750" max-vertical-offset="6600">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="findPwd.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/findPwd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7000">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1439965614880" expanded="false" signature="7793:7807" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bindPhone.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.823529" vertical-offset="525" max-vertical-offset="11475">
-              <caret line="33" column="108" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
-              <folding>
-                <marker date="1439969545117" expanded="false" signature="14833:14847" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -2709,7 +2640,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" />
@@ -2760,6 +2690,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp" />
       </list>
     </option>
   </component>
@@ -2825,7 +2756,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectStructureProblems">
     <ignored-problems>
@@ -2879,21 +2810,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="215" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="211" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="239" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="246" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="242" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1131" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1111" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="230" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="226" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="247" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="243" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="255" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="251" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1083" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="SearchEverywhereHistoryKey" value="login.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp&#10;signin.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp&#10;index&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/index.jsp&#10;expertView&#9;FILE&#9;file://E:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;activit&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp&#10;req&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp&#10;expertorder&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp&#10;serveC&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp&#10;sche&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;expertV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;expertS&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;expertServeList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;/pc/user/view&#9;null&#9;null&#10;login&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp&#10;schedule.js&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;activityLi&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;expertF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp&#10;requirement&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp&#10;expertSe&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;myEx&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;re&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp&#10;signin&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp&#10;schedule.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;expertServeL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;index.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/index.jsp&#10;require&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp&#10;my&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;myExpert&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;assistantorderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp&#10;userOrderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp&#10;myE&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;expertOrder&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp&#10;expertD&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp&#10;expertForm&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp&#10;expertDataV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp&#10;s&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;scheduleV&#9;null&#9;null&#10;activityV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp&#10;id&#9;FILE&#9;file://D:/workspace/zjh/src/main/java/com/frame/core/p/model/ZJHidGenerator.java&#10;requirementF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp&#10;requirem&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp&#10;assistantList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantList.jsp&#10;activityL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;activityF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp&#10;expertv&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;activityList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;orderLink&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp&#10;index.css&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/theme/index.css&#10;orderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp&#10;assistantE&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp" />
     <property name="FullScreen" value="false" />
@@ -3700,7 +3631,7 @@
       <workItem from="1439881652994" duration="7514000" />
       <workItem from="1439892260745" duration="5107000" />
       <workItem from="1439951443615" duration="1105000" />
-      <workItem from="1439953105520" duration="12350000" />
+      <workItem from="1439953105520" duration="13794000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -5002,11 +4933,15 @@
       <created>1439951682474</created>
       <updated>1439951682474</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="周永超：导航栏有姓名显示姓名 需求和活动查询条件修改为5个">
+      <created>1439969763734</created>
+      <updated>1439969763734</updated>
+    </task>
+    <option name="localTasksCounter" value="330" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4110060000" />
+    <option name="totallyTimeSpent" value="4111504000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -5033,11 +4968,11 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6089386" sideWeight="0.3976546" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6089386" sideWeight="0.3976546" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28268155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28268155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26124197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05942184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -5046,7 +4981,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37321624" sideWeight="0.6970021" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.02383532" sideWeight="0.43869936" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30055866" sideWeight="0.43869936" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31620112" sideWeight="0.5187366" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23380727" sideWeight="0.0706922" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -5086,7 +5021,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="zhuanjiaxiangqing ye" />
     <MESSAGE value="活动列表" />
     <MESSAGE value="需求类" />
     <MESSAGE value="删除关键字" />
@@ -5111,7 +5045,8 @@
     <MESSAGE value="重置密码以及忘了那个页面修改样式" />
     <MESSAGE value="8.19早上提交" />
     <MESSAGE value="还原更新前版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="还原更新前版本" />
+    <MESSAGE value="周永超：导航栏有姓名显示姓名 需求和活动查询条件修改为5个" />
+    <option name="LAST_COMMIT_MESSAGE" value="周永超：导航栏有姓名显示姓名 需求和活动查询条件修改为5个" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5511,30 +5446,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.882353" vertical-offset="357" max-vertical-offset="6300">
-          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3235292" vertical-offset="478" max-vertical-offset="6450">
-          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.882353" vertical-offset="357" max-vertical-offset="7025">
-          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.470589" vertical-offset="303" max-vertical-offset="6575">
@@ -5591,22 +5502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.735294" vertical-offset="328" max-vertical-offset="6575">
-          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.735294" vertical-offset="328" max-vertical-offset="7175">
-          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.3235292" vertical-offset="728" max-vertical-offset="19375">
@@ -5652,17 +5547,17 @@
         <state vertical-scroll-proportion="-2.1176472" vertical-offset="803" max-vertical-offset="19175">
           <caret line="35" column="108" selection-start-line="35" selection-start-column="108" selection-end-line="35" selection-end-column="108" />
           <folding>
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446890" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772392" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -5744,19 +5639,19 @@
         <state vertical-scroll-proportion="-13.1470585" vertical-offset="1453" max-vertical-offset="13475">
           <caret line="76" column="108" selection-start-line="76" selection-start-column="108" selection-end-line="76" selection-end-column="108" />
           <folding>
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{&quot;uploader&quot;: '/pc/user/uploadPic'...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="/*...*/" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{&quot;aspectRatio&quot;: 1...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="/*...*/" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446865" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{&quot;uploader&quot;: '/pc/user/uploadPic'...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{&quot;aspectRatio&quot;: 1...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772422" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -5774,26 +5669,26 @@
         <state vertical-scroll-proportion="-3.5882354" vertical-offset="2578" max-vertical-offset="18575">
           <caret line="108" column="108" selection-start-line="108" selection-start-column="108" selection-end-line="108" selection-end-column="108" />
           <folding>
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{&quot;uploader&quot;: '/pc/user/uploadPic'...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;/pc/company/add&quot;...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;/pc/expert/deleteKey&quot;...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;/pc/expert/deleteStyle&quot;...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439969446920" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{&quot;uploader&quot;: '/pc/user/uploadPic'...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;/pc/company/add&quot;...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;/pc/expert/deleteKey&quot;...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;/pc/expert/deleteStyle&quot;...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439969772432" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -5890,24 +5785,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.352941" vertical-offset="675" max-vertical-offset="9800">
-          <caret line="37" column="108" selection-start-line="37" selection-start-column="108" selection-end-line="37" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.558824" vertical-offset="375" max-vertical-offset="7300">
-          <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
+        <state vertical-scroll-proportion="-7.352941" vertical-offset="575" max-vertical-offset="10100">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.970589" vertical-offset="375" max-vertical-offset="7600">
-          <caret line="34" column="112" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="112" />
+        <state vertical-scroll-proportion="-13.970589" vertical-offset="275" max-vertical-offset="7900">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -5925,17 +5812,17 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7000">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1439965614880" expanded="false" signature="7793:7807" placeholder="..." />
+            <marker date="1439965614880" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/bindPhone.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.823529" vertical-offset="525" max-vertical-offset="11475">
-          <caret line="33" column="108" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
+        <state vertical-scroll-proportion="-8.823529" vertical-offset="425" max-vertical-offset="11775">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
-            <marker date="1439969545117" expanded="false" signature="14833:14847" placeholder="..." />
+            <marker date="1439969772469" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -5966,8 +5853,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7518797" vertical-offset="1200" max-vertical-offset="11300">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="-55.14706" vertical-offset="0" max-vertical-offset="11600">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="36.764706" vertical-offset="1850" max-vertical-offset="7600">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="35.382355" vertical-offset="1828" max-vertical-offset="7175">
+          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="35.382355" vertical-offset="1828" max-vertical-offset="6575">
+          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="66.17647" vertical-offset="2250" max-vertical-offset="6525">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="70.588234" vertical-offset="2400" max-vertical-offset="7225">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="2100" max-vertical-offset="7200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

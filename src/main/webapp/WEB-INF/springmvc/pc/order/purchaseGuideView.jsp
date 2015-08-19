@@ -56,7 +56,7 @@
     </div>
     <!-- TAB切换效果 -->
     <div class="search fl">
-        <div class="search-top clear" id="tab-nav">
+        <div class="search-top clear"  id="tab-nav">
             <ul>
                 <li class="select">专家</li>
                 <li class="">需求</li>
@@ -66,7 +66,7 @@
         <form action="/pc/expertServe/search" method="post">
             <div class="search-box">
 					<span class="box1 fl">
-						<input type="text" name="words" value="" placeholder="关键字、课程">
+						<input type="text" name="words" value="" placeholder="请输入专家姓名" class="mainSearchBox">
 					</span>
 					<span class="box2 fl">
 						<input type="submit" value="搜 索">
@@ -87,6 +87,7 @@
             </ul>
             <ul class="">
                 <zjh:status name="type" dataType="Activity.type" type="list" checkedValue="" onclick="/pc/activity/pageList?type="></zjh:status>
+
             </ul>
         </div>
     </div>
