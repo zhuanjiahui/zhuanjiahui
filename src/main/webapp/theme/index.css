@@ -253,8 +253,6 @@
 /*筛选条件*/
 ul,ol{list-style:none;}
 .multiConditionScreening{width:1200px;margin:0 auto;padding:0;}
-.city{font-size:13px;color:#6d6d6d;width:100%;height:50px;line-height:50px;text-indent:1em;}
-.city span:last-child{display:inline-block;margin-left:1em;}
 .screening{width:100%;border:1px solid #e4e4e4;padding:22px 0 5px 0;}
 .screening-1,.screening-2,.screening-3,.screening-hide{display:inline-block;height:35px;width:100%;}
 .screening-1 li,.screening-2 li,.screening-3 li,.screening-hide li{display:inline-block;font-size:14px;color:#6d6d6d;margin:0 8px;cursor:pointer;}
@@ -510,18 +508,18 @@ ul,ol{list-style:none;}
 
 /*footer了解我们页的样式*/
 .footer-sub{margin:30px 0 40px 0;width: 100%;overflow: hidden;}
-.footer-sub .footer-sub-left{float:left;width: 212px;border:1px solid #e7e7e7;}
+.footer-sub .footer-sub-left{float:left;margin-right:60px;width: 212px;border:1px solid #e7e7e7;}
 .footer-sub-left li{height: 53px;line-height:53px;text-align:center;border-bottom:1px solid #e7e7e7;position: relative;}
 .footer-sub-1{color: #1bb9f2;background: url(../images/footer-sub-1.png) 35px center no-repeat;display:block;font-size:20.25px;}
 .footer-sub-2{display:block;font-size:20.25px;color:#999;}
 .footer-sub-2s{display:block;font-size:20.25px;color:#fff;background-color: #00bdff;}
 .right-arrow{position: relative;left: 70px;top: -53px;font-size: 20px;color: #fff;}
 a:hover .footer-sub-2-but{background-color: #00bdff;color: #fff;}
-.footer-sub-right{float:right;width:843px;min-height:380px;padding:0 42px 0 42px;border:1px solid #e7e7e7;color: #333;}
+.footer-sub-right{float:left;width:926px;min-height:380px;padding:0 42px 0 42px;border:1px solid #e7e7e7;color: #333;margin-right:60px;}
 .footer-sub-right h1{height: 78px;line-height: 78px;text-align: center;}
 
 /*footer成功案例页样式*/
-.footer-sub-right .right-con{float:left;width:420px;height: 163px;}
+.footer-sub-right .right-con{float:left;width:378px;height: 163px;}
 .right-con-1{float:left;padding: 0 5px 0 0;}
 .right-con-1 a{display: block;}
 .right-con-2{float:left;width: 268px;position: relative;}
@@ -594,3 +592,4 @@ a:hover .footer-sub-2-but{background-color: #00bdff;color: #fff;}
 .column6-content-1 .text3{font-size:13px!important;position:absolute;left:106px;top:40px;color:#666!important;}
 .column6-content-1 .text4{font-size:13px!important;position:absolute;left:106px;top:66px;color:#666!important;}
 .column6-content-1 .text4 span{display:inline-block;line-height:25px;text-indent:16px!important;}
+
