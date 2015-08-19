@@ -29,12 +29,11 @@
     <link rel="stylesheet" type="text/css" href="/scripts/imgare/imgareaselect-animated.css" />
     <script src="/scripts/imgare/jquery.imgareaselect.pack.js"></script>
     <style type="text/css">
-        #bg{ display: none; position: fixed; top: 20%; left: 34%; width: 32%; height: 60%; background-color: gray; z-index:1001; opacity:0.7;filter:alpha(opacity=70);}
+        #bg{ display: none; position:fixed;top:50%;left:50%;width:600px;height:400px;margin-top:-200px;margin-left:-300px;background:black ; z-index:1001; opacity:0.7;filter:alpha(opacity=70);border-radius:8px;box-shadow:inset 0 0 2px white;-moz-box-shadow:inset 0 0 2px white;-webkit-box-shadow:inset 0 0 2px white; }
         #big{display: none; position: fixed; top: 25%; left: 36%; width: 18%; height: 40%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
         #sma{display: none; position: fixed; top: 25%; left: 58%; width: 6%; height: 12%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
         #sure{display: none; position: fixed; top: 70%; left: 40%; width:120px; height:25px;z-index:1002; overflow: auto;}
         #cancel{display: none; position: fixed; top: 70%; left: 50%; width:120px; height:25px;z-index:1002; overflow: auto;}
-
         .elem{display:inline-block;height:20px;position:relative;}
     </style>
 
@@ -49,11 +48,11 @@
                 uploader: '/pc/user/uploadPic',
                 fileTypeExts: '*.jpg;*.jpeg;*.gif;*.png',
                 //浏览按钮的宽度
-                width: '100',
+                width: '150',
                 //浏览按钮的高度
                 height: '32',
                 multi: false,
-                buttonText: '<a class="le-wz">上传头像</a>',
+                buttonText: '<a class="uploadPhotoBt">上传头像</a>',
                 onUploadSuccess: function (file, data, response) {
                     document.getElementById("bg").style.display ="block";
                     document.getElementById("big").style.display ="block";
@@ -187,214 +186,282 @@
 </div>
 <!-- content部分 -->
 <div class="content clear">
-    <!-- 导航部分 -->
-    <div class="nav">
-        <ul>
-            <li class="nav-1"><a href="/pc/index">首页</a></li>
-            <li><a href="/pc/schedule/view">账号管理</a></li>
-            <li><a href="/pc/expert/viewPersonal">中心</a></li>
-            <li><a href="/pc/requirement/myPublish">我的需求</a></li>
-            <li><a href="/pc/activity/myActivity">我的活动</a></li>
-            <li><a href="#">消息</a></li>
-        </ul>
+<!-- 导航部分 -->
+<div class="nav">
+    <ul>
+        <li class="nav-1"><a href="/pc/index">首页</a></li>
+        <li><a href="/pc/schedule/view">账号管理</a></li>
+        <li><a href="/pc/expert/viewPersonal">中心</a></li>
+        <li><a href="/pc/requirement/myPublish">我的需求</a></li>
+        <li><a href="/pc/activity/myActivity">我的活动</a></li>
+        <li><a href="#">消息</a></li>
+    </ul>
+</div>
+<div class="content-sub">
+    <div class="content-sub1">
+        <div class="content-sub2"><img src="/images/order-bg2.png" alt="背景图文字部分"></div>
     </div>
-    <div class="content-sub">
-        <div class="content-sub1">
-            <div class="content-sub2"><img src="/images/order-bg2.png" alt="背景图文字部分"></div>
-        </div>
-    </div>
-    <div id="wrap2">
-        <div class="content-sidebar fl">
-            <dl>
-                <dt><a href="/pc/expert/viewPersonal">基本资料</a></dt>
-                <dd><a href="/pc/expert/viewPersonal">个人资料</a></dd>
-                <c:if test="${myUser.utype==2}">
-                    <dd><a href="/pc/expertServe/add">服务内容</a></dd>
-                </c:if>
-                <dd><a href="/pc/user/myBalance">资金管理</a></dd>
-                <dd><a href="/pc/bindPhone">修改账户</a></dd>
-                <dd><a href="/pc/resetPwd">重置密码</a></dd>
-            </dl>
-            <dl>
+</div>
+<div id="wrap2">
+<div class="content-sidebar fl">
+    <dl>
+        <dt><a href="/pc/expert/viewPersonal">基本资料</a></dt>
+        <dd><a href="/pc/expert/viewPersonal">个人资料</a></dd>
+        <c:if test="${myUser.utype==2}">
+            <dd><a href="/pc/expertServe/add">服务内容</a></dd>
+        </c:if>
+        <dd><a href="/pc/user/myBalance">资金管理</a></dd>
+        <dd><a href="/pc/bindPhone">修改账户</a></dd>
+        <dd><a href="/pc/resetPwd">重置密码</a></dd>
+    </dl>
+    <dl>
                 <dt class="order-icon2"><a href="/pc/purchaseOrder/myOrders">账号管理</a></dt>
                 <dd><a href="/pc/purchaseOrder/myOrders">订单管理</a></dd>
-                <c:if test="${myUser.utype==3}">
-                    <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
-                </c:if>
-                <c:if test="${myUser.utype==2}">
-                    <dd><a href="/pc/schedule/view">档期管理</a></dd>
-                </c:if>
+        <c:if test="${myUser.utype==3}">
+            <dd><a href="/pc/assistant/myExperts">专家管理</a></dd>
+        </c:if>
+        <c:if test="${myUser.utype==2}">
+            <dd><a href="/pc/schedule/view">档期管理</a></dd>
+        </c:if>
                 <dd><a href="/pc/requirement/myPublish">需求管理</a></dd>
-                <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
-            </dl>
-            <dl>
-                <dt class="order-icon3"><a href="/pc/favorite/listExpert">我的收藏</a></dt>
-                <dd><a href="/pc/favorite/listExpert">收藏专家</a></dd>
-            </dl>
-            <dl>
-                <dt class="no-border"><a href="#">我的消息</a></dt>
-            </dl>
+        <dd><a href="/pc/activity/myActivity">活动管理</a></dd>
+    </dl>
+
+    <dl>
+        <dt class="order-icon3"><a href="/pc/favorite/listExpert">我的收藏</a></dt>
+        <dd><a href="/pc/favorite/listExpert">收藏专家</a></dd>
+    </dl>
+    <dl>
+        <dt class="no-border"><a href="#">我的消息</a></dt>
+    </dl>
+</div>
+<div class="content-head clear">
+    <span class="content-head1">hi,你好,${myUser.name}</span>
+    <span class="content-head2">上次登录时间：${myUser.lastLogintime}</span>
+</div>
+<div class="content-body">
+<ul class="body-nav">
+    <li class="nav-li h-color"><a href="/pc/expert/viewPersonal">个人资料</a> </li>
+    <li class="nav-li"><a href="/pc/expertServe/add">服务内容</a> </li>
+    <li class="nav-li"><a href="/pc/personal/myBalance">资金管理</a> </li>
+    <li class="nav-li"><a href="/pc/bindPhone">资金管理</a> </li>
+    <li class="nav-li"><a href="/pc/resetPwd">重置密码</a> </li>
+</ul>
+<div class="body-sub">
+<div class="Personal-information">
+    <img src="/images/duihao.gif">
+    完善个人资料信息
+</div>
+<div class="pi-inf-table" style="position:relative;">
+    <form id="expert" name="expert" action="/pc/expert/savePerson" method="post">
+        <input id="picUrl" type="hidden" name="pictureUrl" value="${expert.pictureUrl}">
+
+        <div class="uploadPhoto">
+            <img id="head" src="http://pic.591zjh.com/${expert.pictureUrl}">
+            <p id="expertPicUpload">上传头像</p>
         </div>
-        <div class="content-head clear">
-            <span class="content-head1">hi,你好,${myUser.name}</span>
-            <span class="content-head2">上次登录时间:${myUser.lastLogintime}</span>
-        </div>
-        <div class="content-body">
-            <ul class="body-nav">
-                <li class="nav-li h-color"><a href="/pc/expert/viewPersonal">个人资料</a> </li>
-                <li class="nav-li"><a href="/pc/expertServe/add">服务内容</a> </li>
-                <li class="nav-li"><a href="/pc/personal/myBalance">资金管理</a> </li>
-                <li class="nav-li"><a href="/pc/bindPhone">资金管理</a> </li>
-                <li class="nav-li"><a href="/pc/resetPwd">重置密码</a> </li>
-            </ul>
-            <div class="body-sub">
-                <div class="Personal-information">
-                    <img src="/images/duihao.gif">完善个人资料信息
-                </div>
-                <div class="pi-inf-table">
-                    <form id="expert" name="expert" action="/pc/expert/savePerson" method="post">
-                        <input id="picUrl" type="hidden" name="pictureUrl" value="${expert.pictureUrl}">
-                        <div class="pi-inf-tr">
-                            <div class="pi-inf-td-l">姓名:</div>
-                            <div class="pi-inf-td-r"><input class="pi-input-css" type="text" value="${expert.name}" name="name" class="userName"/></div>
-                        </div>
-                        <div class="pi-inf-tr">
-                            <div class="pi-inf-td-l">性别:</div>
-                            <div class="pi-inf-td-r genderChoice"><zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${expert.gender}" defaultValue="1"></zjh:status></div>
-                        </div>
-                        <div class="pi-inf-tr">
-                            <div class="pi-inf-td-l">出生日期:</div>
-                            <div class="pi-inf-td-r"><input required type="text" class="Wdate" id="birthday" name="birthdayDate" value="<fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"></div>
-                        </div>
-                        <div class="pi-inf-tr">
-                            <div class="pi-inf-td-l">工作年限:</div>
-                            <div class="pi-inf-td-r">
-                                <select name="workTime" class="workTime">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">所在公司:</div>
-                        <div class="pi-inf-td-r"><input class="pi-input-css" type="text" value="${expert.companyName}" name="companyName"/></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">公司地址:</div>
-                        <div class="pi-inf-td-r"><input class="pi-input-css" type="text" value="${expert.companyAddress}" name="companyAddress"/></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">现任职务:</div>
-                        <div class="pi-inf-td-r"><input class="pi-input-css" type="text" value="${expert.preposition}" name="preposition"/></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">最高职务:</div>
-                        <div class="pi-inf-td-r"><input class="pi-input-css pi-zuigaoziwu" type="text" value="${expert.chief}" name="chief" placeholder="公司简称与职涯最高职务(10个字内)"/></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">是否在职:</div>
-                        <div class="pi-inf-td-r inPos">
-                            <span><input type="radio" name="isCheif" value="true" checked id="inPosYes"><label for="inPosYes">是</label></span>
-                            <span><input type="radio" name="isCheif" value="false" id="inPosNo"><label for="inPosNo">否</label></span>
-                        </div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">自由专家:</div>
-                        <div class="pi-inf-td-r freedomExpert"><zjh:status name="freedom" dataType="Expert.freedom" type="radio" checkedValue="${expert.freedom}" defaultValue="1"></zjh:status></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="industry">
-                            <label>行业:</label>
-                            <ul class="industryElem">
-                                <li><input type="checkbox" name="industrys" value="khy">跨行业</li>
-                                <li><input type="checkbox" name="industrys" value="hlw">互联网</li>
-                                <li><input type="checkbox" name="industrys" value="tz">投资</li>
-                                <li><input type="checkbox" name="industrys" value="xfdz">消费电子</li>
-                                <li><input type="checkbox" name="industrys" value="tx">通信</li>
-                                <li><input type="checkbox" name="industrys" value="zhzy">制造业</li>
-                            </ul>
-                            <ul class="industryElem">
-                                <li><input type="checkbox" name="industrys" value="yhbx">银行保险</li>
-                                <li><input type="checkbox" name="industrys" value="hk">航空</li>
-                                <li><input type="checkbox" name="industrys" value="fdch">房地产</li>
-                                <li><input type="checkbox" name="industrys" value="qch">汽车</li>
-                                <li><input type="checkbox" name="industrys" value="jjjc">家居建材</li>
-                                <li><input type="checkbox" name="industrys" value="dl">电力</li>
-                            </ul>
-                            <ul class="industryElem">
-                                <li><input type="checkbox" name="industrys" value="gyp">工业品</li>
-                                <li><input type="checkbox" name="industrys" value="kxp">快消品</li>
-                                <li><input type="checkbox" name="industrys" value="jd">家电</li>
-                                <li><input type="checkbox" name="industrys" value="jdcy">酒店餐饮</li>
-                                <li><input type="checkbox" name="industrys" value="mt">媒体</li>
-                                <li><input type="checkbox" name="industrys" value="pxjg">培训机构</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pi-inf-tr keywords">
-                        <div class="pi-inf-td-l">关键字:</div>
-                        <div class="pi-inf-td-r">
-                            <input name="keywords" class="pi-input-css pi-guaniianz"  type="text" value="" placeholder="方便搜索到您"/>
-                            <c:forEach items="${expert.keywordsList}" var="keywords">
-                                <div class="elem"><span>${keywords.words}&nbsp;</span><img src="/images/pop-up-down3.png" onclick="deleteKeyword('${keywords.id}',this)"></div>
-                            </c:forEach>
-                        </div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">风格标签:</div>
-                        <div class="pi-inf-td-r">
-                            <input name="styleLabels" class="pi-input-css pi-guaniianz"  type="text" value="" placeholder="方便查找到您"/>
-                            <c:forEach items="${expert.styleLabelList}" var="stylelabel">
-                                <div class="elem" ><span>${stylelabel.label}&nbsp;</span><img  src="/images/pop-up-down3.png" onclick="deleteLabel('${stylelabel.id}',this)"></div>
-                            </c:forEach>
-                        </div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">联系电话:</div>
-                        <div class="pi-inf-td-r"><input name="phone" class="pi-input-css" type="text" value="${expert.phone}"/></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">邮箱:</div>
-                        <div class="pi-inf-td-r"><input name="email" class="pi-input-css" type="text" value="${expert.email}"/></div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">常驻地:</div>
-                        <div class="pi-inf-td-r">
-                            <select class="pi-box-four" name="provinceId" required="true">
-                                <c:forEach items="${provinces}" var="province">
-                                    <option value="${province.id}">${province.name}</option>
-                                </c:forEach>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="pi-inf-tr">
-                        <div class="pi-inf-td-l">区间报价:</div>
-                        <div class="pi-inf-td-r priceRange">
-                            <input name="minPrice" class="pi-jiaqian" type="text" value="${expert.minPrice}"/>—
-                            <input name="maxPrice" class="pi-jiaqian" type="text" value="${expert.maxPrice}"/>元/天
-                        </div>
-                    </div>
+
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                个人描述:
+                姓名：
+            </div>
+            <div class="pi-inf-td-r">
+                <input class="pi-input-css" type="text" value="${expert.name}" name="name"/>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                性别：
+            </div>
+            <div class="pi-inf-td-r gender">
+                <zjh:status name="gender" dataType="Expert.gender" type="radio" checkedValue="${expert.gender}" defaultValue="1"></zjh:status>
+            </div>
+
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                出生日期：
+            </div>
+            <div class="pi-inf-td-r">
+                <input required type="text" class="Wdate" id="birthday" name="birthdayDate" value="<fmt:formatDate value="${expert.birthday}" pattern="yyyy-MM-dd"></fmt:formatDate>" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                工作年限：
+            </div>
+            <div class="pi-inf-td-r">
+                <select name="workTime">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                所在公司：
+            </div>
+            <div class="pi-inf-td-r">
+                <input class="pi-input-css" type="text" value="${expert.companyName}" name="companyName"/>
+            </div>
+
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                公司地址：
+            </div>
+            <div class="pi-inf-td-r">
+                <input class="pi-input-css" type="text" value="${expert.companyAddress}" name="companyAddress"/>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                现任职务：
+            </div>
+            <div class="pi-inf-td-r">
+                <input class="pi-input-css" type="text" value="${expert.preposition}" name="preposition"/>
+            </div>
+
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                最高职务：
+            </div>
+            <div class="pi-inf-td-r">
+                <input class="pi-input-css pi-zuigaoziwu" type="text" value="${expert.chief}" name="chief" placeholder="公司简称与职涯最高职务(10个字内)"/>
+            </div>
+
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                是否在职：
+            </div>
+            <div class="pi-inf-td-r isCheif">
+                <input type="radio" name="isCheif" value="true" checked>是
+                <input type="radio" name="isCheif" value="false" >否
+
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                自由专家：
+            </div>
+            <div class="pi-inf-td-r isfreedom">
+                <zjh:status name="freedom" dataType="Expert.freedom" type="radio" checkedValue="${expert.freedom}" defaultValue="1"></zjh:status>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="industry" style="margin-top: 25px;">
+                <label>行业：</label>
+                <ul class="industryElem">
+                    <li><input type="checkbox" name="industrys" value="khy">跨行业</li>
+                    <li><input type="checkbox" name="industrys" value="hlw">互联网</li>
+                    <li><input type="checkbox" name="industrys" value="tz">投资</li>
+                    <li><input type="checkbox" name="industrys" value="xfdz">消费电子</li>
+                    <li><input type="checkbox" name="industrys" value="tx">通信</li>
+                    <li><input type="checkbox" name="industrys" value="zhzy">制造业</li>
+                </ul>
+                <ul class="industryElem">
+                    <li><input type="checkbox" name="industrys" value="yhbx">银行保险</li>
+                    <li><input type="checkbox" name="industrys" value="hk">航空</li>
+                    <li><input type="checkbox" name="industrys" value="fdch">房地产</li>
+                    <li><input type="checkbox" name="industrys" value="qch">汽车</li>
+                    <li><input type="checkbox" name="industrys" value="jjjc">家居建材</li>
+                    <li><input type="checkbox" name="industrys" value="dl">电力</li>
+                </ul>
+                <ul class="industryElem">
+                    <li><input type="checkbox" name="industrys" value="gyp">工业品</li>
+                    <li><input type="checkbox" name="industrys" value="kxp">快消品</li>
+                    <li><input type="checkbox" name="industrys" value="jd">家电</li>
+                    <li><input type="checkbox" name="industrys" value="jdcy">酒店餐饮</li>
+                    <li><input type="checkbox" name="industrys" value="mt">媒体</li>
+                    <li><input type="checkbox" name="industrys" value="pxjg">培训机构</li>
+                </ul>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="pi-inf-tr edkeywords">
+            <div class="pi-inf-td-l">
+                关键字：
+            </div>
+            <div class="pi-inf-td-r">
+                <input name="keywords" class="pi-input-css pi-guaniianz"  type="text" value="" placeholder="方便搜索到您"/>
+                <c:forEach items="${expert.keywordsList}" var="keywords">
+                    <div class="elem"><span>${keywords.words}&nbsp;</span><img src="/images/pop-up-down3.png" onclick="deleteKeyword('${keywords.id}',this)"></div>
+                </c:forEach>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                风格标签：
+            </div>
+            <div class="pi-inf-td-r">
+                <input name="styleLabels" class="pi-input-css pi-guaniianz"  type="text" value="" placeholder="方便查找到您"/>
+                <c:forEach items="${expert.styleLabelList}" var="stylelabel">
+                    <div class="elem" ><span>${stylelabel.label}&nbsp;</span><img  src="/images/pop-up-down3.png" onclick="deleteLabel('${stylelabel.id}',this)"></div>
+                </c:forEach>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                联系电话：
+            </div>
+            <div class="pi-inf-td-r">
+                <input name="phone" class="pi-input-css" type="text" value="${expert.phone}"/>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                邮箱：
+            </div>
+            <div class="pi-inf-td-r">
+                <input name="email" class="pi-input-css" type="text" value="${expert.email}"/>
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                常驻地：
+            </div>
+            <div class="pi-inf-td-r">
+                <select class="pi-box-four" name="provinceId" required="true">
+                    <c:forEach items="${provinces}" var="province">
+                        <option value="${province.id}">${province.name}</option>
+                    </c:forEach>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                区间报价：
+            </div>
+            <div class="pi-inf-td-r payRange">
+                <input name="minPrice" class="pi-jiaqian" type="text" value="${expert.minPrice}"/>—
+                <input name="maxPrice" class="pi-jiaqian" type="text" value="${expert.maxPrice}"/>元/天
+            </div>
+        </div>
+        <div class="pi-inf-tr">
+            <div class="pi-inf-td-l">
+                个人描述：
             </div>
             <div class="pi-inf-td-r">
                 <input name="memo" class="pi-input-css pi-gerenmiaoshu" type="text" value="${expert.memo}" placeholder="用一句话描述下自己"/>
@@ -402,24 +469,20 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                个人简介:
+                个人简介：
             </div>
             <div class="pi-inf-td-r">
                 <textarea name="introduce" class="pi-size-inp" type="text" placeholder="详细的介绍下自己">${expert.introduce}</textarea>
             </div>
         </div>
 
-    <div class="uploadPhoto">
-        <div class="pi-imgs-zj">
-            <img id="head" src="http://pic.591zjh.com/${expert.pictureUrl}@!personal-list">
-        </div>
-        <div id="" class="pi-wz-zj"><span id="expertPicUpload">上传头像</span></div>
-    </div>
+
+
 
 
       <%--  <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                认证信息:
+                认证信息：
             </div>
             <div class="pi-inf-td-r">
                 <div class="pi-certification">上传身份证扫描件</div>
@@ -447,12 +510,12 @@
         <c:forEach items="${expert.companyList}" var="company">
             <div class="body-con-4">
                 <dl>
-                    <dd>
-                        <span class="list">${company.name}</span>
-                        <span class="list"><span><fmt:formatDate value="${company.startDate}" pattern="yyyy-MM-dd"></fmt:formatDate></span></span>
-                        <span class="list">——</span>
-                        <span class="list"><span><fmt:formatDate value="${company.endDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></span>
-                        <span class="list">职位:${company.position}</span>
+                    <dd style="padding:0 15px;padding-top: 15px;">
+                        <span class="list" style="width:220px;">${company.name}</span>
+                        <span class="list" style="text-align: right;"><span><fmt:formatDate value="${company.startDate}" pattern="yyyy-MM-dd"></fmt:formatDate></span></span>
+                        <span class="list" style="width:30px;">—</span>
+                        <span class="list" style="text-align: left;"><span><fmt:formatDate value="${company.endDate}" pattern="yyyy-MM-dd"></fmt:formatDate> </span></span>
+                        <span class="list" style="margin-left: 25px;">职位：${company.position}</span>
                     </dd>
                 </dl>
 
@@ -464,13 +527,13 @@
         <div class="pi-inf-tr">
             <input type="hidden" name="expertId" value="${expert.id}">
             <div class="pi-inf-td-l">
-                公司名称:
+                公司名称：
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" name="name" type="text" value=""/>
             </div>
             <div class="pi-inf-td-l">
-                行业:
+                行业：
             </div>
             <div class="pi-inf-td-r">
                 <zjh:status name="industry" dataType="ExpertServe.industry" type="select" checkedValue=""></zjh:status>
@@ -478,7 +541,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                起止年月:
+                起止年月：
             </div>
             <div class="pi-inf-td-r">
                 <input required type="text" class="Wdate"  name="startDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
@@ -489,7 +552,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                职务:
+                职务：
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" type="text" name="position" value=""/>
@@ -497,7 +560,7 @@
         </div>
        <%-- <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                公司官网:
+                公司官网：
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" type="text" name="homeUrl" value=""/>
@@ -505,7 +568,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                公司地址:
+                公司地址：
             </div>
             <div class="pi-inf-td-r">
                 <input class="pi-input-css pi-input1-css" type="text" name="address" value=""/>
@@ -513,7 +576,7 @@
         </div>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
-                公司简介:
+                公司简介：
             </div>
             <div class="pi-inf-td-r">
                 <textarea name="introduce" class="pi-size-inp" type="text" placeholder="公司介绍"></textarea>
@@ -581,7 +644,7 @@
             </li>
             <li class="ul1-li4">
                 <div class="footer-ul1-title">客服热线</div>
-                <div class="footer-ul1-con">（工作时间:08:00 - 23:00）</div>
+                <div class="footer-ul1-con">（工作时间：08:00 - 23:00）</div>
                 <div class="footer-ul1-con biancu">010-51591591</div>
             </li>
         </ul>
@@ -607,8 +670,7 @@
          </div>
         <button id="sure" onclick="sureButton();">确定</button>
         <button id="cancel" onclick="cancelButton();">取消</button>
-
-    </div>
+</div>
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->

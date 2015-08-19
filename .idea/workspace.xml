@@ -6,15 +6,6 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://D:/dvlp_soft/ypl2/ypl/src/main/java/com/ming800/organization/service/UserManager.java" description="public interface UserManager {" line="15" />
-    <bookmark url="file://D:/dvlp_soft/ypl2/ypl/src/main/java/com/ming800/core/base/service/BaseManager.java" description="public interface BaseManager {" line="18" />
-    <bookmark url="file://D:/dvlp_soft/ypl2/ypl/src/main/java/com/ming800/core/base/service/BaseManager.java" description="public void saveOrUpdate(String model, Object obje..." line="35" />
-    <bookmark url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.7.Final/hibernate-core-4.1.7.Final-sources.jar!/org/hibernate/Query.java" description="public Object uniqueResult() throws HibernateExcep..." line="149" />
-    <bookmark url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.1.0.RELEASE/spring-security-web-3.1.0.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java" description="if (postOnly &amp;&amp; !request.getMethod().equals(&quot;POST&quot;..." line="71" />
-    <bookmark url="file://D:/dvlp_soft/ypl2/ypl/src/main/java/com/yuepaila/order/service/PaymentManager.java" description="public interface PaymentManager {" line="10" />
-    <bookmark url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.1.0.RELEASE/spring-security-core-3.1.0.RELEASE-sources.jar!/org/springframework/security/authentication/AnonymousAuthenticationToken.java" description="public Object getPrincipal() {" line="93" />
-    <bookmark url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.7.Final/hibernate-core-4.1.7.Final-sources.jar!/org/hibernate/SharedSessionContract.java" description="public Query createQuery(String queryString);" line="75" />
-    <bookmark url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.7.Final/hibernate-core-4.1.7.Final-sources.jar!/org/hibernate/internal/AbstractSessionImpl.java" description="public Query createQuery(String queryString) {" line="194" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/SigninManager.java" description="public Expert initExpert(Expert expert);" line="14" />
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" line="244" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/service/ScheduleManager.java" description="public List&lt;Map&gt; getScheduleList(Date date) throws..." line="14" />
@@ -22,7 +13,6 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/impl/AssistantManagerImpl.java" description="public PageInfo myExperts(PageEntity pageEntity, S..." line="51" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/impl/ExpertManagerImpl.java" description="public List&lt;Object&gt; getHomeExpert(int size) {" line="54" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/SigninManager.java" description="public User checkUserName(String username);" line="12" />
-    <bookmark url="file://D:/dvlp_soft/ypl2/ypl/src/main/java/com/ming800/organization/model/BigUser.java" description="public class BigUser {" line="12" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/RequirementManager.java" description="public List&lt;Object&gt; getNewRequirements(int size);" line="13" />
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" line="163" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/controller/ScheduleController.java" line="51" />
@@ -30,64 +20,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/impl/ExpertManagerImpl.java" description="public PageInfo pageExpert(PageEntity pageEntity,L..." line="72" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/service/ExpertManager.java" description="public List&lt;Object&gt; getNewExpert(int size);" line="24" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/service/ExpertServeManager.java" description="public List&lt;ExpertServeIndustry&gt; pageExpertServe2(..." line="16" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java" line="216" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fc23e6-c73d-414e-bbc7-c1934cfb5c7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/activityPay.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Activity.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/ActivityExpert.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/ActivityExpert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Expert.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Expert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/model/PurchaseOrder.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/model/PurchaseOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Requirement.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Requirement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/RequirementController.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/RequirementController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/database/master.sql" afterPath="$PROJECT_DIR$/src/main/resources/database/master.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" afterPath="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-index.js" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-index.js" />
     </list>
     <list id="95494e3a-c7ee-41fd-8bb6-2e52c4bdd676" name="Failed commit: Default" comment="完成后台套餐" />
     <ignored path=".idea/" />
@@ -114,11 +52,6 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
-  </component>
-  <component name="DatabaseLocalColorSettings">
-    <colors>
-      <entry key="organization_user//yuepaila/e2cafafa-2a7f-4fde-9234-416bb224dcfb:table" value="Orange" />
-    </colors>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -2578,109 +2511,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PurchaseOrderController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9147287" vertical-offset="4721" max-vertical-offset="5325">
-              <caret line="237" column="77" selection-start-line="237" selection-start-column="77" selection-end-line="237" selection-end-column="77" />
+            <state vertical-scroll-proportion="-7.2033896" vertical-offset="0" max-vertical-offset="13075">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Activity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Activity.java">
+      <file leaf-file-name="zjh-index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4411764" vertical-offset="2283" max-vertical-offset="3875">
-              <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-              <folding>
-                <element signature="e#4115#4116#0" expanded="true" />
-                <element signature="e#4155#4156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityExpert.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/ActivityExpert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="975">
-              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2697" max-vertical-offset="4050">
+              <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java">
+      <file leaf-file-name="public-css-style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1425">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state vertical-scroll-proportion="-20.52" vertical-offset="2437" max-vertical-offset="3100">
+              <caret line="118" column="104" selection-start-line="118" selection-start-column="104" selection-end-line="118" selection-end-column="104" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Expert.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Expert.java">
+      <file leaf-file-name="expertForm.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1764708" vertical-offset="615" max-vertical-offset="3550">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.5423727" vertical-offset="12032" max-vertical-offset="18600">
+              <caret line="492" column="59" selection-start-line="492" selection-start-column="59" selection-end-line="492" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activityView.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp">
+      <file leaf-file-name="myExpertServeList.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4411764" vertical-offset="9915" max-vertical-offset="10475">
-              <caret line="404" column="35" selection-start-line="404" selection-start-column="35" selection-end-line="404" selection-end-column="35" />
+            <state vertical-scroll-proportion="-2.0" vertical-offset="4882" max-vertical-offset="16625">
+              <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderPaymentController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7219" max-vertical-offset="7700">
-              <caret line="329" column="0" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activityPay.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/activityPay.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.647059" vertical-offset="3240" max-vertical-offset="8225">
-              <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PurchaseOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/model/PurchaseOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4411764" vertical-offset="4333" max-vertical-offset="4800">
-              <caret line="306" column="41" selection-start-line="306" selection-start-column="29" selection-end-line="306" selection-end-column="41" />
-              <folding>
-                <element signature="e#8203#8204#0" expanded="true" />
-                <element signature="e#8238#8239#0" expanded="true" />
-                <element signature="e#8302#8303#0" expanded="true" />
-                <element signature="e#8350#8351#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/database/master.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.48" vertical-offset="12388" max-vertical-offset="12900">
-              <caret line="503" column="0" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5358306" vertical-offset="671" max-vertical-offset="13050">
+              <caret line="40" column="103" selection-start-line="40" selection-start-column="103" selection-end-line="40" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -2711,57 +2596,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Requirement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/RequirementController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-index.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/theme/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseGuideView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/sparePay.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/activityPay.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Expert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/ActivityExpert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/model/PurchaseOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/platform.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/settled.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frame/core/taglib/StatusTag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Requirement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frame/organization/model/BigUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Activity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/ActivityController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/database/master.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/controller/ExpertController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/theme/index.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/RequirementController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/service/impl/ExpertServeManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/controller/ExpertServeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frame/organization/model/City.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/model/ExpertServe.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/theme/main.css" />
       </list>
     </option>
   </component>
@@ -2797,8 +2682,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1914" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2856,6 +2743,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2864,10 +2753,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhuanjiahui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhuanjiahui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhuanjiahui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2881,30 +2810,30 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/zjh.iml" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="212" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="215" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="239" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="243" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="246" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1122" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1131" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="226" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="232" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="244" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="249" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="251" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="257" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1095" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1110" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="SearchEverywhereHistoryKey" value="activityV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp&#10;activi&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;purchaseOrderV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp&#10;activity&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;Pur&#9;FILE&#9;file://D:/workspace/zjh/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java&#10;expertF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp&#10;expertV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;serveC&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp&#10;index.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/index.jsp&#10;public&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/theme/public-css-style.css&#10;main.css&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/theme/main.css&#10;index.c&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/theme/index.css&#10;myExp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;assist&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp&#10;pers&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/personalForm.jsp&#10;ex&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm2.jsp&#10;req&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/myRequirementList.jsp&#10;serveConte&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp&#10;activityLi&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;balan&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/balance.jsp&#10;orderLink&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp&#10;activityF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp&#10;acti&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;assistantExp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp&#10;expertD&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp&#10;act&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;activit&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp&#10;expertorder&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp&#10;sche&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;expertS&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;index&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/index.jsp&#10;expertServeList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;/pc/user/view&#9;null&#9;null&#10;login&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp&#10;schedule.js&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;requirement&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp&#10;expertSe&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;myEx&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;re&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp&#10;signin&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp&#10;expertView&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;schedule.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;expertServeL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;require&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp&#10;my&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;myExpert&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;assistantorderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp&#10;userOrderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp&#10;myE&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;expertOrder&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://E:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/index.jsp&#10;expertView&#9;FILE&#9;file://E:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;activit&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp&#10;req&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp&#10;expertorder&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp&#10;serveC&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp&#10;sche&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;expertV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;expertS&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;expertServeList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;/pc/user/view&#9;null&#9;null&#10;login&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/login.jsp&#10;schedule.js&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;activityLi&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;expertF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp&#10;requirement&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp&#10;expertSe&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;myEx&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;re&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp&#10;signin&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/signin.jsp&#10;schedule.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;expertServeL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp&#10;index.jsp&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/index.jsp&#10;require&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementList.jsp&#10;my&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;myExpert&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;assistantorderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/assistantOrderList.jsp&#10;userOrderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/userOrderList.jsp&#10;myE&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp&#10;expertOrder&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp&#10;expertD&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp&#10;expertForm&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp&#10;expertDataV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertDataView.jsp&#10;s&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp&#10;scheduleV&#9;null&#9;null&#10;activityV&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp&#10;id&#9;FILE&#9;file://D:/workspace/zjh/src/main/java/com/frame/core/p/model/ZJHidGenerator.java&#10;requirementF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementForm.jsp&#10;requirem&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp&#10;assistantList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantList.jsp&#10;activityL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;activityF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp&#10;expertv&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp&#10;activityList&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp&#10;orderLink&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp&#10;index.css&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/theme/index.css&#10;orderL&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp&#10;assistantE&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantExperts.jsp&#10;assistantF&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/character/assistantForm.jsp&#10;order&#9;FILE&#9;file://D:/workspace/zjh/src/main/webapp/WEB-INF/springmvc/pc/order/orderLink.jsp" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.100090146" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -2931,11 +2860,16 @@
       <recent name="com.frame.core.base.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\zjh\src\main\webapp\images" />
       <recent name="D:\workspace\zjh\src\main\webapp\theme" />
       <recent name="D:\workspace\zjh\src\main\webapp\scripts" />
       <recent name="D:\workspace\zjh\src\main\webapp" />
+      <recent name="D:\workspace\zjh\src\main\webapp\images" />
       <recent name="D:\workspace\zjh\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zhuanjiahui.character.service" />
+      <recent name="com.yuepaila.main.service" />
+      <recent name="com.yuepaila.main.model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\zjh\src\main\webapp\images" />
@@ -2943,11 +2877,6 @@
       <recent name="D:\workspace\zjh\src\main\webapp\WEB-INF\springmvc\pc\static" />
       <recent name="D:\workspace\zjh\src\main\webapp\html" />
       <recent name="D:\workspace\zjh\src\main\webapp\scripts\zjh" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.zhuanjiahui.character.service" />
-      <recent name="com.yuepaila.main.service" />
-      <recent name="com.yuepaila.main.model" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
@@ -3274,32 +3203,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
       <option name="LOCAL" value="false" />
       <deployment />
@@ -3318,6 +3221,32 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jre7">
@@ -3695,11 +3624,10 @@
       <workItem from="1439454866081" duration="4543000" />
       <workItem from="1439460020117" duration="7755000" />
       <workItem from="1439467898151" duration="2199000" />
-      <workItem from="1439512806297" duration="17140000" />
-      <workItem from="1439536633704" duration="6519000" />
-      <workItem from="1439771398066" duration="27614000" />
-      <workItem from="1439806697045" duration="94000" />
-      <workItem from="1439806979393" duration="20858000" />
+      <workItem from="1439512806297" duration="16874000" />
+      <workItem from="1439536492117" duration="4782000" />
+      <workItem from="1439813576322" duration="39000" />
+      <workItem from="1439857945314" duration="13424000" />
     </task>
     <task id="LOCAL-00001" summary="添加了注册和登录的功能，暂时没有注册验证的功能&#10;&#10;修改了注册时候初始化数据时候的接口 ，添加了自己的接口专门用来前台部分的注册&#10;&#10;添加了作品组列表页面和摄影师列表页面，前端暂时不支持查询功能，搜索功能也没有&#10;&#10;添加了照片组详情的页面以及后台">
       <created>1415876233753</created>
@@ -4961,27 +4889,27 @@
       <created>1439523369804</created>
       <updated>1439523369804</updated>
     </task>
-    <task id="LOCAL-00319" summary="修改样式">
-      <created>1439536269083</created>
-      <updated>1439536269083</updated>
+    <task id="LOCAL-00319" summary="首页最新入驻调整">
+      <created>1439858378115</created>
+      <updated>1439858378116</updated>
     </task>
-    <task id="LOCAL-00320" summary="万云修改样式，内测之前16:42">
-      <created>1439541753675</created>
-      <updated>1439541753675</updated>
+    <task id="LOCAL-00320" summary="首页最新入驻调整">
+      <created>1439858461079</created>
+      <updated>1439858461079</updated>
     </task>
-    <task id="LOCAL-00321" summary="      测试易宝订单流程2015-8-17 17:51">
-      <created>1439805121314</created>
-      <updated>1439805121314</updated>
+    <task id="LOCAL-00321" summary="编辑个人信息页面调整">
+      <created>1439871093968</created>
+      <updated>1439871093968</updated>
     </task>
-    <task id="LOCAL-00322" summary="合并冲突2015-8-17 18:44 周永超">
-      <created>1439808257069</created>
-      <updated>1439808257069</updated>
+    <task id="LOCAL-00322" summary="编辑个人信息页面调整">
+      <created>1439871283967</created>
+      <updated>1439871283967</updated>
     </task>
     <option name="localTasksCounter" value="323" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4120992000" />
+    <option name="totallyTimeSpent" value="4083886000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -5004,32 +4932,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1914" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5094972" sideWeight="0.3976546" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51042813" sideWeight="0.3976546" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27442372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2611051" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26435536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26124197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05942184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49720672" sideWeight="0.30299786" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33694476" sideWeight="0.30299786" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25985953" sideWeight="0.20044793" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37321624" sideWeight="0.6970021" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25985953" sideWeight="0.20044793" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43240222" sideWeight="0.43869936" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31620112" sideWeight="0.5187366" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2475623" sideWeight="0.44055945" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43228602" sideWeight="0.43869936" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3163597" sideWeight="0.5187366" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2342918" sideWeight="0.0706922" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40172786" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2475623" sideWeight="0.5576923" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36089385" sideWeight="0.532973" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2342918" sideWeight="0.9293078" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15492958" sideWeight="0.532973" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2585288" sideWeight="0.20833333" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -5037,43 +4966,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24942264" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39664805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51042813" sideWeight="0.3976546" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2585288" sideWeight="0.20833333" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05942184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26124197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37321624" sideWeight="0.6970021" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43249178" sideWeight="0.43869936" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24678801" sideWeight="0.55866903" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24942264" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3622393" sideWeight="0.532973" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27442372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39736554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37102085" sideWeight="0.30299786" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25985953" sideWeight="0.20044793" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3172338" sideWeight="0.5187366" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19852164" sideWeight="0.441331" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40172786" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
@@ -5095,6 +4989,8 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
+    <MESSAGE value="绑定手机号" />
+    <MESSAGE value="打war包" />
     <MESSAGE value="上传头像已处理一半" />
     <MESSAGE value="页头页尾" />
     <MESSAGE value="gouwuche" />
@@ -5116,11 +5012,9 @@
     <MESSAGE value="删除之前commit记录" />
     <MESSAGE value="git add" />
     <MESSAGE value="助理可以发布活动" />
-    <MESSAGE value="修改样式" />
-    <MESSAGE value="万云修改样式，内测之前16:42" />
-    <MESSAGE value="      测试易宝订单流程2015-8-17 17:51" />
-    <MESSAGE value="合并冲突2015-8-17 18:44 周永超" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并冲突2015-8-17 18:44 周永超" />
+    <MESSAGE value="首页最新入驻调整" />
+    <MESSAGE value="编辑个人信息页面调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="编辑个人信息页面调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5378,7 +5272,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java</url>
-          <line>229</line>
+          <line>224</line>
           <properties />
           <option name="timeStamp" value="786" />
         </line-breakpoint>
@@ -5431,6 +5325,36 @@
           <option name="timeStamp" value="810" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/service/impl/ScheduleManagerImpl.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="812" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="816" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="818" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="819" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="820" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/SigninController.java</url>
           <line>103</line>
           <properties />
@@ -5460,47 +5384,11 @@
           <properties />
           <option name="timeStamp" value="833" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java</url>
-          <line>314</line>
-          <properties />
-          <option name="timeStamp" value="841" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/service/impl/OrderManagerImpl.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="842" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java</url>
-          <line>239</line>
-          <properties />
-          <option name="timeStamp" value="843" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java</url>
-          <line>164</line>
-          <properties />
-          <option name="timeStamp" value="844" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java</url>
-          <line>277</line>
-          <properties />
-          <option name="timeStamp" value="846" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="847" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="848" />
+      <option name="time" value="841" />
     </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
@@ -5526,113 +5414,339 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/settled.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2650" max-vertical-offset="2800">
-          <caret line="106" column="142" selection-start-line="0" selection-start-column="0" selection-end-line="106" selection-end-column="142" />
+        <state vertical-scroll-proportion="-11.058824" vertical-offset="6049" max-vertical-offset="6850">
+          <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/core/taglib/StatusTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5038" max-vertical-offset="6425">
+          <caret line="252" column="39" selection-start-line="252" selection-start-column="39" selection-end-line="252" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.117647" vertical-offset="12513" max-vertical-offset="13075">
-          <caret line="517" column="7" selection-start-line="517" selection-start-column="7" selection-end-line="517" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1675">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/ActivityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="600">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/service/impl/ActivityManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1600">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Assistant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="875">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.0" vertical-offset="3774" max-vertical-offset="4250">
+          <caret line="218" column="69" selection-start-line="218" selection-start-column="69" selection-end-line="218" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="29.147058" vertical-offset="8507" max-vertical-offset="9625">
+          <caret line="261" column="57" selection-start-line="261" selection-start-column="57" selection-end-line="261" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1029413" vertical-offset="3607" max-vertical-offset="11100">
+          <caret line="150" column="55" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/myActivities.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.75" vertical-offset="5607" max-vertical-offset="7400">
+          <caret line="176" column="67" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/ActivityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2490" max-vertical-offset="3600">
+          <caret line="153" column="27" selection-start-line="153" selection-start-column="27" selection-end-line="153" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database/master.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.235294" vertical-offset="6323" max-vertical-offset="16250">
-          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="264" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.76265824" vertical-offset="12068" max-vertical-offset="12700">
+          <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/schedule.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.029411" vertical-offset="9600" max-vertical-offset="11200">
+          <caret line="399" column="0" selection-start-line="374" selection-start-column="4" selection-end-line="399" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/controller/ScheduleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="3725">
+          <caret line="45" column="64" selection-start-line="43" selection-start-column="11" selection-end-line="45" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/serveContents.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.529412" vertical-offset="6237" max-vertical-offset="13200">
-          <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="262" selection-end-column="11" />
+        <state vertical-scroll-proportion="-2.9411764" vertical-offset="2700" max-vertical-offset="12450">
+          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/model/PurchaseOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.647059" vertical-offset="1392" max-vertical-offset="4500">
+          <caret line="92" column="17" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/expertServeList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1029413" vertical-offset="1157" max-vertical-offset="9500">
+          <caret line="52" column="53" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/index.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3575" max-vertical-offset="15025">
-          <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="5675">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-expert-management.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Requirement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="0" max-vertical-offset="6975">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="3350">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/RequirementDiscuss.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1300">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="2010" max-vertical-offset="6300">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/controller/RequirementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6764705" vertical-offset="150" max-vertical-offset="6425">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2630" max-vertical-offset="3125">
+          <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-1.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/controller/ExpertController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="0" max-vertical-offset="7825">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="4807">
+          <caret line="69" column="86" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-2.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/expertOrderList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="0" max-vertical-offset="7825">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2945" max-vertical-offset="14421">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6498" max-vertical-offset="7581">
+          <caret line="342" column="6" selection-start-line="280" selection-start-column="0" selection-end-line="342" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/requirementView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5453" max-vertical-offset="6023">
+          <caret line="287" column="6" selection-start-line="287" selection-start-column="6" selection-end-line="287" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/my-needs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1824">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.76" vertical-offset="481" max-vertical-offset="1025">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.08" vertical-offset="373" max-vertical-offset="1025">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.76" vertical-offset="2656" max-vertical-offset="3250">
+          <caret line="110" column="57" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Expert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="3700">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-event-announcements-3.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="0" max-vertical-offset="7800">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.20512821" vertical-offset="55" max-vertical-offset="1400">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/BigUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="5225">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-website-terms.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6764705" vertical-offset="3225" max-vertical-offset="8600">
-          <caret line="134" column="92" selection-start-line="134" selection-start-column="92" selection-end-line="134" selection-end-column="92" />
+        <state vertical-scroll-proportion="0.25813007" vertical-offset="13923" max-vertical-offset="16250">
+          <caret line="562" column="14" selection-start-line="562" selection-start-column="14" selection-end-line="562" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-contact-us.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/service/impl/ExpertServeManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7941177" vertical-offset="505" max-vertical-offset="1325">
-          <caret line="116" column="20" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.23954372" vertical-offset="3899" max-vertical-offset="4425">
+          <caret line="161" column="128" selection-start-line="161" selection-start-column="128" selection-end-line="161" selection-end-column="128" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-assistant-help.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-102.55882" vertical-offset="113" max-vertical-offset="6375">
-          <caret line="144" column="100" selection-start-line="144" selection-start-column="100" selection-end-line="144" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2775" max-vertical-offset="3350">
+          <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3512974" vertical-offset="299" max-vertical-offset="800">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/Province.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21150278" vertical-offset="161" max-vertical-offset="775">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0927644" vertical-offset="61" max-vertical-offset="900">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/model/ExpertServe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3654916" vertical-offset="911" max-vertical-offset="3250">
+          <caret line="181" column="15" selection-start-line="181" selection-start-column="15" selection-end-line="181" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/main/controller/ExpertServeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3229" max-vertical-offset="4125">
+          <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.32802126" vertical-offset="247" max-vertical-offset="2200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2033896" vertical-offset="0" max-vertical-offset="13075">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1000">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/zjh/zjh-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2697" max-vertical-offset="4050">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -5649,321 +5763,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/uploadify/jquery.uploadify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5497835" vertical-offset="52321" max-vertical-offset="53225">
-          <caret line="2103" column="13" selection-start-line="2103" selection-start-column="13" selection-end-line="2103" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="52406" max-vertical-offset="53225">
+          <caret line="2102" column="71" selection-start-line="2102" selection-start-column="71" selection-end-line="2102" selection-end-column="71" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1439864000392" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439864000392" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439864000392" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439864074113" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439864074113" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439864074113" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-help.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.882353" vertical-offset="3700" max-vertical-offset="6375">
-          <caret line="156" column="38" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-appeal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.882353" vertical-offset="75" max-vertical-offset="6800">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-user-appeal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-121.32353" vertical-offset="0" max-vertical-offset="7025">
-          <caret line="165" column="40" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-transaction-process.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="0" max-vertical-offset="6775">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-successful-case.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-103.67647" vertical-offset="0" max-vertical-offset="7150">
-          <caret line="141" column="52" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-guarantee.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="0" max-vertical-offset="7000">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-platform-process.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.970589" vertical-offset="3225" max-vertical-offset="6250">
-          <caret line="148" column="25" selection-start-line="133" selection-start-column="14" selection-end-line="148" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-know-us.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7352941" vertical-offset="250" max-vertical-offset="6325">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-join-us.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-44.117645" vertical-offset="1875" max-vertical-offset="7350">
-          <caret line="135" column="92" selection-start-line="135" selection-start-column="92" selection-end-line="135" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-feedback.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7941177" vertical-offset="146" max-vertical-offset="6100">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-infringement-complaints.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.617647" vertical-offset="466" max-vertical-offset="6600">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.617647" vertical-offset="3550" max-vertical-offset="6925">
-          <caret line="133" column="13" selection-start-line="133" selection-start-column="13" selection-end-line="148" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-service-install.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646" vertical-offset="3550" max-vertical-offset="7000">
-          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9411764" vertical-offset="3625" max-vertical-offset="6825">
-          <caret line="149" column="25" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-payment-issues.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646" vertical-offset="3975" max-vertical-offset="6900">
-          <caret line="165" column="69" selection-start-line="165" selection-start-column="69" selection-end-line="165" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-help.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8529412" vertical-offset="3763" max-vertical-offset="6375">
-          <caret line="148" column="25" selection-start-line="133" selection-start-column="15" selection-end-line="148" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-expert-settled.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45824847" vertical-offset="975" max-vertical-offset="6250">
-          <caret line="48" column="102" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/static/footer-my-information.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9411764" vertical-offset="3600" max-vertical-offset="6825">
-          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/expertForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0882354" vertical-offset="8758" max-vertical-offset="17050">
-          <caret line="356" column="143" selection-start-line="356" selection-start-column="143" selection-end-line="356" selection-end-column="143" />
+        <state vertical-scroll-proportion="-4.5423727" vertical-offset="12032" max-vertical-offset="18600">
+          <caret line="492" column="59" selection-start-line="492" selection-start-column="59" selection-end-line="492" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/util/logging/Logger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/public-css-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.92908657" vertical-offset="7898" max-vertical-offset="37250">
-          <caret line="315" column="25" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+        <state vertical-scroll-proportion="-20.52" vertical-offset="2437" max-vertical-offset="3100">
+          <caret line="118" column="104" selection-start-line="118" selection-start-column="104" selection-end-line="118" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/sparePay.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="24.264706" vertical-offset="825" max-vertical-offset="7850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439797417697" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/purchaseOrderView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.617647" vertical-offset="4275" max-vertical-offset="8225">
-          <caret line="180" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="323" selection-end-column="7" />
+        <state vertical-scroll-proportion="-2.0" vertical-offset="4882" max-vertical-offset="16625">
+          <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/service/OrderManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/theme/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="800">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2352943" vertical-offset="9087" max-vertical-offset="9725">
-          <caret line="375" column="31" selection-start-line="375" selection-start-column="31" selection-end-line="375" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/basic/activityView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4411764" vertical-offset="9915" max-vertical-offset="10475">
-          <caret line="404" column="35" selection-start-line="404" selection-start-column="35" selection-end-line="404" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.7.Final/hibernate-core-4.1.7.Final-sources.jar!/org/hibernate/collection/internal/PersistentBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3319838" vertical-offset="4636" max-vertical-offset="12500">
-          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
-          <folding>
-            <element signature="e#7715#7716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/order/activityPay.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.647059" vertical-offset="3240" max-vertical-offset="8225">
-          <caret line="140" column="48" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/character/model/Expert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1764708" vertical-offset="615" max-vertical-offset="3550">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="4696" max-vertical-offset="5825">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frame/organization/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1425">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/ActivityExpert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="975">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database/master.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.48" vertical-offset="12388" max-vertical-offset="12900">
-          <caret line="503" column="0" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/basic/model/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4411764" vertical-offset="2283" max-vertical-offset="3875">
-          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-          <folding>
-            <element signature="e#4115#4116#0" expanded="true" />
-            <element signature="e#4155#4156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/model/PurchaseOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4411764" vertical-offset="4333" max-vertical-offset="4800">
-          <caret line="306" column="41" selection-start-line="306" selection-start-column="29" selection-end-line="306" selection-end-column="41" />
-          <folding>
-            <element signature="e#8203#8204#0" expanded="true" />
-            <element signature="e#8238#8239#0" expanded="true" />
-            <element signature="e#8302#8303#0" expanded="true" />
-            <element signature="e#8350#8351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/OrderPaymentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7219" max-vertical-offset="7700">
-          <caret line="329" column="0" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhuanjiahui/order/controller/PurchaseOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9147287" vertical-offset="4721" max-vertical-offset="5325">
-          <caret line="237" column="77" selection-start-line="237" selection-start-column="77" selection-end-line="237" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.5358306" vertical-offset="671" max-vertical-offset="13050">
+          <caret line="40" column="103" selection-start-line="40" selection-start-column="103" selection-end-line="40" selection-end-column="103" />
           <folding />
         </state>
       </provider>

@@ -105,3 +105,15 @@
 .personInfo>ul>li>div:last-child{width:750px;line-height: 28px;padding-left: 10px;padding-top: 12px;}
 .perInfoEdit{position:absolute;top:-60px;right:88px;z-index:3;color:#26C2FF;font-size:16px;}
 .perInfoPhoto{position:absolute;top:-50px;right:222px;z-index:3;width:160px;height:160px;border-radius:80px;border:8px solid rgba(0,0,0,.22);}
+
+/*万云 2015.08.18 个人信息编辑页面修改*/
+.gender,.isCheif,.isfreedom{font-size: 13px;}
+.gender input,.isCheif input,.isfreedom input{margin-right: 2px;}
+.gender input:last-child,.isCheif input:last-child,.isfreedom input:last-child{margin-left: 5px;}
+.edkeywords div{vertical-align: top;}
+.elem{white-space: nowrap;padding:0 10px!important;font-size:13px!important;margin-top: 8px;}
+.payRange{font-size: 13px;}
+.payRange input{text-align: center;padding:0!important;text-indent:0!important;}
+.uploadPhoto{position:absolute;top:-60px;right:188px;}
+#head{width:160px;height:160px;border-radius:80px;border:8px solid rgba(0,0,0,.22);}
+.uploadPhotoBt{font-size:16px;color:#26C2FF;margin-left: 47px;margin-top:8px;position:relative;top:5px;}

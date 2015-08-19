@@ -2100,7 +2100,7 @@ SWFUpload.Console.writeLine = function (d) {
 
             // Call the default event handler
             if ($.inArray('onUploadSuccess', settings.overrideEvents) < 0) {
-               /* $('#' + file.id).find('.data').html(' - Complete');*/
+                /*$('#' + file.id).find('.data').html(' - Complete');*/
             }
 
             // Call the user-defined event handler
