@@ -17,7 +17,7 @@
 .header .logo a{display: block;}
 .header .text-border{padding:25px 40px 0 40px;}
 .header .header-text{line-height: 143px;margin-right: 30px;}
-.header .header-text span{font-size: 24px;color:#777777;}
+.header .header-text span{font-size: 24px;color:#666777;}
 .header .search{padding:20px;width:700px;}
 .header .search .search-top ul li a{display: inline-block;float:left;width:50px;height:25px;line-height:25px;text-align:center;overflow: hidden;}
 .header .search .search-top ul li a:hover{background-color: #00bdff;color:#ffffff;}
@@ -26,7 +26,7 @@
 .header .search form .search-box .box2{display: inline-block;} 
 .header .search form .search-box .box2 input{width:97px;height:43px;background: #00bdff;color:#ffffff;font-size: 18px;margin-left: -4px;border:1px solid #00bdff;cursor: pointer;}
 .header .search .search-bottom ul li{margin: 11px 17px 0 0;float:left;}
-.header .search .search-bottom ul li a{color: #777777;}
+.header .search .search-bottom ul li a{color: #666777;}
 /*content部分*/
 .content .nav{height:39px;background-color:#00bdff;}
 .content .nav ul{padding-left:295px;width: 1200px;margin:0 auto;}

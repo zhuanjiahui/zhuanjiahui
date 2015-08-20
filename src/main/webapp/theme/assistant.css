@@ -28,7 +28,7 @@
 .ad-xx{border:1px dashed #878787;float:left;width:436px;margin-top:12px;}
 .ad-center{width:185px;text-align:center;float:left;}
 
-.ad-tjzj-table{width:1061px;height:180px;border:1px solid #e7e7e7; margin:0 auto;font-size:16px;color:#666666;}
+.ad-tjzj-table{width:1061px;height:180px;border:1px solid #e7e7e7; margin:0 auto;font-size:16px;color:#555666;}
 .ad-tjzj-tr1,.ad-tjzj-tr2,.ad-tjzj-tr3,.ad-tjzj-tr4,.ad-tjzj-tr5{float:left;}
 .ad-tjzj-tr1{width:180px;height:180px;text-align:center;}
 .ad-tjzj-tr2{width:215px;height:180px;}
@@ -57,11 +57,11 @@
 .ad-zlxx-b2-r button{float:left;width:78px;height:23px;background-color:#ec6618;border:0;color:#fff;margin-top:21px;margin-left:-8px;}
 
 .customerName{margin:0 auto;font-size:14px;color:#333;margin-top:15px;}
-.customerNeedInfo,.needDetail{width:1015px;font-size:13px;color:#555;margin:0 auto;}
+.customerNeedInfo,.needDetail{width:1015px;font-size:13px;color:#444;margin:0 auto;}
 .customerNeedInfo tr{height:30px;vertical-align:middle;}
 .needDetail{margin-top:10px;}
 .needDetail li{display:inline-block;vertical-align:top;}
-.popularityValue{width:1015px;height:20px;margin:0 auto;margin-top:20px;color:#999;border-bottom:1px solid #555;}
+.popularityValue{width:1015px;height:20px;margin:0 auto;margin-top:20px;color:#999;border-bottom:1px solid #444;}
 
 
 /*助理查询部分*/

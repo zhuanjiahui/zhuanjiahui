@@ -548,7 +548,7 @@
 
     </div>
     <div class="pi-line2"></div>
-    <div class="pi-but-zk"><a href="javascript:void(0)" onclick="submitCompany()" style="font-size:15px;color:#555;">添加</a> </div>
+    <div class="pi-but-zk"><a href="javascript:void(0)" onclick="submitCompany()" style="font-size:15px;color:#444;">添加</a> </div>
     </form>
     <div style="text-align: center"><button class="pi-but2" onclick="$('#expert').submit();">保存</button></div>
 </div>

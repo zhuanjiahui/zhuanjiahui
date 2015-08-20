@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/manage/order/purchaseOrderView2.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/manage/order" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character/photographerView.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/character" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main/myExpertServeList.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc/pc/main" />
       </map>
     </option>
   </component>

@@ -23,7 +23,7 @@
             $(obj).find("ul").animate({
                 marginTop : "-39px"
             },500,function(){
-                $(this).css({marginTop : "0px"}).find("li:first-child").appendTo(this).find("a div").css("color","#666");
+                $(this).css({marginTop : "0px"}).find("li:first-child").appendTo(this).find("a div").css("color","#555");
             })
         }
         $(function(){

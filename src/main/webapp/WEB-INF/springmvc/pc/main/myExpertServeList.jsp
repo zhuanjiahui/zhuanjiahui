@@ -104,21 +104,22 @@
     <div class="body-sub" style="position:relative;">
         <div class="service-content">
             <img src="/images/duihao.gif">
-            填写服务内容
+            &nbsp;&nbsp;填写服务内容
         </div>
-        <div <%--class="box"--%>>
-            <%--<div class="add">
-                <div class="addImg"></div>
-                <p class="addTxt">添加服务<p>
-            </div>--%>
-            <div class="btMenu">
-                <div <%--class="bt op1"--%> onclick="showPanel('train');">培训</div>
-                <div <%--class="bt op2"--%> onclick="showPanel('consult');">咨询</div>
-                <div <%--class="bt op3"--%> onclick="showPanel('development');">开发</div>
-            </div>
+        <div class="addSeverBox">
+            <ul class="addSeverBtMenu">
+                <li><div class="addImg">+</div><div class="addTxt">添加服务</div></li>
+                <li><div class="menuBt train" onclick="showPanel('train');">培训</div></li><!--
+                --><li><div class="menuBt consult" onclick="showPanel('train');">咨询</div></li><!--
+                --><li><div class="menuBt development" onclick="showPanel('train');">开发</div></li>
+            </ul>
         </div>
+        <div class="noService">
+            <img src="/images/noAddService.png" alt="您还没有添加任何服务">
+        </div>
+        <div class="serviceList">
         <c:forEach items="${expertServeList}" var="expertServe">
-        <div class="body-con-4" style="margin-top: -1px;">
+        <div class="body-con-4">
             <dl>
                 <dd>
                     <span class="list">${expertServe.name}</span>
@@ -129,14 +130,12 @@
                     <span class="list special3">预算：${expertServe.price}元</span>
                 </dd>
             </dl>
-          <%--  <ol>
-               <a href="/pc/expertServe/update?serveId=${expertServe.id}">修改</a></li>
-            </ol>--%>
         </div>
         </c:forEach>
+        </div>
         <div class="sc-table">
             <form id="trainForm" name="expertServe" action="" method="post">
-            <div id="train" hidden="hidden" style="display: block;">
+            <div id="train" hidden="hidden">
                 <div class="sc-tr">
                     <div class="sc-td-l">
                         <span>行业：</span>
@@ -229,10 +228,10 @@
             </div>
             </form>
             <%--咨询--%>
-            <form id="consultForm" name="expertServe" action="" method="post" style="display: block;">
+            <form id="consultForm" name="expertServe" action="" method="post">
 
 
-            <div id="consult" hidden="hidden" style="display: block;">
+            <div id="consult" hidden="hidden">
                 <div class="sc-tr">
                     <div class="sc-td-l sc-td-l-zxnx">
                         咨询年限：
@@ -320,9 +319,9 @@
             </div>
             </form>
             <%--开发--%>
-            <form id="developmentForm" name="expertServe" action="" method="post" style="display: block;">
+            <form id="developmentForm" name="expertServe" action="" method="post">
 
-            <div id="development" hidden="hidden" style="display: block;">
+            <div id="development" hidden="hidden">
                 <div class="sc-tr">
 
                     <div class="sc-td-r">
@@ -493,7 +492,8 @@
             }
         });
     }
-<%--    function showPanel(serveType){
+    function showPanel(serveType){
+        $('.noService').hide();
         if(serveType=="train"){
             $("#train").fadeIn("fast");
             $("#consult").fadeOut("fast");
@@ -508,7 +508,16 @@
             $("#development").fadeIn("fast");
         }
     }
-</script>--%>
+
+    $(function(){
+        var noService = $('.body-con-4').height();
+        if(noService){
+            $('.noService').hide();
+        }else{
+            $('.noService').show();
+        }
+    });
+</script>
 
 
 </body>

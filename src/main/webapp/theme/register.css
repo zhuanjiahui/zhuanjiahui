@@ -67,6 +67,6 @@
 .footer p{color:#6b6b6b;line-height: 40px;text-align: center;}.footer{background-color: #e5e5e5;}
 
 /*设置验证信息样式*/
-#verificationCode{width:120px;height:35px;position:absolute;right:0;top:0;box-sizing:border-box;background:transparent;border:none;border-left:1px solid #e8e8e8;color:#555;text-align:center;}
+#verificationCode{width:120px;height:35px;position:absolute;right:0;top:0;box-sizing:border-box;background:transparent;border:none;border-left:1px solid #e8e8e8;color:#444;text-align:center;}
 #reg-form label.error{color:red;font-size:14px;text-indent:2.5em;width:240px;box-sizing:border-box;text-align:left;background:url(../images/error.png) no-repeat 10px center;}
 .disAble{background:gray!important;}

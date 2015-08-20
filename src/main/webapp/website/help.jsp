@@ -20,7 +20,7 @@
 
     .wiz-todo-label-checked {
         /*text-decoration: line-through;*/
-        color: #666;
+        color: #555;
     }
 
     .wiz-todo-label-unchecked {
@@ -41,7 +41,7 @@
     }
 
     .wiz-todo-account, .wiz-todo-dt {
-        color: #666;
+        color: #555;
     }</style>
     <style type="text/css" id="wiz_custom_css">
         body {

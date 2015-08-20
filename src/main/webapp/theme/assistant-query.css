@@ -2,11 +2,11 @@
 /*筛选条件*/
 ul,ol{list-style:none;}
 .multiConditionScreening{width:1200px;margin:0 auto;padding:0;}
-.city{font-size:13px;color:#555;width:100%;height:50px;line-height:50px;text-indent:1em;}
+.city{font-size:13px;color:#444;width:100%;height:50px;line-height:50px;text-indent:1em;}
 .city span:last-child{display:inline-block;margin-left:1em;}
 .screening{width:100%;border:1px solid #e8e8e8;padding:22px 0 5px 0;}
 .screening-1,.screening-2,.screening-3,.screening-hide{display:inline-block;height:35px;width:100%;}
-.screening-1 li,.screening-2 li,.screening-3 li,.screening-hide li{display:inline-block;font-size:13px;padding:1px 3px;color:#555;margin:0 8px;cursor:pointer;}
+.screening-1 li,.screening-2 li,.screening-3 li,.screening-hide li{display:inline-block;font-size:13px;padding:1px 3px;color:#444;margin:0 8px;cursor:pointer;}
 .screeningChioce{background:#00bdff;color:white!important;}
 
 /*右侧栏*/
@@ -20,25 +20,25 @@ ul,ol{list-style:none;}
 .text li:not(.last){font-size:14px;color:#333;text-indent:1em;height:45px;}
 .text li:last-child{font-size:14px;color:#333;text-indent:1em;height:17px;}
 .commonProblem{margin-top:30px;}
-.commonProblem li{font-size:13px;color:#555;height:30px;}
+.commonProblem li{font-size:13px;color:#444;height:30px;}
 
 /*筛选结果*/
 .resultsTop{width:880px;height:50px;border-top:3px solid #00bdff;border-bottom:1px solid #e8e8e8;margin-top:25px;position:relative;}
-.resultsTop li{display:inline-block;font-size:15px;color:#555;height:100%;line-height:50px;padding:0 15px;}
+.resultsTop li{display:inline-block;font-size:15px;color:#444;height:100%;line-height:50px;padding:0 15px;}
 .sortingMethod{position:absolute;left:0;}
 .costRange{position:absolute;right:0;}
 .costRange li{margin:0;padding:0 2px;}
-.costRange input{height:18px;width:70px;border:1px solid #00bdff;font-size:13px;color:#777;text-indent:.5em;}
+.costRange input{height:18px;width:70px;border:1px solid #00bdff;font-size:13px;color:#666;text-indent:.5em;}
 .resultsBody{width:880px;}
 .resultsBody>ul>li:not(.pagging li){display:block;width:850px;margin-top:35px;}
 .resultsBody>ul>li>ul{width:100%;}
-.resultsElemTop li{display:inline-block;font-size:13px;color:#777;margin:0 50px 0 0;height:30px;line-height:30px;}
+.resultsElemTop li{display:inline-block;font-size:13px;color:#666;margin:0 50px 0 0;height:30px;line-height:30px;}
 .resultsElemMain{border:1px solid #e8e8e8;}
 .resultsElemMain li{display:inline-block;font-size:14px;height:60px;line-height:60px;margin:0 18px;color:#444;}
 .resultsElemMain li:last-child{border-left:1px solid #e8e8e8;width:100px;text-align:center;}
 .pagging{margin:25px auto 0 100px;cursor:pointer;}
-.pagging li:not(.turnPage){display:inline-block;border:1px solid #e8e8e8;height:35px;line-height:35px;padding:0 14px;font-size:13px;color:#555;}
-.turnPage{display:inline-block;height:35px;line-height:35px;padding:0 15px;font-size:14px;color:#555;}
+.pagging li:not(.turnPage){display:inline-block;border:1px solid #e8e8e8;height:35px;line-height:35px;padding:0 14px;font-size:13px;color:#444;}
+.turnPage{display:inline-block;height:35px;line-height:35px;padding:0 15px;font-size:14px;color:#444;}
 .turnPage input,.turnPage span{display:inline-block;border:1px solid #e8e8e8;width:35px;height:25px;vertical-align:middle;line-height:25px;text-align:center;margin:auto 5px;}
 .turnPage span{width:50px;margin:auto 15px;}
 

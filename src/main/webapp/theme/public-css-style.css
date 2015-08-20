@@ -15,24 +15,24 @@
 .logo a{display: block;}
 .logo img{position:relative;right:5px;}
 .header .header-text{line-height: 143px;margin-right: 30px;}
-.header-text span{font-size: 24px;color:#777777;}
+.header-text span{font-size: 24px;color:#666777;}
 /*TAB切换部分*/
 .header .search{padding:20px;width:700px;}
 .search .search-top ul li{float:left;width:50px;height:25px;line-height:25px;text-align:center;overflow: hidden;cursor: pointer;}
 .search .search-top ul li:hover{background-color: #00bdff;color:#ffffff;}
 .search .search-top ul .select{background: #00bdff;color:#fff;}
 .search form .search-box{width:678px;height: 43px;box-sizing:border-box;}
-.search form .search-box .box1 input{box-sizing:border-box;width:576px;height:43px;border:2px solid #00bdff;font-size: 15px;text-indent:10px;color:#666;}
+.search form .search-box .box1 input{box-sizing:border-box;width:576px;height:43px;border:2px solid #00bdff;font-size: 15px;text-indent:10px;color:#555;}
 .search form .search-box .box2{display: inline-block;}
 .search form .search-box .box2 input{box-sizing:border-box;width:97px;height:43px;background: #00bdff;color:#ffffff;font-size: 18px;margin-left: -4px;border:1px solid #00bdff;cursor: pointer;}
 .search .search-bottom ul li{margin: 11px 17px 0 0;float:left;}
-.search .search-bottom ul li a{color: #777777;}
+.search .search-bottom ul li a{color: #666777;}
 #tab_con ul{display: none;}
 #tab_con ul.show{display: block;}
 
 .header .guild{height: 94px;padding: 48px 0 0 80px;}
 .guild .guild-sub{float:left;width:48px;height:47px;margin-left:23px;text-align: center;}
-.guild-sub a span{color:#777;}
+.guild-sub a span{color:#666;}
 .guild-sub a span:hover{color:#ec6618;}
 
 .imgScale,.guild-sub img{-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;-o-transition: all 0.4s linear;-ms-transition: all 0.4s linear;transition: all 0.4s linear;}
@@ -61,8 +61,8 @@
 .content-head .content-head2{color: #a0a0a0;}
 .content-body{width: 950px;border:1px solid#e4e4e4;float:left;background: #fff;margin:22px auto auto 20px;box-sizing:border-box;padding:28px 10px 0 28px;}
 .content-body .body-nav{padding-left:35px;width: 835px;overflow: hidden;box-sizing:border-box;}
-.body-nav .nav-li{float:left;height:41px;line-height:41px;padding:0 31px;cursor:pointer;border:1px solid transparent;border-bottom: 1px solid #e4e4e4;color:#777;font-size: 15px;}
-.body-nav .nav-li a{color:#777;font-size: 15px;}
+.body-nav .nav-li{float:left;height:41px;line-height:41px;padding:0 31px;cursor:pointer;border:1px solid transparent;border-bottom: 1px solid #e4e4e4;color:#666;font-size: 15px;}
+.body-nav .nav-li a{color:#666;font-size: 15px;}
 .body-nav .nav-li:hover{border:1px solid #e4e4e4;border-bottom:1px solid transparent;}
 .content-body .body-sub .body-title{font-size: 14px;color:#727272;padding-left:35px;line-height: 49px;}
 /*我的需求页特别处*/
@@ -107,7 +107,7 @@
 .footer p{color:#6b6b6b;line-height: 40px;text-align: center;}
 
 /*万云 2015.08.17 个人信息查看页面重写*/
-.personInfo{width:100%;padding:0 30px;font-size:13px;color:#666;position:relative;}
+.personInfo{width:100%;padding:0 30px;font-size:13px;color:#555;position:relative;}
 .personInfo>ul{width:100%;margin-bottom: 25px;padding-bottom: 20px;border-bottom: 1px solid #E4E4E4;}
 .personInfo>ul:last-child{border:none;margin-bottom: 66px;}
 .personInfo>ul>li>p,.personInfo>ul>li>div{display: inline-block;line-height: 50px;vertical-align: top;}
