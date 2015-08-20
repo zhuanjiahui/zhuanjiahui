@@ -18,41 +18,7 @@
 <body>
 <div id="wrap">
 <!-- top顶部 -->
-<div class="top">
-    <div class="top-sub">
-        <div class=" top-l fl">
-            <% MyUser user= AuthorizationUtil.getMyUser();
-                if(user!=null&&user.getUsername()!=null){
-                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/user/view\">"+user.getNavName()+"</a>");
-                }else {
-                    pageContext.getOut().print("<a class=\"top-l1\" href=\"/pc/login\">登录</a>");
-                }
-            %>
-            <i>|</i>
-            <a class="top-l2" href="/pc/enroll">免费注册</a>
-        </div>
-        <div class=" top-r fr">
-            <%
-                if(user!=null&&user.getUtype()!=null) {
-                    if (user.getUtype() == 1) {
-                        pageContext.getOut().print("<a href=\"/pc/switchUser\">切换至专家</a><i>|</i>");
-                    } else if (user != null && user.getUtype() == 2) {
-                        pageContext.getOut().print("<a href=\"/pc/switchUser\">切换至用户</a><i>|</i>");
-                    }
-                }
-            %>
-            <a href="/pc/favorite/listExpert">我的收藏</a><i>|</i>
-            <a href="/pc/purchaseOrder/myOrders">我的订单</a><i>|</i>
-            <a class="top-r1" href="/pc/user/view">个人中心</a>
-            <%
-                if(user!=null&&user.getUtype()!=null) {
-                    pageContext.getOut().print("<i>|</i><a href=\"j_spring_security_logout\">退出</a>");
-                }
-            %>
-
-        </div>
-    </div>
-</div>
+    <jsp:include page="../header.jsp"></jsp:include>
 <!-- header部分 -->
 <div class="header clear">
     <div class="logo fl">
