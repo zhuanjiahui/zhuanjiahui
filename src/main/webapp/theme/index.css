@@ -254,15 +254,21 @@
 
 /*筛选条件*/
 ul,ol{list-style:none;}
+.sortingMethod{position:absolute;left:0;width:100%;height:100%;}
+.sortingMethod li{display:inline-block;width:100px;text-align:center;box-sizing:border-box;height:100%;}
+.sortingMethod li a{display:block;width:100%;height:100%;text-align:center;line-height:45px;font-size:15px;color:#666;cursor:pointer;}
+.sortingMethodChioce,.sortingMethod li a:hover{background:#00bdff;color:white!important;}
+
 .multiConditionScreening{width:1200px;margin:0 auto;padding:0;}
 .screening{width:100%;border:1px solid #e4e4e4;padding:22px 0 5px 0;}
-.screening-1,.screening-2,.screening-3,.screening-hide{display:inline-block;height:35px;width:100%;}
+.screening-1,.screening-2,.screening-3,.screening-hide{display:block;height:35px;width:100%;}
 .screening-1 li,.screening-2 li,.screening-3 li,.screening-hide li{display:inline-block;font-size:14px;color:#6d6d6d;margin:0 8px;cursor:pointer;}
 .screening-1 li a,.screening-2 li a,.screening-3 li a,.screening-hide li a{display:block;font-size:14px;padding:0px 3px 2px 3px;color:#6d6d6d;text-align:center;line-height:20px;}
 .screening-1 li:first-child,.screening-2 li:first-child,.screening-3 li:first-child,.screening-hide li:first-child{cursor:default;}
-.screeningChioce a{background:#00bdff;color:white!important;}
 .screening-1 li a{color:#666;}
-.sortingMethodChioce{background:#00bdff;color:white!important;}
+.screeningChioce{background:#00bdff;color:white!important;}
+
+
 
 
 /*右侧栏*/
@@ -283,9 +289,6 @@ ul,ol{list-style:none;}
 /*筛选结果*/
 .resultsTop{width:900px;height:50px;box-sizing:border-box;border-top:3px solid #00bdff;border-bottom:1px solid #e4e4e4;margin-top:25px;position:relative;}
 .resultsTop>li{width:100%;height:100%;}
-.sortingMethod{position:absolute;left:0;width:100%;height:100%;}
-.sortingMethod li{display:inline-block;width:100px;text-align:center;box-sizing:border-box;width:100px;height:100%;line-height:45px;font-size:15px;color:#666;cursor:pointer;}
-.sortingMethod li a{display:inline-block;width:100%;height:100%;text-align:center;line-height:45px;font-size:15px;color:#666;cursor:pointer;}
 .costRange{position:absolute;right:0;top:16px;color:#777;font-size:13px;}
 .costRange li{display:inline-block;padding:0 2px;}
 .costRange input{height:18px;width:70px;border:1px solid #00bdff;font-size:13px;color:#777;text-indent:.5em;}

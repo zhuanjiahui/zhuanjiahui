@@ -144,140 +144,140 @@
         </ul>
     </div>
 
-<!-- 筛选条件 -->
-<div class="multiConditionScreening">
-<%--
-    <p class="city"><span>所有分类&nbsp;>&nbsp;</span><span>北京</span><span>切换城市</span></p>
---%>
-    <ul class="screening">
-        <ul class="screening-1">
-            <li class="screeningTitle">需求类别:</li>
-            <li><a href="/pc/requirement/pageList">全部</a> </li>
-            <zjh:status name="type" dataType="Requirement.type" type="list" checkedValue="${type}" onclick="/pc/requirement/pageList?type="></zjh:status>
-        </ul>
-        <ul class="screening-1">
-            <li class="screeningTitle">行业类别:</li>
-            <li><a href="/pc/requirement/pageList?type=${type}">全部</a> </li>
-            <zjh:status name="industry" dataType="ExpertServe.industry" type="list" checkedValue="${industry}" onclick="/pc/requirement/pageList?type=${type}&industry="></zjh:status>
-        </ul>
-        <c:if test="${type=='train'||type=='consult'}">
+    <!-- 筛选条件 -->
+    <div class="multiConditionScreening">
+        <%--
+            <p class="city"><span>所有分类&nbsp;>&nbsp;</span><span>北京</span><span>切换城市</span></p>
+        --%>
+        <ul class="screening">
             <ul class="screening-1">
-                <li class="screeningTitle">专业类型:</li>
-                <li><a href="/pc/requirement/pageList?type=${type}&industry=${industry}">全部</a> </li>
-                <zjh:status name="major" dataType="ExpertServe.major" type="list" checkedValue="${major}" onclick="/pc/requirement/pageList?type=${type}&industry=${industry}&major="></zjh:status>
+                <li class="screeningTitle">需求类别:</li>
+                <li><a href="/pc/requirement/pageList">全部</a> </li>
+                <zjh:status name="type" dataType="Requirement.type" type="list" checkedValue="${type}" onclick="/pc/requirement/pageList?type="></zjh:status>
             </ul>
-            <c:if test="${!empty courseTypes&&type=='train'}">
+            <ul class="screening-1">
+                <li class="screeningTitle">行业类别:</li>
+                <li><a href="/pc/requirement/pageList?type=${type}">全部</a> </li>
+                <zjh:status name="industry" dataType="ExpertServe.industry" type="list" checkedValue="${industry}" onclick="/pc/requirement/pageList?type=${type}&industry="></zjh:status>
+            </ul>
+            <c:if test="${type=='train'||type=='consult'}">
                 <ul class="screening-1">
-
-                    <li class="screeningTitle">课程类型:</li>
-                    <li><a href="/pc/expertServe/pageList?industry=${industry}&major=${major}&type=train">全部</a> </li>
-                    <c:forEach items="${courseTypes}" var="course">
-                        <c:if test="${course.name==courseType}">
-                            <li><a   class="screeningChioce" href="/pc/requirement/pageList?industry=${industry}&major=${major}&courseType=${course.name}&type=train">${course.label}</a> </li>
-                        </c:if>
-                        <c:if test="${course.name!=courseType}">
-                            <li><a href="/pc/requirement/pageList?industry=${industry}&major=${major}&courseType=${course.name}&type=train">${course.label}</a> </li>
-                        </c:if>
-                    </c:forEach>
+                    <li class="screeningTitle">专业类型:</li>
+                    <li><a href="/pc/requirement/pageList?type=${type}&industry=${industry}">全部</a> </li>
+                    <zjh:status name="major" dataType="ExpertServe.major" type="list" checkedValue="${major}" onclick="/pc/requirement/pageList?type=${type}&industry=${industry}&major="></zjh:status>
                 </ul>
+                <c:if test="${!empty courseTypes&&type=='train'}">
+                    <ul class="screening-1">
 
+                        <li class="screeningTitle">课程类型:</li>
+                        <li><a href="/pc/expertServe/pageList?industry=${industry}&major=${major}&type=train">全部</a> </li>
+                        <c:forEach items="${courseTypes}" var="course">
+                            <c:if test="${course.name==courseType}">
+                                <li><a   class="screeningChioce" href="/pc/requirement/pageList?industry=${industry}&major=${major}&courseType=${course.name}&type=train">${course.label}</a> </li>
+                            </c:if>
+                            <c:if test="${course.name!=courseType}">
+                                <li><a href="/pc/requirement/pageList?industry=${industry}&major=${major}&courseType=${course.name}&type=train">${course.label}</a> </li>
+                            </c:if>
+                        </c:forEach>
+                    </ul>
+
+                </c:if>
             </c:if>
-        </c:if>
-        <c:if test="${type=='development'}">
-            <ul class="screening-1">
-                <li class="screeningTitle">擅长类型:</li>
-                <li><a href="/pc/requirement/pageList?type=development&industry=${industry}">全部</a> </li>
-                <zjh:status name="developType" dataType="ExpertServe.developType" type="list" checkedValue="${developType}" onclick="/pc/requirement/pageList?type=development&industry=${industry}&developType="></zjh:status>
-            </ul>
-        </c:if>
-    </ul>
-</div>
-
-<div class="screeningResultsAndRight">
-<!-- 右侧栏 -->
-<div class="bodyRight">
-    <ul class="expertRecommendation">
-        <li style="margin:15px 0;color:#00bdff;font-size:15px;font-weight:bold;text-indent:5px;">专家推荐</li>
-        <c:forEach items="${listPageExperts}" var="expert">
-        <li>
-            <ul>
-                <img src="http://pic.591zjh.com/${expert.pictureUrl}">
-                <ul class="text">
-                    <li>${expert.name}</li>
-                    <li>工作${expert.workTime}年</li>
-                    <li>${expert.chief}</li>
-                    <li class="last">${expert.province.name}</li>
+            <c:if test="${type=='development'}">
+                <ul class="screening-1">
+                    <li class="screeningTitle">擅长类型:</li>
+                    <li><a href="/pc/requirement/pageList?type=development&industry=${industry}">全部</a> </li>
+                    <zjh:status name="developType" dataType="ExpertServe.developType" type="list" checkedValue="${developType}" onclick="/pc/requirement/pageList?type=development&industry=${industry}&developType="></zjh:status>
                 </ul>
-            </ul>
-        </li>
-        </c:forEach>
-
-    </ul>
-    <ul class="commonProblem">
-        <li style="margin:5px 0;color:#333;font-size:15px;text-indent:5px;border-bottom:1px solid #e8e8e8;height:40px;line-height:40px;">常见问题</li>
-        <li style="margin-top:20px;">1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>1、专家汇平台是否会收取职...</li>
-        <li>10、专家汇平台是否会收取职...</li>
-    </ul>
-</div>
-
-<!-- 筛选结果 -->
-<ul class="resultsTop">
-    <li>
-        <ul class="sortingMethod">
-            <li class="screeningChioce">默认排序</li>
-            <li>人气</li>
+            </c:if>
         </ul>
-    </li>
-   <%-- <li>
-        <ul class="costRange">
-            <li>费用&nbsp;:</li>
-            <li><input type="text"></li>
-            <li style="padding:0 1px;color:#00bdff">-</li>
-            <li><input type="text"></li>
+    </div>
+
+    <div class="screeningResultsAndRight">
+        <!-- 右侧栏 -->
+        <div class="bodyRight">
+            <ul class="expertRecommendation">
+                <li style="margin:15px 0;color:#00bdff;font-size:15px;font-weight:bold;text-indent:5px;">专家推荐</li>
+                <c:forEach items="${listPageExperts}" var="expert">
+                    <li>
+                        <ul>
+                            <img src="http://pic.591zjh.com/${expert.pictureUrl}">
+                            <ul class="text">
+                                <li>${expert.name}</li>
+                                <li>工作${expert.workTime}年</li>
+                                <li>${expert.chief}</li>
+                                <li class="last">${expert.province.name}</li>
+                            </ul>
+                        </ul>
+                    </li>
+                </c:forEach>
+
+            </ul>
+            <ul class="commonProblem">
+                <li style="margin:5px 0;color:#333;font-size:15px;text-indent:5px;border-bottom:1px solid #e8e8e8;height:40px;line-height:40px;">常见问题</li>
+                <li style="margin-top:20px;">1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>1、专家汇平台是否会收取职...</li>
+                <li>10、专家汇平台是否会收取职...</li>
+            </ul>
+        </div>
+
+        <!-- 筛选结果 -->
+        <ul class="resultsTop">
+            <li>
+                <ul class="sortingMethod">
+                    <li><a href="#" class="sortingMethodChioce">默认排序</a></li>
+                    <li><a>人气</a></li>
+                </ul>
+            </li>
+            <%-- <li>
+                 <ul class="costRange">
+                     <li>费用&nbsp;:</li>
+                     <li><input type="text"></li>
+                     <li style="padding:0 1px;color:#00bdff">-</li>
+                     <li><input type="text"></li>
+                 </ul>
+             </li>--%>
         </ul>
-    </li>--%>
-</ul>
-<div class="resultsBody">
-<ul>
-    <c:forEach items="${pageInfo.list}" var="requirement">
-        <li class="resultsList">
-            <ul class="resultsElemTop">
-                <li class="resultsElemTop-1">发布时间:${requirement.createDatetime}</li>
-                <li class="resultsElemTop-2">开始时间:${requirement.startDatetime}</li>
+        <div class="resultsBody">
+            <ul>
+                <c:forEach items="${pageInfo.list}" var="requirement">
+                    <li class="resultsList">
+                        <ul class="resultsElemTop">
+                            <li class="resultsElemTop-1">发布时间:${requirement.createDatetime}</li>
+                            <li class="resultsElemTop-2">开始时间:${requirement.startDatetime}</li>
+                        </ul>
+                        <ul class="resultsElemMain">
+                            <li class="resultsElemMain-1"><a href="/pc/requirement/view?requirementId=${requirement.id}">${requirement.name}</a> </li>
+                            <li class="resultsElemMain-2">需求类型:<span style="color:#00bdff"><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span></li>
+                            <li class="resultsElemMain-3"><zjh:status name="industry" dataType="Expertserve.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status></li>
+                            <li class="resultsElemMain-4" style="color:#f77530;">预算:￥<span>${requirement.price}</span>元</li>
+                            <li class="resultsElemMain-5">地点:<span>${requirement.address}</span></li>
+                            <li class="resultsElemMain-5 last"><span>${requirement.expert.name}</span></li>
+                        </ul>
+                    </li>
+                </c:forEach>
+
             </ul>
-            <ul class="resultsElemMain">
-                <li class="resultsElemMain-1"><a href="/pc/requirement/view?requirementId=${requirement.id}">${requirement.name}</a> </li>
-                <li class="resultsElemMain-2">需求类型:<span style="color:#00bdff"><zjh:status name="type" dataType="Requirement.type" type="normal" checkedValue="${requirement.type}"></zjh:status> </span></li>
-                <li class="resultsElemMain-3"><zjh:status name="industry" dataType="Expertserve.industry" type="normal" checkedValue="${requirement.industry}"></zjh:status></li>
-                <li class="resultsElemMain-4" style="color:#f77530;">预算:￥<span>${requirement.price}</span>元</li>
-                <li class="resultsElemMain-5">地点:<span>${requirement.address}</span></li>
-                <li class="resultsElemMain-5 last"><span>${requirement.expert.name}</span></li>
-            </ul>
-        </li>
-    </c:forEach>
 
-</ul>
+            <!-- 页码部分 -->
+            <div class="page-normal">
+                <ul class="page-ul">
+                    <zjh:pageList bean="${pageEntity}" url="/pc/requirement/pageList">
+                        <zjh:pageParam name="type" value="${type}"></zjh:pageParam>
+                        <zjh:pageParam name="industry" value="${industry}"></zjh:pageParam>
+                    </zjh:pageList>
+                </ul>
+            </div>
 
-<!-- 页码部分 -->
-<div class="page-normal">
-    <ul class="page-ul">
-        <zjh:pageList bean="${pageEntity}" url="/pc/requirement/pageList">
-            <zjh:pageParam name="type" value="${type}"></zjh:pageParam>
-            <zjh:pageParam name="industry" value="${industry}"></zjh:pageParam>
-        </zjh:pageList>
-    </ul>
-</div>
-
-</div>
-</div>
+        </div>
+    </div>
 </div>
 <!-- 回到顶部 -->
 <a href="javascript:;" id="btn" title="回到顶部"></a>
@@ -340,7 +340,7 @@
             <img src="/images/footer-pic.png" alt="底部图片">
         </div>
         <div class="footer-bottom">
-              <p>&copy;2011-2015&nbsp;&nbsp;专家汇&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;北京语博信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11001010号-7&nbsp;&nbsp;京公网安备&nbsp;&nbsp;11010702111111</p>
+            <p>&copy;2011-2015&nbsp;&nbsp;专家汇&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;北京语博信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11001010号-7&nbsp;&nbsp;京公网安备&nbsp;&nbsp;11010702111111</p>
         </div>
     </div>
 </div>

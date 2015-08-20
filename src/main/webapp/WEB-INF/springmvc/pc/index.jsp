@@ -51,7 +51,7 @@
 <body>
 <div id="wrap">
 <!-- top顶部 -->
-<div class="top">
+<%--<div class="top">
     <div class="top-sub">
         <div class=" top-l fl">
             <% MyUser user= AuthorizationUtil.getMyUser();
@@ -152,7 +152,8 @@
             </a>
         </div>
     </div>
-</div>
+</div>--%>
+<jsp:include page="header.jsp"></jsp:include>
 <!-- content部分 -->
 <div class="content">
 <!-- 导航部分 -->
@@ -451,7 +452,8 @@
 </div>
 </div>
 </div>
-<!-- 回到顶部 -->
+<jsp:include page="footer.jsp"></jsp:include>
+<%--<!-- 回到顶部 -->
 <a href="javascript:;" id="btn" title="回到顶部"></a>
 <!-- footer部分 -->
 <div class="footer">
@@ -516,7 +518,7 @@
             <p>&copy;2011-2015&nbsp;&nbsp;专家汇&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved&nbsp;&nbsp;北京语博信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;京ICP备11001010号-7&nbsp;&nbsp;京公网安备&nbsp;&nbsp;11010702111111</p>
         </div>
     </div>
-</div>
+</div>--%>
 </div>
 
 <!-- jiathis插件侧边栏 -->
