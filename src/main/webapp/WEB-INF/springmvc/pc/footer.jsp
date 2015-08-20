@@ -9,7 +9,7 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" href="/theme/index.css">
+    <link rel="stylesheet" href="/theme/footer.css">
 
 </head>
 <body>

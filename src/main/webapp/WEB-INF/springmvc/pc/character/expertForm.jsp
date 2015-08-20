@@ -352,7 +352,16 @@
             </div>
         </div>
         <br/><br/>
-        <div class="pi-inf-tr edkeywords">
+
+        <div class="keywords">
+            <label for="keywordsInpu">关键字：</label>
+            <input name="keywords" class="keywordsInpu" id="keywordsInpu"  type="text" value="" placeholder="方便搜索到您"/>
+            <c:forEach items="${expert.keywordsList}" var="keywords">
+                <div class="elem"><span>${keywords.words}&nbsp;</span><img src="/images/pop-up-down3.png" onclick="deleteKeyword('${keywords.id}',this)"></div>
+            </c:forEach>
+        </div>
+
+<%--        <div class="pi-inf-tr edkeywords">
             <div class="pi-inf-td-l">
                 关键字：
             </div>
@@ -362,7 +371,7 @@
                     <div class="elem"><span>${keywords.words}&nbsp;</span><img src="/images/pop-up-down3.png" onclick="deleteKeyword('${keywords.id}',this)"></div>
                 </c:forEach>
             </div>
-        </div>
+        </div>--%>
         <div class="pi-inf-tr">
             <div class="pi-inf-td-l">
                 风格标签：
@@ -498,9 +507,9 @@
                 起止年月：
             </div>
             <div class="pi-inf-td-r">
-                <input required type="text" class="Wdate"  name="startDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
-                --
-                <input required type="text" class="Wdate"  name="endDatetime" value="" style="width:120px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+                <input required type="text" class="Wdate"  name="startDatetime" value="" style="width:100px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+               —
+                <input required type="text" class="Wdate"  name="endDatetime" value="" style="width:100px" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})">
 
             </div>
         </div>
@@ -539,7 +548,7 @@
 
     </div>
     <div class="pi-line2"></div>
-    <div class="pi-but-zk"><a href="#" onclick="submitCompany()">添加</a> </div>
+    <div class="pi-but-zk"><a href="javascript:void(0)" onclick="submitCompany()" style="font-size:15px;color:#555;">添加</a> </div>
     </form>
     <div style="text-align: center"><button class="pi-but2" onclick="$('#expert').submit();">保存</button></div>
 </div>

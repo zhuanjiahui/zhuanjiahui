@@ -26,7 +26,6 @@
     <script type="text/javascript" src="/scripts/ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('content');
-
     </script>
 
 
@@ -107,15 +106,15 @@
             <img src="/images/duihao.gif">
             填写服务内容
         </div>
-        <div class="box">
-            <div class="add">
+        <div <%--class="box"--%>>
+            <%--<div class="add">
                 <div class="addImg"></div>
                 <p class="addTxt">添加服务<p>
-            </div>
+            </div>--%>
             <div class="btMenu">
-                <div class="bt op1" onclick="showPanel('train');">培训</div>
-                <div class="bt op2" onclick="showPanel('consult');">咨询</div>
-                <div class="bt op3" onclick="showPanel('development');">开发</div>
+                <div <%--class="bt op1"--%> onclick="showPanel('train');">培训</div>
+                <div <%--class="bt op2"--%> onclick="showPanel('consult');">咨询</div>
+                <div <%--class="bt op3"--%> onclick="showPanel('development');">开发</div>
             </div>
         </div>
         <c:forEach items="${expertServeList}" var="expertServe">
@@ -137,7 +136,7 @@
         </c:forEach>
         <div class="sc-table">
             <form id="trainForm" name="expertServe" action="" method="post">
-            <div id="train" hidden="hidden">
+            <div id="train" hidden="hidden" style="display: block;">
                 <div class="sc-tr">
                     <div class="sc-td-l">
                         <span>行业：</span>
@@ -230,10 +229,10 @@
             </div>
             </form>
             <%--咨询--%>
-            <form id="consultForm" name="expertServe" action="" method="post">
+            <form id="consultForm" name="expertServe" action="" method="post" style="display: block;">
 
 
-            <div id="consult" hidden="hidden">
+            <div id="consult" hidden="hidden" style="display: block;">
                 <div class="sc-tr">
                     <div class="sc-td-l sc-td-l-zxnx">
                         咨询年限：
@@ -321,9 +320,9 @@
             </div>
             </form>
             <%--开发--%>
-            <form id="developmentForm" name="expertServe" action="" method="post">
+            <form id="developmentForm" name="expertServe" action="" method="post" style="display: block;">
 
-            <div id="development" hidden="hidden">
+            <div id="development" hidden="hidden" style="display: block;">
                 <div class="sc-tr">
 
                     <div class="sc-td-r">
@@ -422,23 +421,23 @@
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
 <script>
-    var _width = ($('.box').width() - $('.box>div').width()) - 11 + "px";
+    /*var _width = ($('.box').width() - $('.box>div').width()) - 11 + "px";
 
-    var animateList=[
+    *//*var animateList=[
         function(){ $('.op1').delay(10).animate({marginLeft:_width,opacity:1},88,queueList);  },
         function(){ $('.op2').delay(10).animate({marginLeft:_width,opacity:1},88,queueList);  },
         function(){ $('.op3').delay(10).animate({marginLeft:_width,opacity:1},88,queueList);  }
-    ];
+    ];*//*
 
-    $(document).queue('_queueList',animateList);
+    *//*$(document).queue('_queueList',animateList);
     var queueList=function(){
         $(document).dequeue('_queueList');
-    };
+    };*//*
 
 
     $('.add').click(function(){
         queueList();
-    });
+    });*/
     function loadCourse(maj){
         $.ajax({
             url:"/pc/expertServe/loadCourses",
@@ -455,9 +454,9 @@
             }
         })
     }
-    $(function(){
+/*    $(function(){
         $(".body-con-4 :even").css("background","#B3CFE7");
-    })
+    })*/
 </script>
 <script type="text/javascript">
     function submitForm(serveType){
@@ -494,7 +493,7 @@
             }
         });
     }
-    function showPanel(serveType){
+<%--    function showPanel(serveType){
         if(serveType=="train"){
             $("#train").fadeIn("fast");
             $("#consult").fadeOut("fast");
@@ -509,7 +508,7 @@
             $("#development").fadeIn("fast");
         }
     }
-</script>
+</script>--%>
 
 
 </body>

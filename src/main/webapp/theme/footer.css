@@ -1,0 +1,23 @@
+/*footer部分*/
+.footer{height:362px;background-color: #e5e5e5;}
+.footer-wrap{width: 1200px;margin: 0 auto;}
+.footer-ul1{float:left;width:100%;overflow:hidden;background-color: #e5e5e5;}
+.footer-ul1 .ul1-li1{float:left;width: 225px;height:188px;color:#646464;text-indent: 45px;margin-top: 20px;border-right:1px solid #cacaca;}
+.footer-ul1-title{font-size: 24px;color: ;height:45px;line-height: 45px;}
+.footer-ul1-con{font-size:14px;height: 28px;line-height: 28px;}
+.footer-ul1-con a{color:#646464;}
+.footer-ul1 .ul1-li3{float:left;width:260px;height:188px;color:#646464;padding-left: 45px;margin-top: 20px;border-right:1px solid #cacaca;}
+.ul1-con-pic{float:left;margin-top: 10px;}
+.ul1-con-pic1{float:left;width: 80px;text-align: center;position: relative;}
+.ul1-con-pic1 a{display:inline-block;color: #646464;}
+.ul1-con-pic1-1{z-index: 20;}
+.ul1-con-pic1-2{display: none;}
+.ul1-con-pic1 a:hover .ul1-con-pic1-2{display: block;position: absolute;top:0;left:9px;z-index: 30;}
+.ul1-li4{float:left;width: 260px;height:157px;color:#646464;text-indent: 45px;margin-top: 20px;}
+.ul1-li4 .biancu{font-size: 30px;color: #6b6b6b;}
+.footer-bottom{float:left;width: 100%}
+.footer .footerpic{float:left;width: 100%;height:74px;text-align: center;padding:18px 0 18px 0;}
+.footer-ul2{width: 900px;margin:0 auto;background-color:#e5e5e5;}
+.footer-ul2 li{float:left;}
+.footer-ul2 li a{font-size: 14px;color:#6b6b6b;margin:0 20px;line-height: 40px;}
+.footer p{color:#6b6b6b;line-height: 40px;text-align: center;}
