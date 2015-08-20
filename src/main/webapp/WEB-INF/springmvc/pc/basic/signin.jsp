@@ -93,8 +93,7 @@
         </div>
     </form>
 </div>
-<jsp:include page="../footer.jsp"></jsp:include>
-</div>
+<div style="width:100%;"><jsp:include page="../footer.jsp"></jsp:include></div>
 </body>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <script type="text/javascript">
