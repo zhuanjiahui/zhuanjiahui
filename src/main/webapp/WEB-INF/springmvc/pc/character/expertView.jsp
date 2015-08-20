@@ -427,8 +427,13 @@
         })
     }
     function sureOrderTime(obj,date){
+        var size = $(obj).css("font-size");
+        if(size == '14px'){
+            $(obj).css("font-size","33px");
+        }else{
+            $(obj).css("font-size","14px");
+        }
 
-        $(obj).css("background","gray");
         $("#orderTime").val(date);
     }
 
